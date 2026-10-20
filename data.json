@@ -1,0 +1,325 @@
+{
+ "checked": "2026-10-20",
+ "nations": [
+  {
+   "id": "scotland",
+   "name": "Scotland",
+   "summary": "Every short-term let needs a council licence before taking bookings or guests. Control areas in Edinburgh and Badenoch & Strathspey. Visitor levies arriving city by city.",
+   "rules": [
+    {
+     "topic": "Licensing",
+     "status": "In force",
+     "text": "All short-term lets (secondary letting, home letting, home sharing) need a licence from the local council before taking bookings or receiving guests. Operating without a licence is a criminal offence (Edinburgh notes fines up to £2,500).",
+     "sources": [
+      "https://www.gov.scot/publications/short-term-lets/",
+      "https://www.edinburgh.gov.uk/licences-permits/licences-permits-applications/10"
+     ]
+    },
+    {
+     "topic": "Planning / control areas",
+     "status": "In force",
+     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. This is awaiting approval from Scottish Ministers and is not yet in force.",
+     "sources": [
+      "https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas",
+      "https://www.gov.scot/publications/short-term-lets/",
+      "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/"
+     ]
+    },
+    {
+     "topic": "Visitor levy",
+     "status": "Council-by-council",
+     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme opened 19 Aug 2026 (12 weeks). No decision yet. Reported rate of £4 per room per night and closing date of 11 Nov 2026 are UNVERIFIED (the council page was blocked to our fetch).",
+     "sources": [
+      "https://www.edinburgh.gov.uk/visitorlevyinformation",
+      "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
+      "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
+      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+     ]
+    },
+    {
+     "topic": "Tax (FHL)",
+     "status": "In force",
+     "text": "The UK-wide Furnished Holiday Let tax regime was abolished from April 2025. Income is now taxed as ordinary property income.",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+     ]
+    },
+    {
+     "topic": "Non-domestic rates thresholds",
+     "status": "In force (verified)",
+     "text": "To pay non-domestic rates instead of council tax, a let must not be anyone's only or main home, must be available commercially for at least 140 nights in the financial year (1 Apr to 31 Mar), and must actually be let for at least 70 nights. Send evidence to the assessor by the later of 56 days after the year end (usually 26 May) or 56 days after their request. If you miss the deadline you pay council tax for that year. Lets to friends or family don't count. Small Business Bonus Scheme relief may apply.",
+     "sources": [
+      "https://www.mygov.scot/non-domestic-rates-guidance/short-term-lets",
+      "https://www.saa.gov.uk/non-domestic-valuation/self-catering/",
+      "https://www.legislation.gov.uk/uksi/1992/2955/schedule/2",
+      "https://www.legislation.gov.uk/ssi/2026/72/pdfs/ssifia_20260072_en_001.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "england",
+   "name": "England",
+   "summary": "No national register yet (now expected March 2027). Use class C5 is still only a proposal. London has a 90-night cap. Business rates need 140 nights available and 70 nights let.",
+   "rules": [
+    {
+     "topic": "Registration scheme",
+     "status": "Not yet in force",
+     "text": "A mandatory national registration scheme is coming under s.228 of the Levelling-up and Regeneration Act 2023. GOV.UK (updated 2 Oct 2026) now says it is expected to begin in March 2027. No regulations, portal or fee have been published yet.",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
+      "https://www.gov.uk/guidance/delivering-a-registration-scheme-for-short-term-lets"
+     ]
+    },
+    {
+     "topic": "Planning use class (C5)",
+     "status": "Proposal only",
+     "text": "The C5 short-term-let use class was consulted on in 2023 but is not law. Your local planning authority decides whether your letting is a material change of use. Councils can use Article 4 directions.",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+     ]
+    },
+    {
+     "topic": "London 90-night rule",
+     "status": "In force",
+     "text": "In Greater London, a whole home can be short-let for up to 90 nights per calendar year without planning permission. Going over that needs permission (Deregulation Act 2015, s.44).",
+     "sources": [
+      "https://www.legislation.gov.uk/ukpga/2015/20/section/44"
+     ]
+    },
+    {
+     "topic": "Business rates vs council tax",
+     "status": "In force",
+     "text": "To be rated as a business, the let must have been available for at least 140 nights and actually let for at least 70 nights in the last 12 months, and you must intend to make it available for 140 nights in the next 12. From 24 Jul 2026 there are easements for owners of 5+ lets on the same property, and for lets sharing land with another business.",
+     "sources": [
+      "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-england"
+     ]
+    },
+    {
+     "topic": "Tax (FHL abolished)",
+     "status": "In force",
+     "text": "The FHL regime was abolished from April 2025.",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+     ]
+    },
+    {
+     "topic": "Safety",
+     "status": "In force",
+     "text": "Fire safety duties under the Regulatory Reform (Fire Safety) Order 2005, plus gas and electrical safety, an EPC where needed, and insurance (see GOV.UK guidance).",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wales",
+   "name": "Wales",
+   "summary": "Free registration with the Welsh Revenue Authority is mandatory by 31 March 2027. Councils can start a visitor levy (£1.30 per person per night). Licensing is legislated for, with a default start of March 2030. Business rates need 182 days let.",
+   "rules": [
+    {
+     "topic": "Registration (WRA)",
+     "status": "In force",
+     "text": "From 1 Oct 2026, anyone taking bookings of 31 nights or less must register with the Welsh Revenue Authority by 31 Mar 2027. Registration is free and applies even where no levy exists.",
+     "sources": [
+      "https://www.gov.wales/registering-visitor-accommodation-overview"
+     ]
+    },
+    {
+     "topic": "Visitor levy",
+     "status": "Council-by-council",
+     "text": "£1.30 per person per night (75p for hostels, dorms and tent pitches). The earliest start is 1 Apr 2027. Cardiff starts 1 Apr 2027. Councils must give 12 months' notice.",
+     "sources": [
+      "https://www.gov.wales/visitor-levy-for-visitor-accommodation-providers-overview",
+      "https://www.gov.wales/visitor-levy-wales"
+     ]
+    },
+    {
+     "topic": "Licensing",
+     "status": "Legislated, not in force",
+     "text": "A licensing scheme for self-contained self-catering lets has Royal Assent. Its legal default commencement is March 2030, with consultation on regulations first.",
+     "sources": [
+      "https://industry.visitwales.com/about-us/tourism-policies-and-legislation"
+     ]
+    },
+    {
+     "topic": "182-day rule (rates)",
+     "status": "In force (detail UNVERIFIED)",
+     "text": "To be rated as a business, a let must be available for 252 days and actually let for 182 days. Reported (not yet confirmed on gov.wales this session): from April 2026 the 182-day test may be averaged over 2–3 years. Otherwise council tax applies, and second-home premiums of up to 300% are possible (premium cap UNVERIFIED this session).",
+     "sources": [
+      "https://www.gov.wales/self-catering-accommodation-business-rates"
+     ]
+    },
+    {
+     "topic": "Planning",
+     "status": "In force",
+     "text": "Since Oct 2022 Wales has use classes C3 (main home), C5 (second home) and C6 (short-term let). Changes between them are permitted development unless an Article 4 direction applies.",
+     "sources": [
+      "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "northern-ireland",
+   "name": "Northern Ireland",
+   "summary": "All tourist accommodation must hold a Tourism NI certificate. Inspections every 4 years. Fee £40 per unit (min £40, max £350).",
+   "rules": [
+    {
+     "topic": "Certification",
+     "status": "In force",
+     "text": "Under the Tourism (NI) Order 1992, all visitor accommodation needs a current Tourism NI certificate after an inspection. Certificates last 4 years. Star grading is voluntary.",
+     "sources": [
+      "https://www.tourismni.com/business-guidance/sector/accommodation/accommodation-getting-started/self-catering/overview/",
+      "https://www.legislation.gov.uk/nisi/1992/235/contents/made"
+     ]
+    },
+    {
+     "topic": "Rates",
+     "status": "In force",
+     "text": "Self-contained self-catering available commercially for 140 days or more a year is non-domestic (rateable).",
+     "sources": [
+      "https://www.finance-ni.gov.uk/articles/self-catering-holiday-establishment-non-domestic-valuation-practice-notes"
+     ]
+    },
+    {
+     "topic": "Tax (FHL abolished)",
+     "status": "In force",
+     "text": "The FHL regime was abolished UK-wide from April 2025.",
+     "sources": [
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+     ]
+    }
+   ]
+  }
+ ],
+ "councils": [
+  {
+   "name": "City of Edinburgh",
+   "nation": "Scotland",
+   "rule": "Whole-city control area (planning likely needed for secondary lets). 5% visitor levy from 24 Jul 2026, capped at 5 nights.",
+   "source": "https://www.edinburgh.gov.uk/visitorlevyinformation",
+   "verified": true
+  },
+  {
+   "name": "Glasgow City",
+   "nation": "Scotland",
+   "rule": "5% visitor levy from 25 Jan 2027 on the whole stay; applies to bookings made from 1 Apr 2026.",
+   "source": "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
+   "verified": true
+  },
+  {
+   "name": "Highland",
+   "nation": "Scotland",
+   "rule": "Badenoch & Strathspey control area. Consulting on a £5 per room per night levy; decision due 10 Dec 2026.",
+   "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
+   "verified": true
+  },
+  {
+   "name": "Perth & Kinross",
+   "nation": "Scotland",
+   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; awaiting Ministers' approval and not in force (it does not appear to cover Kinross, but check the final map). Flats already need planning permission to become a short-term let. Visitor levy: draft scheme under consultation since 19 Aug 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
+   "source": "https://www.pkc.gov.uk/media/50153/Short-term-Lets-Policy-Statement/pdf/Short-term_Lets_Licensing_Policy_Statement_-_10_MARCH_2025.pdf?m=1741781506817",
+   "verified": true
+  },
+  {
+   "name": "Greater London (all boroughs)",
+   "nation": "England",
+   "rule": "90 nights per calendar year whole-home cap without planning permission.",
+   "source": "https://www.legislation.gov.uk/ukpga/2015/20/section/44",
+   "verified": true
+  },
+  {
+   "name": "Cornwall",
+   "nation": "England",
+   "rule": "100% council tax second-home premium from 1 Apr 2025, with exceptions (e.g. holiday-only planning conditions).",
+   "source": "https://www.cornwall.gov.uk/council-tax/second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Gwynedd",
+   "nation": "Wales",
+   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026.",
+   "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction",
+   "verified": true
+  },
+  {
+   "name": "Cardiff",
+   "nation": "Wales",
+   "rule": "Visitor levy from 1 Apr 2027 (£1.30 per person per night).",
+   "source": "https://www.gov.wales/visitor-levy-wales",
+   "verified": true
+  },
+  {
+   "name": "Pembrokeshire",
+   "nation": "Wales",
+   "rule": "High second-home premium and levy plans reported. NOT VERIFIED.",
+   "source": "https://www.pembrokeshire.gov.uk",
+   "verified": false
+  },
+  {
+   "name": "York / Lake District / Whitby (N. Yorks)",
+   "nation": "England",
+   "rule": "Second-home premiums and possible Article 4 activity reported. NOT VERIFIED.",
+   "source": "",
+   "verified": false
+  }
+ ],
+ "changes": [
+  {
+   "date": "2026-10-08",
+   "nation": "Wales",
+   "text": "WRA registration guidance updated: register by 31 Mar 2027.",
+   "source": "https://www.gov.wales/registering-visitor-accommodation-overview"
+  },
+  {
+   "date": "2026-10-02",
+   "nation": "England",
+   "text": "National STL register start pushed to 'expected March 2027'.",
+   "source": "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+  },
+  {
+   "date": "2026-10-01",
+   "nation": "Wales",
+   "text": "Duty to register visitor accommodation with the WRA starts.",
+   "source": "https://www.gov.wales/registering-visitor-accommodation-overview"
+  },
+  {
+   "date": "2026-09-29",
+   "nation": "England",
+   "text": "Business rates guidance adds rules for owners of 5+ lets and for mixed-use sites (effective 24 Jul 2026).",
+   "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-england"
+  },
+  {
+   "date": "2026-09-07",
+   "nation": "Scotland",
+   "text": "Highland opens 12-week visitor levy consultation (£5 per room per night proposed).",
+   "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal"
+  },
+  {
+   "date": "2026-08-19",
+   "nation": "Scotland",
+   "text": "Perth & Kinross opens 12-week consultation on a draft visitor levy.",
+   "source": "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+  },
+  {
+   "date": "2026-07-24",
+   "nation": "Scotland",
+   "text": "Edinburgh 5% visitor levy goes live.",
+   "source": "https://www.edinburgh.gov.uk/visitorlevyinformation"
+  },
+  {
+   "date": "2026-06-17",
+   "nation": "Scotland",
+   "text": "Perth & Kinross agrees STL control area for Highland Perthshire and N. Eastern Perthshire (awaiting Ministers).",
+   "source": "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/"
+  },
+  {
+   "date": "2026-02-06",
+   "nation": "Wales",
+   "text": "Gwynedd Article 4 direction ends after appeal refused.",
+   "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction"
+  }
+ ]
+}
