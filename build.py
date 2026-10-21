@@ -2,7 +2,7 @@ import json,html
 d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
-def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
+def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-short-term-let-licence-guide.html">Scot licence guide</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
 def page(f,t,b,desc=None,full_title=None,head=''):
     p='../'*f.count('/');nav=mknav(p);PAGES.append(f)
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
@@ -16,7 +16,7 @@ latest=''.join(f'<li><b>{c["date"]}</b> [{c["nation"]}] {e(c["text"])}</li>' for
 page('index.html','Current short-let rules across the UK',f'<p class="lead">Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts, with links to official sources.</p><div class="grid">{cards}</div><h2>Latest changes</h2><ul>{latest}</ul><p><a href="changes.html">Full changes log</a></p><div class="box"><h2>Weekly "what changed" email</h2><p>One short, sourced email a week. Unsubscribe any time.</p>'+FORM+'</div>')
 for n in d['nations']:
     rows=''.join(f'<tr><td>{e(r["topic"])}</td><td><span class="tag{" warn" if "UNVERIFIED" in r["status"] else ""}">{e(r["status"])}</span></td><td>{e(r["text"])}</td><td>{src(r["sources"])}</td></tr>' for r in n['rules'])
-    page(n['id']+'.html',n['name'],f'<p class="lead">{e(n["summary"])}</p>'+('<p class="box"><b>New:</b> <a href="wales-registration-checker.html">Do I need to register with the WRA? Take the 4-question checker</a></p>' if n['id']=='wales' else '')+f'<div class="tw"><table><tr><th>Topic</th><th>Status</th><th>Rule</th><th>Official source</th></tr>{rows}</table></div>')
+    page(n['id']+'.html',n['name'],f'<p class="lead">{e(n["summary"])}</p>'+('<p class="box"><b>New:</b> <a href="wales-registration-checker.html">Do I need to register with the WRA? Take the 4-question checker</a></p>' if n['id']=='wales' else '<p class="box"><b>New:</b> <a href="scotland-short-term-let-licence-guide.html">How to get a short-term let licence: steps and a tick-off checklist</a></p>' if n['id']=='scotland' else '')+f'<div class="tw"><table><tr><th>Topic</th><th>Status</th><th>Rule</th><th>Official source</th></tr>{rows}</table></div>')
 slug=lambda c:c.get('slug') or re.sub(r'[^a-z0-9]+','-',c['name'].lower().replace('&','and')).strip('-')
 rows=''.join(f'<tr><td>{f'<a href="councils/{slug(c)}.html">{e(c["name"])}</a>' if c["verified"] else e(c["name"])}</td><td>{c["nation"]}</td><td>{e(c["rule"])}</td><td>{"✔" if c["verified"] else "<span class=\"tag warn\">unverified</span>"}</td><td>{src([c["source"]] if c["source"] else [])}</td></tr>' for c in d['councils'])
 page('councils.html','Councils with notable local rules',f'<p>Click a council for its own page with official sources and key dates.</p><div class="tw"><table><tr><th>Council</th><th>Nation</th><th>Rule</th><th>Verified</th><th>Source</th></tr>{rows}</table></div>')
@@ -27,7 +27,7 @@ page('sponsor.html','Sponsor this page','<p>Reach UK short-let hosts who are act
 
 # ---- Per-council pages ----
 U='<span class="tag warn">UNVERIFIED</span>'
-SC_LIC=('Licence needed (Scotland-wide). All short-term lets (secondary letting, home letting, home sharing) need a licence from the council before taking bookings or guests.',['https://www.gov.scot/publications/short-term-lets/'])
+SC_LIC=('Licence needed (Scotland-wide). All short-term lets (secondary letting, home letting, home sharing) need a licence from the council before taking bookings or guests. <a href="../scotland-short-term-let-licence-guide.html">Step-by-step licence guide and checklist</a>.',['https://www.gov.scot/publications/short-term-lets/'])
 WA_REG=('No council licence yet. Wales-wide: if you take bookings of 31 nights or fewer you must register with the Welsh Revenue Authority by 31 Mar 2027 (free, applies even with no council levy). A national licensing scheme is legislated but not in force (default commencement March 2030). <a href="../wales-registration-checker.html">Check if you must register</a>.',['https://www.gov.wales/registering-visitor-accommodation-overview','https://industry.visitwales.com/about-us/tourism-policies-and-legislation'])
 EN_LIC=('No licensing or registration scheme in force in England.',[])
 CX={
@@ -96,6 +96,7 @@ document.querySelectorAll('.q input').forEach(function(x){{x.addEventListener('c
 page('wales-registration-checker.html','Do I need to register my holiday let in Wales?',b,desc='Free 4-question checker: do you need to register your Wales holiday let or short-term let with the Welsh Revenue Authority by 31 March 2027? Plain English, official sources.',full_title='Wales visitor accommodation registration checker (WRA, 31 Mar 2027) | UK Short-Let Rules Tracker')
 
 exec(open('tools_extra.py').read())
+exec(open('guides.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
