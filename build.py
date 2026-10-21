@@ -2,13 +2,13 @@ import json,html
 d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
-def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}newsletter.html">Newsletter</a></nav>'
-def page(f,t,b,desc=None,full_title=None):
+def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
+def page(f,t,b,desc=None,full_title=None,head=''):
     p='../'*f.count('/');nav=mknav(p);PAGES.append(f)
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
     desc=desc or f'{t}: licensing, planning, tax and levy rules for UK short-term and holiday lets, with official sources.'
     os.makedirs(os.path.dirname(f) or '.',exist_ok=True)
-    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css"></head><body><header><a class="brand" href="{p}index.html">UK Short-Let Rules Tracker</a>{nav}</header><main><h1>{e(t)}</h1>{b}</main><aside class="sponsor">Sponsor this page: reach UK hosts. <a href="{p}sponsor.html">Find out more</a></aside><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.</footer></body></html>''')
+    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css">{head}</head><body><header><a class="brand" href="{p}index.html">UK Short-Let Rules Tracker</a>{nav}</header><main><h1>{e(t)}</h1>{b}</main><aside class="sponsor">Sponsor this page: reach UK hosts. <a href="{p}sponsor.html">Find out more</a></aside><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.</footer></body></html>''')
 FORM='''<form class="signup" data-endpoint="%s"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><button>Subscribe</button><p class="msg small"></p></form><script src="signup.js"></script>''' % e(d.get('newsletter_endpoint',''))
 src=lambda s:' '.join(f'<a href="{e(u)}" rel="nofollow">source</a>' for u in s) or '<em>no source yet</em>'
 cards=''.join(f'<a class="card" href="{n["id"]}.html"><h2>{n["name"]}</h2><p>{e(n["summary"])}</p></a>' for n in d['nations'])
@@ -94,6 +94,8 @@ T.innerHTML='<ul><li><b>It is free.</b></li><li>It is required by law <b>even if
 document.querySelectorAll('.q input').forEach(function(x){{x.addEventListener('change',upd);}});upd();}})();
 </script>'''
 page('wales-registration-checker.html','Do I need to register my holiday let in Wales?',b,desc='Free 4-question checker: do you need to register your Wales holiday let or short-term let with the Welsh Revenue Authority by 31 March 2027? Plain English, official sources.',full_title='Wales visitor accommodation registration checker (WRA, 31 Mar 2027) | UK Short-Let Rules Tracker')
+
+exec(open('tools_extra.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
