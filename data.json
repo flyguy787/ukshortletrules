@@ -322,5 +322,5 @@
    "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction"
   }
  ],
- "newsletter_endpoint": ""
+ "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
 }
