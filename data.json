@@ -18,22 +18,25 @@
     {
      "topic": "Planning / control areas",
      "status": "In force",
-     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. This is awaiting approval from Scottish Ministers and is not yet in force.",
+     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. This is awaiting approval from Scottish Ministers and is not yet in force. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. Not in force.",
      "sources": [
       "https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas",
       "https://www.gov.scot/publications/short-term-lets/",
-      "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/"
+      "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/",
+      "https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area"
      ]
     },
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme opened 19 Aug 2026 (12 weeks). No decision yet. Reported rate of £4 per room per night and closing date of 11 Nov 2026 are UNVERIFIED (the council page was blocked to our fetch).",
+     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme opened 19 Aug 2026 (12 weeks). No decision yet. Reported rate of £4 per room per night and closing date of 11 Nov 2026 are UNVERIFIED (the council page was blocked to our fetch). Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
      "sources": [
       "https://www.edinburgh.gov.uk/visitorlevyinformation",
       "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
       "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
-      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy",
+      "https://www.visitscotland.org/tourism-events-industry/visitor-levy",
+      "https://www.argyll-bute.gov.uk/visitor-levy"
      ]
     },
     {
@@ -242,6 +245,48 @@
    "verified": true
   },
   {
+   "name": "Aberdeen City",
+   "nation": "Scotland",
+   "rule": "7% visitor levy on the whole stay from 1 Apr 2027 (bookings made from 1 Oct 2026). No control area. Licence fees from £470.40 (home sharing/letting, 1–2 guests) and £492.80 (secondary letting, 1–2 guests), effective 1 Jan 2026. No temporary licences or exemptions granted.",
+   "source": "https://www.aberdeencity.gov.uk/Council-Services/housing/short-term-lets/information/short-term-let-fees",
+   "verified": true
+  },
+  {
+   "name": "Dundee City",
+   "nation": "Scotland",
+   "rule": "No control area. Visitor levy consultation open 31 Aug to 27 Nov 2026; no scheme approved yet.",
+   "source": "https://www.visitscotland.org/tourism-events-industry/visitor-levy",
+   "verified": true
+  },
+  {
+   "name": "Fife",
+   "nation": "Scotland",
+   "rule": "No control area in force (council consulted on the principle in 2025). Visitor levy: early engagement only so far; council says the earliest a levy could start is 2028.",
+   "source": "https://www.fife.gov.uk/housing/private-rented-sector/short-term-lets",
+   "verified": true
+  },
+  {
+   "name": "Argyll and Bute",
+   "nation": "Scotland",
+   "rule": "Consulting (21 Sep to 15 Nov 2026) on a proposed control area for Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. Not in force. Visitor levy consultation (flat rate per room per night proposed) closed 5 Oct 2026; no decision yet. 3-year licence from £285.30 (home sharing/letting, up to 4 guests) or £398.95 (secondary letting, up to 4 guests).",
+   "source": "https://www.argyll-bute.gov.uk/licences/short-term-lets-licence",
+   "verified": true
+  },
+  {
+   "name": "Stirling",
+   "nation": "Scotland",
+   "rule": "3% visitor levy from 14 Jun 2027 (bookings made from 1 Jan 2027); Stirling residents and nights beyond 7 refunded. No control area. Licence fees from £113 (home letting/sharing, up to 4) and £283 (secondary letting, up to 4), as published for 2025-26.",
+   "source": "https://www.stirling.gov.uk/business-and-licences/licensing/short-term-let-licensing/apply-for-a-short-term-let-licence/",
+   "verified": true
+  },
+  {
+   "name": "West Dunbartonshire",
+   "nation": "Scotland",
+   "rule": "5% visitor levy on the whole stay from 1 Jul 2027 (bookings made and paid for from 1 Oct 2026). No control area. Licence grant or renewal £929.",
+   "source": "https://www.west-dunbarton.gov.uk/business/licences-permits-and-permissions/short-term-lets/short-term-let-licences",
+   "verified": true
+  },
+  {
    "name": "Greater London (all boroughs)",
    "nation": "England",
    "rule": "90 nights per calendar year whole-home cap without planning permission.",
@@ -297,10 +342,22 @@
    "source": "https://www.gov.wales/registering-visitor-accommodation-overview"
   },
   {
+   "date": "2026-10-01",
+   "nation": "Scotland",
+   "text": "Aberdeen (7%) and West Dunbartonshire (5%) visitor levies: bookings made from today are liable for stays from 1 Apr 2027 and 1 Jul 2027.",
+   "source": "https://www.visitscotland.org/tourism-events-industry/visitor-levy"
+  },
+  {
    "date": "2026-09-29",
    "nation": "England",
    "text": "Business rates guidance adds rules for owners of 5+ lets and for mixed-use sites (effective 24 Jul 2026).",
    "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-england"
+  },
+  {
+   "date": "2026-09-21",
+   "nation": "Scotland",
+   "text": "Argyll and Bute opens consultation (to 15 Nov 2026) on a proposed short-term let control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles.",
+   "source": "https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area"
   },
   {
    "date": "2026-09-10",
