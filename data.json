@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-20",
+ "checked": "2026-10-21",
  "nations": [
   {
    "id": "scotland",
@@ -96,6 +96,14 @@
      ]
     },
     {
+     "topic": "Overnight Visitor Levy",
+     "status": "Announced, not yet law",
+     "text": "On 10 Sep 2026 the government announced that mayors and Foundation Strategic Authority leaders will get the power to introduce an Overnight Visitor Levy, charged as a percentage of the accommodation cost (not a flat fee). Local leaders choose whether to use it and can offer exemptions (e.g. campsites). Accommodation providers would pay it to the authority. A bill will be introduced in due course; no levy applies yet.",
+     "sources": [
+      "https://www.gov.uk/government/news/local-leaders-handed-powers-to-drive-investment-in-communities"
+     ]
+    },
+    {
      "topic": "Tax (FHL abolished)",
      "status": "In force",
      "text": "The FHL regime was abolished from April 2025.",
@@ -145,10 +153,20 @@
     },
     {
      "topic": "182-day rule (rates)",
-     "status": "In force (detail UNVERIFIED)",
-     "text": "To be rated as a business, a let must be available for 252 days and actually let for 182 days. Reported (not yet confirmed on gov.wales this session): from April 2026 the 182-day test may be averaged over 2–3 years. Otherwise council tax applies, and second-home premiums of up to 300% are possible (premium cap UNVERIFIED this session).",
+     "status": "In force (verified)",
+     "text": "To be rated as a business, a let must have been available commercially for at least 252 nights and actually let for at least 182 nights in a 12-month period, and you must intend to make it available for 252 nights in the next 12 months. Stays over 28 nights don't count towards the 182. From 1 Apr 2026 (Non-Domestic Rating (Amendment of Definition of Domestic Property) (Wales) Order 2026, WSI 2026/7) you can meet the 182 nights as an average over the previous 2 or 3 years, and up to 14 nights a year donated to a registered charity count. Otherwise council tax applies, and councils can charge a second-home premium (premium cap UNVERIFIED this session).",
      "sources": [
-      "https://www.gov.wales/self-catering-accommodation-business-rates"
+      "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-wales",
+      "https://www.legislation.gov.uk/wsi/2026/7/note/made"
+     ]
+    },
+    {
+     "topic": "182-day rule consultation",
+     "status": "Consultation closes 23 Oct 2026",
+     "text": "The Welsh Government is consulting (31 Jul to Fri 23 Oct 2026) on the criteria for classifying self-catering properties for local tax, including whether the 182-day letting threshold is right and 5 proposed exemptions (properties that are part of a wider business, large multi-unit properties, properties with a relevant planning restriction, properties within the curtilage of the owner's home, and properties on the owner's farm). Nothing has changed yet.",
+     "sources": [
+      "https://www.gov.wales/classification-self-catering-properties-local-tax-purposes",
+      "https://www.gov.wales/review-on-holiday-let-tax-rules-to-support-tourism-and-local-communities"
      ]
     },
     {
@@ -219,7 +237,7 @@
   {
    "name": "Perth & Kinross",
    "nation": "Scotland",
-   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; awaiting Ministers' approval and not in force (it does not appear to cover Kinross, but check the final map). Flats already need planning permission to become a short-term let. Visitor levy: draft scheme under consultation since 19 Aug 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
+   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; awaiting Ministers' approval and not in force. Flats already need planning permission to become a short-term let. Visitor levy: draft scheme under consultation since 19 Aug 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
    "source": "https://www.pkc.gov.uk/media/50153/Short-term-Lets-Policy-Statement/pdf/Short-term_Lets_Licensing_Policy_Statement_-_10_MARCH_2025.pdf?m=1741781506817",
    "verified": true
   },
@@ -254,16 +272,9 @@
   {
    "name": "Pembrokeshire",
    "nation": "Wales",
-   "rule": "High second-home premium and levy plans reported. NOT VERIFIED.",
-   "source": "https://www.pembrokeshire.gov.uk",
-   "verified": false
-  },
-  {
-   "name": "York / Lake District / Whitby (N. Yorks)",
-   "nation": "England",
-   "rule": "Second-home premiums and possible Article 4 activity reported. NOT VERIFIED.",
-   "source": "",
-   "verified": false
+   "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26.",
+   "source": "https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes",
+   "verified": true
   }
  ],
  "changes": [
@@ -292,6 +303,12 @@
    "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-england"
   },
   {
+   "date": "2026-09-10",
+   "nation": "England",
+   "text": "Government announces an Overnight Visitor Levy power for mayors and Foundation Strategic Authorities (percentage of room cost; needs legislation).",
+   "source": "https://www.gov.uk/government/news/local-leaders-handed-powers-to-drive-investment-in-communities"
+  },
+  {
    "date": "2026-09-07",
    "nation": "Scotland",
    "text": "Highland opens 12-week visitor levy consultation (£5 per room per night proposed).",
@@ -302,6 +319,12 @@
    "nation": "Scotland",
    "text": "Perth & Kinross opens 12-week consultation on a draft visitor levy.",
    "source": "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+  },
+  {
+   "date": "2026-07-31",
+   "nation": "Wales",
+   "text": "Welsh Government opens consultation on the 182-day self-catering rates rule and 5 proposed exemptions (closes Fri 23 Oct 2026).",
+   "source": "https://www.gov.wales/review-on-holiday-let-tax-rules-to-support-tourism-and-local-communities"
   },
   {
    "date": "2026-07-24",
