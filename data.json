@@ -342,6 +342,27 @@
    "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26. Premium for 2027-28 was due to be set by full Council on 15 Oct 2026; local press reports 125% was kept (UNVERIFIED).",
    "source": "https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes",
    "verified": true
+  },
+  {
+   "name": "East Lothian",
+   "nation": "Scotland",
+   "rule": "Licence needed. No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026); a 27 Oct 2026 council meeting is asked to approve an independent review before any decision.",
+   "source": "https://www.eastlothian.gov.uk/business-and-licensing/licensing/accommodation-licensing/short-term-lets-licensing",
+   "verified": true
+  },
+  {
+   "name": "Moray",
+   "nation": "Scotland",
+   "rule": "Licence needed (£540 new or renewal from 1 Apr 2026). No control area. Consultation on whether to have a visitor levy at all runs to 31 Oct 2026; no decision made.",
+   "source": "https://www.moray.gov.uk/law-and-licensing/licences-permits-and-permissions/property-licences/short-term-lets-licence/",
+   "verified": true
+  },
+  {
+   "name": "Scottish Borders",
+   "nation": "Scotland",
+   "rule": "Licence needed (3-year licence, £417 to £537 by guest numbers). No control area. No visitor levy proposed.",
+   "source": "https://www.scotborders.gov.uk/licensing/short-term-lets",
+   "verified": true
   }
  ],
  "changes": [
