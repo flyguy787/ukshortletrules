@@ -1,0 +1,59 @@
+# ---- Guide: Northern Ireland Tourism NI certification for self-catering / short-term lets ----
+_T='https://www.tourismni.com/business-guidance/sector/accommodation/accommodation-getting-started/'
+NS=[('Tourism NI: Self-catering accommodation, overview',_T+'self-catering/overview/'),
+    ('Tourism NI: Self-catering, what you need to know about the inspection',_T+'self-catering/inspection/'),
+    ('Tourism NI: Self-catering, inspection outcome and advice',_T+'self-catering/inspection-outcome-and-advice/'),
+    ('Tourism NI: Self-catering, after the inspection',_T+'self-catering/after-the-inspection/'),
+    ('Tourism NI: Statutory inspection schedules and fees',_T+'legal-considerations/statutory-inspection-schedules/'),
+    ('Tourism NI: Fire safety regulations for your business',_T+'legal-considerations/fire-safety-regulations-for-your-business/'),
+    ('Tourism NI: Gas and electricity safety',_T+'legal-considerations/gas-and-electricity-safety-in-tourism-business/'),
+    ('Tourism NI: Planning and building control',_T+'legal-considerations/planning-and-building-control/'),
+    ('Tourism NI: Business rates for tourist accommodation',_T+'legal-considerations/business-rates-for-your-tourist-accommodation-premises/'),
+    ('Tourism NI: Public liability insurance',_T+'legal-considerations/public-liability-insurance/'),
+    ('Tourism NI: Mortgage terms and management companies',_T+'legal-considerations/mortgage-terms-and-management-companies/'),
+    ('Tourism (Northern Ireland) Order 1992','https://www.legislation.gov.uk/nisi/1992/235/contents/made')]
+NCK=[('Before you apply',['Check with your local council planning department whether you need planning permission or building regulations approval','Check with your mortgage lender (and any management company) whether restrictions apply','Public liability insurance arranged on top of your house insurance (Tourism NI says cover is usually £2 to £5 million)','Written fire risk assessment done by you or someone competent','Gas appliances inspected by a Gas Safe engineer at least once a year','Electrical appliances checked and serviced regularly (PAT testing is recommended best practice)','Work out if business rates apply (available for short-period lets 140 days a year or more)']),
+     ('What the inspector looks at',['Exterior, paths, parking and grounds well maintained and safe','Unit structurally safe, in good repair, clean and in good decorative order','Enough seating in the lounge and dining areas for the number of guests','Kitchen fit for purpose: cooker with ventilation, fridge, washing machine (unless a separate utility room), matched crockery, cutlery and pans with no chips or damage','Enough beds for the guests, plus storage for clothes in each bedroom','Black-out blinds or curtains with black-out linings in every bedroom','Bathroom with bath or shower, toilet, sink, toiletries cupboard and towel rail, no chips, cracks or discoloured grout or seals','Heating able to warm the unit to 18.5°C','Good lighting in all areas','Cleaned after each let, or weekly for stays over a week','Someone capable of managing the unit and bookings, and arrangements for guest arrival and departure']),
+     ('Guest information and records',['Tourism NI certificate and your scale of charges displayed where guests see them on arrival','Extra charges (for example electricity or bike hire) displayed unless included, and all prices include VAT where applicable','Visitors register: name, address, arrival and departure dates and nationality of each visitor','Information pack: emergency numbers, owner or manager contact, equipment instructions, full terms and conditions and an evacuation procedure','House rules and Wi-Fi details given to guests as early as possible','Local leaflets, maps and tourist information available']),
+     ('After certification',['Certificate received (usually posted within a few days)','Any conditions on the certificate completed within the agreed timeframe (not less than 30 days)','Self-review statement sent to Tourism NI in each of the 3 years between inspections','Diary note for the next statutory inspection in 4 years','Only say you hold a Tourism NI certificate: never "Tourism NI Recommended" or "Approved"','Optional: free listing on discovernorthernireland.com; optional star grading'])]
+NFAQ=[('Do I need a licence for an Airbnb in Northern Ireland?','Northern Ireland does not have a short-term let licence like Scotland. Instead, tourism legislation requires all tourist accommodation, including self-catering, to hold a current Tourism NI certificate, which you get after an inspection.'),
+      ('How much does Tourism NI certification cost?','For self-catering, Tourism NI charges £40 for each unit you plan to let, with a minimum fee of £40 and a maximum of £350. B&amp;Bs, guest houses and guest accommodation pay £20 per bedroom (minimum £80, maximum £200).'),
+      ('How do I apply for a Tourism NI certificate?','Apply online at forms.tourismni.com with the fee, or download the paper form and post it. You can also ask the Quality and Standards team for an application pack (qa@tourismni.com). Once your form and fee arrive, an inspector contacts you to book a visit.'),
+      ('How long does a Tourism NI certificate last?','4 years. Tourism NI inspects every 4 years, and in each of the 3 years in between you send a short self-review statement online. Tourism NI can also make free ad hoc inspections, for example after a guest complaint.'),
+      ('What happens if the inspector finds problems?','The inspector talks you through the outcome. If there are conditions on your certificate, you agree a timeframe of not less than 30 days to do the work. Sometimes a follow-up visit is needed, usually within a month, and there is no charge for it.'),
+      ('Is star grading compulsory in Northern Ireland?','No. The Quality Star Rating Scheme (1 to 5 stars) is voluntary. Certification is the legal requirement; grading is optional.'),
+      ('Do I have to keep a guest register?','Yes. Tourism NI says you are legally required to record each visitor\'s name, address, dates of arrival and departure, and nationality.'),
+      ('Do I need planning permission for a short-term let in Northern Ireland?','It may be needed. Planning permission and building regulations can apply when you start a holiday let, convert or extend a property, or build a new one, and the two use different meanings of "change of use". Ask your local council planning department early.'),
+      ('Do I pay business rates on a holiday let in Northern Ireland?','Self-catering accommodation available for short-period lets for 140 days or more a year is non-domestic and pays business rates. Below 140 days, business rates do not apply. Land and Property Services handles rates.')]
+_ck=''.join(f'<div class="box"><h2>{e(h)}</h2>'+''.join(f'<label class="ck"><input type="checkbox" data-k="{i}-{j}"> {e(x)}</label>' for j,x in enumerate(L))+'</div>' for i,(h,L) in enumerate(NCK))
+_fq=''.join(f'<h3>{e(q)}</h3><p>{a}</p>' for q,a in NFAQ)
+_ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':html.unescape(a)}} for q,a in NFAQ]}).replace('</','<\\/')
+f='northern-ireland-tourism-certificate-guide.html'
+t='Northern Ireland short-term lets: how to get a Tourism NI certificate'
+dsc='How to get the Tourism NI certificate every holiday let, Airbnb and self-catering property in Northern Ireland needs: fees, the inspection, what inspectors check, and a free tick-off checklist. Official sources.'
+b=f'''<p class="lead">Every holiday let in Northern Ireland, including Airbnbs and self-catering cottages, needs a current Tourism NI certificate. Here is how to get one, what the inspector checks, and a checklist you can tick off (it saves in your browser).</p>
+<div class="box"><p><b>The law:</b> the Tourism (Northern Ireland) Order 1992. <b>Who certifies:</b> Tourism NI, after an inspection. <b>How long it lasts:</b> 4 years. <b>Self-catering fee:</b> £40 per unit (minimum £40, maximum £350).</p></div>
+<h2>Step by step</h2><ol>
+<li><b>Check planning and building control.</b> Ask your local council planning department early. Planning permission and building regulations can apply even without structural work.</li>
+<li><b>Get the basics in place:</b> fire risk assessment, yearly Gas Safe check, electrical safety, public liability insurance, and your lender's OK.</li>
+<li><b>Apply to Tourism NI.</b> Online at <a href="https://forms.tourismni.com/Forms/" rel="nofollow">forms.tourismni.com</a> with the fee, or by post. For a pack, email qa@tourismni.com.</li>
+<li><b>Book the inspection.</b> An inspector contacts you once your form and fee arrive.</li>
+<li><b>Inspection day.</b> The inspector checks the outside, the structure and safety, every room, the information you give guests, and how the unit is managed.</li>
+<li><b>Deal with any conditions.</b> You agree a timeframe of at least 30 days. A follow-up visit, if needed, is free.</li>
+<li><b>Get your certificate</b>, usually by post within a few days, and display it with your prices.</li>
+<li><b>Keep it current.</b> Send a self-review statement in each of the 3 years between inspections, then get re-inspected every 4 years.</li></ol>
+<h2>Fees</h2><div class="tw"><table><tr><th>Type</th><th>Charged per</th><th>Fee</th><th>Minimum</th><th>Maximum</th></tr>
+<tr><td>Self-catering</td><td>Unit</td><td>£40</td><td>£40</td><td>£350</td></tr>
+<tr><td>B&amp;B, guest house, guest accommodation</td><td>Bedroom</td><td>£20</td><td>£80</td><td>£200</td></tr></table></div>
+<p class="small">From Tourism NI's statutory inspection schedule, checked {C}. Ad hoc inspections and follow-up visits are free.</p>
+<h2>Certification checklist</h2><p class="small">Based on Tourism NI's self-catering guidance. Not exhaustive: the inspector may raise other points. Ticks are stored only on this device. <button type="button" id="ckp">Print checklist</button> <button type="button" id="ckr">Clear ticks</button></p><p id="ckc" class="small"></p>{_ck}
+<div class="box"><h2>Get told when Northern Ireland rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
+<h2>Common questions</h2>{_fq}
+<p>Related: <a href="northern-ireland.html">Northern Ireland short-let rules</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="scotland-short-term-let-licence-guide.html">Scotland licence guide</a></p>
+<h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in NS)}</ul>
+<p class="small"><b>Not legal advice.</b> Summarised from Tourism NI guidance, checked {C}. For anything specific to your property, contact Tourism NI's Quality and Standards team or your council.</p>
+<script>(function(){{var K='stl-ni-cert-ck',s={{}};try{{s=JSON.parse(localStorage.getItem(K))||{{}}}}catch(x){{}}
+var b=document.querySelectorAll('.ck input'),c=document.getElementById('ckc');function n(){{var d=0;b.forEach(function(i){{if(i.checked)d++}});c.textContent=d+' of '+b.length+' done';}}
+b.forEach(function(i){{i.checked=!!s[i.dataset.k];i.addEventListener('change',function(){{s[i.dataset.k]=i.checked;try{{localStorage.setItem(K,JSON.stringify(s))}}catch(x){{}}n();}})}});
+document.getElementById('ckp').onclick=function(){{window.print()}};document.getElementById('ckr').onclick=function(){{s={{}};b.forEach(function(i){{i.checked=false}});try{{localStorage.removeItem(K)}}catch(x){{}}n();}};n();}})();</script>'''
+page(f,t,b,desc=dsc,full_title='Tourism NI certificate for holiday lets: fees, inspection and checklist | UK Short-Let Rules Tracker',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{_ld}</script>')
