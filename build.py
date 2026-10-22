@@ -108,6 +108,14 @@ CX.update({
  fees=('Grant and renewal application £929.00. Provisional £697.00, confirmation £232.00, transfer £61.00, Environmental Health inspection £60.00. Fees from 1 Apr 2026.',['https://www.west-dunbarton.gov.uk/business/licences-permits-and-permissions/short-term-lets/short-term-let-licences','https://www.west-dunbarton.gov.uk/media/kv1p452v/annual-charges-and-licence-fees-2026-27doc.pdf']),
  dates=['1 Apr 2026: current licence fees','1 Oct 2026: bookings made from this date are liable to the levy','1 Jul 2027: levy starts']),
 })
+import html as _h
+def cfaq(c,x):
+    nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
+    Q=[(f'Do I need a short-term let licence in {nm}?' if c['nation']=='Scotland' else f'Do I need a licence or registration for a short-term let in {nm}?',x['lic'][0]),(f'Do I need planning permission for a short-term let in {nm}?',x['ctrl'][0]),(f'Is there a visitor levy (tourist tax) in {nm}?',x['levy'][0]),(f'How much does a short-term let licence cost in {nm}?' if c['nation']=='Scotland' else f'What fees apply to short-term lets in {nm}?',x['fees'][0])]
+    Q=[(q,tx(a)) for q,a in Q if a and tx(a)]
+    ld=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in Q]}).replace('</','<\\/')
+    h=f'<h2>{e(nm)} short-let rules: quick answers</h2>'+''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in Q)+'<p class="small">Answers summarise the sections above. Follow each section\'s official source before acting.</p>'
+    return h,f'<script type="application/ld+json">{ld}</script>'
 def sec(h,x):return f'<h2>{h}</h2><p>{x[0]}</p>'+(f'<p class="small">Source: {src(x[1])}</p>' if x[1] else '')
 made=[];skipped=[]
 for c in d['councils']:
@@ -116,8 +124,9 @@ for c in d['councils']:
     x=CX[s];dt=' '.join(reversed(C.split('-')));import datetime;dt=datetime.date.fromisoformat(C).strftime('%-d %b %Y')
     t=f'Short-term let rules in {c["name"]} (updated {dt})'
     kd=''.join(f'<li>{k}</li>' for k in x['dates']) or '<li>None listed.</li>'
-    b=f'<p class="lead">{e(c["rule"])}</p>'+sec('Licensing or registration',x['lic'])+sec('Control area / planning',x['ctrl'])+sec('Visitor levy',x['levy'])+sec('Fees',x['fees'])+(f'<h2>Scotland tools</h2><ul><li><a href="../scotland-short-term-let-licence-guide.html">How to get a short-term let licence (steps and checklist)</a></li><li><a href="../scotland-business-rates-checker.html">Business rates or council tax? 140/70 nights checker</a></li><li><a href="../uk-visitor-levy-map.html">Visitor levy map</a></li></ul>' if c['nation']=='Scotland' else '<h2>Safety</h2><p><a href="../holiday-let-fire-safety-england.html">Holiday let fire safety in England: what you need and a checklist</a></p>' if c['nation']=='England' else '')+f'<h2>Key dates</h2><ul>{kd}</ul><p><a href="../{ {"Scotland":"scotland","Wales":"wales","England":"england"}[c["nation"]]}.html">All {c["nation"]} rules</a> · <a href="../councils.html">All councils</a></p><div class="box"><h2>Get told when {e(c["name"])} rules change</h2>'+FORM+'</div>'
-    page(f'councils/{s}.html',t,b,desc=f'Short-term let licensing, control area, visitor levy, fees and key dates for {c["name"]}, {c["nation"]}, with official sources. Updated {dt}.',full_title=t)
+    CF=cfaq(c,x)
+    b=f'<p class="lead">{e(c["rule"])}</p>'+sec('Licensing or registration',x['lic'])+sec('Control area / planning',x['ctrl'])+sec('Visitor levy',x['levy'])+sec('Fees',x['fees'])+(f'<h2>Scotland tools</h2><ul><li><a href="../scotland-short-term-let-licence-guide.html">How to get a short-term let licence (steps and checklist)</a></li><li><a href="../scotland-business-rates-checker.html">Business rates or council tax? 140/70 nights checker</a></li><li><a href="../uk-visitor-levy-map.html">Visitor levy map</a></li></ul>' if c['nation']=='Scotland' else '<h2>Safety</h2><p><a href="../holiday-let-fire-safety-england.html">Holiday let fire safety in England: what you need and a checklist</a></p>' if c['nation']=='England' else '')+f'<h2>Key dates</h2><ul>{kd}</ul>'+CF[0]+f'<p><a href="../{ {"Scotland":"scotland","Wales":"wales","England":"england"}[c["nation"]]}.html">All {c["nation"]} rules</a> · <a href="../councils.html">All councils</a></p><div class="box"><h2>Get told when {e(c["name"])} rules change</h2>'+FORM+'</div>'
+    page(f'councils/{s}.html',t,b,desc=f'Short-term let licensing, control area, visitor levy, fees and key dates for {c["name"]}, {c["nation"]}, with official sources. Updated {dt}.',full_title=t,head=CF[1])
     made.append(s)
 print('council pages',len(made),'skipped',skipped)
 
