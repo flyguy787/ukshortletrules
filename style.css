@@ -11,3 +11,4 @@ input,button{padding:.6rem;font-size:1rem}button{background:#123c5a;color:#fff;b
 .box{background:#fff;border-radius:10px;padding:1rem;margin-top:1rem;box-shadow:0 1px 3px #0002}.hp{position:absolute;left:-9999px}
 .signup{display:flex;flex-wrap:wrap;gap:.5rem}.signup input[type=email]{flex:1;min-width:200px}.signup .msg{width:100%}
 .ck{display:block;padding:.35rem 0}.ck input{margin-right:.5rem;transform:scale(1.2)}@media print{header,nav,.sponsor,.signup,footer,button{display:none}}
+.crumbs{font-size:.85rem;margin:.2rem 0 .6rem;color:#555}.crumbs a{color:inherit}

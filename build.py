@@ -3,12 +3,29 @@ d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
 def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-short-term-let-licence-guide.html">Scot licence guide</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}wales-registration-checker.html">Wales checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
+NAT={n['name']:n['id'] for n in d['nations']}
+def crumbs(f,t,p):
+    if f=='index.html':return '',''
+    L=[('Home','index.html')]
+    if f.startswith('councils/'):
+        sl=f[9:-5];c=next((c for c in d['councils'] if re.sub(r'[^a-z0-9]+','-',(c.get('slug') or c['name']).lower().replace('&','and')).strip('-')==sl),None)
+        L.append(('Councils','councils.html'))
+        if c and c['nation'] in NAT:L.append((c['nation'],NAT[c['nation']]+'.html'))
+        if c:t=c['name']
+    else:
+        for k,nid,nm in (('northern-ireland','northern-ireland','Northern Ireland'),('scotland','scotland','Scotland'),('wales','wales','Wales'),('england','england','England'),('london','england','England')):
+            if k in f and f!=nid+'.html':L.append((nm,nid+'.html'));break
+    L.append((t,f))
+    vis='<nav class="crumbs" aria-label="Breadcrumb">'+' &rsaquo; '.join(f'<a href="{p}{u}">{e(n)}</a>' for n,u in L[:-1])+f' &rsaquo; <span>{e(L[-1][0])}</span></nav>'
+    ld=json.dumps({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':n,'item':SITE+u} for i,(n,u) in enumerate(L)]}).replace('</','<\\/')
+    return vis,f'<script type="application/ld+json">{ld}</script>'
 def page(f,t,b,desc=None,full_title=None,head=''):
     p='../'*f.count('/');nav=mknav(p);PAGES.append(f)
+    cv,cl=crumbs(f,t,p);head=head+cl
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
     desc=desc or f'{t}: licensing, planning, tax and levy rules for UK short-term and holiday lets, with official sources.'
     os.makedirs(os.path.dirname(f) or '.',exist_ok=True)
-    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css">{head}</head><body><header><a class="brand" href="{p}index.html">UK Short-Let Rules Tracker</a>{nav}</header><main><h1>{e(t)}</h1>{b}</main><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.<br><span class="small">Want to reach UK hosts? <a href="{p}sponsor.html">Sponsor the tracker</a></span></footer></body></html>''')
+    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css">{head}</head><body><header><a class="brand" href="{p}index.html">UK Short-Let Rules Tracker</a>{nav}</header><main>{cv}<h1>{e(t)}</h1>{b}</main><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.<br><span class="small">Want to reach UK hosts? <a href="{p}sponsor.html">Sponsor the tracker</a></span></footer></body></html>''')
 FORM='''<form class="signup" data-endpoint="%s"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><button>Subscribe</button><p class="msg small"></p></form><script src="signup.js"></script>''' % e(d.get('newsletter_endpoint',''))
 src=lambda s:' '.join(f'<a href="{e(u)}" rel="nofollow">source</a>' for u in s) or '<em>no source yet</em>'
 cards=''.join(f'<a class="card" href="{n["id"]}.html"><h2>{n["name"]}</h2><p>{e(n["summary"])}</p></a>' for n in d['nations'])
