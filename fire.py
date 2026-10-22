@@ -50,7 +50,7 @@ b=f'''<p class="lead">If you charge guests to stay in a property in England, fir
 <li><b>About every 10 years:</b> replace smoke alarms (typical lifespan).</li></ul>
 <div class="box"><h2>Get told when holiday let safety rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
 <h2>Common questions</h2>{_fq}
-<h2>Elsewhere in the UK</h2><p>This guide covers England only. In Scotland, fire safety is part of the licence conditions: see <a href="scotland-short-term-let-licence-guide.html">how to get a Scottish short-term let licence</a>. See also <a href="wales.html">Wales rules</a> and <a href="northern-ireland.html">Northern Ireland rules</a>.</p>
+<h2>Elsewhere in the UK</h2><p>This guide covers England only. In Scotland, fire safety is part of the licence conditions: see <a href="scotland-short-term-let-licence-guide.html">how to get a Scottish short-term let licence</a>. For Wales see <a href="holiday-let-fire-safety-wales.html">holiday let fire safety in Wales</a>. See also <a href="wales.html">Wales rules</a> and <a href="northern-ireland.html">Northern Ireland rules</a>.</p>
 <p>Related: <a href="england.html">England short-let rules</a> · <a href="london-90-night-counter.html">London 90-night counter</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in FS)}</ul>
 <p class="small"><b>Not legal advice.</b> Summarised from the Home Office guide, checked {C}. You remain responsible for your own fire risk assessment. If in doubt, use a competent fire risk assessor or ask your local fire and rescue service.</p>
