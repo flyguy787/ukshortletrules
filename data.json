@@ -363,6 +363,20 @@
    "rule": "Licence needed (3-year licence, £417 to £537 by guest numbers). No control area. No visitor levy proposed.",
    "source": "https://www.scotborders.gov.uk/licensing/short-term-lets",
    "verified": true
+  },
+  {
+   "name": "Aberdeenshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (3-year licence, £364 to £1,006 by guest numbers and licence type). No control area. No visitor levy scheme proposed yet.",
+   "source": "https://www.aberdeenshire.gov.uk/licensing/licences-and-permits/stl-apply-or-renew",
+   "verified": true
+  },
+  {
+   "name": "Dumfries and Galloway",
+   "nation": "Scotland",
+   "rule": "Licence needed (3-year licence, £324 to £454 by guest numbers and licence type). No control area. Visitor levy plans dropped in June 2026.",
+   "source": "https://www.dumfriesandgalloway.gov.uk/housing/landlords/property-licensing/short-term-lets/apply-short-term-let-licence",
+   "verified": true
   }
  ],
  "changes": [
