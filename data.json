@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-21",
+ "checked": "2026-10-22",
  "nations": [
   {
    "id": "scotland",
@@ -18,25 +18,32 @@
     {
      "topic": "Planning / control areas",
      "status": "In force",
-     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. This is awaiting approval from Scottish Ministers and is not yet in force. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. Not in force.",
+     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. The council page (last modified 2 Jul 2026) still says it is awaiting Scottish Ministers' approval. Planning press reports that Ministers approved it on 12 Oct 2026 (UNVERIFIED: not yet on an official page we could load). Either way it is not in force until the council publishes a designation notice, at least 28 days before the start date. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. The council extended this by two weeks after correcting figures in its consultation materials (2 Oct 2026). Not in force. Highland Council has agreed to submit further proposed control areas to Scottish Ministers (council news, Sep 2026). Reported to cover Inverness City and a wider rural area; details UNVERIFIED because the council website was offline when we checked on 22 Oct 2026. Not in force.",
      "sources": [
       "https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas",
       "https://www.gov.scot/publications/short-term-lets/",
       "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/",
-      "https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area"
+      "https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area",
+      "https://www.argyll-bute.gov.uk/news/2026/oct/council-apologises-error-short-term-let-consultation",
+      "https://www.pkc.gov.uk/article/25569/Short-term-Let-Control-Area",
+      "https://www.highland.gov.uk/news/article/17496/highland-council-agrees-to-submit-short-term-let-control-area-proposals-to-scottish-ministers"
      ]
     },
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme opened 19 Aug 2026 (12 weeks). No decision yet. Reported rate of £4 per room per night and closing date of 11 Nov 2026 are UNVERIFIED (the council page was blocked to our fetch). Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
+     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme with fixed-rate options, 19 Aug to 11 Nov 2026. No decision yet. Reported rate of £4 per room per night is UNVERIFIED (not stated on the council page). Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: consultation on whether to have a levy at all, to 31 Oct 2026 (no draft scheme yet). East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); a council meeting on 27 Oct 2026 is asked to approve an independent review before any decision. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
      "sources": [
       "https://www.edinburgh.gov.uk/visitorlevyinformation",
       "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
       "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
-      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy",
       "https://www.visitscotland.org/tourism-events-industry/visitor-levy",
-      "https://www.argyll-bute.gov.uk/visitor-levy"
+      "https://www.argyll-bute.gov.uk/visitor-levy",
+      "https://www.dundeecity.gov.uk/consultations-and-surveys/visitor-levy-have-your-say",
+      "https://newsroom.moray.gov.uk/news/council-consults-on-visitor-levy-for-moray",
+      "https://www.eastlothian.gov.uk/news/2026/council-asked-approve-independent-review-visitor-levy-plans",
+      "https://www.highland.gov.uk/news/article/17504/highland-council-invites-public-to-visitor-levy-consultation-webinars",
+      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
      ]
     },
     {
@@ -109,9 +116,10 @@
     {
      "topic": "Tax (FHL abolished)",
      "status": "In force",
-     "text": "The FHL regime was abolished from April 2025.",
+     "text": "The FHL regime was abolished from April 2025. From April 2027, property income (including holiday-let profits) gets its own income tax rates: 22% basic, 42% higher, 47% additional, with finance cost relief given at 22% (GOV.UK, published 26 Nov 2025).",
      "sources": [
-      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
+      "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income"
      ]
     },
     {
@@ -127,7 +135,7 @@
   {
    "id": "wales",
    "name": "Wales",
-   "summary": "Free registration with the Welsh Revenue Authority is mandatory by 31 March 2027. Councils can start a visitor levy (£1.30 per person per night). Licensing is legislated for, with a default start of March 2030. Business rates need 182 days let.",
+   "summary": "Free registration with the Welsh Revenue Authority is mandatory by 31 March 2027. Councils can start a visitor levy (£1.30 per person per night); only Cardiff has so far. Licensing is legislated for, with a default start of March 2030. Business rates need 182 days let.",
    "rules": [
     {
      "topic": "Registration (WRA)",
@@ -140,10 +148,14 @@
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "£1.30 per person per night (75p for hostels, dorms and tent pitches). The earliest start is 1 Apr 2027. Cardiff starts 1 Apr 2027. Councils must give 12 months' notice.",
+     "text": "£1.30 per person per night (75p for hostels, dorms and tent pitches). The earliest start is 1 Apr 2027. Cardiff starts 1 Apr 2027. Councils must give 12 months' notice. Isle of Anglesey decided on 24 Sep 2026 not to introduce a levy at present, and Conwy deferred any decision the same day. Gwynedd says it has not decided yet. GOV.WALES lists Cardiff as the only council charging the levy and no councils currently consulting.",
      "sources": [
       "https://www.gov.wales/visitor-levy-for-visitor-accommodation-providers-overview",
-      "https://www.gov.wales/visitor-levy-wales"
+      "https://www.gov.wales/visitor-levy-wales",
+      "https://www.gov.wales/visitor-levy-accommodation-providers-steps/check",
+      "https://www.anglesey.gov.wales/en/newsroom/news/anglesey-will-not-introduce-visitor-levy-at-present",
+      "https://www.conwy.gov.uk/en/Spotlight/Press-Releases/Conwy-County-Borough-Council-Defers-Decision-on-Visitor-Levy.aspx",
+      "https://www.gwynedd.llyw.cymru/en-gb/businesses/tourism/tourism-levy-and-registration-of-visitor-accommodation"
      ]
     },
     {
@@ -157,7 +169,7 @@
     {
      "topic": "182-day rule (rates)",
      "status": "In force (verified)",
-     "text": "To be rated as a business, a let must have been available commercially for at least 252 nights and actually let for at least 182 nights in a 12-month period, and you must intend to make it available for 252 nights in the next 12 months. Stays over 28 nights don't count towards the 182. From 1 Apr 2026 (Non-Domestic Rating (Amendment of Definition of Domestic Property) (Wales) Order 2026, WSI 2026/7) you can meet the 182 nights as an average over the previous 2 or 3 years, and up to 14 nights a year donated to a registered charity count. Otherwise council tax applies, and councils can charge a second-home premium (premium cap UNVERIFIED this session).",
+     "text": "To be rated as a business, a let must have been available commercially for at least 252 nights and actually let for at least 182 nights in a 12-month period, and you must intend to make it available for 252 nights in the next 12 months. Stays over 28 nights don't count towards the 182, but those nights can count towards the 252 available nights if the property could have been booked for 28 nights or less (GOV.UK guidance, corrected 9 Oct 2026). From 1 Apr 2026 (Non-Domestic Rating (Amendment of Definition of Domestic Property) (Wales) Order 2026, WSI 2026/7) you can meet the 182 nights as an average over the previous 2 or 3 years, and up to 14 nights a year donated to a registered charity count. Otherwise council tax applies, and councils can charge a second-home premium (premium cap UNVERIFIED this session).",
      "sources": [
       "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-wales",
       "https://www.legislation.gov.uk/wsi/2026/7/note/made"
@@ -207,9 +219,19 @@
     {
      "topic": "Tax (FHL abolished)",
      "status": "In force",
-     "text": "The FHL regime was abolished UK-wide from April 2025.",
+     "text": "The FHL regime was abolished UK-wide from April 2025. From April 2027, property income (including holiday-let profits) gets its own income tax rates: 22% basic, 42% higher, 47% additional, with finance cost relief given at 22% (GOV.UK, published 26 Nov 2025).",
      "sources": [
-      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
+      "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income"
+     ]
+    },
+    {
+     "topic": "Planning",
+     "status": "Belfast consultation to 16 Nov 2026",
+     "text": "Belfast City Council is consulting (24 Aug to Mon 16 Nov 2026) on draft supplementary planning guidance for short-term lets, covering new-build and change of use of existing buildings (serviced apartments, apart-hotels, self-catering and holiday lets). The council says the draft is a material consideration in deciding planning applications. Elsewhere in NI, check with your council planning office.",
+     "sources": [
+      "https://www.belfastcity.gov.uk/news/public-consultation-launched-looking-at-planning-g",
+      "https://yoursay.belfastcity.gov.uk/ldp-short-term-let-spg"
      ]
     }
    ]
@@ -219,7 +241,7 @@
   {
    "name": "City of Edinburgh",
    "nation": "Scotland",
-   "rule": "Whole-city control area (planning likely needed for secondary lets). 5% visitor levy from 24 Jul 2026, capped at 5 nights.",
+   "rule": "Whole-city control area (planning likely needed for secondary lets). 5% visitor levy from 24 Jul 2026, capped at 5 nights. First levy returns due by 30 Oct 2026, payment by 13 Nov 2026.",
    "source": "https://www.edinburgh.gov.uk/visitorlevyinformation",
    "verified": true
   },
@@ -233,14 +255,14 @@
   {
    "name": "Highland",
    "nation": "Scotland",
-   "rule": "Badenoch & Strathspey control area. Consulting on a £5 per room per night levy; decision due 10 Dec 2026.",
+   "rule": "Badenoch & Strathspey control area; council has agreed to submit further control area proposals to Ministers (details unverified). Consulting on a £5 per room per night levy until 30 Nov 2026; decision due 10 Dec 2026.",
    "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
    "verified": true
   },
   {
    "name": "Perth & Kinross",
    "nation": "Scotland",
-   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; awaiting Ministers' approval and not in force. Flats already need planning permission to become a short-term let. Visitor levy: draft scheme under consultation since 19 Aug 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
+   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; Ministers' approval on 12 Oct 2026 reported in planning press (UNVERIFIED); not in force until a designation notice is published. Flats already need planning permission to become a short-term let. Visitor levy: draft scheme with fixed-rate options under consultation 19 Aug to 11 Nov 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
    "source": "https://www.pkc.gov.uk/media/50153/Short-term-Lets-Policy-Statement/pdf/Short-term_Lets_Licensing_Policy_Statement_-_10_MARCH_2025.pdf?m=1741781506817",
    "verified": true
   },
@@ -254,8 +276,8 @@
   {
    "name": "Dundee City",
    "nation": "Scotland",
-   "rule": "No control area. Visitor levy consultation open 31 Aug to 27 Nov 2026; no scheme approved yet.",
-   "source": "https://www.visitscotland.org/tourism-events-industry/visitor-levy",
+   "rule": "No control area. Visitor levy consultation 31 Aug to 27 Nov 2026 on £5 per room per night or 5% of the room rate (both capped at 7 nights); earliest start 2028/29.",
+   "source": "https://www.dundeecity.gov.uk/consultations-and-surveys/visitor-levy-have-your-say",
    "verified": true
   },
   {
@@ -303,7 +325,7 @@
   {
    "name": "Gwynedd",
    "nation": "Wales",
-   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026.",
+   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026. Visitor levy: consulted May to Jul 2026; council says no decision yet.",
    "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction",
    "verified": true
   },
@@ -317,12 +339,18 @@
   {
    "name": "Pembrokeshire",
    "nation": "Wales",
-   "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26.",
+   "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26. Premium for 2027-28 was due to be set by full Council on 15 Oct 2026; local press reports 125% was kept (UNVERIFIED).",
    "source": "https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes",
    "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-09",
+   "nation": "Wales",
+   "text": "GOV.UK Wales business rates guidance corrected: nights in stays over 28 nights don't count towards the 182 let nights, but can count towards the 252 available nights if the property could have been booked for 28 nights or less.",
+   "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-wales"
+  },
   {
    "date": "2026-10-08",
    "nation": "Wales",
@@ -334,6 +362,12 @@
    "nation": "England",
    "text": "National STL register start pushed to 'expected March 2027'.",
    "source": "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+  },
+  {
+   "date": "2026-10-02",
+   "nation": "Scotland",
+   "text": "Argyll and Bute corrects figures in its control area consultation and extends it by two weeks, to 15 Nov 2026.",
+   "source": "https://www.argyll-bute.gov.uk/news/2026/oct/council-apologises-error-short-term-let-consultation"
   },
   {
    "date": "2026-10-01",
@@ -354,6 +388,12 @@
    "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-england"
   },
   {
+   "date": "2026-09-24",
+   "nation": "Wales",
+   "text": "Isle of Anglesey decides not to introduce a visitor levy at present; Conwy defers any decision. Cardiff remains the only Welsh council charging the levy.",
+   "source": "https://www.anglesey.gov.wales/en/newsroom/news/anglesey-will-not-introduce-visitor-levy-at-present"
+  },
+  {
    "date": "2026-09-21",
    "nation": "Scotland",
    "text": "Argyll and Bute opens consultation (to 15 Nov 2026) on a proposed short-term let control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles.",
@@ -370,6 +410,24 @@
    "nation": "Scotland",
    "text": "Highland opens 12-week visitor levy consultation (£5 per room per night proposed).",
    "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal"
+  },
+  {
+   "date": "2026-09-02",
+   "nation": "Scotland",
+   "text": "Moray opens a consultation on whether to introduce a visitor levy (to 31 Oct 2026).",
+   "source": "https://newsroom.moray.gov.uk/news/council-consults-on-visitor-levy-for-moray"
+  },
+  {
+   "date": "2026-08-31",
+   "nation": "Scotland",
+   "text": "Dundee opens a 12-week visitor levy consultation on two options: £5 per room per night or 5% of the room rate, both capped at 7 nights (to 27 Nov 2026).",
+   "source": "https://www.dundeecity.gov.uk/news/article?article_ref=5123"
+  },
+  {
+   "date": "2026-08-24",
+   "nation": "Northern Ireland",
+   "text": "Belfast City Council consults on draft planning guidance for short-term lets (to 16 Nov 2026).",
+   "source": "https://www.belfastcity.gov.uk/news/public-consultation-launched-looking-at-planning-g"
   },
   {
    "date": "2026-08-19",
