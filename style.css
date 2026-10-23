@@ -5,7 +5,7 @@ a{color:#155a8a;text-underline-offset:2px}a:hover{color:var(--navy)}:focus-visib
 h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.15;letter-spacing:-.02em;margin:.4rem 0 1rem}h2{font-size:1.4rem;letter-spacing:-.01em;line-height:1.25;margin:2rem 0 .7rem}h3{font-size:1.15rem}
 .skip{position:absolute;left:-9999px;top:0;background:var(--amber);color:var(--ink);padding:.5rem 1rem;z-index:9}.skip:focus{left:0}
 /* header + nav */
-.top{background:var(--navy);color:#fff;position:relative;z-index:5}.bar{max-width:1120px;margin:auto;padding:.7rem 1.2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem}
+.top{background:var(--navy);color:#fff;position:relative;z-index:2000}.bar{max-width:1120px;margin:auto;padding:.7rem 1.2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem}
 .wm{display:flex;gap:.6rem;align-items:center;color:#fff;text-decoration:none;font-weight:800;letter-spacing:-.01em;font-size:1.1rem;line-height:1.15}.wm:hover{color:#fff}.wm small{display:block;font-weight:500;font-size:.72rem;color:#bcd6ea;letter-spacing:.06em;text-transform:uppercase}
 summary{cursor:pointer}.menu>summary{list-style:none;color:#fff;border:1px solid #ffffff55;border-radius:8px;padding:.4rem .8rem;font-weight:600}.menu>summary::-webkit-details-marker{display:none}.menu>summary:before{content:"\2630  "}
 .menu{flex:0 0 auto}.menu[open]{flex:1 1 100%}
@@ -58,3 +58,6 @@ footer{text-align:center;font-size:.85rem;color:var(--mute);padding:2rem 1.2rem;
 .lvf label,.tool label.blk{display:block;margin-top:.7rem;font-weight:600}.lvf input:not([type=checkbox]),.lvf select{display:block;margin-top:.2rem;max-width:22rem;width:100%}
 .lvf input[type=checkbox]{margin-right:.4rem}#lpw label{font-weight:400}textarea{font:inherit;padding:.5rem;border-radius:8px;border:1px solid #c9d2dc}
 .lvf button,#lr button,.tool button{margin-top:.8rem}
+
+/* dropdown above embedded maps (Leaflet uses z-index 400-1000); scroll if screen is short */
+.dd{z-index:2001}.dd ul{z-index:2001;max-height:calc(100vh - 6rem);overflow-y:auto;overscroll-behavior:contain}
