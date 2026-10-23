@@ -362,6 +362,10 @@ exec(open('buyer.py').read())
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n')
 
+HOME_T='UK Short-Let Rules Tracker: every UK short-let rule, linked to its official source'
+HOME_D='Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts in England, Scotland, Wales and Northern Ireland, with links to official sources.'
+OGIMG=SITE+'share.png'
+HOME_OG=f'<meta property="og:type" content="website"><meta property="og:site_name" content="UK Short-Let Rules Tracker"><meta property="og:title" content="{e(HOME_T)}"><meta property="og:description" content="{e(HOME_D)}"><meta property="og:url" content="{SITE}"><meta property="og:image" content="{OGIMG}"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080"><meta property="og:image:alt" content="UK Short-Let Rules Tracker"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(HOME_T)}"><meta name="twitter:description" content="{e(HOME_D)}"><meta name="twitter:image" content="{OGIMG}">'
 exec(open('home.py').read())
 # ---- Clean URLs: rewrite every internal .html link/URL to the extensionless form (files stay as .html) ----
 def _clean(t):
@@ -377,3 +381,11 @@ def _clean(t):
     return re.sub(r'href=(["\'])([^"\']*?\.html(?:[#?][^"\']*)?)\1',rel,t)
 for f in PAGES+['levy-calculator-widget.html','checker-widget.html','sitemap.xml']:
     t=open(f).read();open(f,'w').write(_clean(t))
+
+# ---- Short redirect links (redirects.json: slug -> query string on homepage). Not in sitemap; no analytics here ----
+import os
+for _s,_q in json.load(open('redirects.json')).items():
+    _u=SITE+'?'+_q;_ua=e(_u)
+    _h=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{e(HOME_T)}</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}"><meta name="description" content="{e(HOME_D)}">{HOME_OG}<script>location.replace({json.dumps(_u)});</script><meta http-equiv="refresh" content="0;url={_ua}"></head><body><p><a href="{_ua}">Continue to UK Short-Let Rules Tracker</a></p></body></html>'
+    os.makedirs(_s,exist_ok=True)
+    for _f in (_s+'.html',_s+'/index.html'):open(_f,'w').write(_h)
