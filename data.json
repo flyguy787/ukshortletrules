@@ -391,6 +391,20 @@
    "rule": "Licence needed (3-year licence, £324 to £454 by guest numbers and licence type). No control area. Visitor levy plans dropped in June 2026.",
    "source": "https://www.dumfriesandgalloway.gov.uk/housing/landlords/property-licensing/short-term-lets/apply-short-term-let-licence",
    "verified": true
+  },
+  {
+   "name": "North Yorkshire",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, kept unchanged for 2026-27. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.northyorks.gov.uk/council-tax/council-tax-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Northumberland",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.northumberland.gov.uk/council-tax/empty-and-second-homes-premiums",
+   "verified": true
   }
  ],
  "changes": [

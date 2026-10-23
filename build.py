@@ -171,6 +171,27 @@ CX.update({
  fees=('3-year licence, by maximum guests. Home sharing and home letting: £324 (up to 6), £361 (7 to 12), £413 (13+). Secondary letting: £357, £397, £454. The council says new, renewal and provisional applications currently cost the same. From 1 Apr 2026: confirming a provisional licence £79, transfer £79. Fees are non-refundable.',[DG]),
  dates=['29 Sep to 21 Nov 2025: visitor levy early engagement','1 Apr 2026: confirmation and transfer fees','9 Jun 2026: visitor levy plans dropped']),
 })
+# ---- North Yorkshire, Northumberland (sources fetched 23 Oct 2026) ----
+EN_BR='https://www.gov.uk/introduction-to-business-rates/self-catering-and-holiday-let-accommodation'
+EN_OVL='https://www.gov.uk/government/news/local-leaders-handed-powers-to-drive-investment-in-communities'
+EN_REG='https://www.gov.uk/guidance/delivering-a-registration-scheme-for-short-term-lets'
+EN_LIC2=('No licensing or local registration scheme. A national short-term let register for England is coming under the Levelling-up and Regeneration Act 2023; GOV.UK (updated 2 Oct 2026) says it is expected to begin in March 2027. Until then, the main local rules are council tax or business rates, planning, and fire safety.',[EN_REG])
+EN_LEVY=('No visitor levy. On 10 Sep 2026 the government announced that mayors and Foundation Strategic Authority leaders in England will get the power to bring in an Overnight Visitor Levy, as a percentage of the accommodation price. A bill is still to come, so nothing applies yet.',[EN_OVL])
+EN_EXC='Exceptions (national rules from 1 Apr 2025) include: annexes treated as part of the main home (Class F); homes actively marketed for sale or let (Classes G and H, 12 months); probate (Class I, 12 months); job-related homes (Class J); occupied caravan pitches and boat moorings (Class K); and seasonal homes where year-round living is banned, or a planning condition limits use to holiday accommodation or stops anyone staying more than 28 days in a row (Class L).'
+NY='https://www.northyorks.gov.uk/council-tax/council-tax-second-homes'
+NB='https://www.northumberland.gov.uk/council-tax/empty-and-second-homes-premiums'
+CX.update({
+'north-yorkshire':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area or Article 4 direction for holiday lets found on the council site (checked 23 Oct 2026). Whether letting a whole home counts as a material change of use is decided case by case by the planning authority; inside the Yorkshire Dales or North York Moors National Parks, the park authority handles planning. Check before converting a home or outbuilding.',[]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: a 100% premium applies to second homes (furnished, nobody\'s main home), so the bill is 200% of normal, from 1 Apr 2025. The council decided this on 21 Feb 2024 and its 2026-27 council tax resolution kept it unchanged. Second homes with a planning restriction of at least 28 days (Class A) get no discount and no premium. '+EN_EXC+' If your holiday let meets the business rates test (available at least 140 nights and actually let at least 70 nights in the last 12 months, and you plan to offer 140 nights in the next 12), it is valued for business rates instead of council tax, so the premium does not apply. A single let with a rateable value under £15,000 may get small business rate relief.',[NY,'https://edemocracy.northyorks.gov.uk/documents/s63758/Council%20Tax%20Resolution%20Report.pdf',EN_BR]),
+ dates=['21 Feb 2024: Council approved the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
+'northumberland':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area or Article 4 direction for holiday lets found on the council site (checked 23 Oct 2026). Planning is decided case by case; inside Northumberland National Park, the park authority handles planning. Some local neighbourhood plans may have their own housing policies, so check the plan for your parish before buying or converting.',[]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: from 1 Apr 2025, second homes (furnished, nobody\'s main home) pay a 100% premium, so 200% council tax. Full Council approved it on 21 Feb 2024. '+EN_EXC+' The council says you may need to send evidence for an exception, and the 12-month marketing exceptions run from the date you first marketed the home, even if you took it off the market (contact counciltax@northumberland.gov.uk, 0345 600 6400). If your holiday let meets the business rates test (available at least 140 nights and actually let at least 70 nights in the last 12 months, and you plan to offer 140 nights in the next 12), it pays business rates instead, so the premium does not apply. A single let with a rateable value under £15,000 may get small business rate relief.',[NB,EN_BR]),
+ dates=['21 Feb 2024: Full Council approved the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
