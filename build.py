@@ -409,7 +409,7 @@ for f in PAGES+['levy-calculator-widget.html','checker-widget.html','sitemap.xml
 # ---- Short redirect links (redirects.json: slug -> query string on homepage). Not in sitemap; no analytics here ----
 import os
 for _s,_q in json.load(open('redirects.json')).items():
-    _u=SITE+'?'+_q;_ua=e(_u)
+    _p,_,_q=_q.rpartition('|');_u=SITE+_p+'?'+_q;_ua=e(_u)
     _h=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><title>{e(HOME_T)}</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}"><meta name="description" content="{e(HOME_D)}">{HOME_OG}<script>location.replace({json.dumps(_u)});</script><meta http-equiv="refresh" content="0;url={_ua}"></head><body><p><a href="{_ua}">Continue to UK Short-Let Rules Tracker</a></p></body></html>'
     os.makedirs(_s,exist_ok=True)
     for _f in (_s+'.html',_s+'/index.html'):open(_f,'w').write(_h)

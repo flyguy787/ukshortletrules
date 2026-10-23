@@ -3,5 +3,10 @@
   "wa": "utm_source=whatsapp-friends&utm_medium=whatsapp&utm_campaign=story",
   "fb": "utm_source=facebook&utm_medium=social&utm_campaign=story",
   "pc": "utm_source=property-course&utm_medium=whatsapp&utm_campaign=story",
-  "x": "utm_source=x-personal&utm_medium=social&utm_campaign=story"
+  "x": "utm_source=x-personal&utm_medium=social&utm_campaign=story",
+  "fbedi": "councils/city-of-edinburgh|utm_source=facebook&utm_medium=social&utm_campaign=edinburgh-levy",
+  "fbwales": "wales-registration-checker|utm_source=facebook&utm_medium=social&utm_campaign=wales-registration",
+  "fbscot": "scotland-short-term-let-licence-guide|utm_source=facebook&utm_medium=social&utm_campaign=scotland-licence",
+  "fbeng": "england|utm_source=facebook&utm_medium=social&utm_campaign=england-register",
+  "fblevy": "uk-visitor-levy-map|utm_source=facebook&utm_medium=social&utm_campaign=levy-roundup"
 }
