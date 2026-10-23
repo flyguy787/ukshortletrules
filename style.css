@@ -53,3 +53,5 @@ footer{text-align:center;font-size:.85rem;color:var(--mute);padding:2rem 1.2rem;
 .rch{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.rch h2{margin:0;font-size:1.15rem;flex:1}
 .ri{font-size:1.3rem}.st{font-size:.78rem;font-weight:700;padding:.15rem .6rem;border-radius:999px}
 .st.yes{background:#fdebd0;color:#7a4a00}.st.no{background:#e8edf2;color:#33475b}.rs{margin-bottom:0}
+.what{background:#fff8ec;border-left:4px solid #f2a541;padding:.6rem .9rem;border-radius:6px;margin:.4rem 0 1rem}
+.alertbox{background:#123c5a;color:#fff;border-radius:12px;padding:1.2rem 1.4rem;margin:1.5rem 0}.alertbox h2{color:#fff;margin-top:0}.alertbox a{color:#ffd59a}.alertbox .msg{color:#fff}
