@@ -328,6 +328,7 @@ exec(open('checker.py').read())
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n')
 
+exec(open('preview.py').read())
 # ---- Clean URLs: rewrite every internal .html link/URL to the extensionless form (files stay as .html) ----
 def _clean(t):
     S=re.escape(SITE)
@@ -340,5 +341,5 @@ def _clean(t):
         u=re.sub(r'\.html(?=$|[#?])','',u)
         return f'href={q}{u}{q}'
     return re.sub(r'href=(["\'])([^"\']*?\.html(?:[#?][^"\']*)?)\1',rel,t)
-for f in PAGES+['checker-widget.html','sitemap.xml']:
+for f in PAGES+['checker-widget.html','preview-home.html','sitemap.xml']:
     t=open(f).read();open(f,'w').write(_clean(t))
