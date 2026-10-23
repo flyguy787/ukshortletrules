@@ -47,3 +47,9 @@ footer{text-align:center;font-size:.85rem;color:var(--mute);padding:2rem 1.2rem;
 .tools ul{background:#fff;border-radius:14px;padding:1rem 1rem 1rem 2.2rem;margin:0}.tools li{padding:.3rem 0}
 .nl{background:var(--navy);color:#fff;border-radius:16px;padding:1.6rem;margin-top:2.4rem}.nl h2{margin:0 0 .3rem;color:#fff}.nl p{color:#d6e8f5}.nl .small{color:#bcd6ea}.nl .signup input{border:0}
 @media print{header,nav,.sponsor,.signup,footer,button,.skip{display:none}}
+.rcs{display:grid;gap:1rem;margin:1.2rem 0}
+@media(min-width:900px){.rcs{grid-template-columns:repeat(3,1fr)}.rc:last-child{grid-column:1/-1}}
+.rc{background:#fff;border:1px solid #dde3ea;border-top:4px solid #123c5a;border-radius:12px;padding:1rem 1.2rem;box-shadow:0 2px 8px rgba(18,60,90,.06);min-width:0;overflow-wrap:anywhere}
+.rch{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.rch h2{margin:0;font-size:1.15rem;flex:1}
+.ri{font-size:1.3rem}.st{font-size:.78rem;font-weight:700;padding:.15rem .6rem;border-radius:999px}
+.st.yes{background:#fdebd0;color:#7a4a00}.st.no{background:#e8edf2;color:#33475b}.rs{margin-bottom:0}
