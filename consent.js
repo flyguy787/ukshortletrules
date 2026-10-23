@@ -18,3 +18,5 @@ document.addEventListener('click',function(e){var t=e.target.closest&&e.target.c
 document.addEventListener('change',function(e){var t=e.target;if(t.id==='ck-n'||t.id==='ck-c')ev('checker_use',{field:t.id==='ck-n'?'nation':'council',value:t.value});},true);
 document.addEventListener('copy',function(e){var t=e.target;if(t&&t.closest&&t.closest('textarea[aria-label="Embed code"]'))ev('embed_code_copy',{widget:'levy'});},true);
 })();
+/* First-party signup source capture: sessionStorage only, no cookies. First touch per session. */
+(function(){try{var S=sessionStorage;if(S.getItem('ukslr_src'))return;var q=new URLSearchParams(location.search),o={},k=['utm_source','utm_medium','utm_campaign'];k.forEach(function(n){var v=q.get(n);if(v)o[n]=v.slice(0,100);});var r='';try{r=document.referrer?new URL(document.referrer).hostname:'';}catch(e){}if(r&&!/(^|\.)ukshortletrules\.co\.uk$/.test(r))o.referrer=r.slice(0,100);if(Object.keys(o).length)S.setItem('ukslr_src',JSON.stringify(o));}catch(e){}})();
