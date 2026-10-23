@@ -88,6 +88,18 @@ CX={
  levy=('Visitor levy for new bookings for stays from 1 Apr 2027: £1.30 per person per night (75p for shared hostel/dorm rooms and tent pitches).',['https://www.gov.wales/visitor-levy-wales']),
  fees=('WRA registration is free.',[]),dates=['31 Mar 2027: WRA registration deadline','1 Apr 2027: Cardiff levy starts']),
 }
+# ---- More Welsh councils (sources fetched 23 Oct 2026) ----
+WEX='Exceptions include Class 5 (occupied caravan pitches and boat moorings) and Class 6 (seasonal homes or holiday lets where year-round occupation is prohibited, for example by a planning condition).'
+CX.update({
+'isle-of-anglesey':dict(lic=WA_REG,ctrl=('No Article 4 direction or local short-let planning control found on the council\'s site (checked 23 Oct 2026).',[]),
+ levy=('No levy. Full Council decided on 24 Sep 2026 not to introduce a visitor levy at present, citing pressures on tourism businesses, an economic impact assessment and a consultation with more than 2,000 responses. GOV.WALES lists Cardiff as the only council charging.',['https://www.anglesey.gov.wales/en/newsroom/news/anglesey-will-not-introduce-visitor-levy-at-present','https://www.gov.wales/visitor-levy-accommodation-providers-steps/check']),
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so 200% in total). The Executive\'s 2026-27 budget proposal confirmed it is maintained at 100%; the council\'s second-homes page still shows older wording. Final adoption by full Council on 5 Mar 2026: '+U+'. '+WEX,['https://www.anglesey.gov.wales/en/Residents/Council-tax/Second-homes-and-long-term-empty-homes.aspx','https://democracy.anglesey.gov.uk/ieDecisionDetails.aspx?ID=3960&LLL=0']),
+ dates=['24 Sep 2026: council decides not to introduce a visitor levy at present','31 Mar 2027: WRA registration deadline']),
+'conwy':dict(lic=WA_REG,ctrl=('No Article 4 direction or local short-let planning control found on the council\'s site (checked 23 Oct 2026).',[]),
+ levy=('No levy yet. Full Council on 24 Sep 2026 deferred any decision until more evidence and practical experience from levies elsewhere in Wales are available. Its consultation ran 20 May to 17 Jul 2026. Any Welsh levy needs 12 months\' notice before it starts.',['https://www.conwy.gov.uk/en/Spotlight/Press-Releases/Conwy-County-Borough-Council-Defers-Decision-on-Visitor-Levy.aspx','https://www.gov.wales/visitor-levy-for-visitor-accommodation-providers-overview']),
+ fees=('WRA registration is free. Council tax second-home premium: 150% on top of the standard charge (250% in total), retained for 2026-27 and 2027-28 (decided 23 Oct 2025). No discount for second homes or holiday homes. '+WEX,['https://www.conwy.gov.uk/en/Resident/Council-Tax/Council-Tax-Premium-Update.aspx']),
+ dates=['23 Oct 2025: 150% premium retained for 2026-27 and 2027-28','24 Sep 2026: visitor levy decision deferred','31 Mar 2027: WRA registration deadline']),
+})
 # ---- More Scottish councils (sources fetched 21 Oct 2026) ----
 MG_CA='https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas'
 VS='https://www.visitscotland.org/tourism-events-industry/visitor-levy'

@@ -344,6 +344,20 @@
    "verified": true
   },
   {
+   "name": "Isle of Anglesey",
+   "nation": "Wales",
+   "rule": "No visitor levy: Full Council decided on 24 Sep 2026 not to introduce one at present. Council tax second-home premium kept at 100% for 2026-27 (so a second home pays double).",
+   "source": "https://www.anglesey.gov.wales/en/newsroom/news/anglesey-will-not-introduce-visitor-levy-at-present",
+   "verified": true
+  },
+  {
+   "name": "Conwy",
+   "nation": "Wales",
+   "rule": "Visitor levy decision deferred by Full Council on 24 Sep 2026. Council tax second-home premium of 150% (250% of the standard bill) kept for 2026-27 and 2027-28.",
+   "source": "https://www.conwy.gov.uk/en/Resident/Council-Tax/Council-Tax-Premium-Update.aspx",
+   "verified": true
+  },
+  {
    "name": "East Lothian",
    "nation": "Scotland",
    "rule": "Licence needed. No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026); a 27 Oct 2026 council meeting is asked to approve an independent review before any decision.",
