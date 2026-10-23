@@ -419,6 +419,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.northumberland.gov.uk/council-tax/empty-and-second-homes-premiums",
    "verified": true
+  },
+  {
+   "name": "Westmorland and Furness",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national and local discretionary exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.westmorlandandfurness.gov.uk/council-tax/second-homes-and-empty-homes/council-tax-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Cumberland",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.cumberland.gov.uk/council-tax/empty-properties-and-second-homes/second-homes-and-how-apply-exception-council-tax-second-home-premium",
+   "verified": true
   }
  ],
  "changes": [

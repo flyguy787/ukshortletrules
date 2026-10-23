@@ -203,6 +203,24 @@ CX.update({
  fees=('No short-let fees. Council tax: from 1 Apr 2025, second homes (furnished, nobody\'s main home) pay a 100% premium, so 200% council tax. Full Council approved it on 21 Feb 2024. '+EN_EXC+' The council says you may need to send evidence for an exception, and the 12-month marketing exceptions run from the date you first marketed the home, even if you took it off the market (contact counciltax@northumberland.gov.uk, 0345 600 6400). If your holiday let meets the business rates test (available at least 140 nights and actually let at least 70 nights in the last 12 months, and you plan to offer 140 nights in the next 12), it pays business rates instead, so the premium does not apply. A single let with a rateable value under £15,000 may get small business rate relief.',[NB,EN_BR]),
  dates=['21 Feb 2024: Full Council approved the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
 })
+# ---- Westmorland and Furness, Cumberland (sources fetched 23 Oct 2026) ----
+WF='https://www.westmorlandandfurness.gov.uk/council-tax/second-homes-and-empty-homes/council-tax-second-homes'
+WF2='https://www.westmorlandandfurness.gov.uk/news/2024/westmorland-and-furness-council-protects-front-line-services-tough-financial-times-0'
+CU='https://www.cumberland.gov.uk/council-tax/empty-properties-and-second-homes/second-homes-and-how-apply-exception-council-tax-second-home-premium'
+CU2='https://www.cumberland.gov.uk/news/2025/council-agrees-budget-investing-communities-and-services'
+EN_BRT=' If your holiday let meets the business rates test (available at least 140 nights and actually let at least 70 nights in the last 12 months, and you plan to offer 140 nights in the next 12), it is valued for business rates instead of council tax, so the premium does not apply. A single let with a rateable value under £15,000 may get small business rate relief.'
+CX.update({
+'westmorland-and-furness':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area or Article 4 direction for holiday lets found on the council site (checked 23 Oct 2026). Planning is decided case by case; inside the Lake District or Yorkshire Dales National Parks, the park authority handles planning. Check before converting a home or outbuilding.',[]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: on 22 Feb 2024 the council decided to charge a 100% premium on furnished second homes (nobody\'s main home), so the bill is 200% of normal, starting 1 Apr 2025. It also applies to homes owned by businesses. '+EN_EXC+' The council also has discretionary local exceptions, set out in its Council Tax Premium Exceptions Policy 2025 to 2026, and separate forms for the former Barrow, Eden and South Lakeland areas. A home you put up for sale is free of the premium for 12 months from when it was first marketed, not from 1 Apr 2025. The council says the Valuation Office, not the council, decides whether a holiday let moves to business rates, and you keep paying council tax as a second home until it does. If it moves, you need to arrange a trade waste collection.'+EN_BRT,[WF,WF2,EN_BR]),
+ dates=['22 Feb 2024: Full Council approved the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
+'cumberland':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area or Article 4 direction for holiday lets found on the council site (checked 23 Oct 2026). Planning is decided case by case; inside the Lake District National Park, the park authority handles planning. Check before converting a home or outbuilding.',[]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: on 6 Mar 2024 the council adopted a 100% premium on furnished homes that are nobody\'s main home, so 200% council tax is payable from 1 Apr 2025 (before then, second homes paid 100%). '+EN_EXC+' You must apply for an exception, and apply in the area where the second home is. For the marketing exception, the same owner can only use the sale exception once, and the letting exception again only after the home has been let for at least six months in a row. A job-related second home may get a 50% discount.'+EN_BRT,[CU,CU2,EN_BR]),
+ dates=['6 Mar 2024: Council adopted the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
