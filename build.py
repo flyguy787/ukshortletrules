@@ -2,7 +2,7 @@ import json,html
 d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
-def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-short-term-let-licence-guide.html">Scot licence guide</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}wales-registration-checker.html">Wales checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
+def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}checker.html">Licence checker</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-short-term-let-licence-guide.html">Scot licence guide</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}wales-registration-checker.html">Wales checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
 NAT={n['name']:n['id'] for n in d['nations']}
 def crumbs(f,t,p):
     if f=='index.html':return '',''
@@ -30,7 +30,7 @@ FORM='''<form class="signup" data-endpoint="%s"><input type="email" name="email"
 src=lambda s:' '.join(f'<a href="{e(u)}" rel="nofollow">source</a>' for u in s) or '<em>no source yet</em>'
 cards=''.join(f'<a class="card" href="{n["id"]}.html"><h2>{n["name"]}</h2><p>{e(n["summary"])}</p></a>' for n in d['nations'])
 latest=''.join(f'<li><b>{c["date"]}</b> [{c["nation"]}] {e(c["text"])}</li>' for c in d['changes'][:4])
-page('index.html','Current short-let rules across the UK',f'<p class="lead">Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts, with links to official sources.</p><div class="grid">{cards}</div><h2>Free tools</h2><ul><li><a href="wales-registration-checker.html">Wales: do I need to register with the WRA?</a> (4-question checker)</li><li><a href="scotland-business-rates-checker.html">Scotland: business rates or council tax?</a> (140/70 nights checker)</li><li><a href="scotland-short-term-let-licence-guide.html">Scotland: how to get a short-term let licence</a> (steps and checklist)</li><li><a href="london-90-night-counter.html">London: 90-night rule counter</a> (add bookings from every platform)</li><li><a href="uk-visitor-levy-map.html">UK visitor levy and tourist tax map</a></li><li><a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after the FHL abolition</a> (UK-wide guide)</li><li><a href="holiday-let-fire-safety-england.html">England: holiday let fire safety rules and checklist</a></li><li><a href="england-second-homes-council-tax-premium.html">England: second homes council tax premium and exceptions</a></li><li><a href="holiday-let-fire-safety-wales.html">Wales: holiday let fire safety rules and checklist</a></li><li><a href="short-term-let-fire-safety-scotland.html">Scotland: short-term let fire safety rules and checklist</a></li><li><a href="northern-ireland-tourism-certificate-guide.html">Northern Ireland: how to get a Tourism NI certificate</a> (fees, inspection, checklist)</li></ul><h2>Latest changes</h2><ul>{latest}</ul><p><a href="changes.html">Full changes log</a></p><div class="box"><h2>Weekly "what changed" email</h2><p>One short, sourced email a week. Unsubscribe any time.</p>'+FORM+'</div>')
+page('index.html','Current short-let rules across the UK',f'<p class="lead">Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts, with links to official sources.</p><div class="grid">{cards}</div><h2>Free tools</h2><ul><li><a href="checker.html"><b>Do I need a licence or registration for my short let?</b></a> (pick your nation and council; <a href="embed.html">embed it on your site</a>)</li><li><a href="wales-registration-checker.html">Wales: do I need to register with the WRA?</a> (4-question checker)</li><li><a href="scotland-business-rates-checker.html">Scotland: business rates or council tax?</a> (140/70 nights checker)</li><li><a href="scotland-short-term-let-licence-guide.html">Scotland: how to get a short-term let licence</a> (steps and checklist)</li><li><a href="london-90-night-counter.html">London: 90-night rule counter</a> (add bookings from every platform)</li><li><a href="uk-visitor-levy-map.html">UK visitor levy and tourist tax map</a></li><li><a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after the FHL abolition</a> (UK-wide guide)</li><li><a href="holiday-let-fire-safety-england.html">England: holiday let fire safety rules and checklist</a></li><li><a href="england-second-homes-council-tax-premium.html">England: second homes council tax premium and exceptions</a></li><li><a href="holiday-let-fire-safety-wales.html">Wales: holiday let fire safety rules and checklist</a></li><li><a href="short-term-let-fire-safety-scotland.html">Scotland: short-term let fire safety rules and checklist</a></li><li><a href="northern-ireland-tourism-certificate-guide.html">Northern Ireland: how to get a Tourism NI certificate</a> (fees, inspection, checklist)</li></ul><h2>Latest changes</h2><ul>{latest}</ul><p><a href="changes.html">Full changes log</a></p><div class="box"><h2>Weekly "what changed" email</h2><p>One short, sourced email a week. Unsubscribe any time.</p>'+FORM+'</div>')
 slug=lambda c:c.get('slug') or re.sub(r'[^a-z0-9]+','-',c['name'].lower().replace('&','and')).strip('-')
 def nfaq(n):
     nm=n['name'];Q=[]
@@ -221,6 +221,50 @@ CX.update({
  fees=('No short-let fees. Council tax: on 6 Mar 2024 the council adopted a 100% premium on furnished homes that are nobody\'s main home, so 200% council tax is payable from 1 Apr 2025 (before then, second homes paid 100%). '+EN_EXC+' You must apply for an exception, and apply in the area where the second home is. For the marketing exception, the same owner can only use the sale exception once, and the letting exception again only after the home has been let for at least six months in a row. A job-related second home may get a 50% discount.'+EN_BRT,[CU,CU2,EN_BR]),
  dates=['6 Mar 2024: Council adopted the second homes premium','1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']),
 })
+# ---- Holiday-let hotspots: England (North Norfolk, Dorset, South Hams, North Devon, Isle of Wight) and Wales (Denbighshire, Carmarthenshire, Swansea); sources fetched 23 Oct 2026 ----
+NN='https://www.north-norfolk.gov.uk/tasks/council-tax/council-tax-premium-for-second-homes'
+NN2='https://modgov.north-norfolk.gov.uk/mgAi.aspx?ID=13114'
+DO='https://www.dorsetcouncil.gov.uk/w/council-tax/second-homes'
+DO2='https://www.dorsetcouncil.gov.uk/w/your-bill-explained-2025-26'
+SH='https://www.southhams.gov.uk/council-tax/empty-properties-and-second-homes'
+SH2='https://www.southhams.gov.uk/sites/default/files/2025-02/SH%20Guidance%20on%20discretionary%20exceptions%20to%20Council%20Tax%20premiums.pdf'
+ND='https://www.northdevon.gov.uk/council-tax/charges-for-second-homes-and-empty-properties'
+ND2='https://www.northdevon.gov.uk/sites/default/files/2025-03/North%20Devon%20Council%20Tax%20empty%20homes%20and%20second%20homes%20premiums%20policy%202025.pdf'
+IW='https://www.iow.gov.uk/news/introduction-of-the-second-homes-premium-what-you-need-to-know/'
+IW2='https://digitalservices.iow.gov.uk/documents/download/empty-homes-and-second-homes-premium-policy1'
+DE='https://www.denbighshire.gov.uk/en/council-tax/premium.aspx'
+CA='https://www.carmarthenshire.gov.wales/council-services/council-tax/council-tax-premiums/'
+SW='https://www.swansea.gov.uk/counciltaxpremiums'
+WLV=('No levy. GOV.WALES lists Cardiff as the only council that will charge the Visitor Levy and lists no councils consulting on it (checked 23 Oct 2026). Any Welsh levy needs a consultation, a full Council decision and 12 months\' notice.',['https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales','https://www.gov.wales/visitor-levy-for-visitor-accommodation-providers-overview'])
+WPL=lambda extra='':('No Article 4 direction or local short-let planning control found (checked 23 Oct 2026). Wales-wide, use classes C3 (main home), C5 (second home) and C6 (short-term let) exist since Oct 2022, and moving between them is permitted development unless an Article 4 direction applies.'+extra,['https://www.legislation.gov.uk/wsi/2022/994/article/2/made','https://www.gov.wales/written-statement-changes-planning-legislation-and-policy-second-homes-and-short-term-lets'])
+ENPL=lambda park:('No short-let control area or Article 4 direction for holiday lets found (checked 23 Oct 2026). The C5 short-term let use class is still only a proposal in England, so whether letting a whole home is a material change of use is decided case by case by the planning authority.'+park+' Check before converting a home or outbuilding.',['https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations'])
+EDATES=lambda dec:[dec,'1 Apr 2025: 100% second homes premium started','Mar 2027: England short-term let register expected (GOV.UK)']
+CX.update({
+'north-norfolk':dict(lic=EN_LIC2,ctrl=ENPL(' Part of the district is in the Broads, where the Broads Authority handles planning.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: from 1 Apr 2025, a 100% premium applies to second homes (furnished, nobody\'s main home), so owners pay double. The council decided this on 22 Nov 2023 and confirmed it at Full Council in Jan and Feb 2025. The council says holiday lets that are not on the business rates list (because they don\'t meet the holiday let criteria) pay council tax as a second home and may pay the premium; holiday lets on the business rates list do not. '+EN_EXC+EN_BRT,[NN,NN2,EN_BR]),
+ dates=EDATES('22 Nov 2023: Council decided to charge the second homes premium')),
+'dorset':dict(lic=EN_LIC2,ctrl=ENPL(''),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: Dorset Council agreed at its Feb 2024 budget meeting to charge a 100% premium on second homes (furnished, nobody\'s only or main home) from 1 Apr 2025, so 200% council tax. The premium applies from day one; there is no minimum period as a second home. '+EN_EXC+' Apply for an exception with evidence to secondhomes@dorsetcouncil.gov.uk and keep paying your bill while it is considered. The council also considers hardship reductions under s13A.'+EN_BRT,[DO,DO2,EN_BR]),
+ dates=EDATES('Feb 2024: Council agreed the second homes premium')),
+'south-hams':dict(lic=EN_LIC2,ctrl=ENPL(' Part of the district is in Dartmoor National Park, where the park authority handles planning.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: a 100% premium is added automatically to second homes from 1 Apr 2025 (public notice given 2 Mar 2024), so 200% council tax. '+EN_EXC+' South Hams also set local discretionary exceptions for 2025-26 (for example agricultural occupancy conditions, and staff accommodation used to run a business); apply with evidence through the council\'s online form.'+EN_BRT,[SH,SH2,EN_BR]),
+ dates=EDATES('2 Mar 2024: public notice of the second homes premium')),
+'north-devon':dict(lic=EN_LIC2,ctrl=ENPL(' Part of the district is in Exmoor National Park, where the park authority handles planning.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: the council decided on 17 Jan 2024 to charge a 100% second homes premium (twice the standard rate) from 1 Apr 2025, including furnished homes with a planning restriction on occupation unless an exception applies. '+EN_EXC+' You can apply for an exception online through the council.'+EN_BRT,[ND,ND2,EN_BR]),
+ dates=EDATES('17 Jan 2024: Council decided to charge the second homes premium')),
+'isle-of-wight':dict(lic=EN_LIC2,ctrl=ENPL(''),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: the council adopted the power in Feb 2024 and charges a 100% premium on furnished second homes from 1 Apr 2025 (200% in total). '+EN_EXC+' Apply using the council\'s Empty and Second Home Review Form, with the evidence it asks for (for example the planning condition for a holiday-only home).'+EN_BRT,[IW,IW2,EN_BR]),
+ dates=EDATES('Feb 2024: Council adopted the second homes premium')),
+'denbighshire':dict(lic=WA_REG,ctrl=WPL(),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 150% on top of the standard charge (250% in total) since 1 Apr 2025 (100% from 1 Apr 2024). Full Council on 8 Jul 2025 agreed to keep 150% for second homes from 1 Apr 2026. '+WEX,[DE]),
+ dates=['1 Apr 2024: second-home premium 100%','1 Apr 2025: second-home premium 150%','8 Jul 2025: 150% retained from 1 Apr 2026','31 Mar 2027: WRA registration deadline']),
+'carmarthenshire':dict(lic=WA_REG,ctrl=WPL(),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double) for all second homes from 1 Apr 2025 (50% from 1 Apr 2024, approved by Council on 8 Mar 2023). '+WEX+' Ask about exceptions at counciltaxpremium@carmarthenshire.gov.uk.',[CA]),
+ dates=['8 Mar 2023: Council approved the premium','1 Apr 2024: second-home premium 50%','1 Apr 2025: second-home premium 100%','31 Mar 2027: WRA registration deadline']),
+'swansea':dict(lic=WA_REG,ctrl=WPL(),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double), in place since 1 Apr 2021. It applies to any home that is furnished and nobody\'s sole or main residence. '+WEX+' Swansea notes the marketed-for-let exception (Class 2) is for tenancies of at least 6 months, not holiday or Airbnb lets. Send evidence to council.tax@swansea.gov.uk.',[SW]),
+ dates=['1 Apr 2021: second-home premium started','31 Mar 2027: WRA registration deadline']),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
@@ -278,6 +322,7 @@ exec(open('wfire.py').read())
 exec(open('sfire.py').read())
 exec(open('ni.py').read())
 exec(open('premium.py').read())
+exec(open('checker.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')

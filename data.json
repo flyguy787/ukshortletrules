@@ -435,9 +435,71 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.cumberland.gov.uk/council-tax/empty-properties-and-second-homes/second-homes-and-how-apply-exception-council-tax-second-home-premium",
    "verified": true
+  },
+  {
+   "name": "North Norfolk",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.north-norfolk.gov.uk/tasks/council-tax/council-tax-premium-for-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Dorset",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.dorsetcouncil.gov.uk/w/council-tax/second-homes",
+   "verified": true
+  },
+  {
+   "name": "South Hams",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, plus local discretionary exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.southhams.gov.uk/council-tax/empty-properties-and-second-homes",
+   "verified": true
+  },
+  {
+   "name": "North Devon",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.northdevon.gov.uk/council-tax/charges-for-second-homes-and-empty-properties",
+   "verified": true
+  },
+  {
+   "name": "Isle of Wight",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.iow.gov.uk/news/introduction-of-the-second-homes-premium-what-you-need-to-know/",
+   "verified": true
+  },
+  {
+   "name": "Denbighshire",
+   "nation": "Wales",
+   "rule": "150% council tax premium on second homes (250% bill), kept from 1 Apr 2026. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.denbighshire.gov.uk/en/council-tax/premium.aspx",
+   "verified": true
+  },
+  {
+   "name": "Carmarthenshire",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.carmarthenshire.gov.wales/council-services/council-tax/council-tax-premiums/",
+   "verified": true
+  },
+  {
+   "name": "Swansea",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2021. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.swansea.gov.uk/counciltaxpremiums",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-23",
+   "nation": "England/Wales",
+   "text": "Added 8 council pages for holiday-let hotspots: North Norfolk, Dorset, South Hams, North Devon, Isle of Wight (100% second homes premium from 1 Apr 2025), Denbighshire (150%), Carmarthenshire (100%) and Swansea (100%), plus a free licence and registration checker.",
+   "source": "https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales"
+  },
   {
    "date": "2026-10-23",
    "nation": "Wales",
