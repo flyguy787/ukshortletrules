@@ -55,3 +55,6 @@ footer{text-align:center;font-size:.85rem;color:var(--mute);padding:2rem 1.2rem;
 .st.yes{background:#fdebd0;color:#7a4a00}.st.no{background:#e8edf2;color:#33475b}.rs{margin-bottom:0}
 .what{background:#fff8ec;border-left:4px solid #f2a541;padding:.6rem .9rem;border-radius:6px;margin:.4rem 0 1rem}
 .alertbox{background:#123c5a;color:#fff;border-radius:12px;padding:1.2rem 1.4rem;margin:1.5rem 0}.alertbox h2{color:#fff;margin-top:0}.alertbox a{color:#ffd59a}.alertbox .msg{color:#fff}
+.lvf label,.tool label.blk{display:block;margin-top:.7rem;font-weight:600}.lvf input:not([type=checkbox]),.lvf select{display:block;margin-top:.2rem;max-width:22rem;width:100%}
+.lvf input[type=checkbox]{margin-right:.4rem}#lpw label{font-weight:400}textarea{font:inherit;padding:.5rem;border-radius:8px;border:1px solid #c9d2dc}
+.lvf button,#lr button,.tool button{margin-top:.8rem}
