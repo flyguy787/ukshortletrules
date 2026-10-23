@@ -491,9 +491,44 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2021. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.swansea.gov.uk/counciltaxpremiums",
    "verified": true
+  },
+  {
+   "name": "Falkirk",
+   "nation": "Scotland",
+   "rule": "Licence needed (£157.50 to £504 on the 2025/26 table). No control area. Consultation on a 5% visitor levy runs to 25 Nov 2026; full Council expected to decide in January 2027.",
+   "source": "https://www.falkirk.gov.uk/visitor-levy/the-levy",
+   "verified": true
+  },
+  {
+   "name": "Orkney Islands",
+   "nation": "Scotland",
+   "rule": "Licence needed (£275 to £583 for 3 years, 25% off on non-linked isles). No control area. Council decided against an overnight visitor levy on 23 Sep 2025.",
+   "source": "https://www.orkney.gov.uk/business-and-licensing/licensing-information-and-applications/short-term-lets-licensing",
+   "verified": true
+  },
+  {
+   "name": "Shetland Islands",
+   "nation": "Scotland",
+   "rule": "Licence needed (£210 to £530 by guest numbers, 2026/27). No control area. Council decided against an overnight visitor levy in Sep 2025.",
+   "source": "https://www.shetland.gov.uk/downloads/file/7747/environmental-health-charges",
+   "verified": true
+  },
+  {
+   "name": "Na h-Eileanan Siar (Western Isles)",
+   "slug": "na-h-eileanan-siar",
+   "nation": "Scotland",
+   "rule": "Licence needed (base fee £189 or £294 plus £21 per guest, 2026/27). No control area. Accommodation-based visitor levy paused.",
+   "source": "https://www.cne-siar.gov.uk/stl/fees-and-how-pay",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added 4 Scottish council pages: Falkirk (5% visitor levy consultation open to 25 Nov 2026), Orkney Islands, Shetland Islands and Na h-Eileanan Siar (Western Isles), with 2026/27 licence fees and levy status. The three island councils are not pursuing an overnight levy.",
+   "source": "https://www.visitscotland.org/tourism-events-industry/visitor-levy"
+  },
   {
    "date": "2026-10-23",
    "nation": "England/Wales",
