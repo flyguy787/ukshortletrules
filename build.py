@@ -2,7 +2,15 @@ import json,html
 d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
-def mknav(p):return f'<nav><a href="{p}index.html">Home</a>'+''.join(f'<a href="{p}{n["id"]}.html">{n["name"]}</a>' for n in d['nations'])+f'<a href="{p}councils.html">Councils</a><a href="{p}checker.html">Licence checker</a><a href="{p}changes.html">Changes</a><a href="{p}uk-visitor-levy-map.html">Levy map</a><a href="{p}scotland-short-term-let-licence-guide.html">Scot licence guide</a><a href="{p}scotland-business-rates-checker.html">Scot rates checker</a><a href="{p}wales-registration-checker.html">Wales checker</a><a href="{p}newsletter.html">Newsletter</a></nav>'
+LOGO='<svg class="logo" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><rect width="34" height="34" rx="8" fill="#fff"/><path d="M7 17 17 8l10 9v9H7z" fill="#123c5a"/><rect x="14" y="19" width="6" height="7" rx="1" fill="#f2a541"/></svg>'
+def mknav(p):
+    dd=lambda lab,items:f'<li><details class="dd"><summary>{lab}</summary><ul>'+''.join(f'<li><a href="{p}{u}">{n}</a></li>' for n,u in items)+'</ul></details></li>'
+    return ('<details class="menu" open><summary>Menu</summary><nav aria-label="Main"><ul class="nv">'
+     +dd('Nations',[(n['name'],n['id']+'.html') for n in d['nations']])
+     +f'<li><a href="{p}councils.html">Councils</a></li>'
+     +dd('Free tools',[('Licence checker','checker.html'),('Levy map','uk-visitor-levy-map.html'),('Scotland business rates checker','scotland-business-rates-checker.html'),('Wales registration checker','wales-registration-checker.html')])
+     +f'<li><a href="{p}changes.html">Latest changes</a></li><li class="upd"><a class="btn" href="{p}newsletter.html">Get updates</a></li></ul></nav></details>')
+NAVJS='<script>(function(){var m=document.querySelector("details.menu"),q=window.matchMedia("(min-width:900px)");function f(){if(m)m.open=q.matches}f();q.addEventListener("change",f);var D=document.querySelectorAll("details.dd");D.forEach(function(x){x.addEventListener("toggle",function(){if(x.open)D.forEach(function(y){if(y!==x)y.open=false})})});document.addEventListener("click",function(ev){D.forEach(function(x){if(!x.contains(ev.target))x.open=false})});document.addEventListener("keydown",function(ev){if(ev.key==="Escape")D.forEach(function(x){if(x.open){x.open=false;x.querySelector("summary").focus()}})})})();</script>'
 NAT={n['name']:n['id'] for n in d['nations']}
 def crumbs(f,t,p):
     if f=='index.html':return '',''
@@ -19,13 +27,14 @@ def crumbs(f,t,p):
     vis='<nav class="crumbs" aria-label="Breadcrumb">'+' &rsaquo; '.join(f'<a href="{p}{u}">{e(n)}</a>' for n,u in L[:-1])+f' &rsaquo; <span>{e(L[-1][0])}</span></nav>'
     ld=json.dumps({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':n,'item':SITE+u} for i,(n,u) in enumerate(L)]}).replace('</','<\\/')
     return vis,f'<script type="application/ld+json">{ld}</script>'
-def page(f,t,b,desc=None,full_title=None,head=''):
-    p='../'*f.count('/');nav=mknav(p);PAGES.append(f)
+def page(f,t,b,desc=None,full_title=None,head='',pre='',noh1=False):
+    p='../'*f.count('/');nav=mknav(p)
+    if f not in PAGES:PAGES.append(f)
     cv,cl=crumbs(f,t,p);head=head+cl
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
     desc=desc or f'{t}: licensing, planning, tax and levy rules for UK short-term and holiday lets, with official sources.'
     os.makedirs(os.path.dirname(f) or '.',exist_ok=True)
-    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css">{head}</head><body><header><a class="brand" href="{p}index.html">UK Short-Let Rules Tracker</a>{nav}</header><main>{cv}<h1>{e(t)}</h1>{b}</main><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.<br><span class="small">Want to reach UK hosts? <a href="{p}sponsor.html">Sponsor the tracker</a></span></footer></body></html>''')
+    open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css">{head}</head><body><a class="skip" href="#main">Skip to content</a><header class="top"><div class="bar"><a class="wm" href="{p}index.html">{LOGO}<span>UK Short-Let Rules<small>Tracker</small></span></a>{nav}</div></header>{pre}<main id="main">{cv}{"" if noh1 else "<h1>"+e(t)+"</h1>"}{b}</main><footer>Last checked {C}. General information only, not legal or tax advice. Always check the linked official source.<br><span class="small">Want to reach UK hosts? <a href="{p}sponsor.html">Sponsor the tracker</a> · <a href="{p}newsletter.html">Newsletter</a> · <a href="{p}councils.html">All councils</a> · <a href="{p}embed.html">Embed the checker</a></span></footer>{NAVJS}</body></html>''')
 FORM='''<form class="signup" data-endpoint="%s"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><button>Subscribe</button><p class="msg small"></p></form><script src="signup.js"></script>''' % e(d.get('newsletter_endpoint',''))
 src=lambda s:' '.join(f'<a href="{e(u)}" rel="nofollow">source</a>' for u in s) or '<em>no source yet</em>'
 cards=''.join(f'<a class="card" href="{n["id"]}.html"><h2>{n["name"]}</h2><p>{e(n["summary"])}</p></a>' for n in d['nations'])
@@ -328,7 +337,7 @@ exec(open('checker.py').read())
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n')
 
-exec(open('preview.py').read())
+exec(open('home.py').read())
 # ---- Clean URLs: rewrite every internal .html link/URL to the extensionless form (files stay as .html) ----
 def _clean(t):
     S=re.escape(SITE)
@@ -341,5 +350,5 @@ def _clean(t):
         u=re.sub(r'\.html(?=$|[#?])','',u)
         return f'href={q}{u}{q}'
     return re.sub(r'href=(["\'])([^"\']*?\.html(?:[#?][^"\']*)?)\1',rel,t)
-for f in PAGES+['checker-widget.html','preview-home.html','sitemap.xml']:
+for f in PAGES+['checker-widget.html','sitemap.xml']:
     t=open(f).read();open(f,'w').write(_clean(t))
