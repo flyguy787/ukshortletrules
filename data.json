@@ -358,6 +358,20 @@
    "verified": true
   },
   {
+   "name": "Ceredigion",
+   "nation": "Wales",
+   "rule": "Council tax second-home premium of 150% (250% of the standard bill) since 1 Apr 2025, covering second homes and self-catering units not in business rates. No visitor levy decision found.",
+   "source": "https://www.ceredigion.gov.uk/resident/council-tax/premiums/",
+   "verified": true
+  },
+  {
+   "name": "Powys",
+   "nation": "Wales",
+   "rule": "Council tax second-home premium of 75% (175% of the standard bill), in place since 1 Apr 2023 and unchanged for 2026-27. No visitor levy at this stage; any levy left to the council elected in May 2027, earliest start 2028.",
+   "source": "https://en.powys.gov.uk/article/3079/Council-Tax-Premiums",
+   "verified": true
+  },
+  {
    "name": "East Lothian",
    "nation": "Scotland",
    "rule": "Licence needed. No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026); a 27 Oct 2026 council meeting is asked to approve an independent review before any decision.",
