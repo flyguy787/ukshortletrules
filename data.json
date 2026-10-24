@@ -541,9 +541,29 @@
    "rule": "Licence needed (£300 or £480 for a new secondary let, by guest numbers; covers Arran and Cumbrae). No control area. No visitor levy decided yet. Second homes pay double council tax since April 2025.",
    "source": "https://www.north-ayrshire.gov.uk/business-licensing/licensing/accommodation-licences",
    "verified": true
+  },
+  {
+   "name": "East Suffolk",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with homes for sale exempt for up to 24 months. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.angliarevenues.gov.uk/services/counciltax/reductions/empty-homes/es-second-home-premium.cfm",
+   "verified": true
+  },
+  {
+   "name": "Somerset",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, including homes with a planning restriction on occupation unless an exception applies. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.somerset.gov.uk/council-tax/council-tax-discounts-and-premiums/",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "England",
+   "text": "Added council pages for East Suffolk and Somerset (100% second homes council tax premium since 1 April 2025; East Suffolk gives homes for sale up to 24 months' exception; no licensing scheme).",
+   "source": "https://www.somerset.gov.uk/council-tax/council-tax-discounts-and-premiums/"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",

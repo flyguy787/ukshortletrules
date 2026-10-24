@@ -334,6 +334,19 @@ CX.update({
  fees=('Fees from 1 April 2026, by maximum occupancy (up to 4 guests / 5 or more). New licence: secondary let £300 / £480; home sharing or home letting (or both) £150 / £300. Renewal: secondary let £240 / £420; home sharing or letting £135 / £240. Provisional licence: 25% of the new fee when you apply, 75% on confirmation. Temporary licence: 50% of the new fee. Amendment £75, variation £90, transfer £110, replacement licence £60. No refund if refused, withdrawn or granted for a shorter period.',[NAY]),
  dates=['12 Feb 2025: council approves 100% second homes council tax premium','1 Apr 2025: second homes premium starts','1 Apr 2026: current licence fees apply','Jan 2026: Scottish Government says levy decision not yet confirmed']),
 })
+# ---- East Suffolk, Somerset (sources fetched 24 Oct 2026) ----
+ES='https://www.angliarevenues.gov.uk/services/counciltax/reductions/empty-homes/es-second-home-premium.cfm'
+SO='https://www.somerset.gov.uk/council-tax/council-tax-discounts-and-premiums/'
+SO2='https://democracy.somerset.gov.uk/ieDecisionDetails.aspx?Id=608'
+ENPL24=lambda p:(ENPL(p)[0].replace('(checked 23 Oct 2026)','(searched 24 Oct 2026)'),ENPL(p)[1])
+CX.update({
+'east-suffolk':dict(lic=EN_LIC2,ctrl=ENPL24(' Part of the district is in the Broads, where the Broads Authority handles planning.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: Full Council approved in Feb 2024 a 100% premium on homes that are furnished and nobody\'s main home, so 200% council tax from 1 Apr 2025. Council tax is billed by Anglia Revenues Partnership for East Suffolk. '+EN_EXC+' East Suffolk goes further than the national rules: a home actively marketed for sale is excepted for up to 24 months (not 12), and the Section 151 Officer can waive the premium in exceptional cases such as vulnerability or hardship. Claim an exception through the online form, choosing the Long Term Empty and Second Homes option.'+EN_BRT,[ES,EN_BR]),
+ dates=EDATES('Feb 2024: Full Council approved the second homes premium')),
+'somerset':dict(lic=EN_LIC2,ctrl=ENPL24(' Parts of Somerset are in Exmoor National Park, where the park authority handles planning.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: on 20 Dec 2023 Full Council reaffirmed its Nov 2022 decision to charge a 100% premium on second homes (furnished, nobody\'s sole or main home) from 1 Apr 2025, so 2 times the normal charge. The council says this includes furnished homes with a planning restriction on occupation. '+EN_EXC+' Somerset also lists Class M (empty homes needing major repairs, 12 months). Where the council already knows an exception applies it is added automatically; otherwise contact the council with evidence.'+EN_BRT,[SO,SO2,EN_BR]),
+ dates=EDATES('20 Dec 2023: Full Council confirmed the second homes premium')),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
