@@ -347,6 +347,24 @@ CX.update({
  fees=('No short-let fees. Council tax: on 20 Dec 2023 Full Council reaffirmed its Nov 2022 decision to charge a 100% premium on second homes (furnished, nobody\'s sole or main home) from 1 Apr 2025, so 2 times the normal charge. The council says this includes furnished homes with a planning restriction on occupation. '+EN_EXC+' Somerset also lists Class M (empty homes needing major repairs, 12 months). Where the council already knows an exception applies it is added automatically; otherwise contact the council with evidence.'+EN_BRT,[SO,SO2,EN_BR]),
  dates=EDATES('20 Dec 2023: Full Council confirmed the second homes premium')),
 })
+# ---- East Ayrshire, Clackmannanshire (sources fetched 24 Oct 2026) ----
+EAY='https://www.east-ayrshire.gov.uk/LawAndLicensing/ApplyForALicence/AccommodationLicences/short-term-lets-licence.aspx'
+EAYG='https://www.east-ayrshire.gov.uk/Resources/PDF/S/short-term-lets-provisional-licence-guidance.pdf'
+EAYL='https://newsroom.east-ayrshire.gov.uk/news/east-ayrshire-says-no-thanks-to-visitor-levy'
+CLK='https://www.clacks.gov.uk/regulation/licensing/business/shorttermlets/'
+CLKF='https://www.clacks.gov.uk/document/7470.pdf'
+CX.update({
+'east-ayrshire':dict(lic=(SC_LIC[0]+' East Ayrshire Council runs the scheme. Read its licensing policy statement and application guidance and complete the Scottish Fire and Rescue fire safety checklist first, then email your application form and checklist to licensing@east-ayrshire.gov.uk (the forms are PDFs on the <a href="'+EAY+'" rel="nofollow">council\'s short-term lets page</a>). You must display a statutory site notice at or near the property for 21 days and return a certificate of compliance. The council also publishes spa pool (hot tub) guidance and records for holiday lets. If you are refused, you can appeal to the Sheriff Court within 28 days.',SC_LIC[1]+[EAY,EAYG]),
+ ctrl=(NOCA[0]+' For secondary letting you still need to show planning status: East Ayrshire\'s provisional licence guidance says a copy of the planning certificate must go with the application, and the planning service charges for it separately.',NOCA[1]+[EAYG]),
+ levy=('No levy. On 1 Oct 2025 East Ayrshire Council decided not to introduce a visitor levy for now and paused further work until August 2027, saying set-up costs of at least £110k and running costs of at least £190k a year would leave little or no net income from its small accommodation sector. It is still discussing a possible regional scheme with neighbouring councils. Any Scottish levy needs at least 18 months\' notice.',[EAYL]),
+ fees=('Short-term let licence fees, by maximum occupancy (up to 4 guests / 5 or more). New licence: secondary let £250 / £400; home sharing, home letting or both £125 / £250. Renewal: secondary let £200 / £350; home sharing or letting £75 / £200. Provisional licence £100 when you apply, with the rest of the new-licence fee due on confirmation. Transfer £50, variation £75, replacement licence £50. Fees are non-refundable.',[EAY]),
+ dates=['1 Oct 2022: licensing scheme opens','1 Oct 2025: council pauses visitor levy work','Aug 2027: council to revisit a visitor levy']),
+'clackmannanshire':dict(lic=(SC_LIC[0]+' <a href="'+CLK+'" rel="nofollow">Apply online through Clackmannanshire Council</a> (a PDF form can be posted or handed in at Kilncraigs, Alloa, with the fee and supporting documents). The council points applicants to its Short Term Lets Policy, the fire safety checklist, the mandatory licence conditions and its public Short Term Lets Register. Questions go to licensing@clacks.gov.uk.',SC_LIC[1]+[CLK]),
+ ctrl=(NOCA[0]+' You may still need planning permission, depending on the property, and secondary lets must show their planning status when applying.',NOCA[1]),
+ levy=('No levy proposed. We found no published visitor levy consultation or scheme for Clackmannanshire (searched 24 Oct 2026), and it is not on the visitorlevy.scot list of councils with approved schemes. In a Scotsman survey of councils, Clackmannanshire said it had no plans to introduce one. Any Scottish levy needs at least 18 months\' notice.',['https://visitorlevy.scot/visitorlevy/pages/levy-scheme','https://www.scotsman.com/news/politics/flawed-in-my-eyes-tourist-tax-will-put-off-visitors-from-travelling-to-rural-scotland-4991169']),
+ fees=('Fees from the council\'s Register of Charges 2026/27, by occupancy (4 or under / 5 or above). New licence: secondary letting £514.30 / £628.70; home letting or home sharing (or both) £314.30 / £400. Renewal: secondary letting £457.20 / £571.50 (the register labels the lower band "4 or above", which looks like a typo for 4 or under); home letting or sharing £257.20 / £514.30. Variation £75. Fees are non-refundable.',[CLKF,CLK]),
+ dates=['1 Mar 2022: licensing order made','Apr 2026: 2026/27 Register of Charges applies']),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()

@@ -555,9 +555,29 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, including homes with a planning restriction on occupation unless an exception applies. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.somerset.gov.uk/council-tax/council-tax-discounts-and-premiums/",
    "verified": true
+  },
+  {
+   "name": "East Ayrshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (£250 or £400 for a new secondary let, by guest numbers). No control area. Visitor levy paused until August 2027.",
+   "source": "https://www.east-ayrshire.gov.uk/LawAndLicensing/ApplyForALicence/AccommodationLicences/short-term-lets-licence.aspx",
+   "verified": true
+  },
+  {
+   "name": "Clackmannanshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (£514.30 or £628.70 for a new secondary let in 2026/27, by guest numbers). No control area. No visitor levy proposed.",
+   "source": "https://www.clacks.gov.uk/regulation/licensing/business/shorttermlets/",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added council pages for East Ayrshire (new secondary let licence from £250; visitor levy paused until Aug 2027) and Clackmannanshire (2026/27 fees from £514.30 for a secondary let; no levy proposed). East Ayrshire moved to the 'paused' row on the levy map.",
+   "source": "https://www.east-ayrshire.gov.uk/LawAndLicensing/ApplyForALicence/AccommodationLicences/short-term-lets-licence.aspx"
+  },
   {
    "date": "2026-10-24",
    "nation": "England",
