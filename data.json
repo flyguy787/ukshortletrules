@@ -534,9 +534,22 @@
    "rule": "Licence needed (£349 to £588 by guest numbers; 3-year grant, renewals up to 6 years). No control area. No visitor levy: the council is still at early engagement.",
    "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets",
    "verified": true
+  },
+  {
+   "name": "North Ayrshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (£300 or £480 for a new secondary let, by guest numbers; covers Arran and Cumbrae). No control area. No visitor levy decided yet. Second homes pay double council tax since April 2025.",
+   "source": "https://www.north-ayrshire.gov.uk/business-licensing/licensing/accommodation-licences",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added a council page for North Ayrshire, including Arran and Cumbrae (licence £300 or £480 for a new secondary let from 1 April 2026; no control area; visitor levy not yet decided).",
+   "source": "https://www.north-ayrshire.gov.uk/business-licensing/licensing/accommodation-licences"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
