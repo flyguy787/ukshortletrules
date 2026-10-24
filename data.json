@@ -611,9 +611,29 @@
    "rule": "Licence needed (secondary let £927 to £1,274 by bedrooms from Apr 2026; renewal fee not published, check with council). Licence lasts 3 years; renew at least 6 weeks before expiry. No control area. No visitor levy yet.",
    "source": "https://www1.renfrewshire.gov.uk/article/12823/Short-term-let-licence-for-residential-accommodation",
    "verified": true
+  },
+  {
+   "name": "East Renfrewshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (secondary let £972 to £1,293 by bedrooms; renewal £805 to £1,126). Check planning with the council before applying. No control area. No visitor levy proposed.",
+   "source": "https://eastrenfrewshire.gov.uk/article/5412/Short-term-lets-fees",
+   "verified": true
+  },
+  {
+   "name": "South Lanarkshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (secondary let £381.43 to £953.58 by guests from Apr 2026; same fee for renewal). No control area; planning checked case by case. No visitor levy yet; council researching one.",
+   "source": "https://www.southlanarkshire.gov.uk/business-licences-1/short-term-lets-scotland-%E2%80%93-licensing-scheme/3",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added council pages for East Renfrewshire (licence fees by bedrooms, £972 to £1,293 for a new secondary let; no visitor levy proposed) and South Lanarkshire (2026/27 fees by guests, £381.43 to £953.58 for a secondary let, same fee to renew; visitor levy research under way, no formal consultation yet). East Renfrewshire added to the levy map's 'None proposed yet' group; South Lanarkshire has its own row.",
+   "source": "https://www.southlanarkshire.gov.uk/business-licences-1/short-term-lets-scotland-%E2%80%93-licensing-scheme/3"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
