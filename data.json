@@ -583,9 +583,29 @@
    "rule": "Second homes pay double council tax since 1 Apr 2025; holiday lets that pass the business rates test (140 nights available, 70 let) pay business rates instead. Planning guidance since Dec 2024 says letting rooms separately or to oversized groups needs permission, with a 5% cap within 100 m in residential areas. No short-let licence. No visitor levy yet, but the City Region Mayor is getting the power to bring one in.",
    "source": "https://www.sefton.gov.uk/media/pynlmwev/finaldraftshorttermletsspd.pdf",
    "verified": true
+  },
+  {
+   "name": "Midlothian",
+   "nation": "Scotland",
+   "rule": "Licence needed (£541 for a secondary let up to 4 bedrooms, new or renewal, from Apr 2026). No control area. No visitor levy; council to reassess in 2026.",
+   "source": "https://www.midlothian.gov.uk/info/200269/licences_and_permits/742/short-term_let_licence",
+   "verified": true
+  },
+  {
+   "name": "West Lothian",
+   "nation": "Scotland",
+   "rule": "Licence needed, and every application must include planning permission or a certificate of lawfulness. Fees by size (2025/26 schedule: £500.86 to £1,113.03 for a secondary let; check with council). No control area. No visitor levy yet.",
+   "source": "https://www.westlothian.gov.uk/article/75805/Short-Term-Lets",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added council pages for Midlothian (2026/27 licence fees from £541 for a secondary let; levy to be reassessed in 2026) and West Lothian (planning permission or a certificate of lawfulness needed with every licence application; two conflicting fee tables flagged). Both added to the levy map's 'None proposed yet' group.",
+   "source": "https://www.westlothian.gov.uk/article/75805/Short-Term-Lets"
+  },
   {
    "date": "2026-10-24",
    "nation": "England",
