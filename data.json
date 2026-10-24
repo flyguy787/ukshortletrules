@@ -625,9 +625,29 @@
    "rule": "Licence needed (secondary let £381.43 to £953.58 by guests from Apr 2026; same fee for renewal). No control area; planning checked case by case. No visitor levy yet; council researching one.",
    "source": "https://www.southlanarkshire.gov.uk/business-licences-1/short-term-lets-scotland-%E2%80%93-licensing-scheme/3",
    "verified": true
+  },
+  {
+   "name": "North Lanarkshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (£315 up to 4 guests, £472.50 for 5 or more, any licence type; renewal fee not published, check with council). No control area; check planning separately. No visitor levy yet; council exploring one.",
+   "source": "https://www.northlanarkshire.gov.uk/housing/private-housing/short-term-lets-2022",
+   "verified": true
+  },
+  {
+   "name": "East Dunbartonshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (secondary let £594 up to 10 guests, +£55 per extra 5; same fee to renew). No control area. No visitor levy: council decided against one in 2026.",
+   "source": "https://www.eastdunbarton.gov.uk/services/a-z-of-services/housing-properties/short-term-lets-policy/",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Scotland",
+   "text": "Added council pages for North Lanarkshire (one licence fee for all types: £315 up to 4 guests, £472.50 for 5 or more; levy feasibility work under way, no consultation yet) and East Dunbartonshire (3-year fee £594 for a secondary let up to 10 guests, same to renew; council decided in 2026 not to introduce a visitor levy). North Lanarkshire has its own levy map row; East Dunbartonshire is shown as 'No levy: decided against'.",
+   "source": "https://www.northlanarkshire.gov.uk/housing/private-housing/short-term-lets-2022"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
