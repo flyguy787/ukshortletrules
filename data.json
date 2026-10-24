@@ -597,9 +597,29 @@
    "rule": "Licence needed, and every application must include planning permission or a certificate of lawfulness. Fees by size (2025/26 schedule: £500.86 to £1,113.03 for a secondary let; check with council). No control area. No visitor levy yet.",
    "source": "https://www.westlothian.gov.uk/article/75805/Short-Term-Lets",
    "verified": true
+  },
+  {
+   "name": "Inverclyde",
+   "nation": "Scotland",
+   "rule": "Licence needed (£508 for a secondary let for up to 4 guests from Apr 2026; renewal £451). Check planning with the council before applying. No control area. No visitor levy; council monitoring the national rollout.",
+   "source": "https://www.inverclyde.gov.uk/assets/attach/15462/2026-short-term-lets-fee-list.pdf",
+   "verified": true
+  },
+  {
+   "name": "Renfrewshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (secondary let £927 to £1,274 by bedrooms from Apr 2026; renewal fee not published, check with council). Licence lasts 3 years; renew at least 6 weeks before expiry. No control area. No visitor levy yet.",
+   "source": "https://www1.renfrewshire.gov.uk/article/12823/Short-term-let-licence-for-residential-accommodation",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added council pages for Inverclyde (2026/27 licence fees from £508 for a secondary let; levy decision on hold while the council monitors the national rollout) and Renfrewshire (2026/27 fees by bedrooms, £927 to £1,274 for a secondary let; renewal fee not published; levy proposition being developed). Both added to the levy map's 'None proposed yet' group.",
+   "source": "https://www1.renfrewshire.gov.uk/article/12823/Short-term-let-licence-for-residential-accommodation"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
