@@ -520,9 +520,29 @@
    "rule": "Licence needed (base fee £189 or £294 plus £21 per guest, 2026/27). No control area. Accommodation-based visitor levy paused.",
    "source": "https://www.cne-siar.gov.uk/stl/fees-and-how-pay",
    "verified": true
+  },
+  {
+   "name": "South Ayrshire",
+   "nation": "Scotland",
+   "rule": "Licence needed (£300 or £480 for a new secondary let, by guest numbers). No control area, but every application includes a planning operational statement. Visitor levy work paused until August 2027 at the earliest.",
+   "source": "https://www.south-ayrshire.gov.uk/article/40559/Short-Term-Let-Licensing-Scheme-South-Ayrshire",
+   "verified": true
+  },
+  {
+   "name": "Angus",
+   "nation": "Scotland",
+   "rule": "Licence needed (£349 to £588 by guest numbers; 3-year grant, renewals up to 6 years). No control area. No visitor levy: the council is still at early engagement.",
+   "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
+   "text": "Added council pages for South Ayrshire (visitor levy paused until August 2027 at the earliest; licensing policy and fees under review) and Angus (licence £349 to £588, renewals now up to 6 years; no control area), with licence fees and levy status.",
+   "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
