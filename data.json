@@ -569,9 +569,29 @@
    "rule": "Licence needed (£514.30 or £628.70 for a new secondary let in 2026/27, by guest numbers). No control area. No visitor levy proposed.",
    "source": "https://www.clacks.gov.uk/regulation/licensing/business/shorttermlets/",
    "verified": true
+  },
+  {
+   "name": "Liverpool",
+   "nation": "England",
+   "rule": "Second homes pay double council tax since 1 Apr 2025; holiday lets that pass the business rates test (140 nights available, 70 let) pay business rates instead. No short-let licence: holiday lets are exempt from selective landlord licensing. The city centre £2 Accommodation BID charge only covers hotels and serviced accommodation rated £45,000+. No visitor levy yet, but the City Region Mayor is getting the power to bring one in.",
+   "source": "https://liverpool.gov.uk/council-tax/empty-properties-and-second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Sefton",
+   "nation": "England",
+   "rule": "Second homes pay double council tax since 1 Apr 2025; holiday lets that pass the business rates test (140 nights available, 70 let) pay business rates instead. Planning guidance since Dec 2024 says letting rooms separately or to oversized groups needs permission, with a 5% cap within 100 m in residential areas. No short-let licence. No visitor levy yet, but the City Region Mayor is getting the power to bring one in.",
+   "source": "https://www.sefton.gov.uk/media/pynlmwev/finaldraftshorttermletsspd.pdf",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-24",
+   "nation": "England",
+   "text": "Added council pages for Liverpool and Sefton (second homes pay double council tax since 1 April 2025; holiday lets exempt from selective landlord licensing; Sefton short-term holiday lets planning guidance; Liverpool City Region Overnight Visitor Levy not yet in force).",
+   "source": "https://www.sefton.gov.uk/council-tax/council-tax/discounts-and-exemptions/council-tax-premiums/"
+  },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
