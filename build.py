@@ -544,7 +544,7 @@ exec(open('buyer.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
-open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n')
+open('robots.txt','w').write(f'User-agent: *\nAllow: /\nDisallow: /media/\n\nUser-agent: facebookexternalhit\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n')  # /media/: social post assets fetched by Buffer/Facebook; unlinked, not in sitemap. Facebook's fetcher keeps full access.
 
 HOME_T='UK Short-Let Rules Tracker: every UK short-let rule, linked to its official source'
 HOME_D='Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts in England, Scotland, Wales and Northern Ireland, with links to official sources.'
