@@ -540,6 +540,12 @@
   {
    "date": "2026-10-24",
    "nation": "Scotland",
+   "text": "Added a free \"Is your licence renewal due?\" checker for Scottish short-term let licences: estimates your expiry date and when to start your renewal, with renewal rules from the 1982 Act, Scottish Government guidance and council pages (Highland, Edinburgh, Argyll and Bute, Na h-Eileanan Siar, Angus).",
+   "source": "https://www.gov.scot/publications/short-term-lets-licensing-scheme-part-1-guidance-hosts-operators/pages/6/"
+  },
+  {
+   "date": "2026-10-24",
+   "nation": "Scotland",
    "text": "Added council pages for South Ayrshire (visitor levy paused until August 2027 at the earliest; licensing policy and fees under review) and Angus (licence £349 to £588, renewals now up to 6 years; no control area), with licence fees and levy status.",
    "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets"
   },
