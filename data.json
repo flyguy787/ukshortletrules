@@ -695,9 +695,29 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.rctcbc.gov.uk/EN/Resident/CouncilTax/CouncilTaxPremiums.aspx",
    "verified": true
+  },
+  {
+   "name": "Caerphilly",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, still charged in 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://beta.caerphilly.gov.uk/council-tax-premiums",
+   "verified": true
+  },
+  {
+   "name": "Torfaen",
+   "nation": "Wales",
+   "rule": "No council tax premium on second homes or long-term empty homes in 2026/27 (council says it is considering one, subject to consultation). Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.torfaen.gov.uk/en/council-tax-benefits-and-money/council-tax/council-tax-premiums-for-long-term-empty-properties-and-second-homes",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Wales",
+   "text": "Added council pages for Caerphilly (100% second-home council tax premium since April 2025, still charged in 2026/27; long-term empty premium only after 2 years, up to 300% after 5) and Torfaen (no second-home premium: one of only two Welsh councils not charging one in 2026/27, though the council says it is considering premiums subject to consultation). Neither has a visitor levy or an Article 4 direction on short lets; WRA registration still applies by 31 Mar 2027.",
+   "source": "https://www.torfaen.gov.uk/en/council-tax-benefits-and-money/council-tax/council-tax-premiums-for-long-term-empty-properties-and-second-homes"
+  },
   {
    "date": "2026-10-25",
    "nation": "Wales",
