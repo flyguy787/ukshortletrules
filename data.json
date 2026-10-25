@@ -667,9 +667,29 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2023, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax-Premium-Scheme.aspx",
    "verified": true
+  },
+  {
+   "name": "Bridgend",
+   "nation": "Wales",
+   "rule": "200% council tax premium on second homes (300% bill) from 1 Apr 2026, up from 100% since Apr 2024. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.bridgend.gov.uk/residents/council-tax/council-tax-premiums-for-long-term-empty-properties-and-second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Newport",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, still charged in 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.newport.gov.uk/council-tax/council-tax-premiums",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Wales",
+   "text": "Added council pages for Bridgend (second-home council tax premium rose to 200%, a triple bill, from April 2026, among the highest in Wales) and Newport (100% second-home premium since April 2025, which the council says can include holiday lets on council tax). Neither has a visitor levy or an Article 4 direction; WRA registration still applies by 31 Mar 2027.",
+   "source": "https://www.bridgend.gov.uk/residents/council-tax/council-tax-premiums-for-long-term-empty-properties-and-second-homes/"
+  },
   {
    "date": "2026-10-25",
    "nation": "Wales",
