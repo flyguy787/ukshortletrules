@@ -681,9 +681,29 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, still charged in 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.newport.gov.uk/council-tax/council-tax-premiums",
    "verified": true
+  },
+  {
+   "name": "Neath Port Talbot",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, still charged in 2026/27; 6-month exception for self-catering lets moved off business rates. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.npt.gov.uk/council-tax/premiums-for-empty-properties-and-second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Rhondda Cynon Taf",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.rctcbc.gov.uk/EN/Resident/CouncilTax/CouncilTaxPremiums.aspx",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Wales",
+   "text": "Added council pages for Neath Port Talbot (100% second-home council tax premium since April 2025, plus a new 6-month premium exception from April 2026 for self-catering lets moved off business rates onto council tax) and Rhondda Cynon Taf (100% second-home premium since April 2024). Neither has a visitor levy or an Article 4 direction; WRA registration still applies by 31 Mar 2027.",
+   "source": "https://democracy.npt.gov.uk/documents/s112460/SCMDPR190326-Council%20Tax%20Premium%20Exceptions%20NEW.pdf"
+  },
   {
    "date": "2026-10-25",
    "nation": "Wales",
