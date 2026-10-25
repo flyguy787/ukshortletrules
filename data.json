@@ -734,6 +734,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.e-lindsey.gov.uk/article/27747/Council-Tax-Additional-Charges",
    "verified": true
+  },
+  {
+   "name": "Cotswold",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.cotswold.gov.uk/council-tax-and-benefits/second-homes/",
+   "verified": true
+  },
+  {
+   "name": "East Devon",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://eastdevon.gov.uk/council-tax/council-tax-discounts-and-exemptions-information/secondholiday-homes/",
+   "verified": true
   }
  ],
  "changes": [
@@ -972,6 +986,12 @@
    "nation": "England",
    "text": "Added council pages for Torridge (north Devon coast) and East Lindsey (Lincolnshire coast, including Skegness and Mablethorpe areas). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets.",
    "source": "https://www.e-lindsey.gov.uk/article/27747/Council-Tax-Additional-Charges"
+  },
+  {
+   "date": "2026-10-25",
+   "nation": "England",
+   "text": "Added council pages for Cotswold (Gloucestershire) and East Devon (Devon). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets.",
+   "source": "https://eastdevon.gov.uk/council-tax/council-tax-discounts-and-exemptions-information/secondholiday-homes/"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
