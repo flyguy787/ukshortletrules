@@ -665,6 +665,22 @@ for f in PAGES+['levy-calculator-widget.html','checker-widget.html','sitemap.xml
 import os
 for _s,_q in json.load(open('redirects.json')).items():
     _p,_,_q=_q.rpartition('|');_u=SITE+_p+'?'+_q;_ua=e(_u)
-    _h=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><title>{e(HOME_T)}</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}"><meta name="description" content="{e(HOME_D)}">{HOME_OG}<script>location.replace({json.dumps(_u)});</script><meta http-equiv="refresh" content="0;url={_ua}"></head><body><p><a href="{_ua}">Continue to UK Short-Let Rules Tracker</a></p></body></html>'
+    # Copy the target page's title/description/og:/twitter: tags so link previews match the destination
+    _tf=(_p.rstrip('/')+'.html') if _p and not _p.endswith('/') else (_p+'index.html')
+    _meta=None
+    if os.path.exists(_tf):
+        _th=open(_tf).read();_tm=re.search(r'<title>(.*?)</title>',_th,re.S)
+        _dm=re.search(r'<meta name="description" content="([^"]*)">',_th)
+        _g=lambda k:(lambda m:m.group(1) if m else None)(re.search(r'<meta (?:property|name)="'+k+r'" content="([^"]*)">',_th))
+        if _tm:
+            _T=_tm.group(1).strip();_D=_dm.group(1) if _dm else e(HOME_D);_ot=_g('og:title') or _T;_od=_g('og:description') or _D
+            _im=_g('og:image') or _g('twitter:image') or OGIMG;_tt=_g('twitter:title') or _ot;_td=_g('twitter:description') or _od
+            _dim='' if _g('og:image') and not _g('og:image:width') else ''.join(f'<meta property="og:image:{k}" content="{_g("og:image:"+k) or v}">' for k,v in (('width','1080'),('height','1080'),('alt','UK Short-Let Rules Tracker')))
+            _meta=(f'<title>{_T}</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE+_p}"><meta name="description" content="{_D}">'
+              f'<meta property="og:type" content="website"><meta property="og:site_name" content="UK Short-Let Rules Tracker"><meta property="og:title" content="{_ot}"><meta property="og:description" content="{_od}"><meta property="og:url" content="{_g("og:url") or SITE+_p}"><meta property="og:image" content="{_im}">{_dim}'
+              f'<meta name="twitter:card" content="{_g("twitter:card") or "summary"}"><meta name="twitter:title" content="{_tt}"><meta name="twitter:description" content="{_td}"><meta name="twitter:image" content="{_im}">')
+    else:print('WARN redirect target missing:',_s,_tf)
+    if not _meta:_meta=f'<title>{e(HOME_T)}</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}"><meta name="description" content="{e(HOME_D)}">{HOME_OG}'
+    _h=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">{_meta}<script>location.replace({json.dumps(_u)});</script><meta http-equiv="refresh" content="0;url={_ua}"></head><body><p><a href="{_ua}">Continue to UK Short-Let Rules Tracker</a></p></body></html>'
     os.makedirs(_s,exist_ok=True)
     for _f in (_s+'.html',_s+'/index.html'):open(_f,'w').write(_h)

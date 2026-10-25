@@ -11,5 +11,8 @@
   "fblevy": "uk-visitor-levy-map|utm_source=facebook&utm_medium=social&utm_campaign=levy-roundup",
   "renewal": "scotland-licence-renewal-checker|utm_source=newsletter&utm_medium=email&utm_campaign=renewal-kit-waitlist",
   "lpool": "councils/liverpool|utm_source=property-course&utm_medium=whatsapp&utm_campaign=liverpool-reply",
-  "sefton": "councils/sefton|utm_source=property-course&utm_medium=whatsapp&utm_campaign=sefton-reply"
+  "sefton": "councils/sefton|utm_source=property-course&utm_medium=whatsapp&utm_campaign=sefton-reply",
+  "xwales": "wales-second-homes-council-tax-premium|utm_source=x-brand&utm_medium=social&utm_campaign=wales-premium",
+  "xlondon": "london-90-night-counter|utm_source=x-brand&utm_medium=social&utm_campaign=london-90-nights",
+  "xscot": "scotland-business-rates-checker|utm_source=x-brand&utm_medium=social&utm_campaign=scotland-140-70"
 }
