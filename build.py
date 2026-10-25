@@ -592,6 +592,19 @@ CX.update({
  fees=('One fee for a 3-year licence, the same for a new application or a renewal. Secondary letting £594 for up to 10 guests, plus £55 for every extra five guests (so £649 for 11 to 15). Home letting, or home letting and home sharing, £495 for up to 10 guests, plus £55 for every extra five. Home sharing £275 per room. Fees are not refunded if you are refused. The policy page does not say which year these fees apply from.',[EDP]),
  dates=['1 Oct 2022: licensing scheme opens','Jul 2026: council decides not to introduce a visitor levy']),
 })
+# ---- Torridge, East Lindsey (sources read 25 Oct 2026) ----
+TO='https://www.torridge.gov.uk/article/19942/Empty-and-Exempt-Properties'
+TO2='https://www.torridge.gov.uk/article/22102/Change-to-Council-Tax-Charge-for-Second-Homeowners-from-1st-April-2025'
+EL='https://www.e-lindsey.gov.uk/article/27747/Council-Tax-Additional-Charges'
+ELA4='https://www.e-lindsey.gov.uk/article/6141/Article-4-Directions-and-Local-Development-Orders'
+CX.update({
+'torridge':dict(lic=EN_LIC2,ctrl=ENPL24(' Torridge has Article 4 directions in some conservation areas, but these control building alterations, not holiday-let use.'),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: Full Council agreed in principle on 5 Sep 2022 to charge a 100% second homes premium, and voted on 22 Jan 2024 to bring it in, so from 1 Apr 2025 homes that are substantially furnished and nobody\'s main home pay 200% council tax (no premium was charged before). The council updated its Empty Homes and Second Home Premium Policy in 2025 to follow the national exceptions. '+EN_EXC+' Empty and unfurnished homes pay a premium after 1 year: 100% (1 to 5 years), 200% (5 to 10 years) and 300% (10 years or more). If the use of your property changes, the council asks for evidence, and you must tell it about a change in circumstances within 21 days or risk a £70 penalty.'+EN_BRT,[TO,TO2,EN_BR]),
+ dates=EDATES('22 Jan 2024: Full Council voted to charge the second homes premium')),
+'east-lindsey':dict(lic=EN_LIC2,ctrl=(ENPL24('')[0]+' East Lindsey\'s Article 4 directions cover changes to the appearance of homes in conservation areas (windows, doors, porches, roofs), not holiday-let use.',ENPL24('')[1]+[ELA4]),levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: Council approved a 100% premium on second homes and furnished homes not used as anyone\'s main home on 28 Feb 2024, so from 1 Apr 2025 the charge is 200%. The council published notice in the local press in Mar 2024 and wrote to owners it thought were affected in Nov and Dec 2024. The premium is added automatically to your bill, which you can still pay in 10 or 12 instalments. Permanent exceptions it lists: armed forces accommodation, annexes to a main home, job-related homes, caravan pitches and boat moorings, and homes where a planning restriction prevents occupation. Up to 12 months: marketed for sale, marketed for let, probate granted in the last 12 months, and major repairs or structural alterations. Claim using the council\'s second home/furnished property review form, with evidence. Empty and unfurnished homes pay a premium once empty for 2 years: 100% (2 years), 200% (5 years) and 300% (10 years).'+EN_BRT,[EL,EN_BR]),
+ dates=EDATES('28 Feb 2024: Council approved the second homes premium')),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()

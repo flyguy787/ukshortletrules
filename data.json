@@ -720,6 +720,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.merthyr.gov.uk/resident/council-tax/council-tax-premiums/",
    "verified": true
+  },
+  {
+   "name": "Torridge",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.torridge.gov.uk/article/19942/Empty-and-Exempt-Properties",
+   "verified": true
+  },
+  {
+   "name": "East Lindsey",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.e-lindsey.gov.uk/article/27747/Council-Tax-Additional-Charges",
+   "verified": true
   }
  ],
  "changes": [
@@ -952,6 +966,12 @@
    "nation": "Wales",
    "text": "Gwynedd Article 4 direction ends after appeal refused.",
    "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction"
+  },
+  {
+   "date": "2026-10-25",
+   "nation": "England",
+   "text": "Added council pages for Torridge (north Devon coast) and East Lindsey (Lincolnshire coast, including Skegness and Mablethorpe areas). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets.",
+   "source": "https://www.e-lindsey.gov.uk/article/27747/Council-Tax-Additional-Charges"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
