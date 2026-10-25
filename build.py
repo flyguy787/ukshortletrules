@@ -284,6 +284,21 @@ CX.update({
  fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double), in place since 1 Apr 2021. It applies to any home that is furnished and nobody\'s sole or main residence. '+WEX+' Swansea notes the marketed-for-let exception (Class 2) is for tenancies of at least 6 months, not holiday or Airbnb lets. Send evidence to council.tax@swansea.gov.uk.',[SW]),
  dates=['1 Apr 2021: second-home premium started','31 Mar 2027: WRA registration deadline']),
 })
+# ---- Monmouthshire, Vale of Glamorgan (sources read 25 Oct 2026) ----
+MON='https://www.monmouthshire.gov.uk/council-tax-premiums-for-long-term-empty-properties-and-second-homes/'
+MON2='https://democracy.monmouthshire.gov.uk/documents/s44679/3.%2020260305%20Council%20-%20Council%20Tax%20Resolution%20and%20Budget%20report%202026-27%20Final.pdf'
+VOG='https://www.valeofglamorgan.gov.uk/en/our_council/council_tax/Council-Tax.aspx'
+VOG2='https://www.valeofglamorgan.gov.uk/Documents/_Committee%20Reports/Cabinet/2025/25-12-18/Premiums-Long-Term-Empty-Properties-and-Second-Homes.pdf'
+VOG3='https://www.valeofglamorgan.gov.uk/Documents/Our%20Council/Council%20Tax%20&%20Benefits/2026-27/EN-Council-Tax-Explanatory-Notes-20262027.pdf'
+WPL25=lambda extra='':('No Article 4 direction or local short-let planning control found (checked 25 Oct 2026). Wales-wide, use classes C3 (main home), C5 (second home) and C6 (short-term let) exist since Oct 2022, and moving between them is permitted development unless an Article 4 direction applies.'+extra,['https://www.legislation.gov.uk/wsi/2022/994/article/2/made','https://www.gov.wales/written-statement-changes-planning-legislation-and-policy-second-homes-and-short-term-lets'])
+CX.update({
+'monmouthshire':dict(lic=WA_REG,ctrl=WPL25(' Part of the county is in Bannau Brycheiniog (Brecon Beacons) National Park, where the park authority handles planning.'),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double) since 1 Apr 2024, confirmed unchanged for 2026/27 at Full Council on 5 Mar 2026. It applies to furnished homes where nobody lives or the owner has a main home elsewhere. Useful for holiday lets: the council also made a local exception so a property moving from business rates to council tax is free of the second-home premium for 12 months (standard council tax is still payable). '+WEX+' In 2025/26, 387 homes were liable for the premium and 273 were billed after exceptions.',[MON,MON2]),
+ dates=['18 Jan 2024: Council confirms 100% second-home premium','1 Apr 2024: second-home premium started','5 Mar 2026: premiums unchanged for 2026/27','31 Mar 2027: WRA registration deadline']),
+'vale-of-glamorgan':dict(lic=WA_REG,ctrl=WPL25(' The council\'s Nov 2025 housing market paper on second and holiday homes found their numbers low and did not propose a local planning policy for them.'),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double) since 1 Apr 2024, reaffirmed by Cabinet on 18 Dec 2025 and set by Council on 9 Mar 2026 for 2026/27. It applies to furnished homes that are not anyone\'s sole or main residence. '+WEX+' The Vale also lists Class 7 (job-related homes). Apply for an exception through the council\'s online Council Tax Enquiry form and upload evidence. The council gives no discount on empty homes, and long-term empty homes pay a 100% to 200% premium depending on how long they have been empty.',[VOG,VOG2,VOG3,'https://valeofglamorgan.oc2.uk/docfiles/63/BP10C%20LHMA%20Second%20and%20Holiday%20Homes.pdf']),
+ dates=['1 Apr 2024: second-home premium started','18 Dec 2025: Cabinet reaffirms 100% for 2026/27','9 Mar 2026: Council sets 2026/27 council tax','31 Mar 2027: WRA registration deadline']),
+})
 # ---- Falkirk and the island councils (sources fetched 24 Oct 2026) ----
 VSE='https://www.visitscotland.org/tourism-events-industry/visitor-levy'
 CX.update({

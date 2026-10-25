@@ -639,9 +639,29 @@
    "rule": "Licence needed (secondary let £594 up to 10 guests, +£55 per extra 5; same fee to renew). No control area. No visitor levy: council decided against one in 2026.",
    "source": "https://www.eastdunbarton.gov.uk/services/a-z-of-services/housing-properties/short-term-lets-policy/",
    "verified": true
+  },
+  {
+   "name": "Monmouthshire",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024, with a 12-month exception for lets moving from business rates to council tax. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.monmouthshire.gov.uk/council-tax-premiums-for-long-term-empty-properties-and-second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Vale of Glamorgan",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.valeofglamorgan.gov.uk/en/our_council/council_tax/Council-Tax.aspx",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Wales",
+   "text": "Added council pages for Monmouthshire (100% second-home council tax premium, unchanged for 2026/27; a property moving from business rates to council tax is free of the premium for 12 months) and Vale of Glamorgan (100% second-home premium reaffirmed for 2026/27). Neither has a visitor levy or an Article 4 direction; WRA registration still applies by 31 Mar 2027.",
+   "source": "https://www.monmouthshire.gov.uk/council-tax-premiums-for-long-term-empty-properties-and-second-homes/"
+  },
   {
    "date": "2026-10-25",
    "nation": "Scotland",
