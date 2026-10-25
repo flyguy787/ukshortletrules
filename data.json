@@ -18,21 +18,19 @@
     {
      "topic": "Planning / control areas",
      "status": "In force",
-     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed: Perth & Kinross agreed on 17 Jun 2026 to designate Highland Perthshire and the northern part of Eastern Perthshire. The council page (last modified 2 Jul 2026) still says it is awaiting Scottish Ministers' approval. Planning press reports that Ministers approved it on 12 Oct 2026 (UNVERIFIED: not yet on an official page we could load). Either way it is not in force until the council publishes a designation notice, at least 28 days before the start date. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. The council extended this by two weeks after correcting figures in its consultation materials (2 Oct 2026). Not in force. Highland Council has agreed to submit further proposed control areas to Scottish Ministers (council news, Sep 2026). Reported to cover Inverness City and a wider rural area; details UNVERIFIED because the council website was offline when we checked on 22 Oct 2026. Not in force.",
+     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed control areas are not in force until the council publishes a designation notice, at least 28 days before the start date. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. The council extended this by two weeks after correcting figures in its consultation materials (2 Oct 2026). Not in force. Highland Council has agreed to submit further proposed control areas to Scottish Ministers (council news, Sep 2026). Reported to cover Inverness City and a wider rural area; details UNVERIFIED because the council website was offline when we checked on 22 Oct 2026. Not in force.",
      "sources": [
       "https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas",
       "https://www.gov.scot/publications/short-term-lets/",
-      "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/",
       "https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area",
       "https://www.argyll-bute.gov.uk/news/2026/oct/council-apologises-error-short-term-let-consultation",
-      "https://www.pkc.gov.uk/article/25569/Short-term-Let-Control-Area",
       "https://www.highland.gov.uk/news/article/17496/highland-council-agrees-to-submit-short-term-let-control-area-proposals-to-scottish-ministers"
      ]
     },
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Perth & Kinross: statutory consultation on a draft scheme with fixed-rate options, 19 Aug to 11 Nov 2026. No decision yet. Reported rate of £4 per room per night is UNVERIFIED (not stated on the council page). Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: consultation on whether to have a levy at all, to 31 Oct 2026 (no draft scheme yet). East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); a council meeting on 27 Oct 2026 is asked to approve an independent review before any decision. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
+     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: consultation on whether to have a levy at all, to 31 Oct 2026 (no draft scheme yet). East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); a council meeting on 27 Oct 2026 is asked to approve an independent review before any decision. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
      "sources": [
       "https://www.edinburgh.gov.uk/visitorlevyinformation",
       "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
@@ -42,8 +40,7 @@
       "https://www.dundeecity.gov.uk/consultations-and-surveys/visitor-levy-have-your-say",
       "https://newsroom.moray.gov.uk/news/council-consults-on-visitor-levy-for-moray",
       "https://www.eastlothian.gov.uk/news/2026/council-asked-approve-independent-review-visitor-levy-plans",
-      "https://www.highland.gov.uk/news/article/17504/highland-council-invites-public-to-visitor-levy-consultation-webinars",
-      "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+      "https://www.highland.gov.uk/news/article/17504/highland-council-invites-public-to-visitor-levy-consultation-webinars"
      ]
     },
     {
@@ -908,7 +905,8 @@
    "date": "2026-08-19",
    "nation": "Scotland",
    "text": "Perth & Kinross opens 12-week consultation on a draft visitor levy.",
-   "source": "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy"
+   "source": "https://www.pkc.gov.uk/article/24551/Perth-and-Kinross-Visitor-Levy",
+   "dir_only": true
   },
   {
    "date": "2026-07-31",
@@ -926,7 +924,8 @@
    "date": "2026-06-17",
    "nation": "Scotland",
    "text": "Perth & Kinross agrees STL control area for Highland Perthshire and N. Eastern Perthshire (awaiting Ministers).",
-   "source": "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/"
+   "source": "https://consult.pkc.gov.uk/communities/proposal-of-short-term-let-control-area/",
+   "dir_only": true
   },
   {
    "date": "2026-02-06",

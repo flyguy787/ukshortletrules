@@ -1,7 +1,6 @@
 # 90-day UK short-let deadlines (re-verified 23 Oct 2026 against each official source).
 DL=[
  ('2026-10-27','Scotland','East Lothian','Full council meeting considers visitor levy consultation findings and next steps','https://www.eastlothian.gov.uk/news/2026/council-asked-approve-independent-review-visitor-levy-plans'),
- ('2026-11-11','Scotland','Perth & Kinross','Visitor levy consultation closes','https://www.visitscotland.org/tourism-events-industry/visitor-levy'),
  ('2026-11-13','Scotland','Edinburgh','Last day to pay the levy for stays 24 Jul to 30 Sep 2026 (return due by 30 Oct)','https://www.edinburgh.gov.uk/visitorlevyinformation'),
  ('2026-11-15','Scotland','Argyll & Bute','Mull and Iona short-term let control area consultation closes','https://www.argyll-bute.gov.uk/my-community/community-planning/consultations/consultation/proposed-short-term-let-control-area'),
  ('2026-11-16','Northern Ireland','Belfast','Consultation on short-term let planning guidance closes','https://www.belfastcity.gov.uk/news/public-consultation-launched-looking-at-planning-g'),

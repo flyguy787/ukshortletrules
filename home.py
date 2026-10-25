@@ -4,7 +4,7 @@ _tools=re.search(r'<h2>Free tools</h2>(<ul>.*?</ul>)',_idx).group(1)
 NCOL={'england':'#c8102e','scotland':'#0065bd','wales':'#00843d','northern-ireland':'#6b4c9a'}
 def _chips(n):return ''.join(f'<li><span class="k">{e(r["topic"])}</span><span class="s">{e(r["status"])}</span></li>' for r in n['rules'][:4])
 pcards=''.join(f'<a class="nc" href="{n["id"]}.html" style="--nc:{NCOL[n["id"]]}"><h3>{n["name"]}</h3><p>{e(n["summary"])}</p><ul class="chips">{_chips(n)}</ul><span class="go">See {n["name"]} rules &rarr;</span></a>' for n in d['nations'])
-pch=''.join(f'<li><time>{c["date"]}</time><span class="nt">{e(c["nation"])}</span><p>{e(c["text"])}</p></li>' for c in d['changes'][:4])
+pch=''.join(f'<li><time>{c["date"]}</time><span class="nt">{e(c["nation"])}</span><p>{e(c["text"])}</p></li>' for c in [c for c in d['changes'] if not c.get('dir_only')][:4])
 LOGO='<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#fff"/><path d="M7 17 17 8l10 9v9H7z" fill="#123c5a"/><rect x="14" y="19" width="6" height="7" rx="1" fill="#f2a541"/></svg>'
 
 HERO=f'<section class="hero"><div class="hin"><h1>Every UK short-let rule, linked to its official source</h1><p>Licensing, planning, tax and safety rules for UK holiday-let and short-term-let hosts, with links to official sources.</p><a class="cta" href="checker.html">Do I need a licence? Check now</a><a class="cta2" href="councils.html">Browse {len(d["councils"])} councils</a><ul class="trust"><li>Every rule links to an official source</li><li>Last checked {C}</li><li>Free, independent, no tracking</li></ul></div></section>'

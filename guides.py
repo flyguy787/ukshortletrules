@@ -30,7 +30,7 @@ b=f'''<p class="lead">Every short-term let in Scotland needs a council licence b
 <li><b>Pick your licence type.</b> Secondary letting, home sharing, home letting, or home letting and home sharing.</li>
 <li><b>Check planning.</b> If you are in a control area (all of Edinburgh, and Badenoch &amp; Strathspey in Highland), letting a whole home that isn't your main home very likely needs planning permission. <a href="scotland.html">See Scotland rules</a>.</li>
 <li><b>Get your certificates and safety items in place.</b> Use the checklist below.</li>
-<li><b>Apply through your council's website</b> and pay its fee. Fees vary by council. Example: <a href="councils/perth-and-kinross.html">Perth &amp; Kinross fees</a>.</li>
+<li><b>Apply through your council's website</b> and pay its fee. Fees vary by council. Example: <a href="councils/highland.html">Highland fees</a>.</li>
 <li><b>Display a public notice</b> at or near the property for 21 days from the date you applied.</li>
 <li><b>Wait for a decision.</b> Councils have up to 9 months.</li>
 <li><b>Once licensed,</b> put your licence number in every advert and display the required information for guests.</li></ol>
