@@ -299,6 +299,20 @@ CX.update({
  fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double) since 1 Apr 2024, reaffirmed by Cabinet on 18 Dec 2025 and set by Council on 9 Mar 2026 for 2026/27. It applies to furnished homes that are not anyone\'s sole or main residence. '+WEX+' The Vale also lists Class 7 (job-related homes). Apply for an exception through the council\'s online Council Tax Enquiry form and upload evidence. The council gives no discount on empty homes, and long-term empty homes pay a 100% to 200% premium depending on how long they have been empty.',[VOG,VOG2,VOG3,'https://valeofglamorgan.oc2.uk/docfiles/63/BP10C%20LHMA%20Second%20and%20Holiday%20Homes.pdf']),
  dates=['1 Apr 2024: second-home premium started','18 Dec 2025: Cabinet reaffirms 100% for 2026/27','9 Mar 2026: Council sets 2026/27 council tax','31 Mar 2027: WRA registration deadline']),
 })
+# ---- Wrexham, Flintshire (sources read 25 Oct 2026) ----
+WRX='https://www.wrexham.gov.uk/service/empty-and-second-home-premium'
+WRX2='https://www.wrexham.gov.uk/sites/default/files/2025-12/cofi4525-setting-the-council-tax-base-2026-27.pdf'
+FLN='https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax-Premium-Scheme.aspx'
+FLN2='https://committeemeetings.flintshire.gov.uk/ieDecisionDetails.aspx?AIId=32855&LLL=0'
+FLN3='https://committeemeetings.flintshire.gov.uk/ieDecisionDetails.aspx?AIId=26211&LLL=0'
+CX.update({
+'wrexham':dict(lic=WA_REG,ctrl=WPL25(),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 50% on top of the standard charge (so 150% in total), the rate Wrexham has charged since 1 Apr 2017 and still in its 2026/27 tax base. That is lower than most Welsh councils that charge a premium. Long-term empty homes pay far more: 200% premium (300% bill) from 1 Apr 2025, or 250% (350% bill) once empty for 4 years or more. A second home is a furnished home that is not anyone\'s sole or main residence. Exceptions include homes marketed for sale or let (one year only), annexes, armed forces homes, occupied caravan pitches and boat moorings, seasonal homes where year-round occupation is not allowed (for example by a planning condition), and job-related homes. The 2026/27 tax base counted 71 homes paying the second-home premium.',[WRX,WRX2]),
+ dates=['1 Apr 2017: 50% second-home premium started','1 Apr 2025: long-term empty premium rises to 200%','31 Mar 2027: WRA registration deadline']),
+'flintshire':dict(lic=WA_REG,ctrl=WPL25(),levy=WLV,
+ fees=('WRA registration is free. Council tax second-home premium: 100% on top of the standard charge (so double) since 1 Apr 2023 (Council decision 13 Dec 2022), kept for 2026/27 when Council set the tax on 24 Feb 2026. It applies to substantially furnished homes that are not anyone\'s sole or main residence, and Flintshire gives no discount on second homes. Long-term empty homes pay a 100% premium after one year, rising from Apr 2026 to 150% after 3 years, 200% after 5 years and 300% after 10 years. '+WEX+' Class 7 (job-related homes) and Classes 1 to 4 (marketed for sale or let for up to a year, annexes, armed forces) also apply.',[FLN,FLN2,FLN3]),
+ dates=['13 Dec 2022: Council sets 100% second-home premium','1 Apr 2023: 100% second-home premium started','24 Feb 2026: premium kept for 2026/27','31 Mar 2027: WRA registration deadline']),
+})
 # ---- Falkirk and the island councils (sources fetched 24 Oct 2026) ----
 VSE='https://www.visitscotland.org/tourism-events-industry/visitor-levy'
 CX.update({

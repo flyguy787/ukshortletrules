@@ -653,9 +653,29 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2024, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
    "source": "https://www.valeofglamorgan.gov.uk/en/our_council/council_tax/Council-Tax.aspx",
    "verified": true
+  },
+  {
+   "name": "Wrexham",
+   "nation": "Wales",
+   "rule": "50% council tax premium on second homes (150% bill), unchanged since 1 Apr 2017 and still charged in 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.wrexham.gov.uk/service/empty-and-second-home-premium",
+   "verified": true
+  },
+  {
+   "name": "Flintshire",
+   "nation": "Wales",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2023, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
+   "source": "https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax-Premium-Scheme.aspx",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-25",
+   "nation": "Wales",
+   "text": "Added council pages for Wrexham (50% second-home council tax premium, one of the lowest in Wales, unchanged since 2017) and Flintshire (100% second-home premium since April 2023, kept for 2026/27). Neither has a visitor levy or an Article 4 direction; WRA registration still applies by 31 Mar 2027.",
+   "source": "https://www.wrexham.gov.uk/service/empty-and-second-home-premium"
+  },
   {
    "date": "2026-10-25",
    "nation": "Wales",
