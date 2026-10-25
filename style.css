@@ -69,3 +69,11 @@ footer{text-align:center;font-size:.85rem;color:var(--mute);padding:2rem 1.2rem;
 .ckb button{font:inherit;font-size:.85rem;min-width:5.5rem;padding:.35rem .8rem;border-radius:8px;cursor:pointer;background:#fff;color:#123c5a;border:2px solid #f2a541;margin:0}
 body.ckb-on{padding-bottom:6rem}
 @media print{.ckb{display:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.signup select{flex:1 1 220px;padding:.65rem .7rem;border:0;border-radius:8px;font:inherit;background:#fff;color:var(--ink);max-width:100%}
+.alertcta{border-top:4px solid var(--amber)}
+.alertcta h2 .acn{color:#ffd59a}
+.alerttop{padding:1rem 1.2rem}
+.alerttop h2{font-size:1.25rem}
+.alerttop p{margin:.2rem 0 .4rem}
+@media(max-width:520px){.signup select,.signup input[type=email],.signup button{flex:1 1 100%}.alertbox{padding:1rem}}
