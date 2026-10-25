@@ -77,3 +77,5 @@ body.ckb-on{padding-bottom:6rem}
 .alerttop h2{font-size:1.25rem}
 .alerttop p{margin:.2rem 0 .4rem}
 @media(max-width:520px){.signup select,.signup input[type=email],.signup button{flex:1 1 100%}.alertbox{padding:1rem}}
+.hero+main>.alertcta:first-child{margin-top:-2rem;position:relative;box-shadow:0 6px 24px #123c5a33}
+.alertcta+.ckcard{margin-top:0}
