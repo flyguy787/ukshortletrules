@@ -804,6 +804,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national and local exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.derbyshiredales.gov.uk/council-tax/council-tax-premiums",
    "verified": true
+  },
+  {
+   "name": "Bournemouth, Christchurch and Poole",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme; in May 2026 the council agreed to look at using existing powers on short lets and gather evidence for a possible future Article 4 direction.",
+   "source": "https://www.bcpcouncil.gov.uk/council-tax/council-tax-explained/council-tax-charges-for-unoccupied-but-furnished-or-unfurnished-properties",
+   "verified": true
+  },
+  {
+   "name": "Isles of Scilly",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions and a local staff accommodation exception. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The Local Plan resists losing permanent homes to holiday lets.",
+   "source": "https://scilly.gov.uk/council-democracy/council-finances/council-tax",
+   "verified": true
   }
  ],
  "changes": [
@@ -1084,6 +1098,12 @@
    "nation": "England",
    "text": "Added council pages for City of York and Derbyshire Dales (Matlock, Bakewell and Ashbourne). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; York has draft planning guidance on short-term holiday lets awaiting approval, and the York and North Yorkshire visitor levy report is now on both York and North Yorkshire pages.",
    "source": "https://www.york.gov.uk/council-tax/second-homes-additional-premium"
+  },
+  {
+   "date": "2026-10-26",
+   "nation": "England",
+   "text": "Added council pages for Bournemouth, Christchurch and Poole (BCP) and the Isles of Scilly. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; the Isles of Scilly adds a local exception for staff accommodation. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. BCP Council agreed a short-term lets motion on 12 May 2026 (use existing powers, map lets, gather evidence for a possible future Article 4 direction); the Isles of Scilly Local Plan resists turning permanent homes into holiday lets. The visitor levy map now shows the BCP Accommodation BID charge as void (ballot declared void in Jan 2025).",
+   "source": "https://www.bcpcouncil.gov.uk/council-tax/council-tax-explained/council-tax-charges-for-unoccupied-but-furnished-or-unfurnished-properties"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
