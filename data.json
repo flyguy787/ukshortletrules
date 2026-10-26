@@ -795,6 +795,12 @@
  "changes": [
   {
    "date": "2026-10-26",
+   "nation": "Wales",
+   "text": "Re-checked the Wales 182-day business rates rule against GOV.UK guidance and the Non-Domestic Rating (Amendment of Definition of Domestic Property) (Wales) Order 2026 (WSI 2026/7). Both confirm that from 1 April 2026 a holiday let that wasn't let for 182 nights in the last 12 months can still qualify if its average nights let over the previous 2 or 3 years is at least 182, and that up to 14 nights a year donated to a registered charity (for free use by its beneficiaries) count. The Wales page row is marked verified. The old GOV.WALES self-catering business rates page now returns 404, so we link to the GOV.UK guidance instead.",
+   "source": "https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-wales"
+  },
+  {
+   "date": "2026-10-26",
    "nation": "Scotland",
    "text": "Added the published short-term let licence fees for Glasgow (from April 2026: secondary letting grant £310 for up to 4 guests or £494 for 5 or more), Dundee (£310 to £3,100 by guest capacity, same for every licence type) and Fife (£295 to £826 for a full licence by occupancy). Our licence fee finder now lists fees for all 32 Scottish councils.",
    "source": "https://glasgow.gov.uk/feesandcharges"
