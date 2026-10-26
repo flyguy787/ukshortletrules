@@ -265,7 +265,7 @@ SH='https://www.southhams.gov.uk/council-tax/empty-properties-and-second-homes'
 SH2='https://www.southhams.gov.uk/sites/default/files/2025-02/SH%20Guidance%20on%20discretionary%20exceptions%20to%20Council%20Tax%20premiums.pdf'
 ND='https://www.northdevon.gov.uk/council-tax/charges-for-second-homes-and-empty-properties'
 ND2='https://www.northdevon.gov.uk/sites/default/files/2025-03/North%20Devon%20Council%20Tax%20empty%20homes%20and%20second%20homes%20premiums%20policy%202025.pdf'
-IW='https://www.iow.gov.uk/news/introduction-of-the-second-homes-premium-what-you-need-to-know/'
+IW='https://www.iow.gov.uk/premiums'
 IW2='https://digitalservices.iow.gov.uk/documents/download/empty-homes-and-second-homes-premium-policy1'
 DE='https://www.denbighshire.gov.uk/en/council-tax/premium.aspx'
 CA='https://www.carmarthenshire.gov.wales/council-services/council-tax/council-tax-premiums/'
@@ -318,7 +318,7 @@ CX.update({
 # ---- Wrexham, Flintshire (sources read 25 Oct 2026) ----
 WRX='https://www.wrexham.gov.uk/service/empty-and-second-home-premium'
 WRX2='https://www.wrexham.gov.uk/sites/default/files/2025-12/cofi4525-setting-the-council-tax-base-2026-27.pdf'
-FLN='https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax-Premium-Scheme.aspx'
+FLN='https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax.aspx'
 FLN2='https://committeemeetings.flintshire.gov.uk/ieDecisionDetails.aspx?AIId=32855&LLL=0'
 FLN3='https://committeemeetings.flintshire.gov.uk/ieDecisionDetails.aspx?AIId=26211&LLL=0'
 CX.update({

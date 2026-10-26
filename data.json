@@ -465,7 +465,7 @@
    "name": "Isle of Wight",
    "nation": "England",
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
-   "source": "https://www.iow.gov.uk/news/introduction-of-the-second-homes-premium-what-you-need-to-know/",
+   "source": "https://www.iow.gov.uk/premiums",
    "verified": true
   },
   {
@@ -662,7 +662,7 @@
    "name": "Flintshire",
    "nation": "Wales",
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2023, kept for 2026/27. Holiday lets need free WRA registration by 31 Mar 2027. No visitor levy.",
-   "source": "https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax-Premium-Scheme.aspx",
+   "source": "https://www.flintshire.gov.uk/en/Resident/Council-Tax-and-Benefits-and-Grants/Council-Tax.aspx",
    "verified": true
   },
   {
