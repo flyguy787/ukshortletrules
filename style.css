@@ -79,3 +79,6 @@ body.ckb-on{padding-bottom:6rem}
 @media(max-width:520px){.signup select,.signup input[type=email],.signup button{flex:1 1 100%}.alertbox{padding:1rem}}
 .hero+main>.alertcta:first-child{margin-top:-2rem;position:relative;box-shadow:0 6px 24px #123c5a33}
 .alertcta+.ckcard{margin-top:0}
+.answer{background:#fff;border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;max-width:78ch}
+.answer h2{font-size:1.1rem;margin:0 0 .35rem}
+.answer p{margin:.2rem 0}
