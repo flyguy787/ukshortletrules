@@ -776,6 +776,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.newforest.gov.uk/article/3500/Council-Tax-premium-for-properties-that-are-unoccupied-and-furnished",
    "verified": true
+  },
+  {
+   "name": "West Devon",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.westdevon.gov.uk/council-tax/empty-properties-and-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Teignbridge",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.teignbridge.gov.uk/council-tax/reduce-your-council-tax/council-tax-discounts/empty-property-premiums/",
+   "verified": true
   }
  ],
  "changes": [
@@ -1032,6 +1046,12 @@
    "nation": "England",
    "text": "Added council pages for Bath and North East Somerset and New Forest (Hampshire). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025, and still in 2026/27. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; the New Forest National Park's draft Local Plan proposes principal residence conditions on new homes.",
    "source": "https://www.newforest.gov.uk/article/3500/Council-Tax-premium-for-properties-that-are-unoccupied-and-furnished"
+  },
+  {
+   "date": "2026-10-26",
+   "nation": "England",
+   "text": "Added council pages for West Devon (Tavistock and Okehampton) and Teignbridge (Newton Abbot, Teignmouth and Dawlish). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025, and still in 2026/27. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; Teignbridge's new Local Plan requires new-build homes in five coastal parishes to be primary residences, and Dartmoor National Park conditions new holiday lets to holiday use only.",
+   "source": "https://www.teignbridge.gov.uk/council-tax/reduce-your-council-tax/council-tax-discounts/empty-property-premiums/"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
