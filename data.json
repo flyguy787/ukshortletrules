@@ -794,6 +794,12 @@
  ],
  "changes": [
   {
+   "date": "2026-10-26",
+   "nation": "Scotland",
+   "text": "Added the published short-term let licence fees for Glasgow (from April 2026: secondary letting grant £310 for up to 4 guests or £494 for 5 or more), Dundee (£310 to £3,100 by guest capacity, same for every licence type) and Fife (£295 to £826 for a full licence by occupancy). Our licence fee finder now lists fees for all 32 Scottish councils.",
+   "source": "https://glasgow.gov.uk/feesandcharges"
+  },
+  {
    "date": "2026-10-25",
    "nation": "Wales",
    "text": "Added council pages for Blaenau Gwent and Merthyr Tydfil, so all 22 Welsh councils now have a page. Merthyr Tydfil keeps its 100% second-home council tax premium for 2026/27 (full Council, 11 Feb 2026). Blaenau Gwent's own page says a 100% second-home premium starts from April 2026, but its 2026/27 return to the Welsh Government shows none, so we mark it unverified and suggest checking with the council. Neither has a visitor levy or an Article 4 direction on short lets; WRA registration still applies by 31 Mar 2027.",
