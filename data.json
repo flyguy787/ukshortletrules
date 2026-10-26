@@ -790,6 +790,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
    "source": "https://www.teignbridge.gov.uk/council-tax/reduce-your-council-tax/council-tax-discounts/empty-property-premiums/",
    "verified": true
+  },
+  {
+   "name": "City of York",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The council says some holiday lets need planning permission; draft short-term let planning guidance (2026) is not yet approved.",
+   "source": "https://www.york.gov.uk/council-tax/second-homes-additional-premium",
+   "verified": true
+  },
+  {
+   "name": "Derbyshire Dales",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national and local exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme.",
+   "source": "https://www.derbyshiredales.gov.uk/council-tax/council-tax-premiums",
+   "verified": true
   }
  ],
  "changes": [
@@ -1064,6 +1078,12 @@
    "nation": "England",
    "text": "Added council pages for West Devon (Tavistock and Okehampton) and Teignbridge (Newton Abbot, Teignmouth and Dawlish). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025, and still in 2026/27. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; Teignbridge's new Local Plan requires new-build homes in five coastal parishes to be primary residences, and Dartmoor National Park conditions new holiday lets to holiday use only.",
    "source": "https://www.teignbridge.gov.uk/council-tax/reduce-your-council-tax/council-tax-discounts/empty-property-premiums/"
+  },
+  {
+   "date": "2026-10-26",
+   "nation": "England",
+   "text": "Added council pages for City of York and Derbyshire Dales (Matlock, Bakewell and Ashbourne). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; York has draft planning guidance on short-term holiday lets awaiting approval, and the York and North Yorkshire visitor levy report is now on both York and North Yorkshire pages.",
+   "source": "https://www.york.gov.uk/council-tax/second-homes-additional-premium"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
