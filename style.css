@@ -82,3 +82,5 @@ body.ckb-on{padding-bottom:6rem}
 .answer{background:#fff;border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;max-width:78ch}
 .answer h2{font-size:1.1rem;margin:0 0 .35rem}
 .answer p{margin:.2rem 0}
+/* mobile: stack wide data tables (table.stk, cells carry data-label) into labelled cards */
+@media(max-width:600px){.stk,.stk tbody,.stk tr,.stk td{display:block;width:auto}.stk .sh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.stk tr{padding:.55rem 0;border-bottom:1px solid #dde3ea}.stk tr:nth-child(even),.stk tr:nth-child(even) td,.stk tr:hover td{background:#fff}.stk tr:nth-child(odd){background:#fafbfc}.stk tr:nth-child(odd) td{background:transparent}.stk td{border:0;padding:.3rem 1rem;overflow-wrap:anywhere}.stk td:empty{display:none}.stk td::before{content:attr(data-label);display:block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#5b6878;margin-bottom:.1rem}.stk td:first-child{font-weight:700;font-size:1.02rem;padding-top:.45rem}.stk td:first-child::before{display:none}}

@@ -86,7 +86,7 @@ head=OGT('uk-visitor-levy-map.html',LVT,dsc)+LVF[1]+'<link rel="stylesheet" href
 nl=sum(1 for x in LV if x[4]=='live');nc=sum(1 for x in LV if x[4]=='confirmed')
 b=ANSWER(*LVA)+TOP_PICK()+f'''<p class="lead">Where UK hosts must charge guests a visitor levy (tourist tax), and where one is coming. {nl} live, {nc} confirmed, more under consultation. Last checked {C}.</p>
 <div id="map" role="img" aria-label="Map of UK visitor levies"></div><p class="small">Green: live. Blue: confirmed. Orange: consulting or proposed.{" Grey: none." if any(x[4]=="none" and x[6] is not None for x in LV) else ""} Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
-<div class="tw"><table><tr><th>Area</th><th>Rate</th><th>Start date</th><th>Status</th><th>Official source / notes</th></tr>{rows}</table></div>
+<div class="tw"><table class="stk"><tr><th>Area</th><th>Rate</th><th>Start date</th><th>Status</th><th>Official source / notes</th></tr>{rows}</table></div>
 <p class="small">Statuses: <b>Live</b> = being charged now; <b>Confirmed</b> = approved with a start date; <b>Consulting</b> = formal consultation open; <b>Proposed</b> = early stage or outcome unknown. {UV} = we could not confirm this on an official source. Manchester and Liverpool are accommodation Business Improvement District charges, not statutory levies.</p>
 <h2>Scotland visitor levy: quick answers</h2>{LVF[0]}<p class="small">Answers summarise the table above. Follow each row's official source before acting.</p>
 <div class="box"><h2>Get told when a new levy is announced</h2><p>One short, sourced email a week on UK short-let rule changes.</p>{FORM}</div>
