@@ -42,7 +42,7 @@ b=f'''<p class="lead">Since <b>1 April 2025</b>, councils in England can charge 
 <li>Does a planning condition limit the property to holiday use or stop stays over 28 days in a row? Class L may apply. Ask the council.</li>
 <li>Is it an annex used as part of your main home? Class F may apply.</li>
 <li>Does your council have a local exceptions or discount policy?</li></ul>
-<h2>Council pages with premium details</h2><ul>{pcl}</ul><p><a href="england.html">All England rules</a> · <a href="councils.html">All councils</a></p>
+<h2>Council pages with premium details</h2><p>Holiday let hotspots: <a href="councils/north-devon.html">North Devon</a> and <a href="councils/dorset.html">Dorset</a> both charge the full 100% premium, so a second home pays double council tax unless it qualifies for business rates or an exception.</p><ul>{pcl}</ul><p><a href="england.html">All England rules</a> · <a href="councils.html">All councils</a></p>
 <p>Wales has its own council tax premiums and a different 182-day business rates test. See <a href="wales.html">Wales rules</a>. For income tax, see <a href="holiday-let-tax-after-fhl-abolition.html">holiday let tax after the FHL abolition</a>.</p>
 <div class="box"><h2>Get told when council tax rules for holiday lets change</h2><p>One short, sourced email a week.</p>{FORM}</div>
 <h2>Common questions</h2>{pfq}
