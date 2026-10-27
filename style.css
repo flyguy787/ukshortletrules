@@ -87,3 +87,7 @@ body.ckb-on{padding-bottom:6rem}
 .ghub li{margin:.2rem 0 .7rem}
 @media(min-width:900px){.dd ul{min-width:18.5rem}}
 @media(min-width:900px) and (max-width:1099px){.nv a,.dd>summary{padding-left:.4rem;padding-right:.4rem;font-size:.94rem}.upd{margin-left:.3rem}.upd .btn{padding:.5rem .8rem}}
+.alertbox .anxh{margin:.5rem 0 .2rem}
+.alertbox ul.anx{margin:.2rem 0 .6rem;padding-left:1.2rem}
+.alertbox ul.anx li{margin:.15rem 0}
+.alertbox p.small:not(.msg){color:#d6e2ec}

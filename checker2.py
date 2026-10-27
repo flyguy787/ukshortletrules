@@ -41,13 +41,13 @@ for c in d['councils']:
     s=slug(c)
     if s in CX and c['verified']:
         x=CX[s];V2D['councils'].append({'n':c['name'],'nat':NAT[c['nation']],'s':s,'ldn':s=='greater-london-all-boroughs',
-          'sec':[[h,_tx2(x[k][0]),_srcs(x[k][1])] for h,k in (('Licensing or registration','lic'),('Planning','ctrl')) if _tx2(x[k][0]) and _tx2(x[k][0])!='None listed.']})
+          'sec':[[h,_tx2(x[k][0]),_srcs(x[k][1])] for h,k in (('Licensing or registration','lic'),('Planning','ctrl')) if _tx2(x[k][0]) and _tx2(x[k][0])!='None listed.'],'nx':[_tx(k) for k in NEXTD(x['dates'])]})
 V2J=json.dumps(V2D,ensure_ascii=False).replace('</','<\\/')
 V2F='''<form class="ck2" onsubmit="return false"><fieldset><legend>1. Where is the let?</legend><label for="v2-n" class="sr">Nation</label><select id="v2-n"><option value="">Choose a nation</option></select></fieldset>
 <fieldset id="v2-cf" hidden><legend>2. Which council?</legend><label for="v2-c" class="sr">Council</label><select id="v2-c"></select></fieldset>
 <fieldset id="v2-tf" hidden><legend>3. What type of let is it?</legend><div id="v2-t"></div></fieldset></form>
 <div id="v2-out" aria-live="polite"></div>
-<div class="alertbox" id="v2-alert" hidden><h2>Get free rule-change alerts for <span id="v2-an">your council</span></h2><p>One email when these short-let rules change, plus the weekly UK "what changed" email. Free. Unsubscribe any time.</p>'''+FORMX.replace('<form class="signup"','<form class="signup" id="v2-form" data-cta="checker-v2" data-area="" data-area-name=""',1).replace('>Subscribe<','>Get free alerts<')+'</div>'
+<div class="alertbox" id="v2-alert" hidden><h2>Get an email when short-let rules change in <span id="v2-an">your council</span></h2><p id="v2-why">We track these rules against official sources and email you when one of them changes.</p><p class="anxh" id="v2-nxh" hidden><b>Dates we're watching:</b></p><ul class="anx" id="v2-nx" hidden></ul><p class="small">Plus one short weekly UK "what changed" email. Free. Unsubscribe any time.</p>'''+FORMX.replace('<form class="signup"','<form class="signup" id="v2-form" data-cta="checker-v2" data-area="" data-area-name=""',1).replace('>Subscribe<','>Get free alerts<')+'</div>'
 V2JS='''<script>(function(){var D=%s,N=document.getElementById('v2-n'),C=document.getElementById('v2-c'),CF=document.getElementById('v2-cf'),TF=document.getElementById('v2-tf'),T=document.getElementById('v2-t'),O=document.getElementById('v2-out'),A=document.getElementById('v2-alert'),AN=document.getElementById('v2-an'),F=document.getElementById('v2-form');
 function el(t,x,c){var e=document.createElement(t);if(x)e.textContent=x;if(c)e.className=c;return e}
 D.nations.forEach(function(n){var o=el('option',n.name);o.value=n.id;N.appendChild(o)});
@@ -63,7 +63,7 @@ b.appendChild(el('p','Official source: '+n.src.join('; ')+'.','small src'));
 if(c&&c.sec.length){b.appendChild(el('h3','What our '+c.n+' page says'));c.sec.forEach(function(s){var d=el('div');d.appendChild(el('h4',s[0]));d.appendChild(el('p',s[1]));if(s[2].length)d.appendChild(el('p','Official source: '+s[2].join('; ')+'.','small src'));b.appendChild(d)})}
 var m=el('p','','ck-more'),a=el('a',c?'See everything for '+c.n+': licensing, planning, levy and fees':'See all the '+n.name+' rules');a.href=c?'councils/'+c.s:n.url.replace('.html','');m.appendChild(a);b.appendChild(m);
 b.appendChild(el('p','General information only, not legal or tax advice. Always check the official source.','small'));O.appendChild(b);
-F.setAttribute('data-area',c?'council:'+c.s:'nation:'+n.id);F.setAttribute('data-area-name',c?c.n:n.name);AN.textContent=c?c.n:'all of '+n.name;A.hidden=false;var S=document.querySelector('section.alertcta');if(S)S.hidden=true;}
+F.setAttribute('data-area',c?'council:'+c.s:'nation:'+n.id);F.setAttribute('data-area-name',c?c.n:n.name);AN.textContent=c?c.n:'all of '+n.name;var W=document.getElementById('v2-why'),NH=document.getElementById('v2-nxh'),NX=document.getElementById('v2-nx');W.textContent=c?'We track licensing, planning, visitor levy and fee rules for '+c.n+' against official sources, and email you when one of them changes.':'We track the '+n.name+' rules against official sources and email you when one of them changes.';NX.innerHTML='';var L2=c&&c.nx?c.nx:[];L2.forEach(function(x){NX.appendChild(el('li',x))});NX.hidden=NH.hidden=!L2.length;A.hidden=false;var S=document.querySelector('section.alertcta');if(S)S.hidden=true;}
 N.addEventListener('change',function(){var n=nat();C.innerHTML='';var L=n?D.councils.filter(function(x){return x.nat===n.id}):[];
 var z=el('option','Choose your council');z.value='';C.appendChild(z);L.forEach(function(x){var o=el('option',x.n);o.value=x.s;C.appendChild(o)});
 CF.hidden=!L.length;TF.hidden=!n;show()});
