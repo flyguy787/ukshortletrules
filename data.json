@@ -176,8 +176,8 @@
     },
     {
      "topic": "182-day rule consultation",
-     "status": "Consultation closed 23 Oct 2026",
-     "text": "The Welsh Government consulted (31 Jul to Fri 23 Oct 2026; now closed) on the criteria for classifying self-catering properties for local tax, including whether the 182-day letting threshold is right and 5 proposed exemptions (properties that are part of a wider business, large multi-unit properties, properties with a relevant planning restriction, properties within the curtilage of the owner's home, and properties on the owner's farm). The consultation has closed and the Welsh Government has not yet published a response or any decision, so the current rules still apply. We'll update this when the outcome is published.",
+     "status": "Consultation open until 30 Oct 2026",
+     "text": "The Welsh Government is consulting (from 31 Jul 2026) on the criteria for classifying self-catering properties for local tax, including whether the 182-day letting threshold is right and 5 proposed exemptions (properties that are part of a wider business, large multi-unit properties, properties with a relevant planning restriction, properties within the curtilage of the owner's home, and properties on the owner's farm). It was due to close at 11:59pm on Fri 23 Oct 2026 but closed early at 5pm that day, so the Welsh Government has extended it to 11:59pm on Fri 30 Oct 2026. Email responses sent after 5pm on 23 Oct will still be counted. Nothing has changed yet, so the current rules still apply. We'll update this when the outcome is published.",
      "sources": [
       "https://www.gov.wales/classification-self-catering-properties-local-tax-purposes",
       "https://www.gov.wales/review-on-holiday-let-tax-rules-to-support-tourism-and-local-communities"
@@ -324,7 +324,7 @@
   {
    "name": "Gwynedd",
    "nation": "Wales",
-   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026. Visitor levy: consulted May to Jul 2026; council says no decision yet.",
+   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026. Visitor levy: consulted 20 May to 26 Jul 2026; on 24 Sep 2026 Full Council agreed the final decision will come back to it once the consultation responses have been fully analysed (no date set). No levy decision yet.",
    "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction",
    "verified": true
   },
@@ -821,6 +821,12 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-27",
+   "nation": "Wales",
+   "text": "The Welsh Government has extended its consultation on the 182-day self-catering rule for local tax, and the 5 proposed exemptions, to 11:59pm on Fri 30 Oct 2026. It was due to close at 11:59pm on 23 Oct but the form closed early at 5pm. Email responses sent after 5pm on 23 Oct will still be counted. The current rules still apply.",
+   "source": "https://www.gov.wales/classification-self-catering-properties-local-tax-purposes"
+  },
   {
    "date": "2026-10-26",
    "nation": "Wales",
