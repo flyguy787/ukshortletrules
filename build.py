@@ -937,3 +937,5 @@ for _s,_q in json.load(open('redirects.json')).items():
     _h=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">{_meta}<script>location.replace({json.dumps(_u)});</script><meta http-equiv="refresh" content="0;url={_ua}"></head><body><p><a href="{_ua}">Continue to UK Short-Let Rules Tracker</a></p></body></html>'
     os.makedirs(_s,exist_ok=True)
     for _f in (_s+'.html',_s+'/index.html'):open(_f,'w').write(_h)
+
+exec(open('lastmod.py').read())
