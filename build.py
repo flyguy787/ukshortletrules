@@ -870,9 +870,27 @@ Q=[('q1','Is the accommodation in Wales?','It can be a cottage, flat, lodge, you
    ('q2','Do you take bookings for overnight stays there?','Even once a year counts (for example, letting your home on Airbnb for a local event). Friends or family staying for free do not count.'),
    ('q3','Are any of those bookings for 31 nights or fewer?','One short booking is enough.'),
    ('q4','Are you responsible for the accommodation (for example, you own or rent it)?','If an agent or management company runs it for you, you are still the one who must register (they can do it on your behalf).')]
+# Wales-tagged alert box for the result (same form/endpoint/signup.js; cta wales-checker, area nation:wales as PICK uses).
+# Dates are only ones already sourced on the site: Wales rows in deadlines.py (DL/AHEAD, read without running it),
+# Cardiff's levy start (CX['cardiff']) and the licensing default start in data.json (Wales Licensing row, legislation.gov.uk s61).
+def _wdates():
+    import ast,datetime as _d
+    L=[]
+    for nd in ast.parse(open('deadlines.py').read()).body:
+        if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
+    out=[(_d.date.fromisoformat(a).strftime('%-d %b %Y')+': '+e(t[:1].lower()+t[1:])+(' ('+e(c)+')' if c!='All of Wales' else ''),u) for a,n,c,t,u in L if n=='Wales']
+    out.append(('1 Apr 2027: Cardiff visitor levy starts','https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales'))
+    lic=[r for r in next(n for n in d['nations'] if n['id']=='wales')['rules'] if r['topic']=='Licensing'][0]
+    if '4 Mar 2030' in lic['text']:out.append(('4 Mar 2030: legal default start of the Wales visitor accommodation licensing scheme',lic['sources'][0]))
+    src=dict(out);return [k+f' (<a href="{e(src[k])}" rel="nofollow">source</a>)' for k in NEXTD([k for k,_ in out])]
+_wn=_wdates()
+WALERT=('<div class="alertbox alerttop" id="wales-alert"><h2>Get an email when short-let rules change in Wales</h2><p>We track WRA registration, the visitor levy, the 182-night and council tax premium rules and the coming licensing scheme against official sources, and email you when one of them changes.</p>'
+ +((f'<p class="anxh"><b>Dates we\'re watching for Wales:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in _wn)+'</ul>') if _wn else '<p>We have no upcoming Wales dates logged right now. If the Welsh Government or a council announces a change, we\'ll email you.</p>')
+ +'<p class="small">Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+ +FORMX.replace('<form class="signup"','<form class="signup" data-area="nation:wales" data-area-name="Wales" data-cta="wales-checker" aria-label="Get an email when short-let rules change in Wales"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 qs=''.join(f'<fieldset class="box q" id="{i}"><legend><b>{n+1}. {q}</b></legend><p class="small">{h}</p><label><input type="radio" name="{i}" value="y"> Yes</label> <label><input type="radio" name="{i}" value="n"> No</label></fieldset>' for n,(i,q,h) in enumerate(Q))
 b=f'''<p class="lead">Answer {len(Q)} quick questions to see if you must register your visitor accommodation with the Welsh Revenue Authority (WRA).</p>{qs}
-<div id="result" class="box" hidden aria-live="polite"><h2 id="rh"></h2><div id="rt"></div><h3>Get told when this changes</h3><p>One short, sourced email a week when Wales (or UK) short-let rules change.</p>{FORM}<p class="small"><b>Not legal advice.</b> This is general information based on the official guidance below. Always check the official source or contact the WRA.</p></div>
+<div id="result" class="box" hidden aria-live="polite"><h2 id="rh"></h2><div id="rt"></div>{WALERT}<p class="small"><b>Not legal advice.</b> This is general information based on the official guidance below. Always check the official source or contact the WRA.</p></div>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{u}</a></li>' for u in WS)}</ul>
 <script>
 (function(){{var ids=['q1','q2','q3','q4'];var R=document.getElementById('result'),H=document.getElementById('rh'),T=document.getElementById('rt');
