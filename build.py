@@ -3,12 +3,15 @@ d=json.load(open('data.json'));e=html.escape;C=d['checked']
 import re,os
 SITE='https://ukshortletrules.co.uk/';PAGES=[]
 LOGO='<svg class="logo" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false"><rect width="34" height="34" rx="8" fill="#fff"/><path d="M7 17 17 8l10 9v9H7z" fill="#123c5a"/><rect x="14" y="19" width="6" height="7" rx="1" fill="#f2a541"/></svg>'
+# Guides dropdown (short labels; full titles are on /guides, built by guidehub.py)
+GUIDES_NAV=[('England: planning permission','england-holiday-let-planning-permission.html'),('England: second homes premium','england-second-homes-council-tax-premium.html'),('England: fire safety','holiday-let-fire-safety-england.html'),('Wales: second homes premium','wales-second-homes-council-tax-premium.html'),('Wales: fire safety','holiday-let-fire-safety-wales.html'),('Scotland: licence guide','scotland-short-term-let-licence-guide.html'),('Scotland: fire safety','short-term-let-fire-safety-scotland.html'),('Northern Ireland: Tourism NI certificate','northern-ireland-tourism-certificate-guide.html'),('UK: holiday let tax after FHL','holiday-let-tax-after-fhl-abolition.html')]
 def mknav(p):
     dd=lambda lab,items:f'<li><details class="dd"><summary>{lab}</summary><ul>'+''.join(f'<li><a href="{p}{u}">{n}</a></li>' for n,u in items)+'</ul></details></li>'
     return ('<details class="menu" open><summary>Menu</summary><nav aria-label="Main"><ul class="nv">'
      +dd('Nations',[(n['name'],n['id']+'.html') for n in d['nations']])
      +f'<li><a href="{p}checker.html">Licence checker</a></li><li><a href="{p}councils.html">Councils</a></li>'
      +dd('Free tools',[('Do I need a licence? (checker)','checker.html'),('Levy map','uk-visitor-levy-map.html'),('Levy calculator','levy-calculator.html'),('90-day deadlines','deadlines.html'),('Occupancy threshold tracker','occupancy-threshold-tracker.html'),('Buyer due-diligence checker','buyer-due-diligence-checker.html'),('Scotland licence fees (32 councils)','scotland-short-term-let-licence-fees.html'),('Scotland business rates checker','scotland-business-rates-checker.html'),('Wales registration checker','wales-registration-checker.html')])
+     +dd('Guides',GUIDES_NAV+[('All guides','guides.html')])
      +f'<li><a href="{p}changes.html">Latest changes</a></li><li class="upd"><a class="btn" href="#get-alerts">Get free alerts</a></li></ul></nav></details>')
 NAVJS='<script>(function(){var m=document.querySelector("details.menu"),q=window.matchMedia("(min-width:900px)");function f(){if(m)m.open=q.matches}f();q.addEventListener("change",f);var D=document.querySelectorAll("details.dd");D.forEach(function(x){x.addEventListener("toggle",function(){if(x.open)D.forEach(function(y){if(y!==x)y.open=false})})});document.addEventListener("click",function(ev){D.forEach(function(x){if(!x.contains(ev.target))x.open=false})});document.addEventListener("keydown",function(ev){if(ev.key==="Escape")D.forEach(function(x){if(x.open){x.open=false;x.querySelector("summary").focus()}})})})();</script>'
 NAT={n['name']:n['id'] for n in d['nations']}
@@ -883,6 +886,7 @@ exec(open('levy.py').read())
 exec(open('deadlines.py').read())
 exec(open('occupancy.py').read())
 exec(open('buyer.py').read())
+exec(open('guidehub.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
