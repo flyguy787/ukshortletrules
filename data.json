@@ -158,8 +158,10 @@
     {
      "topic": "Licensing",
      "status": "Legislated, not in force",
-     "text": "A licensing scheme for self-contained self-catering lets has Royal Assent. Its legal default commencement is March 2030, with consultation on regulations first.",
+     "text": "A licensing scheme for self-contained self-catering lets is set up by the Development of Tourism and Regulation of Visitor Accommodation (Wales) Act 2026 (Royal Assent 27 Apr 2026). Licences will be granted by the Welsh Ministers. Its legal default commencement is 4 Mar 2030 (GOV.WALES: March 2030), with consultation on regulations first; fees are not set yet.",
      "sources": [
+      "https://www.legislation.gov.uk/asc/2026/10/section/61",
+      "https://www.gov.wales/licensing-visitor-accommodation-wales",
       "https://industry.visitwales.com/about-us/tourism-policies-and-legislation"
      ]
     },
@@ -821,6 +823,12 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-27",
+   "nation": "Wales",
+   "text": "Now tracked: the Development of Tourism and Regulation of Visitor Accommodation (Wales) Act 2026 (2026 asc 10) received Royal Assent on 27 April 2026. It sets up licensing by the Welsh Ministers for self-contained self-catering lets, with standards on fire safety, electrical and gas checks, carbon monoxide alarms and public liability insurance. The licensing duty and offences are not in force: the legal default start is 4 March 2030, after consultation on regulations (fees are not set yet). Registering with the Welsh Revenue Authority by 31 March 2027 is a separate requirement.",
+   "source": "https://www.legislation.gov.uk/asc/2026/10/contents"
+  },
   {
    "date": "2026-10-27",
    "nation": "Wales",
