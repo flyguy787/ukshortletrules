@@ -8,7 +8,7 @@ GHUB=[('England',['england-holiday-let-planning-permission.html','england-second
  ('Wales',['wales-second-homes-council-tax-premium.html','holiday-let-fire-safety-wales.html'],['wales-registration-checker.html'],'wales.html'),
  ('Scotland',['scotland-short-term-let-licence-guide.html','short-term-let-fire-safety-scotland.html'],['scotland-short-term-let-licence-fees.html','scotland-licence-renewal-checker.html','scotland-business-rates-checker.html'],'scotland.html'),
  ('Northern Ireland',['northern-ireland-tourism-certificate-guide.html'],[],'northern-ireland.html'),
- ('UK-wide',['holiday-let-tax-after-fhl-abolition.html'],['checker.html','uk-visitor-levy-map.html','levy-calculator.html','occupancy-threshold-tracker.html','buyer-due-diligence-checker.html','deadlines.html'],None)]
+ ('UK-wide',['holiday-let-tax-after-fhl-abolition.html','holiday-let-insurance-uk.html'],['checker.html','uk-visitor-levy-map.html','levy-calculator.html','occupancy-threshold-tracker.html','buyer-due-diligence-checker.html','deadlines.html'],None)]
 assert {u for _,u in GUIDES_NAV}=={g for _,G,_,_ in GHUB for g in G},'nav Guides and hub guide lists differ'
 _gli=lambda fs:'<ul class="ghub">'+''.join((lambda tt,dd_:f'<li><a href="{fn}"><b>{e(tt)}</b></a><br><span class="small">{e(dd_)}</span></li>')(*_gmeta(fn)) for fn in fs)+'</ul>'
 _gb='';_items=[]
