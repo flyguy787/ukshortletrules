@@ -73,6 +73,56 @@ LV=[
 ('Northern Ireland','Northern Ireland','None','—','none',[],None,None,'No visitor levy found.'),
 ]
 ST={'live':'Live','confirmed':'Confirmed','consulting':'Consulting','proposed':'Proposed','none':'None'}
+# In-context visitor-levy alert box (same form/endpoint/signup.js as ALERT_TOP/DLALERT). Used on this map (cta levy-map)
+# and the levy calculator (cta levy-calculator; levy.py reuses LEVYALERT after redefining LV).
+# Picker: only councils this map shows as live, confirmed or consulting, or with a levy consultation noted, that have a
+# council page (council:<slug>), plus nation:scotland / nation:wales (national levy laws); PICK_EXCL councils never appear.
+# Dates: the next 3 upcoming visitor-levy rows already sourced in deadlines.py (DL/AHEAD read via ast, NEXTD: today or later,
+# Europe/London), each with its official source link. Nothing new is stated here.
+def _lvdl():
+    import ast
+    L=[]
+    for nd in ast.parse(open('deadlines.py').read()).body:
+        if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
+    return L
+def _lvsrc(a,u):
+    # prefer the council's own levy source already used on /deadlines, then a gov.uk/gov.wales source, then the first
+    dl=[r[4] for r in _lvdl() if r[2]==a and 'levy' in r[3].lower() and '.gov.' in r[4]]
+    g=[x for x in u if re.search(r'\.gov\.(uk|wales)/|gov\.wales/',x)];return (dl or g or u)[0]
+def _lvareas():
+    cs={c['name']:c for c in d['councils'] if c['verified'] and _sl(c) not in PICK_EXCL}
+    out=[]
+    for a,n,r,s_,st,u,la,lo,no in LV:
+        if not (st in ('live','confirmed','consulting') or 'Consultation' in no):continue
+        c=cs.get(a) or cs.get('City of '+a) or cs.get(a+' City')
+        if c and 'kinross' not in _sl(c):out.append((n,c,st,_lvsrc(a,u),a))
+    return out
+_LVA=_lvareas()
+def _lvdates():
+    import datetime as _d
+    L=[r for r in _lvdl() if 'levy' in r[3].lower() and not re.search('perth|kinross',(r[2]+r[3]).lower())]
+    k=[_d.date.fromisoformat(a).strftime('%-d %b %Y')+f': {i}' for i,(a,n,c_,t,u) in enumerate(L)]
+    return [(lambda a,n,c_,t,u:f'<b>{_d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(c_)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)')(*L[int(x.rsplit(": ",1)[1])]) for x in NEXTD(k)]
+def _lvwhy():
+    lk=lambda z:f'<a href="{e(z[3])}" rel="nofollow">{e(z[4])}</a>'
+    g=lambda *S:[z for z in _LVA if z[2] in S]
+    j=lambda L:', '.join(lk(z) for z in L[:-1])+(' and ' if len(L)>1 else '')+(lk(L[-1]) if L else '')
+    lv,cf,cn=g('live'),g('confirmed'),g('consulting')
+    parts=[]
+    if lv:parts.append(j(lv)+(' charges' if len(lv)==1 else ' charge')+' a visitor levy now')
+    if cf:parts.append(j(cf)+' have confirmed start dates')
+    if cn:parts.append(j(cn)+(' is' if len(cn)==1 else ' are')+' consulting')
+    return '; '.join(parts)+'. We check each against its official source and email you when a levy in your area is announced, changes or starts.'
+def LEVYALERT(cta,aid):
+    og=''
+    for nm,nid in (('Scotland','scotland'),('Wales','wales')):
+        cs=sorted([z[1] for z in _LVA if z[0]==nm],key=lambda c:c['name'].replace('City of ',''))
+        og+=f'<optgroup label="{nm}"><option value="nation:{nid}" data-name="{nm}">All of {nm}</option>'+''.join(f'<option value="council:{_sl(c)}" data-name="{e(c["name"])}">{e(c["name"])}</option>' for c in cs)+'</optgroup>'
+    nx=_lvdates()
+    return (f'<div class="alertbox alerttop" id="{aid}"><h2>Get an email when visitor levy rules change</h2><p>{_lvwhy()}</p>'
+     +((f'<p class="anxh"><b>Next visitor levy dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else '<p>We have no upcoming visitor levy dates logged right now. If a council announces one, we\'ll email you.</p>')
+     +'<p class="small">Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+     +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when visitor levy rules change"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council or nation</label><select name="area" id="{aid}-area" required><option value="">Choose your council or nation</option>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 rows=''.join(f'<tr><td><b>{a}</b><br><span class="small">{n}</span></td><td>{r}</td><td>{s}</td><td><span class="tag{"" if st in ("live","confirmed") else " warn"}">{ST[st]}</span></td><td>{src(u)}{"<br><span class=small>"+no+"</span>" if no else ""}</td></tr>' for a,n,r,s,st,u,la,lo,no in LV)
 pts=json.dumps([dict(a=re.sub('<[^>]+>','',html.unescape(a)),r=re.sub('<[^>]+>','',r).replace('UNVERIFIED','(unverified)'),s=re.sub('<[^>]+>','',s),st=st,lat=la,lon=lo) for a,n,r,s,st,u,la,lo,no in LV if la])
 dsc='Scotland visitor levy rates and start dates: Edinburgh 5% now; Glasgow, Aberdeen, Stirling and West Dunbartonshire confirmed. Plus every UK tourist tax.'
@@ -90,7 +140,7 @@ b=ANSWER(*LVA)+TOP_PICK()+f'''<p class="lead">Where UK hosts must charge guests 
 <div class="tw"><table class="stk"><tr><th>Area</th><th>Rate</th><th>Start date</th><th>Status</th><th>Official source / notes</th></tr>{rows}</table></div>
 <p class="small">Statuses: <b>Live</b> = being charged now; <b>Confirmed</b> = approved with a start date; <b>Consulting</b> = formal consultation open; <b>Proposed</b> = early stage or outcome unknown. {UV} = we could not confirm this on an official source. Manchester and Liverpool are accommodation Business Improvement District charges, not statutory levies.</p>
 <h2>Scotland visitor levy: quick answers</h2>{LVF[0]}<p class="small">Answers summarise the table above. Follow each row's official source before acting.</p>
-<div class="box"><h2>Get told when a new levy is announced</h2><p>One short, sourced email a week on UK short-let rule changes.</p>{FORM}</div>
+{LEVYALERT('levy-map','levy-alert')}
 <p>Share this page: <a href="https://twitter.com/intent/tweet?url={SITE}uk-visitor-levy-map.html&amp;text=Every%20UK%20visitor%20levy%20in%20one%20map" rel="nofollow">X</a> · <a href="https://www.facebook.com/sharer/sharer.php?u={SITE}uk-visitor-levy-map.html" rel="nofollow">Facebook</a> · <a href="https://www.linkedin.com/sharing/share-offsite/?url={SITE}uk-visitor-levy-map.html" rel="nofollow">LinkedIn</a></p>
 <p>Related: <a href="scotland-business-rates-checker.html">Scotland business rates checker</a> · <a href="wales-registration-checker.html">Wales registration checker</a></p>
 <script>(function(){{if(!window.L)return;var P={pts};var C={{live:'#1a7f37',confirmed:'#1f6feb',consulting:'#d97706',proposed:'#d97706',none:'#8a94a3'}};
