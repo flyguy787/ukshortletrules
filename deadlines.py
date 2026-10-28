@@ -18,13 +18,23 @@ AHEAD=[('2027-03-31','Wales','All of Wales','Register your visitor accommodation
 import datetime as _dt
 _f=lambda s:_dt.date.fromisoformat(s).strftime('%a %-d %b %Y')
 _r=lambda L:''.join(f'<tr><td><b>{_f(a)}</b></td><td>{e(c)}<br><span class="small">{e(n)}</span></td><td>{e(t)}</td><td><a href="{u}" rel="nofollow">source</a></td></tr>' for a,n,c,t,u in L)
+# In-context alert box (same form/endpoint/signup.js as ALERT_TOP/WALERT). Reason to subscribe: the next 3 upcoming dates
+# from this page's own sourced DL/AHEAD rows (NEXTD: today or later, Europe/London). The page covers several nations, so the
+# visitor picks one (values nation:<id>, the same encoding PICK uses); cta 'deadlines'; id deadlines-alert (sitewide #get-alerts stays unique).
+_dlr=DL+AHEAD;_dlk=[_dt.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(_dlr)]
+_dln=[(lambda a,n,c,t,u:f'<b>{_dt.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)')(*_dlr[int(k.rsplit(": ",1)[1])]) for k in NEXTD(_dlk)]
+_dlo=''.join(f'<option value="nation:{n["id"]}" data-name="{e(n["name"])}">{e(n["name"])}</option>' for n in d['nations'])
+DLALERT=('<div class="alertbox alerttop" id="deadlines-alert"><h2>Get an email before these short-let deadlines</h2><p>We check every date on this page against its official source, and email you when a deadline in your nation moves or a new one is announced.</p>'
+ +((f'<p class="anxh"><b>Next deadlines we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in _dln)+'</ul>') if _dln else '<p>We have no upcoming deadlines logged right now. If a council or government announces one, we\'ll email you.</p>')
+ +'<p class="small">Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+ +FORMX.replace('<form class="signup"','<form class="signup pick" data-cta="deadlines" aria-label="Get an email before these short-let deadlines"',1).replace('<input type="email"','<label class="sr" for="deadlines-alert-area">Your nation</label><select name="area" id="deadlines-alert-area" required><option value="">Choose your nation</option>'+_dlo+'</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 page('deadlines.html','UK short-let deadlines: next 90 days',f'''<p class="lead">Every UK short-term let date we track from late October 2026 to the end of January 2027: levy start dates, payment deadlines, consultations closing and council decisions. Each date re-checked against its official source on 23 Oct 2026.</p>
 <p><img src="deadlines-nov.png" alt="Card listing UK short-let deadlines from 27 Oct 2026 to 30 Jan 2027" width="540" height="675" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.12)"></p>
 <p><a href="deadlines-nov.png" download>Download the card (PNG)</a> to share. Please link back to this page.</p>
 <div class="tw"><table><tr><th>Date</th><th>Where</th><th>What</th><th>Official source</th></tr>{_r(DL)}</table></div>
 <h2>Looking further ahead</h2><div class="tw"><table><tr><th>Date</th><th>Where</th><th>What</th><th>Official source</th></tr>{_r(AHEAD)}</table></div>
 <p>Dates can move. Check the source before acting, and see the <a href="changes.html">changes log</a> for updates.</p>
-<div class="box"><h2>Get a reminder when dates change</h2>{FORM}</div>''',desc='UK short-let deadlines for the next 90 days: Glasgow levy start, Edinburgh levy payment dates, Highland decision, consultations closing, with official sources.',full_title='UK short-let deadlines: next 90 days (Oct 2026 to Jan 2027) | UK Short-Let Rules')
+{DLALERT}''',desc='UK short-let deadlines for the next 90 days: Glasgow levy start, Edinburgh levy payment dates, Highland decision, consultations closing, with official sources.',full_title='UK short-let deadlines: next 90 days (Oct 2026 to Jan 2027) | UK Short-Let Rules')
 # card HTML for the PNG (outside the site)
 _card=''.join(f'<div class="r"><div class="d">{_dt.date.fromisoformat(a).strftime("%-d %b")}</div><div><b>{e(c)}</b> {e(t)}</div></div>' for a,n,c,t,u in DL)
 import os
