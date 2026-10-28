@@ -134,7 +134,7 @@ def _nlitems(nch=3,ndl=3):
     for nd in ast.parse(open('deadlines.py').read()).body:
         if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
     keys=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
-    dl=[(lambda a,n,c,t,u:f'<li><b>{_d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)</li>')(*L[int(k.rsplit(": ",1)[1])]) for k in NEXTD(keys,ndl)]
+    dl=[(lambda a,n,c,t,u:f'<li><b>{_d.date.fromisoformat(a).strftime("%B %Y")+" (expected)" if t.startswith("Expected") else _d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)</li>')(*L[int(k.rsplit(": ",1)[1])]) for k in NEXTD(keys,ndl)]
     s1=lambda t:re.split(r'(?<=[a-z0-9)])\. (?=[A-Z])',t,maxsplit=1)[0].rstrip('.')+'.'
     rc=[c for c in _chs if not re.match(r'(Added|Re-checked|Now tracked)\b',c['text'])];pk=[]
     for c in rc:
@@ -906,7 +906,7 @@ def _wdates():
     for nd in ast.parse(open('deadlines.py').read()).body:
         if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
     out=[(_d.date.fromisoformat(a).strftime('%-d %b %Y')+': '+e(t[:1].lower()+t[1:])+(' ('+e(c)+')' if c!='All of Wales' else ''),u) for a,n,c,t,u in L if n=='Wales']
-    out.append(('1 Apr 2027: Cardiff visitor levy starts','https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales'))
+    if not any(r[0]=='2027-04-01' and r[1]=='Wales' for r in L):out.append(('1 Apr 2027: Cardiff visitor levy starts','https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales'))  # deadlines.py has its own Cardiff row since 28 Oct
     lic=[r for r in next(n for n in d['nations'] if n['id']=='wales')['rules'] if r['topic']=='Licensing'][0]
     if '4 Mar 2030' in lic['text']:out.append(('4 Mar 2030: legal default start of the Wales visitor accommodation licensing scheme',lic['sources'][0]))
     src=dict(out);return [k+f' (<a href="{e(src[k])}" rel="nofollow">source</a>)' for k in NEXTD([k for k,_ in out])]
