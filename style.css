@@ -93,3 +93,4 @@ body.ckb-on{padding-bottom:6rem}
 .alertbox p.small:not(.msg){color:#d6e2ec}
 .hnl a{color:#ffd59a}.hnl .anxh{margin:.7rem 0 .2rem}.hnl ul.anx{margin:.2rem 0 .8rem;padding-left:1.2rem}.hnl ul.anx li{margin:.2rem 0;color:#d6e8f5}.hnl ul.anx b{color:#fff}
 @media(max-width:520px){.hnl{padding:1.1rem}.hnl>p:not(.small):not(.anxh){font-size:.95rem;line-height:1.45}.hnl ul.anx li{font-size:.9rem;line-height:1.4}.hnl ul.hdl li:nth-child(n+3){display:none}}
+.signup .ehint{width:100%;margin:.1rem 0 0}.signup .ehint:empty{display:none}.signup .ehint .sugg{background:none;color:inherit;font:inherit;font-weight:700;text-decoration:underline;padding:.45rem .15rem;margin:0;border:0;min-height:0;cursor:pointer;word-break:break-all}.signup .ehint .sugg:hover{background:none}
