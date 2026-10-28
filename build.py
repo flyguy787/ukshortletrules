@@ -40,6 +40,53 @@ def _stack(m):
         i=iter(hd);return f'<tr{r.group(1)}>'+re.sub(r'<td(?=[ >])',lambda _:f'<td data-label="{next(i,"")}"',r.group(2))+'</tr>'
     body=re.sub(r'<tr\b([^>]*)>(.*?)</tr>',row,t[t.index('</tr>')+5:],flags=re.S)
     return '<table class="stk"><tr class="sh">'+rows[0]+'</tr>'+body+'</table>'
+_ABR=re.compile(r'(?:\b(?:e\.g|i\.e|St|No|approx|etc|Mr|Mrs|Dr|vs|cf|para|reg|s|c|p|pp|art|Art|Sch|Cllr|Ltd|Co|nr|no)\.)$')
+def _chunks(x,lim=300,per=2):
+    if len(x)<=lim:return [x]
+    parts=[];start=0
+    for m in re.finditer(r'(?<=[a-z0-9\)\]%"\'])\.\s+(?=[A-Z£0-9(])',x):
+        pre=x[start:m.start()+1]
+        if _ABR.search(pre):continue
+        if pre.count('<')!=pre.count('>'):continue
+        if len(re.findall(r'<a\b',pre))!=len(re.findall(r'</a>',pre)):continue
+        parts.append(pre);start=m.end()
+    parts.append(x[start:])
+    out=[];cur=''
+    for p in parts:
+        cur=(cur+' '+p).strip()
+        if cur.count('. ')+1>=per or len(cur)>220:out.append(cur);cur=''
+    if cur:out.append(cur)
+    return out
+
+# ---- Long guides: auto 'On this page' jump nav from h2s and collapsed 'Official sources' list (no text changes) ----
+GUIDEUX={'england-second-homes-council-tax-premium.html','holiday-let-fire-safety-wales.html','short-term-let-fire-safety-scotland.html','holiday-let-insurance-uk.html','holiday-let-fire-safety-england.html','northern-ireland-tourism-certificate-guide.html','holiday-let-tax-after-fhl-abolition.html','scotland-short-term-let-licence-guide.html','england-holiday-let-planning-permission.html','wales-second-homes-council-tax-premium.html','wales-visitor-accommodation-licensing.html'}
+def _guideux(b):
+    b=re.sub(r'<h2>Official sources</h2><ul>(.*?)</ul>',lambda m:f'<h2 id="sources">Official sources</h2><details class="more srcs"><summary>Show all official sources ({m.group(1).count("<li")})</summary><ul>{m.group(1)}</ul></details>',b,count=1,flags=re.S)
+    ids=set(re.findall(r'id="([^"]+)"',b));toc=[]
+    def h(m):
+        a,tx=m.group(1),m.group(2)
+        if m.start()>=12 and b[max(0,m.start()-20):m.start()].endswith('<div class="answer">'):return m.group(0)
+        plain=re.sub(r'<[^>]+>','',tx)
+        if re.match(r'Get (an email|told|free)',plain):return m.group(0)
+        if a:i=re.search(r'id="([^"]+)"',a).group(1)
+        else:
+            i=re.sub(r'[^a-z0-9]+','-',html.unescape(plain).lower()).strip('-')[:40].strip('-') or 'sec';k=i;n=2
+            while k in ids:k=f'{i}-{n}';n+=1
+            i=k;ids.add(i)
+        toc.append((i,html.unescape(plain)))
+        return f'<h2 id="{i}">{tx}</h2>' if not a else m.group(0)
+    b=re.sub(r'<h2((?: id="[^"]*")?)>(.*?)</h2>',h,b,flags=re.S)
+    if len(toc)<4:return b
+    T=TOC(toc)
+    a=b.find('<div class="answer">');h2=b.find('<h2 id=')
+    if a>-1 and (h2<0 or a<h2):
+        j=b.index('</div>',a)+6
+    elif '<p class="lead">' in b:
+        j=b.index('</p>',b.index('<p class="lead">'))+4
+        m=re.match(r'\s*<div class="box">.*?</div>',b[j:],flags=re.S)
+        if m and '<div' not in m.group(0)[5:]:j+=m.end()
+    else:j=0
+    return b[:j]+T+b[j:]
 def page(f,t,b,desc=None,full_title=None,head='',pre='',noh1=False,checked=None):
     p='../'*f.count('/');nav=mknav(p)
     if 'id="get-alerts"' not in b+pre:b=b+PICK('sitewide')
@@ -48,6 +95,8 @@ def page(f,t,b,desc=None,full_title=None,head='',pre='',noh1=False,checked=None)
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
     desc=desc or f'{t}: licensing, planning, tax and levy rules for UK short-term and holiday lets, with official sources.'
     b=_STK.sub(_stack,b)
+    if f in GUIDEUX:b=_guideux(b)
+    b=re.sub(r'(?:<details><summary>(?:(?!</details>).)*</details>){2,}',lambda m:'<div class="faq">'+m.group(0)+'</div>',b,flags=re.S) if '<div class="faq">' not in b else b  # runs of plain Q&A details -> FAQ accordions
     os.makedirs(os.path.dirname(f) or '.',exist_ok=True)
     open(f,'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="zrDJ8obvzCdX7z4q4_OPxJ1UFoqLlwdeirHCpcbX-Rg"><title>{e(full_title or t+' | UK Short-Let Rules Tracker')}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{SITE}{f}"><link rel="stylesheet" href="{p}style.css"><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('consent','default',{{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500}});try{{if(localStorage.getItem('ukslr_consent')==='granted')gtag('consent','update',{{analytics_storage:'granted'}})}}catch(e){{}}gtag('js',new Date());gtag('config','G-P66CG4QX9B');</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-P66CG4QX9B"></script>{head}</head><body><a class="skip" href="#main">Skip to content</a><header class="top"><div class="bar"><a class="wm" href="{p}index.html">{LOGO}<span>UK Short-Let Rules<small>Tracker</small></span></a>{nav}</div></header>{pre}<main id="main">{cv}{"" if noh1 else "<h1>"+e(t)+"</h1>"}{b}</main><section class="fb" aria-labelledby="fbh" data-endpoint="https://ukshortletrules-signup.vercel.app/feedback"><h2 id="fbh">Did this answer your question?</h2><div class="fbq"><button type="button" value="yes">Yes</button> <button type="button" value="no">No</button></div><form class="fbmore" hidden><label for="fbt">What's missing or wrong? (optional)</label><textarea id="fbt" name="text" maxlength="1000" rows="3"></textarea><label for="fbe">Your email, if you'd like a reply (optional)</label><input type="email" id="fbe" name="email" autocomplete="email"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><button type="submit">Send feedback</button></form><p class="fbmsg small" role="status" tabindex="-1"></p><p class="small">Feedback is sent to us by email with the page address. Your email is optional.</p></section><script src="{p}feedback.js"></script><footer>Last checked {checked or C}. General information only, not legal or tax advice. Always check the linked official source. Feedback you send goes to us by email; your email address is optional.<br><span class="small">Want to reach UK hosts? <a href="{p}sponsor.html">Sponsor the tracker</a> · <a href="{p}newsletter.html">Newsletter</a> · <a href="{p}councils.html">All councils</a> · <a href="{p}embed.html">Embed the checker</a> · <a href="https://www.facebook.com/ukshortletrules" rel="me">Facebook</a> · <a href="{p}privacy.html">Privacy</a> · <a href="#" class="ck-open">Cookie settings</a></span></footer><div class="ckb" id="ckb" role="region" aria-label="Cookie choice" hidden><p>We use analytics cookies to see which tools help hosts most. No ads. <a href="{p}privacy.html">Privacy</a></p><button type="button" class="ckb-a">Accept</button><button type="button" class="ckb-r">Reject</button></div><script src="{p}consent.js"></script><script src="{p}signup.js"></script>{NAVJS}<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "da68f33bb3c545ef80a37cb389b8d0e9"}}'></script><!-- End Cloudflare Web Analytics --></body></html>''')
 FORM='''<form class="signup" data-endpoint="%s" data-cta="newsletter"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><button>Subscribe</button><p class="msg small"></p></form><script src="signup.js"></script>''' % e(d.get('newsletter_endpoint',''))
@@ -133,13 +182,37 @@ def NATALERT(nid,cta,why,aid=None,tag='h2',nats=None):
 def ANSWER(q,html_):
     """Direct-answer box for a page's main search query (2-3 sentences, facts from this repo only)."""
     return f'<div class="answer"><h2>{e(q)}</h2><p>{html_}</p></div>'
+# ---- Reusable scannable-page components (TL;DR box, status cards, jump nav, vertical timeline, callout, collapsible long lists, FAQ accordions, collapsed sources) ----
+PILL={'in':'In force','coming':'Coming','proposed':'Proposed','announced':'Announced'}
+def TLDR(items,title='In short',sub=''):
+    """Short summary box at the top of a long page: 3-5 plain-English bullets (HTML allowed, facts from the page only)."""
+    return f'<section class="tldr" aria-labelledby="tldr-h"><h2 id="tldr-h">{e(title)}</h2>'+(f'<p class="tldrs">{sub}</p>' if sub else '')+'<ul>'+''.join(f'<li>{x}</li>' for x in items)+'</ul></section>'
+def SCARDS(cards,label='At a glance'):
+    """At-a-glance status cards: list of (title, status key in PILL, headline, detail html, anchor)."""
+    return f'<section class="scards" aria-label="{e(label)}">'+''.join(f'<a class="scard sc-{k}" href="#{a}"><span class="pill p-{k}">{PILL[k]}</span><h3>{e(t)}</h3><p class="sch">{h}</p><p class="scd">{dd}</p></a>' for t,k,h,dd,a in cards)+'</section>'
+def TOC(items):
+    """'On this page' jump nav: list of (anchor, label)."""
+    return '<nav class="toc" aria-label="On this page"><p class="toch">On this page</p><ul>'+''.join(f'<li><a href="#{a}">{e(l)}</a></li>' for a,l in items)+'</ul></nav>'
+def VTL(items):
+    """Vertical timeline: list of (date, text html, source url or '', upcoming bool)."""
+    return '<ol class="vtl">'+''.join(f'<li class="{"up" if up else "done"}"><time>{e(a)}</time>'+('<span class="pill p-coming">Upcoming</span>' if up else '')+f'<p>{b}'+(f' <a href="{u}" rel="nofollow">Source</a>' if u else '')+'</p></li>' for a,b,u,up in items)+'</ol>'
+def CALLOUT(html_,title='What this means for you'):
+    return f'<div class="callout"><p class="cot">{e(title)}</p>{html_}</div>'
+def COLLAPSE(summary,inner,filt=None,cls=''):
+    """Long table/list behind a <details> toggle. filt=placeholder text adds a live filter box (filters rows/items inside by text)."""
+    fb=(f'<label class="flt"><span class="sr">Filter</span><input type="search" placeholder="{e(filt)}" data-filter autocomplete="off"></label><p class="small fltn" hidden>No matches.</p>' if filt else '')
+    return f'<details class="more {cls}"><summary>{summary}</summary>{fb}{inner}</details>'
+FILTJS='<script>document.querySelectorAll("input[data-filter]").forEach(function(i){var d=i.closest("details"),n=d.querySelector(".fltn");i.addEventListener("input",function(){var q=i.value.trim().toLowerCase(),k=0;d.querySelectorAll("tr:not(.sh),li").forEach(function(r){if(r.querySelector("th"))return;var m=!q||r.textContent.toLowerCase().indexOf(q)>-1;r.hidden=!m;if(m)k++});if(n)n.hidden=k>0})})</script>'
+def SOURCES(L,title='Official sources'):
+    """Collapsed list of (name, url) official sources."""
+    return f'<details class="more srcs"><summary>{e(title)} ({len(L)})</summary><ul>'+''.join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in L)+'</ul></details>'
 def TOP_PICK(nation=None):
     """Signup placed just below a direct answer; form_location (data-cta) 'top-answer' for GA4 generate_lead."""
     return PICK('top-answer',aid='top-alerts',nation=nation,tag='div')
 def FAQ(Q):
     """Visible FAQ (details) plus FAQPage JSON-LD for a list of (question, plain-text answer)."""
     ld=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in Q]}).replace('</','<\\/')
-    return ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in Q),f'<script type="application/ld+json">{ld}</script>'
+    return '<div class="faq">'+''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in Q)+'</div>',f'<script type="application/ld+json">{ld}</script>'
 src=lambda s:' '.join(f'<a href="{e(u)}" rel="nofollow">source</a>' for u in s) or '<em>no source yet</em>'
 cards=''.join(f'<a class="card" href="{n["id"]}.html"><h2>{n["name"]}</h2><p>{e(n["summary"])}</p></a>' for n in d['nations'])
 latest=''.join(f'<li><b>{c["date"]}</b> [{c["nation"]}] {e(c["text"])}</li>' for c in [c for c in d['changes'] if not c.get('dir_only')][:4])
@@ -903,7 +976,7 @@ def cfaq(c,x):
 ICO={'lic':'\U0001F4CB','ctrl':'\U0001F3D8','levy':'\U0001F4B7','fees':'\U0001F4B0'}
 def sec(h,x,k=''):
     st='' if k=='fees' else '<span class="st yes">Registration required</span>' if 'must register' in x[0] else ('<span class="st no">None found</span>' if x[0].strip().startswith('No ') else '<span class="st yes">Applies</span>')
-    return f'<section class="rc" aria-labelledby="rc-{k}"><div class="rch"><span class="ri" aria-hidden="true">{ICO.get(k,"")}</span><h2 id="rc-{k}">{h}</h2>{st}</div><p>{x[0]}</p>'+(f'<p class="small rs">Source: {src(x[1])}</p>' if x[1] else '')+'</section>'
+    return f'<section class="rc" aria-labelledby="rc-{k}"><div class="rch"><span class="ri" aria-hidden="true">{ICO.get(k,"")}</span><h2 id="rc-{k}">{h}</h2>{st}</div>'+''.join(f'<p>{y}</p>' for y in _chunks(x[0]))+(f'<p class="small rs">Source: {src(x[1])}</p>' if x[1] else '')+'</section>'
 def CK(c):
     """Latest date this council's rules are backed as checked: the last full sweep (data.json 'checked'),
     or a later changes-log entry naming the council (e.g. its page being added from official sources)."""
@@ -940,8 +1013,10 @@ def CHLOG(c):
     it=[(ch['date'],f'{e(ch["text"])} <a href="{e(ch["source"])}" rel="nofollow">Official source</a>') for ch in CHG(c)]
     it.append((C,'Rules on this page last checked in full against the official sources listed above.'))
     it.sort(key=lambda z:z[0],reverse=True)
-    li=''.join(f'<li><time datetime="{dt}">{_fdate(dt)}</time> {tx}</li>' for dt,tx in it)
-    return f'<section class="chlog" id="what-changed" aria-labelledby="wc-h"><h2 id="wc-h">What changed in {e(c["name"])}</h2><ul>{li}</ul><p class="small">Newest first. Every UK change is in the <a href="../changes.html">changes log</a>. Nothing here is legal advice: check the official source before acting.</p></section>'
+    _l=lambda L:''.join(f'<li><time datetime="{dt}">{_fdate(dt)}</time> {tx}</li>' for dt,tx in L)
+    V=it if len(it)<=4 else it[:3]
+    li=_l(V)+'</ul>'+(f'<details class="more"><summary>Show {len(it)-3} earlier changes</summary><ul>{_l(it[3:])}</ul></details>' if len(it)>4 else '')
+    return f'<section class="chlog" id="what-changed" aria-labelledby="wc-h"><h2 id="wc-h">What changed in {e(c["name"])}</h2><ul>{li}<p class="small">Newest first. Every UK change is in the <a href="../changes.html">changes log</a>. Nothing here is legal advice: check the official source before acting.</p></section>'
 # ---- Search quick wins (26 Oct 2026): title/description/direct answer for councils ranking 4-8 in GSC ----
 CSEO={
 'ceredigion':('Ceredigion Holiday Let Rules: Council Tax Premium & WRA',
