@@ -90,6 +90,25 @@ def PICK(cta,aid='get-alerts',nation=None,tag='section'):
     lab='your council'
     fm=FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get free rule-change alerts for your council"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council</label><select name="area" id="{aid}-area" required><option value="">Choose your council</option>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')
     return f'<{tag} class="alertbox alertcta" id="{aid}" aria-labelledby="{aid}-h"><h2 id="{aid}-h">Get free rule-change alerts for <span class="acn">{lab}</span></h2><p>Pick your council. We email you when its short-let rules change (licensing, planning, levy, fees), plus one short weekly "what changed" email. Free. Unsubscribe any time.</p>{fm}</{tag}>'
+def _scotdates(n=3):
+    """Next Scotland rows from deadlines.py (DL/AHEAD, read without running it), today or later, with official source links. Perth/Kinross rows skipped (directory-only)."""
+    import ast,datetime as _d
+    L=[]
+    for nd in ast.parse(open('deadlines.py').read()).body:
+        if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
+    L=[r for r in L if r[1]=='Scotland' and not re.search('perth|kinross',(r[2]+r[3]).lower())]
+    k=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
+    return [(lambda a,nn,c_,t,u:f'<b>{_d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(c_)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)')(*L[int(x.rsplit(": ",1)[1])]) for x in NEXTD(k,n)]
+def SCOTALERT(cta,why,aid='scot-alert',tag='h2'):
+    """Scotland-tagged in-context alert box for Scotland guides/tools: page-specific why line, next 3 sourced Scotland dates, council picker defaulting to All of Scotland. Same form/endpoint/signup.js."""
+    sc=next(n for n in d['nations'] if n['id']=='scotland')
+    cs=sorted([c for c in d['councils'] if c['nation']==sc['name'] and c['verified'] and _sl(c) not in PICK_EXCL],key=lambda c:c['name'].replace('City of ',''))
+    og=f'<option value="nation:scotland" data-name="Scotland" selected>All of Scotland</option>'+''.join(f'<option value="council:{_sl(c)}" data-name="{e(c["name"])}">{e(c["name"])}</option>' for c in cs)
+    nx=_scotdates()
+    return (f'<div class="alertbox alerttop" id="{aid}"><{tag}>Get an email when short-let rules change in Scotland</{tag}><p>{why}</p>'
+     +((f'<p class="anxh"><b>Next Scotland dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else '<p>We have no upcoming Scotland dates logged right now. If the Scottish Government or a council announces a change, we\'ll email you.</p>')
+     +'<p class="small">Pick your council for alerts about it, or keep All of Scotland. Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+     +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when short-let rules change in Scotland"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council</label><select name="area" id="{aid}-area" required>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 def ANSWER(q,html_):
     """Direct-answer box for a page's main search query (2-3 sentences, facts from this repo only)."""
     return f'<div class="answer"><h2>{e(q)}</h2><p>{html_}</p></div>'

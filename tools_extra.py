@@ -11,10 +11,10 @@ b=f'''<p class="lead">Enter your nights for one financial year (1 April to 31 Ma
 <form id="sbr" class="box" onsubmit="return false">
 <p><label><b>Nights available to let</b> in the financial year (advertised and bookable on a commercial basis)<br><input type="number" id="avail" min="0" max="366" inputmode="numeric" required></label></p>
 <p><label><b>Nights actually let</b> in that year (paying guests only; free stays by family or friends do not count)<br><input type="number" id="let" min="0" max="366" inputmode="numeric" required></label></p>
-<p><label><input type="checkbox" id="main"> The property is someone's only or main home</label><br>
+<p><label><input type="checkbox" id="mainhome"> The property is someone's only or main home</label><br>
 <label><input type="checkbox" id="comm" checked> It is let commercially as short-term self-catering, with a view to profit</label></p>
 <button type="button" id="go">Check</button></form>
-<div id="result" class="box" hidden aria-live="polite"><h2 id="rh"></h2><div id="rt"></div><h3>Get told when Scottish rules change</h3><p>One short, sourced email a week.</p>{FORM}<p class="small"><b>Not legal or tax advice.</b> The local Assessor decides. Always check the official sources below.</p></div>
+<div id="result" class="box" hidden aria-live="polite"><h2 id="rh"></h2><div id="rt"></div>{SCOTALERT('scot-rates-checker','We track the Scottish non-domestic rates rules for self-catering, licensing, the visitor levy and council fees against official sources, and email you when one changes.',tag='h3')}<p class="small"><b>Not legal or tax advice.</b> The local Assessor decides. Always check the official sources below.</p></div>
 <h2>The rules in brief</h2><ul>
 <li>To be rated as self-catering holiday accommodation, the property must <b>not be anyone's only or main residence</b>, be <b>available to let commercially for 140+ nights</b> and <b>actually let for 70+ nights</b> in the financial year (1 April to 31 March).</li>
 <li>You must <b>prove it to the Assessor every year</b>: booking calendars and adverts (availability), and booking dates and income per booking (lettings). Explain any booking over 28 nights. If you self-advertise, include bank statements.</li>
@@ -34,7 +34,7 @@ noncomm:['Probably council tax','<p>To be rated it must be let on a commercial b
 rates:['Likely to qualify for non-domestic (business) rates','<p>You meet both thresholds: at least 140 nights available and at least 70 nights let. You must still <b>prove this to the Assessor</b> for every financial year, or the property moves to council tax.</p>'+EV],
 ct_avail:['Does not qualify: fewer than 140 nights available',CT],ct_let:['Does not qualify: fewer than 70 nights let',CT],ct_both:['Does not qualify: below both thresholds',CT]}};
 document.getElementById('go').addEventListener('click',function(){{var a=parseInt(document.getElementById('avail').value,10),l=parseInt(document.getElementById('let').value,10);
-var k=sbrCheck(a,l,document.getElementById('main').checked,document.getElementById('comm').checked);H.textContent=M[k][0];T.innerHTML=M[k][1];R.hidden=false;R.dataset.result=k;}});}})();
+var k=sbrCheck(a,l,document.getElementById('mainhome').checked,document.getElementById('comm').checked);H.textContent=M[k][0];T.innerHTML=M[k][1];R.hidden=false;R.dataset.result=k;}});}})();
 </script>'''
 t='Scotland self-catering business rates checker (140/70 nights)'
 page('scotland-business-rates-checker.html','Does my Scottish holiday let pay business rates or council tax?',b,desc=dsc,full_title=t+' | UK Short-Let Rules Tracker',head=OGT('scotland-business-rates-checker.html',t,dsc))

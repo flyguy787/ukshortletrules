@@ -37,7 +37,7 @@ b=f'''<p class="lead">Every short-term let in Scotland needs a council licence b
 <h2>Licence checklist</h2><p class="small">Ticks are stored only on this device. <button type="button" id="ckp">Print checklist</button> <button type="button" id="ckr">Clear ticks</button></p><p id="ckc" class="small"></p>{cl}
 <p class="small">Your council can add its own conditions on top of these. Check its website.</p>
 <h2>Common questions</h2>{fq}
-<div class="box"><h2>Get told when Scottish rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
+{SCOTALERT('scot-licence-guide','We track licence fees, control areas, the visitor levy and licensing rule changes for Scottish councils against official sources, and email you when one changes, so you hear about it before your application or renewal.')}
 <p>Related: <a href="scotland-business-rates-checker.html">Business rates or council tax checker</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="councils.html">Council pages</a></p>
 <p>Fire safety in detail: <a href="short-term-let-fire-safety-scotland.html">alarms, doors, the fire risk assessment and a checklist</a>.</p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in GS)}</ul>
