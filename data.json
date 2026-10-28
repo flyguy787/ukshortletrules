@@ -18,7 +18,7 @@
     {
      "topic": "Planning / control areas",
      "status": "In force",
-     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed control areas are not in force until the council publishes a designation notice, at least 28 days before the start date. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. The council extended this by two weeks after correcting figures in its consultation materials (2 Oct 2026). Not in force. Highland Council has agreed to submit further proposed control areas to Scottish Ministers (council news, Sep 2026). Reported to cover Inverness City and a wider rural area; details UNVERIFIED because the council website was offline when we checked on 22 Oct 2026. Not in force.",
+     "text": "Two control areas: the whole City of Edinburgh (since 5 Sep 2022) and Badenoch & Strathspey ward, Highland (since 4 Mar 2024). In these areas, using a whole dwelling that isn't your main home as a short-term let very likely needs planning permission. Licence applications there may need planning permission granted or applied for (mandatory condition 13). Proposed control areas are not in force until the council publishes a designation notice, at least 28 days before the start date. Argyll and Bute is consulting (21 Sep to 15 Nov 2026) on a proposed control area covering Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. The council extended this by two weeks after correcting figures in its consultation materials (2 Oct 2026). Not in force. Highland Council agreed on 28 Sep 2026 to submit two proposed control areas to Scottish Ministers: Inverness City, and Highland Rural (several rural areas, including Aird and Loch Ness, Lochaber, Skye and Raasay, and Sutherland). Not in force.",
      "sources": [
       "https://www.mygov.scot/short-term-let-licences/planning-permission-control-areas",
       "https://www.gov.scot/publications/short-term-lets/",
@@ -256,7 +256,7 @@
   {
    "name": "Highland",
    "nation": "Scotland",
-   "rule": "Badenoch & Strathspey control area; council has agreed to submit further control area proposals to Ministers (details unverified). Consulting on a £5 per room per night levy until 30 Nov 2026; decision due 10 Dec 2026.",
+   "rule": "Badenoch & Strathspey control area; proposed Inverness City and Highland Rural control areas agreed for submission to Ministers on 28 Sep 2026 (not in force). Consulting on a £5 per room per night levy until 30 Nov 2026; decision due 10 Dec 2026.",
    "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
    "verified": true
   },
@@ -823,6 +823,36 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-28",
+   "nation": "Scotland",
+   "text": "Confirmed from Highland Council: on 28 Sep 2026 its Economy and Infrastructure Committee agreed to submit two proposed short-term let control areas to Scottish Ministers, Inverness City and Highland Rural (several rural areas, including Aird and Loch Ness, Lochaber, Skye and Raasay, and Sutherland). Not in force until Ministers decide.",
+   "source": "https://www.highland.gov.uk/news/article/17496/highland-council-agrees-to-submit-short-term-let-control-area-proposals-to-scottish-ministers"
+  },
+  {
+   "date": "2026-10-28",
+   "nation": "Wales",
+   "text": "Confirmed from the official minutes: Isle of Anglesey full Council kept the 100% second-home council tax premium for 2026/27 on 5 Mar 2026.",
+   "source": "https://democracy.anglesey.gov.uk/documents/s23435/m5.3.26.pdf?LLL=0"
+  },
+  {
+   "date": "2026-10-28",
+   "nation": "England",
+   "text": "Confirmed from the official minutes: Brighton & Hove Budget Council approved serviced accommodation as an exception to the second homes council tax premium on 26 Feb 2026, in force from 1 Apr 2026.",
+   "source": "https://democracy.brighton-hove.gov.uk/documents/s214038/Minutes%2026.02.2026%20Budget.pdf"
+  },
+  {
+   "date": "2026-10-28",
+   "nation": "England",
+   "text": "Liverpool's Submission Draft Local Plan 2043 (Regulation 19) keeps Policy TC7 on short-term lets: converting a home would not be supported where 10% or more of properties within 100m are HMOs or where it would over-concentrate short-term lets, and a management plan would be required. Not yet examined or adopted.",
+   "source": "https://liverpool.gov.uk/media/rdgp1ab4/1-local-plan.pdf"
+  },
+  {
+   "date": "2026-10-28",
+   "nation": "England",
+   "text": "Liverpool's consultation on a replacement selective landlord licensing scheme (current scheme ends March 2027) closed on 5 Oct 2026; no decision published yet. Selective licensing covers rented homes, not holiday lets.",
+   "source": "https://liverpoolexpress.co.uk/liverpool-residents-invited-to-have-their-say-on-the-future-of-the-private-rented-sector/"
+  },
   {
    "date": "2026-10-27",
    "nation": "Wales",

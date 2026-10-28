@@ -4,7 +4,7 @@ def _gmeta(fn):
     t=open(fn).read()
     h=re.search(r'<h1>(.*?)</h1>',t,re.S);m=re.search(r'<meta name="description" content="([^"]*)">',t)
     return _H.unescape(re.sub(r'<[^>]+>','',h.group(1)).strip()),_H.unescape(m.group(1))
-GHUB=[('England',['england-holiday-let-planning-permission.html','england-second-homes-council-tax-premium.html','holiday-let-fire-safety-england.html'],['london-90-night-counter.html'],'england.html'),
+GHUB=[('England',['england-short-term-let-rules-2027.html','england-holiday-let-planning-permission.html','england-second-homes-council-tax-premium.html','holiday-let-fire-safety-england.html'],['london-90-night-counter.html'],'england.html'),
  ('Wales',['wales-second-homes-council-tax-premium.html','holiday-let-fire-safety-wales.html','wales-visitor-accommodation-licensing.html'],['wales-registration-checker.html'],'wales.html'),
  ('Scotland',['scotland-short-term-let-licence-guide.html','short-term-let-fire-safety-scotland.html'],['scotland-short-term-let-licence-fees.html','scotland-licence-renewal-checker.html','scotland-business-rates-checker.html'],'scotland.html'),
  ('Northern Ireland',['northern-ireland-tourism-certificate-guide.html'],[],'northern-ireland.html'),
