@@ -109,6 +109,27 @@ def SCOTALERT(cta,why,aid='scot-alert',tag='h2'):
      +((f'<p class="anxh"><b>Next Scotland dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else '<p>We have no upcoming Scotland dates logged right now. If the Scottish Government or a council announces a change, we\'ll email you.</p>')
      +'<p class="small">Pick your council for alerts about it, or keep All of Scotland. Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
      +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when short-let rules change in Scotland"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council</label><select name="area" id="{aid}-area" required>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
+def _natdates(nats,n=3):
+    """Next rows from deadlines.py (DL/AHEAD, read without running it) for the given nation labels, today or later, with official source links. Perth/Kinross rows skipped (directory-only)."""
+    import ast,datetime as _d
+    L=[]
+    for nd in ast.parse(open('deadlines.py').read()).body:
+        if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
+    L=[r for r in L if r[1] in nats and not re.search('perth|kinross',(r[2]+r[3]).lower())]
+    k=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
+    fd=lambda a,t:_d.date.fromisoformat(a).strftime('%B %Y')+' (expected)' if t.startswith('Expected') else _d.date.fromisoformat(a).strftime('%-d %b %Y')  # 'Expected:' rows have no exact day at source (as on /deadlines)
+    ft=lambda t:t[len('Expected: '):] if t.startswith('Expected: ') else t
+    return [(lambda a,nn,c_,t,u:f'<b>{fd(a,t)}, {e(c_)}:</b> {e(ft(t))} (<a href="{e(u)}" rel="nofollow">source</a>)')(*L[int(x.rsplit(": ",1)[1])]) for x in NEXTD(k,n)]
+def NATALERT(nid,cta,why,aid=None,tag='h2',nats=None):
+    """Nation-tagged in-context alert box (Wales/England guides; same pattern as SCOTALERT): page-specific why line, next 3 sourced dates for the nation, council picker defaulting to All of <nation>. Same form/endpoint/signup.js."""
+    na=next(n for n in d['nations'] if n['id']==nid);nm=na['name'];aid=aid or f'{nid}-alert'
+    cs=sorted([c for c in d['councils'] if c['nation']==nm and c['verified'] and _sl(c) not in PICK_EXCL],key=lambda c:c['name'].replace('City of ',''))
+    og=f'<option value="nation:{nid}" data-name="{e(nm)}" selected>All of {e(nm)}</option>'+''.join(f'<option value="council:{_sl(c)}" data-name="{e(c["name"])}">{e(c["name"])}</option>' for c in cs)
+    nx=_natdates(nats or (nm,))
+    return (f'<div class="alertbox alerttop" id="{aid}"><{tag}>Get an email when short-let rules change in {e(nm)}</{tag}><p>{why}</p>'
+     +((f'<p class="anxh"><b>Next {e(nm)} dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else f'<p>We have no upcoming {e(nm)} dates logged right now. If the government or a council announces a change, we\'ll email you.</p>')
+     +f'<p class="small">Pick your council for alerts about it, or keep All of {e(nm)}. Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+     +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when short-let rules change in {e(nm)}"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council</label><select name="area" id="{aid}-area" required>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 def ANSWER(q,html_):
     """Direct-answer box for a page's main search query (2-3 sentences, facts from this repo only)."""
     return f'<div class="answer"><h2>{e(q)}</h2><p>{html_}</p></div>'

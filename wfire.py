@@ -55,7 +55,7 @@ b=ANSWER(*WANS)+TOP_PICK(nation=next(n for n in d['nations'] if n['id']=='wales'
 <li><b>Yearly:</b> service gas appliances, heating, any escape lighting and any extinguishers; sweep chimneys; review your risk assessment.</li>
 <li><b>Every 5 years:</b> electrical installation inspection and test.</li>
 <li><b>About every 10 years:</b> replace smoke alarms (typical lifespan; check the maker's guidance for heat and CO alarms).</li></ul>
-<div class="box"><h2>Get told when Welsh holiday let rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
+{NATALERT('wales','wales-fire-safety','We check the fire safety guidance for Welsh holiday lets against official sources, along with WRA registration, the visitor levy and the coming licensing scheme, and email you when one changes.')}
 <h2>Common questions</h2>{_fq}
 <h2>Elsewhere in the UK</h2><p>This guide covers Wales only. For England see <a href="holiday-let-fire-safety-england.html">holiday let fire safety in England</a>. In Scotland, see <a href="short-term-let-fire-safety-scotland.html">short-term let fire safety in Scotland</a>, and fire safety is part of the licence conditions: see <a href="scotland-short-term-let-licence-guide.html">how to get a Scottish short-term let licence</a>. In Northern Ireland see the <a href="northern-ireland-tourism-certificate-guide.html">Tourism NI certificate guide</a>.</p>
 <p>Related: <a href="wales.html">Wales short-let rules</a> · <a href="councils/ceredigion.html">Ceredigion holiday let rules</a> (every Welsh council is listed on the Wales page) · <a href="wales-registration-checker.html">Do I need to register with the WRA?</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a></p>

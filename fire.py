@@ -48,7 +48,7 @@ b=f'''<p class="lead">If you charge guests to stay in a property in England, fir
 <li><b>Yearly:</b> service gas appliances, heating and any extinguishers; sweep chimneys; review your risk assessment.</li>
 <li><b>Every 5 years:</b> electrical installation inspection and test.</li>
 <li><b>About every 10 years:</b> replace smoke alarms (typical lifespan).</li></ul>
-<div class="box"><h2>Get told when holiday let safety rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
+{NATALERT('england','england-fire-safety','We check the fire safety guidance for small holiday lets in England against official sources, along with the coming national short-term let register and council rules, and email you when one changes.',nats=('England','England / NI'))}
 <h2>Common questions</h2>{_fq}
 <h2>Elsewhere in the UK</h2><p>This guide covers England only. In Scotland, see <a href="short-term-let-fire-safety-scotland.html">short-term let fire safety in Scotland</a>, and fire safety is part of the licence conditions: see <a href="scotland-short-term-let-licence-guide.html">how to get a Scottish short-term let licence</a>. For Wales see <a href="holiday-let-fire-safety-wales.html">holiday let fire safety in Wales</a>. See also <a href="wales.html">Wales rules</a> and <a href="northern-ireland.html">Northern Ireland rules</a>.</p>
 <p>Related: <a href="england.html">England short-let rules</a> · <a href="london-90-night-counter.html">London 90-night counter</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a></p>
