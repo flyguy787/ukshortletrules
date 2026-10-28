@@ -127,19 +127,23 @@ CH_ANS=ANSWER('What has changed in UK short-let rules?',f'This log lists every c
 page('changes.html','Changes log',CH_ANS+TOP_PICK()+f'<h2>All changes</h2><div class="tw"><table class="stk"><tr><th>Date</th><th>Nation</th><th>Change</th><th>Source</th></tr>{rows}</table></div>',desc='What changed in UK short-term let and holiday let rules: licensing, visitor levies, council tax premiums and registration, each with an official source.',full_title=f'UK Short-Let Rule Changes: Latest Updates ({_chld.strftime("%b %Y")})')
 # Newsletter landing page: a concrete reason to subscribe, built only from facts already sourced on the site:
 # the 3 latest changes-log entries (first sentence + official source) and the next 3 deadlines from deadlines.py DL/AHEAD (read via ast).
-def _nlpage():
+def _nlitems(nch=3,ndl=3):
+    """Sourced 'reason to subscribe' lists shared by /newsletter and the homepage box: (recent rule changes <li>s, next deadlines <li>s)."""
     import ast,datetime as _d
     L=[]
     for nd in ast.parse(open('deadlines.py').read()).body:
         if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
     keys=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
-    dl=[(lambda a,n,c,t,u:f'<li><b>{_d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)</li>')(*L[int(k.rsplit(": ",1)[1])]) for k in NEXTD(keys)]
+    dl=[(lambda a,n,c,t,u:f'<li><b>{_d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)</li>')(*L[int(k.rsplit(": ",1)[1])]) for k in NEXTD(keys,ndl)]
     s1=lambda t:re.split(r'(?<=[a-z0-9)])\. (?=[A-Z])',t,maxsplit=1)[0].rstrip('.')+'.'
     rc=[c for c in _chs if not re.match(r'(Added|Re-checked|Now tracked)\b',c['text'])];pk=[]
     for c in rc:
-        if len(pk)<3 and c['nation'] not in [p['nation'] for p in pk]:pk.append(c)
-    pk+=[c for c in rc if c not in pk][:3-len(pk)];pk.sort(key=lambda c:c['date'],reverse=True)  # rule changes only (not site additions), one per nation where possible
+        if len(pk)<nch and c['nation'] not in [p['nation'] for p in pk]:pk.append(c)
+    pk+=[c for c in rc if c not in pk][:nch-len(pk)];pk.sort(key=lambda c:c['date'],reverse=True)  # rule changes only (not site additions), one per nation where possible
     ch=''.join(f'<li><b>{_d.date.fromisoformat(c["date"]).strftime("%-d %b %Y")}, {e(c["nation"])}:</b> {e(s1(c["text"]))} (<a href="{e(c["source"])}" rel="nofollow">source</a>)</li>' for c in pk)
+    return ch,dl
+def _nlpage():
+    ch,dl=_nlitems()
     nlf=FORMX.replace('<form class="signup"','<form class="signup" data-cta="newsletter-weekly" aria-label="Get the weekly what changed email"',1)
     return ('<p class="lead">One short email a week on UK short-term let and holiday let rules: what changed, what\'s coming, and the deadlines to act on. Every item links to its official source.</p>'
      +'<h2>What you get</h2><ul><li><b>What changed:</b> new licensing, planning, visitor levy, council tax and registration rules in England, Scotland, Wales and Northern Ireland.</li><li><b>What\'s coming:</b> consultations closing, council votes and levy start dates, before they happen.</li><li><b>Your council, if you want it:</b> pick your council below and we\'ll also email you when its rules change.</li></ul>'
