@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-22",
+ "checked": "2026-10-29",
  "nations": [
   {
    "id": "scotland",
@@ -30,7 +30,7 @@
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: consultation on whether to have a levy at all, to 31 Oct 2026 (no draft scheme yet). East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); a council meeting on 27 Oct 2026 is asked to approve an independent review before any decision. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
+     "text": "Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: consultation on whether to have a levy at all, to 31 Oct 2026 (no draft scheme yet). East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); on 27 Oct 2026 the council agreed an independent review and further work instead of a decision, so no levy yet. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
      "sources": [
       "https://www.edinburgh.gov.uk/visitorlevyinformation",
       "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
@@ -113,7 +113,7 @@
     {
      "topic": "Tax (FHL abolished)",
      "status": "In force",
-     "text": "The FHL regime was abolished from April 2025. From April 2027, property income (including holiday-let profits) gets its own income tax rates: 22% basic, 42% higher, 47% additional, with finance cost relief given at 22% (GOV.UK, published 26 Nov 2025).",
+     "text": "The FHL regime was abolished from April 2025. From 6 April 2027, property income (including holiday-let profits) gets its own income tax rates. Budget 2026 (28 Oct 2026) raised the planned rates by a further 2 points to 24% basic, 44% higher and 49% additional, in England, Wales and Northern Ireland; this still needs Finance Bill 2026-27 to pass. Finance cost relief follows the property basic rate (UNVERIFIED: expected 24%, not yet confirmed on GOV.UK).",
      "sources": [
       "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
       "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income"
@@ -220,7 +220,7 @@
     {
      "topic": "Tax (FHL abolished)",
      "status": "In force",
-     "text": "The FHL regime was abolished UK-wide from April 2025. From April 2027, property income (including holiday-let profits) gets its own income tax rates: 22% basic, 42% higher, 47% additional, with finance cost relief given at 22% (GOV.UK, published 26 Nov 2025).",
+     "text": "The FHL regime was abolished UK-wide from April 2025. From 6 April 2027, property income (including holiday-let profits) gets its own income tax rates. Budget 2026 (28 Oct 2026) raised the planned rates by a further 2 points to 24% basic, 44% higher and 49% additional, in England, Wales and Northern Ireland; this still needs Finance Bill 2026-27 to pass. Finance cost relief follows the property basic rate (UNVERIFIED: expected 24%, not yet confirmed on GOV.UK).",
      "sources": [
       "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
       "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income"
@@ -375,7 +375,7 @@
   {
    "name": "East Lothian",
    "nation": "Scotland",
-   "rule": "Licence needed (3-year licence from £1,154 for 1 to 5 occupants, 2026/27 fees). No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026); a 27 Oct 2026 council meeting is asked to approve an independent review before any decision.",
+   "rule": "Licence needed (3-year licence from £1,154 for 1 to 5 occupants, 2026/27 fees). No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026). On 27 Oct 2026 the council did not approve a levy; it agreed an independent review and further assessment, with options and recommendations to come back in a later report.",
    "source": "https://www.eastlothian.gov.uk/business-and-licensing/licensing/accommodation-licensing/short-term-lets-licensing",
    "verified": true
   },
@@ -823,6 +823,24 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-29",
+   "nation": "UK",
+   "text": "Budget 2026 (28 Oct 2026): the property income tax rates starting 6 April 2027 will be 2 points higher than previously announced, at 24% basic, 44% higher and 49% additional, in England, Wales and Northern Ireland (was 22/42/47%). Holiday-let profits count as property income. To be legislated in Finance Bill 2026-27; Scotland and Wales can set their own property rates.",
+   "source": "https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar"
+  },
+  {
+   "date": "2026-10-29",
+   "nation": "England",
+   "text": "Budget 2026: from 1 April 2027, Small Business Rate Relief thresholds for retail, hospitality and leisure properties in England rise from £12,000 to £18,000 (100% relief) and from £15,000 to £21,000 (tapered relief). Whether self-catering holiday lets count as hospitality for this is UNVERIFIED; check when the detailed guidance is published. The Budget also repeats the plan to legislate so Strategic Authorities can bring in an Overnight Visitor Levy.",
+   "source": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html"
+  },
+  {
+   "date": "2026-10-29",
+   "nation": "Scotland",
+   "text": "East Lothian Council did not approve a visitor levy on 27 Oct 2026. It agreed an independent review of its evidence and further assessment, with scheme options and recommendations to come to a later council meeting.",
+   "source": "https://www.eastlothian.gov.uk/news/2026/council-agrees-further-work-and-independent-review-visitor-levy-plans"
+  },
   {
    "date": "2026-10-28",
    "nation": "Scotland",
