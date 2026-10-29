@@ -43,7 +43,7 @@ b=f'''<p class="lead">Councils in Wales can charge a <b>second homes premium of 
 <li>What rate does your council charge? See below or your council's website.</li></ul>
 <h2>Council rates we track</h2><ul>{wcl}</ul><p><a href="wales.html">All Wales rules</a> · <a href="councils.html">All councils</a></p>
 <p>England has a different premium (up to 100%) and a 140/70-night business rates test: see <a href="england-second-homes-council-tax-premium.html">England second homes council tax premium</a>. Holiday lets in Wales must also <a href="wales-registration-checker.html">register with the Welsh Revenue Authority</a> by 31 March 2027.</p>
-{NATALERT('wales','wales-premium','We track the Welsh second homes council tax premium, the 252/182-night business rates test, council premium rates and other Welsh short-let rules against official sources, and email you when one changes.')}
+{NATALERT('wales','wales-premium','We track the Welsh second homes council tax premium, the 252/182-night business rates test, council premium rates and other Welsh short-let rules against official sources, and email you when one changes.',nats=('Wales','England / Wales / NI'))}
 <h2>Common questions</h2>{wfq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in WPS)}</ul>
 <p class="small"><b>Not tax advice.</b> Checked {C}. Your council decides whether a premium, exception or reduction applies, so check with them before acting.</p>'''

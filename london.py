@@ -34,7 +34,7 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
 <li>England has no short-let licence or registration scheme in force. <a href="england.html">See England rules</a>.</li></ul>
 {TOPICALERT('london-alert','london-90-night','Get an email when short-let rules change in London',
  'The 90-night rule is set in law (<a href="https://www.legislation.gov.uk/ukpga/2015/20/section/44" rel="nofollow">Deregulation Act 2015, s44</a>). We watch it, and the England-wide changes that also apply in London, against official sources, and email you when something changes.',
- "Next dates for London hosts we're watching",_rowdates(lambda r:r[2] in ('All of England','England and Northern Ireland')),
+ "Next dates for London hosts we're watching",_rowdates(lambda r:r[2] in ('All of England','England, Wales and Northern Ireland')),
  [('council:greater-london-all-boroughs','Greater London (all boroughs)',True),('nation:england','England',False)],'Your area',
  'Keep Greater London for London alerts, or pick All of England.',
  'We have no upcoming London dates logged right now. If the government or a borough announces a change, we\'ll email you.')}

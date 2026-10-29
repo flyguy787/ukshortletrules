@@ -58,7 +58,7 @@ b=f'''<p class="lead">The special tax treatment for <b>furnished holiday lets (F
 <p>Local taxes are separate and did not change with the FHL abolition. See <a href="scotland-business-rates-checker.html">Scotland business rates or council tax</a>, <a href="wales.html">Wales rules</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>
 {TOPICALERT('fhl-tax-alert','fhl-tax','Get an email when holiday-let tax rules change',
  'Holiday let tax is still changing. From 6 April 2027, <a href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax" rel="nofollow">Making Tax Digital for Income Tax</a> applies if your self-employment and property income was over £30,000 in 2025 to 2026, and <a href="https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income" rel="nofollow">property income gets its own tax rates</a> (22%, 42%, 47%) in England, Wales and Northern Ireland. We check HMRC and GOV.UK and email you when something changes.',
- "Next holiday-let tax dates we're watching",_rowdates(lambda r:r[1] in ('UK','England / NI')),
+ "Next holiday-let tax dates we're watching",_rowdates(lambda r:r[1] in ('UK','England / Wales / NI')),
  [('','Choose your nation',False)]+[('nation:'+n['id'],n['name'],False) for n in d['nations']],'Your nation',
  'Pick the nation your let is in: you get UK tax changes plus rule changes for that nation.',
  'We have no upcoming holiday-let tax dates logged right now. If HMRC or the government announces a change, we\'ll email you.')}

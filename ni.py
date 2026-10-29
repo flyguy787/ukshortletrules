@@ -47,7 +47,7 @@ b=f'''<p class="lead">Every holiday let in Northern Ireland, including Airbnbs a
 <tr><td>B&amp;B, guest house, guest accommodation</td><td>Bedroom</td><td>£20</td><td>£80</td><td>£200</td></tr></table></div>
 <p class="small">From Tourism NI's statutory inspection schedule, checked {C}. Ad hoc inspections and follow-up visits are free.</p>
 <h2>Certification checklist</h2><p class="small">Based on Tourism NI's self-catering guidance. Not exhaustive: the inspector may raise other points. Ticks are stored only on this device. <button type="button" id="ckp">Print checklist</button> <button type="button" id="ckr">Clear ticks</button></p><p id="ckc" class="small"></p>{_ck}
-{NATALERT('northern-ireland','ni-certificate','We track Tourism NI certification, fees, planning and tax rules for Northern Ireland short lets against official sources, and email you when one of them changes.',aid='ni-alert',nats=('Northern Ireland','England / NI'))}
+{NATALERT('northern-ireland','ni-certificate','We track Tourism NI certification, fees, planning and tax rules for Northern Ireland short lets against official sources, and email you when one of them changes.',aid='ni-alert',nats=('Northern Ireland','England / Wales / NI'))}
 <h2>Common questions</h2>{_fq}
 <p>Related: <a href="northern-ireland.html">Northern Ireland short-let rules</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="scotland-short-term-let-licence-guide.html">Scotland licence guide</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in NS)}</ul>
