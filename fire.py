@@ -16,12 +16,18 @@ FFAQ=[('Do holiday lets in England need a fire risk assessment?','Yes. If you ch
       ('Who enforces fire safety in holiday lets?','Your local fire and rescue service. It may inspect your property and can give advice, but it cannot do the risk assessment for you.'),
       ('Does this guide apply in Scotland, Wales or Northern Ireland?','No. The Home Office guide applies only to England. Wales has its own guidance, and Scotland and Northern Ireland have different (but similar) fire safety laws.')]
 _ck=''.join(f'<div class="box"><h2>{e(h)}</h2>'+''.join(f'<label class="ck"><input type="checkbox" data-k="{i}-{j}"> {e(x)}</label>' for j,x in enumerate(L))+'</div>' for i,(h,L) in enumerate(FCK))
-_fq=''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q,a in FFAQ)
+_fq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in FFAQ)
 _ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in FFAQ]}).replace('</','<\\/')
 f='holiday-let-fire-safety-england.html'
 t='Fire safety for holiday lets in England: what you need and a checklist'
 dsc='What fire safety law requires for holiday lets and short-term lets in England: fire risk assessment, smoke and heat alarms, doors, escape routes and guest information, with a free tick-off checklist. Official Home Office sources.'
-b=f'''<p class="lead">If you charge guests to stay in a property in England, fire safety law applies, even for one night. Here is what the official Home Office guide for small holiday lets, B&amp;Bs and self-catering says, in plain English, plus a checklist you can tick off (it saves in your browser).</p>
+b=f'''{TLDR(['<b>The law applies even for one night.</b> If you charge guests to stay in a property in England, the Regulatory Reform (Fire Safety) Order 2005 applies.',
+'<b>You need a written fire risk assessment</b> specific to the property. For small, simple places you can do it yourself; you stay legally responsible either way.',
+'<b>Typical cottage kit:</b> interlinked mains smoke alarms with backup battery (Grade D1) in the hall, landing, living room and bedrooms, a heat alarm in the kitchen, carbon monoxide alarms if the property has a gas or solid fuel appliance, and solid doors onto the hall and stairs.',
+'<b>Keep it up:</b> test alarms at every changeover and at least monthly, and review the assessment yearly and after any change.',
+'<b>Who checks:</b> your local fire and rescue service, which may inspect.',
+'<b>Do now:</b> work through the <a href="#fire-safety-checklist">free checklist below</a> (ticks save on this device).'],sub='From the Home Office guide for small paying guest accommodation. Not legal advice.')}
+<p class="lead">Here is what the official Home Office guide for small holiday lets, B&amp;Bs and self-catering says, in plain English, plus a checklist you can tick off.</p>
 <div class="box"><p><b>The law:</b> the Regulatory Reform (Fire Safety) Order 2005. <b>Who it applies to:</b> the "responsible person", usually the owner or letting agent. <b>Who enforces it:</b> your local fire and rescue service, which may inspect.</p></div>
 <h2>What you must do</h2><ul>
 <li>Carry out a <b>fire risk assessment</b> specific to the property, and <b>record it in writing</b>, including anyone especially at risk.</li>

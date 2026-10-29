@@ -68,6 +68,7 @@ def _guideux(b):
         if m.start()>=12 and b[max(0,m.start()-20):m.start()].endswith('<div class="answer">'):return m.group(0)
         plain=re.sub(r'<[^>]+>','',tx)
         if re.match(r'Get (an email|told|free)',plain):return m.group(0)
+        if a and 'tldr-h' in a:return m.group(0)
         if a:i=re.search(r'id="([^"]+)"',a).group(1)
         else:
             i=re.sub(r'[^a-z0-9]+','-',html.unescape(plain).lower()).strip('-')[:40].strip('-') or 'sec';k=i;n=2
