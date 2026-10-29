@@ -19,12 +19,18 @@ FAQ=[('Do I need a short-term let licence in Scotland?','Yes, if you let accommo
      ('Can I let for a short time without a full licence?','Some councils offer temporary licences (up to 6 weeks a year) or temporary exemptions (up to 3 in 12 months, no more than 6 weeks in total). It is up to each council. A provisional licence is available if you are building new accommodation.'),
      ('Can I appeal if I am refused?','Yes, at the sheriff court within 28 days of the decision. You cannot reapply for a year unless your circumstances change materially.')]
 cl=''.join(f'<div class="box"><h2>{h}</h2>'+''.join(f'<label class="ck"><input type="checkbox" data-k="{n}-{i}"> {e(x)}</label>' for i,x in enumerate(L))+'</div>' for n,(h,L) in enumerate(CK))
-fq=''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q,a in FAQ)
+fq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in FAQ)
 ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in FAQ]}).replace('</','<\\/')
 f='scotland-short-term-let-licence-guide.html'
 t='How to get a short-term let licence in Scotland: steps and checklist'
 dsc='Plain-English steps to get a Scottish short-term let licence, plus a free tick-off checklist of every certificate, safety item and notice you need. Official sources.'
-b=f'''<p class="lead">Every short-term let in Scotland needs a council licence before you take bookings or guests. Here are the steps, and a checklist you can tick off as you go (it saves in your browser).</p>
+b=f'''{TLDR(['<b>You need the licence first.</b> Every short-term let in Scotland needs a council licence before you take bookings or receive guests, unless an exclusion applies.',
+'<b>Letting without one is a criminal offence:</b> a fine of up to £2,500 and a one-year ban from applying.',
+'<b>Apply to your council</b> and pay its fee (each council sets its own), then display a public notice at or near the property for 21 days.',
+'<b>Councils have up to 9 months to decide.</b> A licence usually lasts 3 years.',
+'<b>In a control area</b> (all of Edinburgh, and Badenoch &amp; Strathspey in Highland), a new licence very likely needs planning permission too.',
+'<b>Do now:</b> tick off the <a href="#licence-checklist">licence checklist below</a>, and <a href="#get-alerts">get an email</a> if your council\'s fees or rules change.'],sub='From mygov.scot. Not legal advice.')}
+<p class="lead">Here are the steps, and a checklist you can tick off as you go (it saves in your browser).</p>
 <h2>The steps</h2><ol>
 <li><b>Check you need one.</b> Most hosts do. See the exclusions on <a href="https://www.mygov.scot/short-term-let-licences/exclusions" rel="nofollow">mygov.scot</a>.</li>
 <li><b>Pick your licence type.</b> Secondary letting, home sharing, home letting, or home letting and home sharing.</li>
