@@ -56,7 +56,12 @@ b=f'''<p class="lead">The special tax treatment for <b>furnished holiday lets (F
 <li><b>Caravan parks:</b> HMRC says a <a href="{FPI}" rel="nofollow">caravan site</a> may be a trade, a mix of trade and letting, or purely letting, depending on the services provided. A site operator carrying on a trade can choose to put caravan and pitch letting income into the trade profits (<a href="https://www.legislation.gov.uk/ukpga/2005/5/section/20" rel="nofollow">ITTOIA 2005, s20</a>). HMRC says FHL income was always property income, not trading income.</li>
 <li><b>Council tax:</b> in England, an occupied caravan pitch that is nobody&rsquo;s main home is excepted from the <a href="england-second-homes-council-tax-premium.html">second homes premium</a> (Class K). This is separate from income tax.</li></ul>
 <p>Local taxes are separate and did not change with the FHL abolition. See <a href="scotland-business-rates-checker.html">Scotland business rates or council tax</a>, <a href="wales.html">Wales rules</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>
-<div class="box"><h2>Get told when holiday let tax rules change</h2><p>One short, sourced email a week.</p>{FORM}</div>
+{TOPICALERT('fhl-tax-alert','fhl-tax','Get an email when holiday-let tax rules change',
+ 'Holiday let tax is still changing. From 6 April 2027, <a href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax" rel="nofollow">Making Tax Digital for Income Tax</a> applies if your self-employment and property income was over £30,000 in 2025 to 2026, and <a href="https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income" rel="nofollow">property income gets its own tax rates</a> (22%, 42%, 47%) in England, Wales and Northern Ireland. We check HMRC and GOV.UK and email you when something changes.',
+ "Next holiday-let tax dates we're watching",_rowdates(lambda r:r[1] in ('UK','England / NI')),
+ [('','Choose your nation',False)]+[('nation:'+n['id'],n['name'],False) for n in d['nations']],'Your nation',
+ 'Pick the nation your let is in: you get UK tax changes plus rule changes for that nation.',
+ 'We have no upcoming holiday-let tax dates logged right now. If HMRC or the government announces a change, we\'ll email you.')}
 <h2>Common questions</h2>{fq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in TS)}</ul>
 <p class="small"><b>Not tax advice.</b> Checked {C}. Tax depends on your circumstances, so speak to an accountant or HMRC before acting.</p>'''

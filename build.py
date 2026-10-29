@@ -209,10 +209,34 @@ def NATALERT(nid,cta,why,aid=None,tag='h2',nats=None):
     cs=sorted([c for c in d['councils'] if c['nation']==nm and c['verified'] and _sl(c) not in PICK_EXCL],key=lambda c:c['name'].replace('City of ',''))
     og=f'<option value="nation:{nid}" data-name="{e(nm)}" selected>All of {e(nm)}</option>'+''.join(f'<option value="council:{_sl(c)}" data-name="{e(c["name"])}">{e(c["name"])}</option>' for c in cs)
     nx=_natdates(nats or (nm,))
+    if not cs:  # nation with no verified council pages (Northern Ireland): no one-option picker, the form carries the nation itself
+        return (f'<div class="alertbox alerttop" id="{aid}"><{tag}>Get an email when short-let rules change in {e(nm)}</{tag}><p>{why}</p>'
+         +((f'<p class="anxh"><b>Next {e(nm)} dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else f'<p>We have no upcoming {e(nm)} dates logged right now. If the government or a council announces a change, we\'ll email you.</p>')
+         +f'<p class="small">Alerts for all of {e(nm)}, plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+         +FORMX.replace('<form class="signup"',f'<form class="signup" data-area="nation:{nid}" data-area-name="{e(nm)}" data-cta="{cta}" aria-label="Get an email when short-let rules change in {e(nm)}"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
     return (f'<div class="alertbox alerttop" id="{aid}"><{tag}>Get an email when short-let rules change in {e(nm)}</{tag}><p>{why}</p>'
      +((f'<p class="anxh"><b>Next {e(nm)} dates we\'re watching:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else f'<p>We have no upcoming {e(nm)} dates logged right now. If the government or a council announces a change, we\'ll email you.</p>')
      +f'<p class="small">Pick your council for alerts about it, or keep All of {e(nm)}. Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
      +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when short-let rules change in {e(nm)}"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council</label><select name="area" id="{aid}-area" required>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
+def _rowdates(pred,n=3):
+    """Next rows from deadlines.py (DL/AHEAD, read without running it) matching pred(row), today or later, with official source links. Perth/Kinross rows skipped (directory-only). Same display as _natdates; 'All of X' shown as 'X'."""
+    import ast,datetime as _d
+    L=[]
+    for nd in ast.parse(open('deadlines.py').read()).body:
+        if isinstance(nd,ast.Assign) and getattr(nd.targets[0],'id','') in ('DL','AHEAD'):L+=ast.literal_eval(nd.value)
+    L=[r for r in L if pred(r) and not re.search('perth|kinross',(r[2]+r[3]).lower())]
+    k=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
+    fd=lambda a,t:_d.date.fromisoformat(a).strftime('%B %Y')+' (expected)' if t.startswith('Expected') else _d.date.fromisoformat(a).strftime('%-d %b %Y')
+    ft=lambda t:t[len('Expected: '):] if t.startswith('Expected: ') else t
+    fc=lambda c:c[len('All of '):] if c.startswith('All of ') else c
+    return [(lambda a,nn,c_,t,u:f'<b>{fd(a,t)}, {e(fc(c_))}:</b> {e(ft(t))} (<a href="{e(u)}" rel="nofollow">source</a>)')(*L[int(x.rsplit(": ",1)[1])]) for x in NEXTD(k,n)]
+def TOPICALERT(aid,cta,head,why,dlabel,nx,opts,plabel,note,empty,tag='h2'):
+    """Topic in-context alert box (UK-wide tax, London): heading saying what changes they'll be emailed about, page-specific why line, next up-to-3 sourced dates (or an honest 'none logged' line), area picker built from opts [(value,name,selected)] (a leading ('', 'Choose ...') placeholder makes the choice required). Same form/endpoint/signup.js as NATALERT."""
+    og=''.join(f'<option value="{v}"'+(f' data-name="{e(nm)}"' if v else '')+(' selected' if sl else '')+f'>{e(nm) if not v or v.startswith("council:") else "All of "+e(nm)}</option>' for v,nm,sl in opts)
+    return (f'<div class="alertbox alerttop" id="{aid}"><{tag}>{e(head)}</{tag}><p>{why}</p>'
+     +((f'<p class="anxh"><b>{e(dlabel)}:</b></p><ul class="anx">'+''.join(f'<li>{k}</li>' for k in nx)+'</ul>') if nx else f'<p>{empty}</p>')
+     +f'<p class="small">{note} Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
+     +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="{e(head)}"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">{e(plabel)}</label><select name="area" id="{aid}-area" required>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 def ANSWER(q,html_):
     """Direct-answer box for a page's main search query (2-3 sentences, facts from this repo only)."""
     return f'<div class="answer"><h2>{e(q)}</h2><p>{html_}</p></div>'
