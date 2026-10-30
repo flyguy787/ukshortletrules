@@ -26,14 +26,20 @@ NFAQ=[('Do I need a licence for an Airbnb in Northern Ireland?','Northern Irelan
       ('Do I need planning permission for a short-term let in Northern Ireland?','It may be needed. Planning permission and building regulations can apply when you start a holiday let, convert or extend a property, or build a new one, and the two use different meanings of "change of use". Ask your local council planning department early.'),
       ('Do I pay business rates on a holiday let in Northern Ireland?','Self-catering accommodation available for short-period lets for 140 days or more a year is non-domestic and pays business rates. Below 140 days, business rates do not apply. Land and Property Services handles rates.')]
 _ck=''.join(f'<div class="box"><h2>{e(h)}</h2>'+''.join(f'<label class="ck"><input type="checkbox" data-k="{i}-{j}"> {e(x)}</label>' for j,x in enumerate(L))+'</div>' for i,(h,L) in enumerate(NCK))
-_fq=''.join(f'<h3>{e(q)}</h3><p>{a}</p>' for q,a in NFAQ)
+_fq='<div class="faq">'+''.join(f'<details><summary>{e(q)}</summary><p>{a}</p></details>' for q,a in NFAQ)+'</div>'
 _ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':html.unescape(a)}} for q,a in NFAQ]}).replace('</','<\\/')
+_tl=TLDR(['<b>No licence, but a certificate.</b> Northern Ireland has no short-term let licence like Scotland. Tourism legislation (the Tourism (Northern Ireland) Order 1992) requires all tourist accommodation, including Airbnbs and self-catering, to hold a current Tourism NI certificate.',
+'<b>How you get it:</b> apply to Tourism NI with the fee, then an inspector visits. Self-catering costs £40 per unit (minimum £40, maximum £350).',
+'<b>How long it lasts:</b> 4 years. You send a short self-review statement in each of the 3 years between statutory inspections.',
+'<b>If the inspector finds problems,</b> you agree a timeframe of at least 30 days to fix them, and any follow-up visit is free.',
+'<b>Records and money:</b> you must keep a visitors register (including nationality). Self-catering available for short lets 140 days a year or more pays business rates. Star grading is voluntary.',
+'<b>Do now:</b> follow the <a href="#step-by-step">8 steps</a>, tick off the <a href="#certification-checklist">certification checklist</a>, and <a href="#ni-alert">get an email when Northern Ireland&rsquo;s rules change</a>.'],sub='From Tourism NI guidance and legislation.gov.uk. Not legal advice.')
 f='northern-ireland-tourism-certificate-guide.html'
 t='Northern Ireland short-term lets: how to get a Tourism NI certificate'
 dsc='How to get the Tourism NI certificate every holiday let, Airbnb and self-catering property in Northern Ireland needs: fees, the inspection, what inspectors check, and a free tick-off checklist. Official sources.'
 b=f'''<p class="lead">Every holiday let in Northern Ireland, including Airbnbs and self-catering cottages, needs a current Tourism NI certificate. Here is how to get one, what the inspector checks, and a checklist you can tick off (it saves in your browser).</p>
-<div class="box"><p><b>The law:</b> the Tourism (Northern Ireland) Order 1992. <b>Who certifies:</b> Tourism NI, after an inspection. <b>How long it lasts:</b> 4 years. <b>Self-catering fee:</b> £40 per unit (minimum £40, maximum £350).</p></div>
-<h2>Step by step</h2><ol>
+{_tl}
+<h2 id="step-by-step">Step by step</h2><ol>
 <li><b>Check planning and building control.</b> Ask your local council planning department early. Planning permission and building regulations can apply even without structural work.</li>
 <li><b>Get the basics in place:</b> fire risk assessment, yearly Gas Safe check, electrical safety, public liability insurance, and your lender's OK.</li>
 <li><b>Apply to Tourism NI.</b> Online at <a href="https://forms.tourismni.com/Forms/" rel="nofollow">forms.tourismni.com</a> with the fee, or by post. For a pack, email qa@tourismni.com.</li>
@@ -46,7 +52,7 @@ b=f'''<p class="lead">Every holiday let in Northern Ireland, including Airbnbs a
 <tr><td>Self-catering</td><td>Unit</td><td>£40</td><td>£40</td><td>£350</td></tr>
 <tr><td>B&amp;B, guest house, guest accommodation</td><td>Bedroom</td><td>£20</td><td>£80</td><td>£200</td></tr></table></div>
 <p class="small">From Tourism NI's statutory inspection schedule, checked {C}. Ad hoc inspections and follow-up visits are free.</p>
-<h2>Certification checklist</h2><p class="small">Based on Tourism NI's self-catering guidance. Not exhaustive: the inspector may raise other points. Ticks are stored only on this device. <button type="button" id="ckp">Print checklist</button> <button type="button" id="ckr">Clear ticks</button></p><p id="ckc" class="small"></p>{_ck}
+<h2 id="certification-checklist">Certification checklist</h2><p class="small">Based on Tourism NI's self-catering guidance. Not exhaustive: the inspector may raise other points. Ticks are stored only on this device. <button type="button" id="ckp">Print checklist</button> <button type="button" id="ckr">Clear ticks</button></p><p id="ckc" class="small"></p>{_ck}
 {NATALERT('northern-ireland','ni-certificate','We track Tourism NI certification, fees, planning and tax rules for Northern Ireland short lets against official sources, and email you when one of them changes.',aid='ni-alert',nats=('Northern Ireland','England / Wales / NI'))}
 <h2>Common questions</h2>{_fq}
 <p>Related: <a href="northern-ireland.html">Northern Ireland short-let rules</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="scotland-short-term-let-licence-guide.html">Scotland licence guide</a></p>
