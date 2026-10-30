@@ -379,8 +379,8 @@ CX={
  levy=('No levy. The council consulted from 20 May to Jul 2026 and says (page updated 1 Oct 2026) it has not made a decision. Any Gwynedd levy could start no earlier than Oct 2027. GOV.WALES lists Cardiff as the only council charging.',['https://www.gwynedd.llyw.cymru/en-gb/businesses/tourism/tourism-levy-and-registration-of-visitor-accommodation','https://www.gov.wales/visitor-levy-accommodation-providers-steps/check']),fees=('WRA registration is free.',[]),dates=['6 Feb 2026: appeal refused, Article 4 not in force','31 Mar 2027: WRA registration deadline']),
 'pembrokeshire':dict(lic=WA_REG,ctrl=('No control area or Article 4 direction listed here.',[]),
  levy=('No levy listed here. Check the gov.wales list of councils charging the levy.',['https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales']),
- fees=('WRA registration is free. Council tax second-home premium: 125% from 1 Apr 2026, on top of the standard charge (150% in 2025-26, 200% in 2024-25). Exceptions apply. The 2027-28 premium was due to be decided by full Council on 15 Oct 2026, taking effect 1 Apr 2027; local press reports 125% was kept: '+U+' (not yet on the council\'s premium page).',['https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes','https://newsroom.pembrokeshire.gov.uk/news/council-tax-premiums-for-2027-28-have-your-say']),
- dates=['1 Apr 2026: second-home premium 125%','31 Mar 2027: WRA registration deadline']),
+ fees=('WRA registration is free. Council tax second-home premium: 125% from 1 Apr 2026, on top of the standard charge (150% in 2025-26, 200% in 2024-25). The council has confirmed the premium stays at 125% from 1 Apr 2027 (2027-28), per its premium page revised 29 Oct 2026. Exceptions apply.',['https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes']),
+ dates=['1 Apr 2026: second-home premium 125%','31 Mar 2027: WRA registration deadline','1 Apr 2027: second-home premium stays 125% (2027-28)']),
 'cardiff':dict(lic=WA_REG,ctrl=('No Article 4 direction listed.',[]),
  levy=('Visitor levy for new bookings for stays from 1 Apr 2027: £1.30 per person per night (75p for shared hostel/dorm rooms and tent pitches).',['https://www.gov.wales/visitor-levy-wales']),
  fees=('WRA registration is free.',[]),dates=['31 Mar 2027: WRA registration deadline','1 Apr 2027: Cardiff levy starts']),
@@ -533,7 +533,7 @@ SH2='https://www.southhams.gov.uk/sites/default/files/2025-02/SH%20Guidance%20on
 ND='https://www.northdevon.gov.uk/council-tax/charges-for-second-homes-and-empty-properties'
 ND2='https://www.northdevon.gov.uk/sites/default/files/2025-03/North%20Devon%20Council%20Tax%20empty%20homes%20and%20second%20homes%20premiums%20policy%202025.pdf'
 IW='https://www.iow.gov.uk/article/1100/Second-home-premium'
-IW2='https://digitalservices.iow.gov.uk/documents/download/empty-homes-and-second-homes-premium-policy1'
+IW2='https://www.iow.gov.uk/media/2786/Empty-and-second-home-review-form/pdf/5516CORP_Empty_and_second_homes_form_-_Feb_2025.pdf'
 DE='https://www.denbighshire.gov.uk/en/council-tax/premium.aspx'
 CA='https://www.carmarthenshire.gov.wales/council-services/council-tax/council-tax-premiums/'
 SW='https://www.swansea.gov.uk/counciltaxpremiums'

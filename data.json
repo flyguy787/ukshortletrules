@@ -340,7 +340,7 @@
   {
    "name": "Pembrokeshire",
    "nation": "Wales",
-   "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26. Premium for 2027-28 was due to be set by full Council on 15 Oct 2026; local press reports 125% was kept (UNVERIFIED).",
+   "rule": "Council tax second-home premium of 125% from 1 Apr 2026 (on top of the standard charge), down from 150% in 2025-26. The council has confirmed it stays at 125% from 1 Apr 2027 (2027-28).",
    "source": "https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes",
    "verified": true
   },
@@ -823,6 +823,12 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-30",
+   "nation": "Wales",
+   "text": "Pembrokeshire: the council has confirmed the second-home council tax premium stays at 125% from 1 April 2027 (2027-28), the same as 2026-27. Its premium page was revised on 29 Oct 2026 to add the 2027 rate.",
+   "source": "https://www.pembrokeshire.gov.uk/council-tax-discounts/second-homes"
+  },
   {
    "date": "2026-10-29",
    "nation": "UK",
