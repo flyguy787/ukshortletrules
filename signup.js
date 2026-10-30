@@ -49,7 +49,7 @@ document.querySelectorAll('form.signup').forEach(function(f){
       .then(function(j){
         if(j.ok){
           m.textContent=p?'Thanks! Alerts are on for '+(p.name||'your council')+', and you\'re on the weekly "what changed" email.':'Thanks! You\'re on the list for the weekly "what changed" email.';
-          try{if(typeof window.gtag==='function'){gtag('event',p?'alert_signup':'newsletter_signup',{cta:cta,area:p?p.area:''});gtag('event','generate_lead',{form_location:cta,page_path:location.pathname,signup_type:p?'alert':'newsletter',area:p?p.area:''});}}catch(e){}
+          try{if(typeof window.gtag==='function'){gtag('event',p?'alert_signup':'newsletter_signup',{cta:cta,area:p?p.area:''});gtag('event','sign_up',{method:'email',cta:cta,council:p?p.area.replace(/^(council|nation):/,''):'',signup_type:p?'alert':'newsletter'});gtag('event','generate_lead',{form_location:cta,page_path:location.pathname,signup_type:p?'alert':'newsletter',area:p?p.area:''});}}catch(e){}
           f.email.value='';hint.textContent='';
         }
         else{m.textContent=j.error||'Sorry, something went wrong. Please try again.';}

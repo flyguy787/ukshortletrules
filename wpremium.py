@@ -26,7 +26,7 @@ wld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'
 wcl=''.join(f'<li><a href="councils/{slug(c)}.html">{e(c["name"])}</a>: {e(c["rule"])}</li>' for c in d['councils'] if c['nation']=='Wales' and c['verified'] and 'premium' in c['rule'])
 f='wales-second-homes-council-tax-premium.html'
 t='Wales second homes council tax premium: holiday lets'
-dsc='The Welsh second homes council tax premium (up to 300%): when a holiday let pays it after missing the 252/182-night business rates test, the Class 1 to 7 exceptions, and council rates. Official sources.'
+dsc='Holiday let council tax in Wales: the second homes premium (up to 300%), when a holiday let pays it after missing the 252/182-night business rates test, the Class 1 to 7 exceptions, and council rates. Official sources.'
 b=f'''{TLDR(['<b>Up to 4 times normal council tax.</b> Since 1 April 2023, councils in Wales can charge a premium of up to 300% on second homes: furnished homes that are nobody\'s sole or main home.',
 '<b>Business rates means no premium.</b> A Welsh holiday let stays on business rates only if it is available to let for at least 252 nights and actually let for at least 182 nights in 12 months. Miss that and it moves to council tax, where the premium can apply.',
 '<b>Your council decides</b> whether to charge it, at what rate and on which types of property. Its first decision must be made at least 1 year before the financial year it applies to.',
@@ -54,4 +54,4 @@ f'<b>The 182-night test is under review.</b> The Welsh Government <a href="{WCON
 <h2>Common questions</h2>{wfq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in WPS)}</ul>
 <p class="small"><b>Not tax advice.</b> Checked {C}. Your council decides whether a premium, exception or reduction applies, so check with them before acting.</p>'''
-page(f,t,b,desc=dsc,full_title='Wales second homes council tax premium for holiday lets (up to 300%) | UK Short-Let Rules Tracker',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{wld}</script>')
+page(f,t,b,desc=dsc,full_title='Holiday Let Council Tax in Wales: Second Homes Premium (up to 300%)',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{wld}</script>')

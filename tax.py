@@ -37,7 +37,7 @@ ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@
 FCK='2026-10-30'  # sources re-checked for the TL;DR
 f='holiday-let-tax-after-fhl-abolition.html'
 t='Holiday let tax after the FHL abolition'
-dsc='How holiday lets and static caravans are taxed since FHL abolition in April 2025: mortgage interest, capital allowances, losses, CGT and pensions.'
+dsc='FHL repeal explained: how holiday lets and static caravans are taxed since the furnished holiday lettings rules ended in April 2025: mortgage interest, capital allowances, losses, CGT and pensions.'
 b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 2025 for Income Tax and Capital Gains Tax, and 1 April 2025 for Corporation Tax. Council tax and business rates did not change.',
 '<b>Taxed like other property income.</b> A former holiday let is now part of your UK (or overseas) property business. The 105-night and 210-day tests no longer matter for Income Tax or Capital Gains Tax.',
 '<b>Mortgage interest:</b> if you let as an individual, relief is now at the basic rate of Income Tax (20%) only, like other landlords. Companies are not affected by this restriction.',
@@ -71,4 +71,4 @@ b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 20
 <h2>Common questions</h2>{fq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in TS)}</ul>
 <p class="small"><b>Not tax advice.</b> Checked {FCK}. Tax depends on your circumstances, so speak to an accountant or HMRC before acting.</p>'''
-page(f,t,b,desc=dsc,full_title='FHL Abolition 2025: Holiday Let & Static Caravan Tax',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>',checked=FCK)
+page(f,t,b,desc=dsc,full_title='FHL Repeal: How Holiday Lets Are Taxed Since April 2025',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>',checked=FCK)
