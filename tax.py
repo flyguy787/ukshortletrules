@@ -32,16 +32,22 @@ TFAQ=[('When was the furnished holiday let tax regime abolished?','From 6 April 
       ('Can I still claim capital allowances on a holiday caravan after April 2025?','It is not clear from HMRC guidance. The Capital Allowances Act still lists caravans provided mainly for holiday lettings as plant, and HMRC accepts that a caravan provided mainly for holiday lettings on a licensed holiday caravan site is plant, but a property business cannot claim allowances on plant for use in a dwelling-house. HMRC has not said how these rules apply to a let holiday caravan after the FHL abolition, so check with an accountant before claiming. Existing capital allowances pools can still be written down.'),
       ('Is a caravan park taxed as a trade or as property income?','It depends on what the site does. HMRC says a caravan site may be a trade, a mix of trade and letting, or purely letting, depending on the services provided. If the site operator carries on a trade, the operator can choose to include caravan and pitch letting income in the trade profits. HMRC also says income from a former furnished holiday let has always been property income, not trading income.')]
 tr=''.join(f'<tr><td>{e(a)}</td><td>{e(b_)}</td><td>{e(c)}</td></tr>' for a,b_,c in TROWS)
-fq=''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q,a in TFAQ)
+fq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in TFAQ)
 ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in TFAQ]}).replace('</','<\\/')
+FCK='2026-10-30'  # sources re-checked for the TL;DR
 f='holiday-let-tax-after-fhl-abolition.html'
 t='Holiday let tax after the FHL abolition'
 dsc='How holiday lets and static caravans are taxed since FHL abolition in April 2025: mortgage interest, capital allowances, losses, CGT and pensions.'
-b=f'''<p class="lead">The special tax treatment for <b>furnished holiday lets (FHLs)</b> ended in April 2025 across the whole UK. Holiday let income is now taxed like any other property income. Here is what changed, in plain English, with HMRC sources, including <a href="#static-caravans">static caravans</a>.</p>
-<div class="box"><p><b>Dates:</b> from <b>6 April 2025</b> for Income Tax and Capital Gains Tax, and from <b>1 April 2025</b> for Corporation Tax. An anti-forestalling rule applies from 6 March 2024.</p></div>
+b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 2025 for Income Tax and Capital Gains Tax, and 1 April 2025 for Corporation Tax. Council tax and business rates did not change.',
+'<b>Taxed like other property income.</b> A former holiday let is now part of your UK (or overseas) property business. The 105-night and 210-day tests no longer matter for Income Tax or Capital Gains Tax.',
+'<b>Mortgage interest:</b> if you let as an individual, relief is now at the basic rate of Income Tax (20%) only, like other landlords. Companies are not affected by this restriction.',
+'<b>No new capital allowances.</b> You can keep writing down an existing pool. Replacing furniture and kit now uses replacement of domestic items relief. Old FHL losses carry forward against property profits.',
+'<b>Selling and pensions:</b> Business Asset Disposal, rollover and gift relief no longer apply to disposals from 6 April 2025, apart from limited transitional cases. An anti-forestalling rule applies from 6 March 2024. Profits no longer count as earnings for pension relief.',
+'<b>Do now:</b> go through <a href="#what-to-check-for-your-own-lets">what to check for your own lets</a>, and <a href="#fhl-tax-alert">get an email when holiday-let tax rules change</a>. Next up: Making Tax Digital for Income Tax from 6 April 2027 if your property and self-employment income was over £30,000 in 2025 to 2026.'],sub='From HMRC and GOV.UK guidance. Not tax advice.')}
+<p class="lead">How holiday lets are taxed since the furnished holiday let (FHL) rules ended, in plain English with HMRC sources, including <a href="#static-caravans">static caravans</a>.</p>
 <h2>Before and after</h2>
 <div class="tw"><table><tr><th>Area</th><th>Under the FHL rules</th><th>Now</th></tr>{tr}</table></div>
-<h2>What to check for your own lets</h2><ul>
+<h2 id="what-to-check-for-your-own-lets">What to check for your own lets</h2><ul>
 <li><b>Mortgage interest:</b> if you own the let personally and pay higher-rate tax, your tax bill on the same profit may go up because interest relief is now limited to the basic rate.</li>
 <li><b>Capital allowances pool:</b> keep claiming writing-down allowances on any existing pool. Treat new furniture and kit under the property rules.</li>
 <li><b>Losses:</b> any FHL losses brought forward can now be used against profits from your other UK lets.</li>
@@ -64,5 +70,5 @@ b=f'''<p class="lead">The special tax treatment for <b>furnished holiday lets (F
  'We have no upcoming holiday-let tax dates logged right now. If HMRC or the government announces a change, we\'ll email you.')}
 <h2>Common questions</h2>{fq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in TS)}</ul>
-<p class="small"><b>Not tax advice.</b> Checked {C}. Tax depends on your circumstances, so speak to an accountant or HMRC before acting.</p>'''
-page(f,t,b,desc=dsc,full_title='FHL Abolition 2025: Holiday Let & Static Caravan Tax',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>')
+<p class="small"><b>Not tax advice.</b> Checked {FCK}. Tax depends on your circumstances, so speak to an accountant or HMRC before acting.</p>'''
+page(f,t,b,desc=dsc,full_title='FHL Abolition 2025: Holiday Let & Static Caravan Tax',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>',checked=FCK)
