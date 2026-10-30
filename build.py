@@ -170,7 +170,9 @@ PICK_EXCL={'perth-and-kinross'}  # directory-only council: listed in councils.ht
 # gets 6 inbound links from sibling pages. data.json has no region data, so this is not 'nearby' geographically. Perth & Kinross excluded (PICK_EXCL).
 CPK_GUIDES={'holiday-let-fire-safety-wales.html':('Wales',),'wales-visitor-accommodation-licensing.html':('Wales',),'wales-registration-checker.html':('Wales',),
  'scotland-short-term-let-licence-guide.html':('Scotland',),'short-term-let-fire-safety-scotland.html':('Scotland',),'scotland-business-rates-checker.html':('Scotland',),
- 'holiday-let-fire-safety-england.html':('England',),'holiday-let-tax-after-fhl-abolition.html':('England','Scotland','Wales'),'holiday-let-insurance-uk.html':('England','Scotland','Wales')}
+ 'holiday-let-fire-safety-england.html':('England',),'holiday-let-tax-after-fhl-abolition.html':('England','Scotland','Wales'),'holiday-let-insurance-uk.html':('England','Scotland','Wales'),
+ 'wales-second-homes-council-tax-premium.html':('Wales',),'scotland-licence-renewal-checker.html':('Scotland',),
+ 'deadlines.html':('England','Scotland','Wales'),'occupancy-threshold-tracker.html':('England','Scotland','Wales'),'buyer-due-diligence-checker.html':('England','Scotland','Wales')}
 _ADJ={'England':'English','Scotland':'Scottish','Wales':'Welsh'}
 def _cpkc(nm):return sorted([c for c in d['councils'] if c['nation']==nm and c['verified'] and _sl(c) not in PICK_EXCL],key=lambda c:c['name'].replace('City of ',''))
 def _chips(cs,p):return '<ul class="cpkl">'+''.join(f'<li><a href="{p}councils/{_sl(c)}.html">{e(c["name"])}</a></li>' for c in cs)+'</ul>'
@@ -180,6 +182,8 @@ def CPK(f,p):
     return f'<section class="cpk" id="your-council" aria-labelledby="cpk-h"><h2 id="cpk-h">Rules in your council</h2><p>Each council page has the local licensing, planning, visitor levy and fee rules, key dates and official sources, plus a free email alert when they change.</p>{g}</section>'
 def _cpkins(b,blk):
     m=re.search(r'<h2[^>]*>(?:Common questions|Official sources)</h2>',b)
+    if m:return b[:m.start()]+blk+b[m.start():]
+    m=re.search(r'<section[^>]*id="get-alerts"',b)  # tools with no FAQ/sources heading: put it above the sitewide alert box
     return b[:m.start()]+blk+b[m.start():] if m else b+blk
 def MOREC(c):
     cs=_cpkc(c['nation']);ss=[_sl(x) for x in cs];s=_sl(c)

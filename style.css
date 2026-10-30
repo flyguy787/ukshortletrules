@@ -138,7 +138,7 @@ main details.more[open]>summary:after,.faq details[open]>summary:after{transform
 main details.more[open]>summary{border-bottom:1px solid var(--line);margin:0}
 main details.more .tw{margin:0;box-shadow:none;border-radius:0}main details.more>ul{margin:.6rem 0;padding:0 1rem 0 2.2rem}main details.more>ul li{margin:.3rem 0}
 .flt{display:block;padding:.7rem 1rem 0}.flt input{width:100%;max-width:26rem}.fltn{padding:0 1rem}
-.faq{display:grid;gap:.5rem;max-width:80ch}.faq details{margin:0}.faq summary{list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;padding:.15rem 0}.faq summary:after{margin-top:.45rem}.faq details[open]>summary:after{margin-top:.65rem}.faq details p{margin:.3rem 0 .2rem;color:#2f3b4c}
+.faq{display:grid;grid-template-columns:minmax(0,1fr);gap:.5rem;max-width:80ch}.faq details{min-width:0;overflow-wrap:anywhere}.faq details{margin:0}.faq summary{list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;padding:.15rem 0}.faq summary:after{margin-top:.45rem}.faq details[open]>summary:after{margin-top:.65rem}.faq details p{margin:.3rem 0 .2rem;color:#2f3b4c}
 @media(max-width:600px){.lead{font-size:1.05rem}.tldr{padding:.9rem .95rem}.tldr li{font-size:.97rem}.callout{padding:.65rem .8rem}}
 /* feedback loop (vote + error report), mobile first */
 .fbz [hidden]{display:none!important}
