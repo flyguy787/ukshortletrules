@@ -1,8 +1,10 @@
 # ---- Guide: Wales second homes council tax premium (up to 300% from 1 Apr 2023). Sources checked 23 Oct 2026 ----
 WG='https://www.gov.wales/council-tax-empty-and-second-homes-html'
+WCONS='https://www.gov.wales/classification-self-catering-properties-local-tax-purposes'
 WBR='https://www.gov.uk/guidance/apply-for-business-rates-for-a-self-catering-property-in-wales'
 WPS=[('Welsh Government: Council Tax on empty and second homes, guidance for local authorities (last updated 9 Mar 2023)',WG),
      ('GOV.UK: Apply for business rates for a self-catering property in Wales',WBR),
+     ('GOV.WALES consultation: Classification of self-catering properties for local tax purposes (closed 30 Oct 2026)',WCONS),
      ('GOV.WALES: Registering visitor accommodation (overview)','https://www.gov.wales/registering-visitor-accommodation-overview')]
 WPEX=[('Class 1','Marketed for sale at a reasonable price, or an offer accepted (up to 1 year; only once until it sells)'),
       ('Class 2','Marketed for let at a reasonable rent, or an offer accepted (up to 1 year; again only after a tenancy of 6 months or more)'),
@@ -19,14 +21,19 @@ WPFAQ=[('What is the second homes council tax premium in Wales?','Welsh councils
        ('How much notice does a council have to give?','A council\'s first decision to charge a second homes premium must be made at least 1 year before the financial year it applies to. After that, it can change the rate before the start of each financial year, usually when full Council sets the budget.'),
        ('Is this the same as registering with the Welsh Revenue Authority?','No. The premium is council tax. Separately, Wales requires visitor accommodation providers to register with the Welsh Revenue Authority. It is free, and the deadline is 31 March 2027.')]
 wec=''.join(f'<tr><td>{e(a)}</td><td>{e(b_)}</td></tr>' for a,b_ in WPEX)
-wfq=''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q,a in WPFAQ)
+wfq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in WPFAQ)
 wld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in WPFAQ]}).replace('</','<\\/')
 wcl=''.join(f'<li><a href="councils/{slug(c)}.html">{e(c["name"])}</a>: {e(c["rule"])}</li>' for c in d['councils'] if c['nation']=='Wales' and c['verified'] and 'premium' in c['rule'])
 f='wales-second-homes-council-tax-premium.html'
 t='Wales second homes council tax premium: holiday lets'
 dsc='The Welsh second homes council tax premium (up to 300%): when a holiday let pays it after missing the 252/182-night business rates test, the Class 1 to 7 exceptions, and council rates. Official sources.'
-b=f'''<p class="lead">Councils in Wales can charge a <b>second homes premium of up to 300%</b> on top of normal council tax. Here is when it hits a holiday let, the exceptions, and what each council we cover charges, with official sources.</p>
-<div class="box"><p><b>Quick answer:</b> if your holiday let is on <b>business rates</b> (available 252 nights and let 182 nights), the premium does not apply. If it misses those thresholds it moves to <b>council tax</b>, and your council's second homes premium applies unless an exception fits, such as a holiday-only planning condition (Class 6).</p></div>
+b=f'''{TLDR(['<b>Up to 4 times normal council tax.</b> Since 1 April 2023, councils in Wales can charge a premium of up to 300% on second homes: furnished homes that are nobody\'s sole or main home.',
+'<b>Business rates means no premium.</b> A Welsh holiday let stays on business rates only if it is available to let for at least 252 nights and actually let for at least 182 nights in 12 months. Miss that and it moves to council tax, where the premium can apply.',
+'<b>Your council decides</b> whether to charge it, at what rate and on which types of property. Its first decision must be made at least 1 year before the financial year it applies to.',
+'<b>Exceptions (Classes 1 to 7)</b> remove the premium. For holiday lets the big one is Class 6: a planning condition that limits the home to holiday use, stops stays of 28 days in a row, or stops it being anyone\'s main home. Councils can also reduce bills, for example for annexes or garage conversions that are part of your home.',
+f'<b>The 182-night test is under review.</b> The Welsh Government <a href="{WCONS}" rel="nofollow">consulted</a> from 31 July to 30 October 2026 on the criteria for classing self-catering properties and on exemptions. The current 252/182 test still applies until any change is made.',
+'<b>Do now:</b> check <a href="#premium-checklist">what to check for your let</a>, track your nights with the <a href="occupancy-threshold-tracker.html">occupancy tracker</a>, and <a href="#wales-alert">get an email when the rules change</a>.'],sub='From Welsh Government guidance, GOV.UK and GOV.WALES. Not tax advice.')}
+<p class="lead">When the Welsh second homes premium hits a holiday let, the exceptions, and what each council we cover charges, with official sources.</p>
 <h2>Who it applies to</h2><ul>
 <li>For this premium, a <b>second home</b> is a home that is substantially furnished but is nobody's sole or main home.</li>
 <li>Since 1 April 2017 Welsh councils have been able to charge up to 100%. From 1 April 2023 the maximum is <b>300%</b>.</li>
@@ -36,7 +43,7 @@ b=f'''<p class="lead">Councils in Wales can charge a <b>second homes premium of 
 <h2>Exceptions (Council Tax (Exceptions to Higher Amounts) (Wales) Regulations 2015)</h2><p>Councils cannot charge the premium on these. They remove the premium, not the normal council tax.</p>
 <div class="tw"><table><tr><th>Class</th><th>Who it covers</th></tr>{wec}</table></div>
 <p>Councils can also reduce the premium or the whole bill under section 13A of the Local Government Finance Act 1992. The Welsh Government suggests they consider this for farm barn conversions, annexes or garage conversions that are part of the owner's home, and lodges, caravans or chalets that move to council tax.</p>
-<h2>What to check for your let</h2><ul>
+<h2 id="premium-checklist">What to check for your let</h2><ul>
 <li>Did it meet 252 available and 182 let nights? If not, expect a move to council tax.</li>
 <li>Does a planning condition limit it to holiday use or stop stays of 28 days in a row? Class 6 may apply. Ask the council and keep the planning decision notice.</li>
 <li>Is it an annex or garage conversion used as part of your main home? Class 3 may apply, or the council may have a local reduction policy.</li>
