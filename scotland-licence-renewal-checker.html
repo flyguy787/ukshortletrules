@@ -21,7 +21,7 @@ else if(days<=92){O.appendChild(el('p','Your licence expires in about '+days+' d
 else{O.appendChild(el('p','About '+days+' days to go.'))}
 O.appendChild(el('p','This is only an estimate. Your licence shows its expiry date, and that date (and your council\'s own requirements) always win.','small'));
 if(c){if(c.note){O.appendChild(el('h4','What '+c.n+' says'));O.appendChild(el('p',c.note));var u=el('ul','', 'small');c.src.forEach(function(x){var li=el('li'),a=el('a',x[0]);a.href=x[1];a.rel='nofollow';li.appendChild(a);li.appendChild(document.createTextNode(' (checked '+D.chk+')'));u.appendChild(li)});O.appendChild(u)}
-var m=el('p'),a=el('a','See our '+c.n+' page: fees, planning and levy, with official sources');a.href='councils/'+c.s+'.html';m.appendChild(a);O.appendChild(m)}
+var m=el('p'),a=el('a','See our '+c.n+' page: fees, planning and levy, with official sources');a.href='councils/'+c.s;m.appendChild(a);O.appendChild(m)}
 else if(C.value==='other'){var m2=el('p'),a2=el('a','Find your council page');a2.href='councils';m2.appendChild(document.createTextNode('Most Scottish licences last 3 years, but councils can grant shorter ones, and longer renewals are possible. '));m2.appendChild(a2);O.appendChild(m2)}}
 C.addEventListener('change',function(){setLen();run()});T.addEventListener('change',function(){setLen();run()});[Dt,Y].forEach(function(x){x.addEventListener('change',run);x.addEventListener('input',run)});})();</script>
 <h2>How renewal works in Scotland</h2>

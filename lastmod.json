@@ -1,19 +1,19 @@
 {
  "buyer-due-diligence-checker.html": {
-  "d": "2026-10-30",
-  "h": "8a738f2ce918aae6385109bff0b86b4d7d5f16cccc1bcb6ef6e7b8c8f1afc613"
+  "d": "2026-10-31",
+  "h": "68e3c2ef3cf9978e47eccd732c16cd0e0b39375eda3cb576d2bdb874fc827c7c"
  },
  "changes.html": {
   "d": "2026-10-30",
   "h": "91d36974ff87c72e9614c111c36fc43180795599728b98c4f7c6e0d5d37e9276"
  },
  "checker.html": {
-  "d": "2026-10-30",
-  "h": "1963de6576cb24105f139d2397e501f7b9237547ebb9d4b8643445c521f61f1c"
+  "d": "2026-10-31",
+  "h": "637fb124039100d39e3cdc9bc653e60284a20519d2d8849ebad981087df0798f"
  },
  "councils.html": {
-  "d": "2026-10-30",
-  "h": "769fa56602b1933591a510c740343c60601054dd8bf5578c20dc6b0255e6e368"
+  "d": "2026-10-31",
+  "h": "9b7567c3023a3f7d55cdb242b4a172a00dcbda3fb29a05443f6239a96c1facf0"
  },
  "councils/aberdeen-city.html": {
   "d": "2026-10-30",
@@ -68,8 +68,8 @@
   "h": "ed3d67693eda672f52b809ff87abd70edc801d9447737c1c7f45346551989e1d"
  },
  "councils/city-of-edinburgh.html": {
-  "d": "2026-10-30",
-  "h": "2293afff383195bec523b05f5013312f7408e28aeca02894b210b1cb435c6ae0"
+  "d": "2026-10-31",
+  "h": "f0fa1742f909a6aa2ef359f786caffbd57309df7ce07baf0fd70a62c27e6b75e"
  },
  "councils/city-of-york.html": {
   "d": "2026-10-30",
@@ -348,8 +348,8 @@
   "h": "85f9f0b9dee791537ae07b26ef4d7c8ca2df58fea20d4c5bd18bab466d660c63"
  },
  "deadlines.html": {
-  "d": "2026-10-30",
-  "h": "f3ea357c896e4450ec6b7e864d0a942977d73911466ea1267ef7372938913d87"
+  "d": "2026-10-31",
+  "h": "d1a255239660c7baa800716b912d4ea6ac66cc4e42a532d97d01bd476ef013da"
  },
  "embed.html": {
   "d": "2026-10-26",
@@ -380,8 +380,8 @@
   "h": "846432da0579afbab44b0ff56d7f4d24c502abc584b19fa38667fe4cf9c7f59f"
  },
  "holiday-let-fire-safety-wales.html": {
-  "d": "2026-10-30",
-  "h": "10c97043270e978a73092792feff6b66ac7d4b3a97dc847453b903cddbedf89e"
+  "d": "2026-10-31",
+  "h": "19bca7f69ce522aa9b4566ae033f898a46c7bcf20b5cebb0b6200e9c8b11fbfe"
  },
  "holiday-let-insurance-uk.html": {
   "d": "2026-10-30",
@@ -392,8 +392,8 @@
   "h": "c0ba0fc597dfe5e41407834f7da0078f47af56692418d1d02f69c9105e3db8d4"
  },
  "index.html": {
-  "d": "2026-10-30",
-  "h": "fabccb730537209dc49cdb1dfef2eac77ffd7454d3bc30e27ab4ca8648ca6998"
+  "d": "2026-10-31",
+  "h": "aeeafffc22e1936e115c8ea732e86f252be61f7f42e8cce5cd456d3e9ecdc72e"
  },
  "levy-calculator.html": {
   "d": "2026-10-30",
@@ -404,8 +404,8 @@
   "h": "2df36e2d8e2ab02ed285f6868e7de66df04f59e29dfcd46e629b7338f5a142fd"
  },
  "newsletter.html": {
-  "d": "2026-10-30",
-  "h": "0b011f632657bd3c423aa84d1f938b97566e942ef1de375c9e3c34e8d32f6df8"
+  "d": "2026-10-31",
+  "h": "70ae1dc5b750add1d19145f40a0da3fbfd24c532c897b7ac5d31115a6d6612b8"
  },
  "northern-ireland-tourism-certificate-guide.html": {
   "d": "2026-10-30",
@@ -428,12 +428,12 @@
   "h": "74870436f57f740cbb9bf0e196528ae26769d5d607dcd2a907a587304db73224"
  },
  "scotland-licence-renewal-checker.html": {
-  "d": "2026-10-30",
-  "h": "301984037155330b603542dc3043c4c4b2b20da7955fb308a8c1af7104aa1138"
+  "d": "2026-10-31",
+  "h": "0164b5b463eb569a980fa837d5e1d139610d8985e18962cab1ff659368cffa75"
  },
  "scotland-short-term-let-licence-fees.html": {
-  "d": "2026-10-29",
-  "h": "014f96a885cb7e735b695f4873f71ec424b2cf5d3b8ca2aa97fa4e3f1fcf9aa2"
+  "d": "2026-10-31",
+  "h": "fe60c8de05075f4f797f8fb6bb923400a39169b7b39e65f40bcd8d24acb123c2"
  },
  "scotland-short-term-let-licence-guide.html": {
   "d": "2026-10-30",
@@ -456,19 +456,19 @@
   "h": "c7d1ae39a34ca199e4752680b9bb493b60b5ba932dfb353354502f7c49a4d2e5"
  },
  "wales-registration-checker.html": {
-  "d": "2026-10-30",
-  "h": "9833ff22895e0fa26746da1fbae041353565a89fbcb43b505df8eecf3d308300"
+  "d": "2026-10-31",
+  "h": "f5bbc597336ae61cbf37b5939ff8787780df7368b5ba0d67e1bfe572401b45e8"
  },
  "wales-second-homes-council-tax-premium.html": {
-  "d": "2026-10-30",
-  "h": "3766fff1d4ecde434b2271097692f51cd718dac61c78000642ba0ba0cccc247c"
+  "d": "2026-10-31",
+  "h": "e5613c67de0680f0afff5067df2934023e4551375c45fd63b95b2edc9ede9cc4"
  },
  "wales-visitor-accommodation-licensing.html": {
   "d": "2026-10-30",
   "h": "12137a51bf950834ac0c8a554b4b32b278f8149105496ef43d5bac4fa07e9431"
  },
  "wales.html": {
-  "d": "2026-10-30",
-  "h": "52730925860462c3ea14cd9b889ab85aea86bd553439ca28c67ef701a1495e38"
+  "d": "2026-10-31",
+  "h": "c6711aeea03ff3adbd82b39723146e0190b9f1d453ed15c3521ac8e3ab785671"
  }
 }

@@ -1271,8 +1271,11 @@ def _clean(t):
         u=re.sub(r'\.html(?=$|[#?])','',u)
         return f'href={q}{u}{q}'
     return re.sub(r'href=(["\'])([^"\']*?\.html(?:[#?][^"\']*)?)\1',rel,t)
+_ESC=re.compile(r'href=\\"([^"\\:]*?)\.html(?=[#?]|\\")')
+def _clean_esc(t):  # escaped hrefs inside inline JSON strings (e.g. buyer checker data)
+    return _ESC.sub(lambda m:'href=\\"'+(re.sub(r'(^|/)index$',lambda k:k.group(1) or './',m.group(1))),t)
 for f in PAGES+['levy-calculator-widget.html','checker-widget.html','sitemap.xml']:
-    t=open(f).read();open(f,'w').write(_clean(t))
+    t=open(f).read();open(f,'w').write(_clean_esc(_clean(t)))
 
 # ---- Short redirect links (redirects.json: slug -> query string on homepage). Not in sitemap; no analytics here ----
 import os
