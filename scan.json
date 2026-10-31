@@ -1,417 +1,417 @@
 {
  "aberdeen-city": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 3,
   "total": 7
  },
  "aberdeenshire": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 6
  },
  "angus": {
-  "scanned": "2026-10-30",
-  "ok": 10,
-  "total": 10
- },
- "argyll-and-bute": {
-  "scanned": "2026-10-30",
-  "ok": 7,
-  "total": 7
- },
- "bath-and-north-east-somerset": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 11,
   "total": 11
  },
- "blaenau-gwent": {
-  "scanned": "2026-10-30",
-  "ok": 4,
+ "argyll-and-bute": {
+  "scanned": "2026-10-31",
+  "ok": 8,
   "total": 8
  },
+ "bath-and-north-east-somerset": {
+  "scanned": "2026-10-31",
+  "ok": 9,
+  "total": 12
+ },
+ "blaenau-gwent": {
+  "scanned": "2026-10-31",
+  "ok": 9,
+  "total": 9
+ },
  "bournemouth-christchurch-and-poole": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 15,
   "total": 15
  },
  "bridgend": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 9
- },
- "brighton-and-hove": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 9,
   "total": 9
  },
+ "brighton-and-hove": {
+  "scanned": "2026-10-31",
+  "ok": 10,
+  "total": 10
+ },
  "caerphilly": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 9
+  "scanned": "2026-10-31",
+  "ok": 8,
+  "total": 10
  },
  "cardiff": {
-  "scanned": "2026-10-30",
-  "ok": 2,
+  "scanned": "2026-10-31",
+  "ok": 4,
   "total": 4
  },
  "carmarthenshire": {
-  "scanned": "2026-10-30",
-  "ok": 3,
+  "scanned": "2026-10-31",
+  "ok": 7,
   "total": 7
  },
  "ceredigion": {
-  "scanned": "2026-10-30",
-  "ok": 4,
+  "scanned": "2026-10-31",
+  "ok": 6,
   "total": 6
  },
  "city-of-edinburgh": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 6,
+  "total": 6
  },
  "city-of-york": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 12,
   "total": 12
  },
  "clackmannanshire": {
-  "scanned": "2026-10-30",
-  "ok": 4,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 6
  },
  "conwy": {
-  "scanned": "2026-10-30",
-  "ok": 4,
+  "scanned": "2026-10-31",
+  "ok": 6,
   "total": 6
  },
  "cornwall": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 1,
   "total": 1
  },
  "cotswold": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 8,
-  "total": 8
+  "total": 9
  },
  "cumberland": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "denbighshire": {
-  "scanned": "2026-10-30",
-  "ok": 3,
+  "scanned": "2026-10-31",
+  "ok": 7,
   "total": 7
  },
  "derbyshire-dales": {
-  "scanned": "2026-10-30",
-  "ok": 12,
-  "total": 12
+  "scanned": "2026-10-31",
+  "ok": 13,
+  "total": 13
  },
  "dorset": {
-  "scanned": "2026-10-30",
-  "ok": 6,
-  "total": 6
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 7
  },
  "dumfries-and-galloway": {
-  "scanned": "2026-10-30",
-  "ok": 5,
+  "scanned": "2026-10-31",
+  "ok": 2,
   "total": 5
  },
  "dundee-city": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
-  "total": 6
+  "total": 7
  },
  "east-ayrshire": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "east-devon": {
-  "scanned": "2026-10-30",
-  "ok": 9,
+  "scanned": "2026-10-31",
+  "ok": 4,
   "total": 9
  },
  "east-dunbartonshire": {
-  "scanned": "2026-10-30",
-  "ok": 3,
-  "total": 3
+  "scanned": "2026-10-31",
+  "ok": 4,
+  "total": 4
  },
  "east-lindsey": {
-  "scanned": "2026-10-30",
-  "ok": 6,
+  "scanned": "2026-10-31",
+  "ok": 4,
   "total": 6
  },
  "east-lothian": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 6,
+  "total": 6
  },
  "east-renfrewshire": {
-  "scanned": "2026-10-30",
-  "ok": 7,
-  "total": 8
+  "scanned": "2026-10-31",
+  "ok": 3,
+  "total": 9
  },
  "east-suffolk": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 6,
+  "total": 6
  },
  "falkirk": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "fife": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 8,
-  "total": 8
- },
- "flintshire": {
-  "scanned": "2026-10-30",
-  "ok": 5,
   "total": 9
  },
+ "flintshire": {
+  "scanned": "2026-10-31",
+  "ok": 8,
+  "total": 10
+ },
  "glasgow-city": {
-  "scanned": "2026-10-30",
-  "ok": 5,
+  "scanned": "2026-10-31",
+  "ok": 2,
   "total": 5
  },
  "greater-london-all-boroughs": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 1,
   "total": 1
  },
  "gwynedd": {
-  "scanned": "2026-10-30",
-  "ok": 2,
+  "scanned": "2026-10-31",
+  "ok": 4,
   "total": 4
  },
  "highland": {
-  "scanned": "2026-10-30",
-  "ok": 6,
-  "total": 6
- },
- "inverclyde": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 7,
   "total": 7
  },
+ "inverclyde": {
+  "scanned": "2026-10-31",
+  "ok": 2,
+  "total": 8
+ },
  "isle-of-anglesey": {
-  "scanned": "2026-10-30",
-  "ok": 3,
-  "total": 6
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 7
  },
  "isle-of-wight": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
-  "total": 6
+  "total": 7
  },
  "isles-of-scilly": {
-  "scanned": "2026-10-30",
-  "ok": 13,
-  "total": 13
+  "scanned": "2026-10-31",
+  "ok": 14,
+  "total": 14
  },
  "liverpool": {
-  "scanned": "2026-10-30",
-  "ok": 13,
-  "total": 13
+  "scanned": "2026-10-31",
+  "ok": 15,
+  "total": 15
  },
  "merthyr-tydfil": {
-  "scanned": "2026-10-30",
-  "ok": 5,
+  "scanned": "2026-10-31",
+  "ok": 9,
   "total": 9
  },
  "midlothian": {
-  "scanned": "2026-10-30",
-  "ok": 4,
-  "total": 4
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 5
  },
  "monmouthshire": {
-  "scanned": "2026-10-30",
-  "ok": 4,
+  "scanned": "2026-10-31",
+  "ok": 8,
   "total": 8
  },
  "moray": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 6
  },
  "na-h-eileanan-siar-western-isles": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 1,
   "total": 1
  },
  "neath-port-talbot": {
-  "scanned": "2026-10-30",
-  "ok": 5,
+  "scanned": "2026-10-31",
+  "ok": 9,
   "total": 9
  },
  "new-forest": {
-  "scanned": "2026-10-30",
-  "ok": 12,
+  "scanned": "2026-10-31",
+  "ok": 7,
   "total": 12
  },
  "newport": {
-  "scanned": "2026-10-30",
-  "ok": 4,
-  "total": 8
+  "scanned": "2026-10-31",
+  "ok": 9,
+  "total": 9
  },
  "north-ayrshire": {
-  "scanned": "2026-10-30",
-  "ok": 6,
+  "scanned": "2026-10-31",
+  "ok": 5,
   "total": 6
  },
  "north-devon": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
-  "total": 6
+  "total": 7
  },
  "north-lanarkshire": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 4,
   "total": 4
  },
  "north-norfolk": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
-  "total": 6
+  "total": 7
  },
  "north-yorkshire": {
-  "scanned": "2026-10-30",
-  "ok": 4,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 6
  },
  "northumberland": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 4,
   "total": 4
  },
  "orkney-islands": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 4,
   "total": 4
  },
  "pembrokeshire": {
-  "scanned": "2026-10-30",
-  "ok": 3,
-  "total": 5
+  "scanned": "2026-10-31",
+  "ok": 4,
+  "total": 4
  },
  "perth-and-kinross": {
-  "scanned": "2026-10-30",
-  "ok": 6,
+  "scanned": "2026-10-31",
+  "ok": 2,
   "total": 6
  },
  "powys": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 2,
   "total": 3
  },
  "renfrewshire": {
-  "scanned": "2026-10-30",
-  "ok": 3,
+  "scanned": "2026-10-31",
+  "ok": 2,
   "total": 3
  },
  "rhondda-cynon-taf": {
-  "scanned": "2026-10-30",
-  "ok": 4,
-  "total": 8
+  "scanned": "2026-10-31",
+  "ok": 9,
+  "total": 9
  },
  "scottish-borders": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 4,
   "total": 4
  },
  "sefton": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 13,
   "total": 13
  },
  "shetland-islands": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 6
  },
  "somerset": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 6
  },
  "south-ayrshire": {
-  "scanned": "2026-10-30",
-  "ok": 6,
-  "total": 6
+  "scanned": "2026-10-31",
+  "ok": 3,
+  "total": 7
  },
  "south-hams": {
-  "scanned": "2026-10-30",
-  "ok": 6,
-  "total": 6
+  "scanned": "2026-10-31",
+  "ok": 5,
+  "total": 7
  },
  "south-lanarkshire": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 7
  },
  "stirling": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "swansea": {
-  "scanned": "2026-10-30",
-  "ok": 3,
+  "scanned": "2026-10-31",
+  "ok": 6,
   "total": 7
  },
  "teignbridge": {
-  "scanned": "2026-10-30",
-  "ok": 13,
+  "scanned": "2026-10-31",
+  "ok": 7,
   "total": 13
  },
  "torbay": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
+  "ok": 8,
+  "total": 10
+ },
+ "torfaen": {
+  "scanned": "2026-10-31",
   "ok": 9,
   "total": 9
  },
- "torfaen": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 9
- },
  "torridge": {
-  "scanned": "2026-10-30",
-  "ok": 6,
-  "total": 6
+  "scanned": "2026-10-31",
+  "ok": 4,
+  "total": 7
  },
  "vale-of-glamorgan": {
-  "scanned": "2026-10-30",
-  "ok": 5,
-  "total": 9
+  "scanned": "2026-10-31",
+  "ok": 10,
+  "total": 10
  },
  "west-devon": {
-  "scanned": "2026-10-30",
-  "ok": 12,
-  "total": 12
+  "scanned": "2026-10-31",
+  "ok": 7,
+  "total": 13
  },
  "west-dunbartonshire": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 6,
   "total": 6
  },
  "west-lothian": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "westmorland-and-furness": {
-  "scanned": "2026-10-30",
+  "scanned": "2026-10-31",
   "ok": 5,
   "total": 5
  },
  "wrexham": {
-  "scanned": "2026-10-30",
-  "ok": 4,
+  "scanned": "2026-10-31",
+  "ok": 8,
   "total": 8
  }
 }
