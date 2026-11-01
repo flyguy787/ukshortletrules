@@ -1,19 +1,19 @@
 {
  "buyer-due-diligence-checker.html": {
-  "d": "2026-10-31",
-  "h": "68e3c2ef3cf9978e47eccd732c16cd0e0b39375eda3cb576d2bdb874fc827c7c"
+  "d": "2026-11-01",
+  "h": "f09b28768197e9fd2582e27669b2c93799f4d214f8a4dfa574dc692e346ae15f"
  },
  "changes.html": {
   "d": "2026-10-30",
   "h": "91d36974ff87c72e9614c111c36fc43180795599728b98c4f7c6e0d5d37e9276"
  },
  "checker.html": {
-  "d": "2026-10-31",
-  "h": "3d884f952695691c86da0fc9444cf80039811788d9c04aa2a50f0d81477da805"
+  "d": "2026-11-01",
+  "h": "1ea48ef099e86f663bf897ca6c9cfd1c88429ee99feb4463e3fde4df4fbf78c8"
  },
  "councils.html": {
-  "d": "2026-10-31",
-  "h": "9b7567c3023a3f7d55cdb242b4a172a00dcbda3fb29a05443f6239a96c1facf0"
+  "d": "2026-11-01",
+  "h": "527092a68b0ea881ec61a10fe538a0a1137f6f71cecf92f8cbcb5bec58f8793a"
  },
  "councils/aberdeen-city.html": {
   "d": "2026-10-31",
@@ -204,8 +204,8 @@
   "h": "c3f34eb68ca1e8d0141cc52d1cd88686e9b4e7fa1c14bc4021066929cbe98a8d"
  },
  "councils/moray.html": {
-  "d": "2026-10-31",
-  "h": "f618b5750e33738604badc9bc11045dfbbab673269fb55082105a0bbe20962df"
+  "d": "2026-11-01",
+  "h": "3a14125ef9997cbd15274ed1437ddc4e4f8464df8979d625242ff8bb6d262d01"
  },
  "councils/na-h-eileanan-siar.html": {
   "d": "2026-10-30",
@@ -348,8 +348,8 @@
   "h": "4eb16c193ea3ef0cc9ed33d7a46376cddca3b6e8dca3bc21c5e49e946f8a0e1e"
  },
  "deadlines.html": {
-  "d": "2026-10-31",
-  "h": "1e300d400fb091e839da0e0c9f2487e33878135c1d1f01be6df83957a897959c"
+  "d": "2026-11-01",
+  "h": "ab1ca3a0ee506c4df15b3fe7fc8c8702b0cc520fc5dc97807993afb21e0cfa30"
  },
  "embed.html": {
   "d": "2026-10-26",
@@ -388,12 +388,12 @@
   "h": "5fd701ed1848aa705de029e17479b4e42c8aa2653010470202242937e1e5956a"
  },
  "holiday-let-tax-after-fhl-abolition.html": {
-  "d": "2026-10-30",
-  "h": "c0ba0fc597dfe5e41407834f7da0078f47af56692418d1d02f69c9105e3db8d4"
+  "d": "2026-11-01",
+  "h": "450e7abbc9523d9d63cecc4a5930de338ad686a4eac486f3d6cffa690b3b48cd"
  },
  "index.html": {
-  "d": "2026-10-31",
-  "h": "aeeafffc22e1936e115c8ea732e86f252be61f7f42e8cce5cd456d3e9ecdc72e"
+  "d": "2026-11-01",
+  "h": "ca7ee8ef8d49f91349dd68027d11972e8d1c6d79b8752c69014d73beabdc3ca2"
  },
  "levy-calculator.html": {
   "d": "2026-10-31",
@@ -404,8 +404,8 @@
   "h": "2df36e2d8e2ab02ed285f6868e7de66df04f59e29dfcd46e629b7338f5a142fd"
  },
  "newsletter.html": {
-  "d": "2026-10-31",
-  "h": "70ae1dc5b750add1d19145f40a0da3fbfd24c532c897b7ac5d31115a6d6612b8"
+  "d": "2026-11-01",
+  "h": "8bad72683cfa7bbad55811d6526e85805648e41011436e7de784d0b7046f3871"
  },
  "northern-ireland-tourism-certificate-guide.html": {
   "d": "2026-10-30",
@@ -428,8 +428,8 @@
   "h": "131869187e5c0abb52561836962e264d3b776b75a6e8fe6940f9c97ee5e96f3a"
  },
  "scotland-licence-renewal-checker.html": {
-  "d": "2026-10-31",
-  "h": "b5a750a0eb7cb436702f8faf0996b2413f682fab3b751734e76a2da5f6049ad6"
+  "d": "2026-11-01",
+  "h": "e5bf9f62a904e60c216dff01c1e0d4713eddc4d544ef6865121102cb8309ff65"
  },
  "scotland-short-term-let-licence-fees.html": {
   "d": "2026-10-31",
