@@ -143,7 +143,25 @@ def LEVYALERT(cta,aid):
      +'<p class="small">Plus one short weekly UK "what changed" email. Free, no spam, unsubscribe any time.</p>'
      +FORMX.replace('<form class="signup"',f'<form class="signup pick" data-cta="{cta}" aria-label="Get an email when visitor levy rules change"',1).replace('<input type="email"',f'<label class="sr" for="{aid}-area">Your council or nation</label><select name="area" id="{aid}-area" required><option value="">Choose your council or nation</option>{og}</select><input type="email"',1).replace('>Subscribe<','>Get free alerts<')+'</div>')
 rows=''.join(f'<tr><td><b>{a}</b><br><span class="small">{n}</span></td><td>{r}</td><td>{s}</td><td><span class="tag{"" if st in ("live","confirmed") else " warn"}">{ST[st]}</span></td><td>{src(u)}{"<br><span class=small>"+no+"</span>" if no else ""}</td></tr>' for a,n,r,s,st,u,la,lo,no in LV)
-pts=json.dumps([dict(a=re.sub('<[^>]+>','',html.unescape(a)),r=re.sub('<[^>]+>','',r).replace('UNVERIFIED','(unverified)'),s=re.sub('<[^>]+>','',s),st=st,lat=la,lon=lo) for a,n,r,s,st,u,la,lo,no in LV if la])
+# In-context alert on the map (1 Nov 2026, growth push): clicking a marker shows #lm-alert under the map, pre-set to that area
+# (data-cta levy-map, fixed data-area like buyer-result). A marker maps to its council page (council:<slug>) when there is exactly one;
+# multi-council rows, BID charges and combined-authority proposals without a single council page fall back to the nation (nation:<id>).
+# PICK_EXCL councils (Perth & Kinross) never get an alert. The reason text only restates the row's status shown on this map.
+LMC={'Edinburgh':'City of Edinburgh','Glasgow':'Glasgow City','Aberdeen':'Aberdeen City','Dundee':'Dundee City','Dumfries &amp; Galloway':'Dumfries and Galloway',
+ 'Liverpool (Accommodation BID)':'Liverpool','Bournemouth, Christchurch &amp; Poole':'Bournemouth, Christchurch and Poole'}
+LMN={'Scotland':'scotland','Wales':'wales','England':'england','Northern Ireland':'northern-ireland'}
+LMS={'live':'the visitor levy it charges now','confirmed':'its confirmed visitor levy, before and after it starts','consulting':'the outcome of its visitor levy consultation','proposed':'any visitor levy decision','none':'any visitor levy it proposes'}
+def _lmarea(a,n,st):
+    cs={c['name']:c for c in d['councils'] if c['verified']}
+    nm=re.sub(r', ([^,]+)$',r' and \1',re.sub(r' \([^)]*\)$','',html.unescape(re.sub('<[^>]+>','',a))))
+    c=cs.get(LMC.get(a,a))
+    if c:
+        if _sl(c) in PICK_EXCL or 'kinross' in _sl(c):return None
+        lv='its Accommodation BID charge (not a statutory levy) and any visitor levy' if 'BID' in a else LMS[st]
+        return dict(ar='council:'+_sl(c),an=c['name'],why=f'We track licensing, planning, visitor levy and fee rules for {c["name"]} against official sources, and email you when one of them changes, including {lv}.')
+    return dict(ar='nation:'+LMN[n],an=n,why=f'We don\'t have a single council page for {nm}, so this signs you up for every {n} change: licensing or registration, planning, visitor levy and council tax rules, checked against official sources.')
+pts=json.dumps([dict(a=re.sub('<[^>]+>','',html.unescape(a)),r=re.sub('<[^>]+>','',r).replace('UNVERIFIED','(unverified)'),s=re.sub('<[^>]+>','',s),st=st,lat=la,lon=lo,**(_lmarea(a,n,st) or {})) for a,n,r,s,st,u,la,lo,no in LV if la]).replace('</','<\\/')
+LMALERT='<div class="alertbox" id="lm-alert" hidden><h2>Get an email when short-let rules change in <span id="lm-an">your area</span></h2><p id="lm-why">We track these rules against official sources and email you when one of them changes.</p><p class="small">Plus one short weekly UK "what changed" email. Free. Unsubscribe any time.</p>'+FORMX.replace('<form class="signup"','<form class="signup" id="lm-form" data-cta="levy-map" data-area="" data-area-name=""',1).replace('>Subscribe<','>Get free alerts<')+'</div>'
 dsc='Scotland visitor levy rates and start dates: Edinburgh 5% now; Glasgow, Aberdeen, Stirling and West Dunbartonshire confirmed. Plus every UK tourist tax.'
 t='UK visitor levy and tourist tax map 2026-27'
 LVT='Scotland Visitor Levy for Holiday Lets: Rates & Dates (2026)'
@@ -155,15 +173,16 @@ LVF=FAQ([('Is there a visitor levy in Scotland?','Yes, but only where a council 
 head=OGT('uk-visitor-levy-map.html',LVT,dsc)+LVF[1]+'<link rel="stylesheet" href="vendor/leaflet/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="><script src="vendor/leaflet/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="></script><style>#map{height:460px;border-radius:10px;margin:1rem 0}</style>'
 nl=sum(1 for x in LV if x[4]=='live');ns=sum(1 for x in LV if x[4]=='live' and 'BID' not in x[0]);nb=nl-ns;nsn=', '.join(x[0] for x in LV if x[4]=='live' and 'BID' not in x[0]);nbt=f' plus {nb} city accommodation BID charges (not a tourist tax)' if nb else '';nc=sum(1 for x in LV if x[4]=='confirmed')
 b=ANSWER(*LVA)+TOP_PICK()+f'''<p class="lead">Where UK hosts must charge guests a visitor levy (tourist tax), and where one is coming. {ns} statutory {'levy' if ns==1 else 'levies'} live ({nsn}){nbt}, {nc} confirmed, more under consultation. Last checked {C}.</p>
-<div id="map" role="img" aria-label="Map of UK visitor levies"></div><p class="small">Green: live. Blue: confirmed. Orange: consulting or proposed.{" Grey: none." if any(x[4]=="none" and x[6] is not None for x in LV) else ""} Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
+<div id="map" role="img" aria-label="Map of UK visitor levies"></div><p class="small">Tap a marker for its rate and free alerts for that area. Green: live. Blue: confirmed. Orange: consulting or proposed.{" Grey: none." if any(x[4]=="none" and x[6] is not None for x in LV) else ""} Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>{LMALERT}
 <div class="tw"><table class="stk"><tr><th>Area</th><th>Rate</th><th>Start date</th><th>Status</th><th>Official source / notes</th></tr>{rows}</table></div>
 <p class="small">Statuses: <b>Live</b> = being charged now; <b>Confirmed</b> = approved with a start date; <b>Consulting</b> = formal consultation open; <b>Proposed</b> = early stage or outcome unknown. {UV} = we could not confirm this on an official source. Manchester and Liverpool are accommodation Business Improvement District charges, not statutory levies.</p>
 <h2>Scotland visitor levy: quick answers</h2>{LVF[0]}<p class="small">Answers summarise the table above. Follow each row's official source before acting.</p>
-{LEVYALERT('levy-map','levy-alert')}
+{LEVYALERT('levy-map-list','levy-alert')}
 <p>Share this page: <a href="https://twitter.com/intent/tweet?url={SITE}uk-visitor-levy-map.html&amp;text=Every%20UK%20visitor%20levy%20in%20one%20map" rel="nofollow">X</a> · <a href="https://www.facebook.com/sharer/sharer.php?u={SITE}uk-visitor-levy-map.html" rel="nofollow">Facebook</a> · <a href="https://www.linkedin.com/sharing/share-offsite/?url={SITE}uk-visitor-levy-map.html" rel="nofollow">LinkedIn</a></p>
 <p>Related: <a href="scotland-business-rates-checker.html">Scotland business rates checker</a> · <a href="wales-registration-checker.html">Wales registration checker</a></p>
 <script>(function(){{if(!window.L)return;var P={pts};var C={{live:'#1a7f37',confirmed:'#1f6feb',consulting:'#d97706',proposed:'#d97706',none:'#8a94a3'}};
 var m=L.map('map',{{scrollWheelZoom:false}}).setView([54.8,-3.4],5);L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{maxZoom:12,attribution:'&copy; OpenStreetMap contributors'}}).addTo(m);
 P.forEach(function(p){{var d=document.createElement('div');d.innerHTML='<b></b><br><span></span><br><i></i>';d.querySelector('b').textContent=p.a;d.querySelector('span').textContent=p.r;d.querySelector('i').textContent=p.st+': '+p.s;
-L.circleMarker([p.lat,p.lon],{{radius:9,color:C[p.st],fillColor:C[p.st],fillOpacity:.8}}).addTo(m).bindPopup(d);}});}})();</script>'''
+var mk=L.circleMarker([p.lat,p.lon],{{radius:9,color:C[p.st],fillColor:C[p.st],fillOpacity:.8}}).addTo(m);if(p.ar){{var bt=document.createElement('button');bt.type='button';bt.className='sugg';bt.textContent='Get alerts for '+p.an;bt.addEventListener('click',function(){{lmShow(p);var A=document.getElementById('lm-alert');A.scrollIntoView({{block:'nearest'}});var i=A.querySelector('input[type=email]');if(i)i.focus({{preventScroll:true}});}});var pp=document.createElement('p');pp.appendChild(bt);d.appendChild(pp);mk.on('click',function(){{lmShow(p)}});}}mk.bindPopup(d);}});}})();
+function lmShow(p){{var A=document.getElementById('lm-alert'),F=document.getElementById('lm-form');if(!A||!F||!p.ar)return;F.setAttribute('data-area',p.ar);F.setAttribute('data-area-name',p.an);document.getElementById('lm-an').textContent=p.an;document.getElementById('lm-why').textContent=p.why;var g=F.querySelector('.msg');if(g)g.textContent='';A.hidden=false;var S=document.querySelector('section.alertcta');if(S)S.hidden=true;var B=document.getElementById('levy-alert');if(B)B.hidden=true;}}</script>'''
 page('uk-visitor-levy-map.html',t,b,desc=dsc,full_title=LVT,head=head)
