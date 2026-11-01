@@ -46,7 +46,8 @@ b=f'''{TLDR(['<b>Up to double council tax.</b> Since 1 April 2025, councils in E
 <li>Does your council charge the premium, and at what rate? See the council pages below or your council's website.</li>
 <li>Does a planning condition limit the property to holiday use or stop stays over 28 days in a row? Class L may apply. Ask the council.</li>
 <li>Is it an annex used as part of your main home? Class F may apply.</li>
-<li>Does your council have a local exceptions or discount policy?</li></ul>
+<li>Does your council have a local exceptions or discount policy?</li>
+<li>Buying a second home or holiday let? Run the <a href="buyer-due-diligence-checker">buyer due-diligence checker</a> for the council first: it shows the business rates or council tax test, premium risk, planning and licence or registration rules in one place.</li></ul>
 <h2>Council pages with premium details</h2><p>Holiday let hotspots: <a href="councils/north-devon.html">North Devon</a> and <a href="councils/dorset.html">Dorset</a> both charge the full 100% premium, so a second home pays double council tax unless it qualifies for business rates or an exception.</p><ul>{pcl}</ul><p><a href="england.html">All England rules</a> · <a href="councils.html">All councils</a></p>
 <p>Wales has its own council tax premiums and a different 182-day business rates test. See <a href="wales.html">Wales rules</a>. For income tax, see <a href="holiday-let-tax-after-fhl-abolition.html">holiday let tax after the FHL abolition</a>.</p>
 {NATALERT('england','england-premium','We track the English second homes council tax premium, the 140/70-night business rates test, council premium start dates and other England short-let rules against official sources, and email you when one changes.',nats=('England','England / Wales / NI'))}

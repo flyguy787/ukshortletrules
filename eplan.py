@@ -49,6 +49,7 @@ b=ANSWER(t,f'Sometimes. There is no national rule in England that every holiday 
 <h2 id="getting-certainty-before-you-let">Getting certainty before you let</h2><ul>
 <li><b>Lawful development certificate.</b> You can ask your council to confirm that a <a href="{GLDC}" rel="nofollow">proposed use (s192) or an existing use (s191)</a> is lawful. The council looks only at the facts and the law, not planning merits. You need to describe exactly what you plan to do and send evidence, plus the fee.</li>
 <li><b>Pre-application advice.</b> Planning guidance says your council should be the <a href="{GWP}" rel="nofollow">first point of contact</a>, and some councils charge for pre-application advice.</li>
+<li><b>Buying a property to let?</b> Check before you exchange: our <a href="buyer-due-diligence-checker">buyer due-diligence checker</a> lists the planning, council tax or business rates, levy and lender, insurance and title checks for the council you are buying in.</li>
 <li><b>Planning application.</b> If permission is needed, apply to your council. If you are refused, you can appeal to the Planning Inspectorate.</li></ul>
 <h2>If you let without permission you needed</h2>
 <p>The council can take enforcement action. In England the time limit is now <b>10 years</b> for breaches on or after 25 April 2024 (<a href="{L115}" rel="nofollow">LURA 2023, s115</a>). Breaches that happened before that date keep the old limits (<a href="{SI452}" rel="nofollow">SI 2024/452, reg 5</a>). That means a let that has run for a few years is not automatically safe.</p>

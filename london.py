@@ -31,7 +31,8 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
 <li>Two conditions: no more than <b>90 nights in the calendar year</b> in total, and the person providing the accommodation is <b>liable for council tax</b> on the property for each night.</li>
 <li>A borough or the Secretary of State can switch the exception off for specific properties or areas.</li>
 <li>Above 90 nights you need <b>planning permission</b> from your borough. Airbnb blocks further short-term bookings on entire-home listings once 90 nights are booked, unless you claim an exemption.</li>
-<li>England has no short-let licence or registration scheme in force. <a href="england.html">See England rules</a>.</li></ul>
+<li>England has no short-let licence or registration scheme in force. <a href="england.html">See England rules</a>.</li>
+<li>Buying a London property to let? Check the 90-night limit, lease, lender consent and insurance first with our <a href="buyer-due-diligence-checker?council=greater-london-all-boroughs">buyer due-diligence checker for Greater London</a>.</li></ul>
 {TOPICALERT('london-alert','london-90-night','Get an email when short-let rules change in London',
  'The 90-night rule is set in law (<a href="https://www.legislation.gov.uk/ukpga/2015/20/section/44" rel="nofollow">Deregulation Act 2015, s44</a>). We watch it, and the England-wide changes that also apply in London, against official sources, and email you when something changes.',
  "Next dates for London hosts we're watching",_rowdates(lambda r:r[2] in ('All of England','England, Wales and Northern Ireland')),
@@ -39,7 +40,7 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
  'Keep Greater London for London alerts, or pick All of England.',
  'We have no upcoming London dates logged right now. If the government or a borough announces a change, we\'ll email you.')}
 <h2>Common questions</h2>{fq}
-<p>Related: <a href="councils/greater-london-all-boroughs.html">Greater London council page</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="changes.html">Changes log</a></p>
+<p>Related: <a href="councils/greater-london-all-boroughs.html">Greater London council page</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="changes.html">Changes log</a> · <a href="buyer-due-diligence-checker?council=greater-london-all-boroughs">Buying a holiday let? Due-diligence checker</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in LS)}</ul>
 <p class="small"><b>Not legal or planning advice.</b> Checked {C}. Your borough planning team has the final say.</p>
 <script>
