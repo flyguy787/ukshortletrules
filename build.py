@@ -129,6 +129,10 @@ def page(f,t,b,desc=None,full_title=None,head='',pre='',noh1=False,checked=None)
     cv,cl=crumbs(f,t,p);head=head+cl
     if p:b=b.replace('src="signup.js"',f'src="{p}signup.js"')
     desc=desc or f'{t}: licensing, planning, tax and levy rules for UK short-term and holiday lets, with official sources.'
+    _ttl=full_title or t+' | UK Short-Let Rules Tracker'
+    if 'og:title' not in head and 'noindex' not in head:  # default link-preview tags mirroring title/description/canonical
+        head=head+(f'<meta property="og:type" content="website"><meta property="og:site_name" content="UK Short-Let Rules Tracker"><meta property="og:title" content="{e(_ttl)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{SITE}{f}"><meta property="og:image" content="{SITE}share.png"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1080"><meta property="og:image:alt" content="UK Short-Let Rules Tracker">'
+                   f'<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(_ttl)}"><meta name="twitter:description" content="{e(desc)}"><meta name="twitter:image" content="{SITE}share.png">')
     b=_STK.sub(_stack,b)
     if f in GUIDEUX:b=_guideux(b)
     b=re.sub(r'(?:<details><summary>(?:(?!</details>).)*</details>){2,}',lambda m:'<div class="faq">'+m.group(0)+'</div>',b,flags=re.S) if '<div class="faq">' not in b else b  # runs of plain Q&A details -> FAQ accordions
