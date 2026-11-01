@@ -326,7 +326,7 @@
   {
    "name": "Gwynedd",
    "nation": "Wales",
-   "rule": "Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026. Visitor levy: consulted 20 May to 26 Jul 2026; on 24 Sep 2026 Full Council agreed the final decision will come back to it once the consultation responses have been fully analysed (no date set). No levy decision yet.",
+   "rule": "Cyngor Gwynedd's Article 4 direction (C3 to C5/C6) quashed. Not in force since the Court of Appeal refused appeal on 6 Feb 2026. Inside Eryri National Park, the park authority's Article 4 direction has applied since 1 Jun 2025, so changing a main home to a second home or holiday let there needs planning permission. Visitor levy: consulted 20 May to 26 Jul 2026; on 24 Sep 2026 Full Council agreed the final decision will come back to it once the consultation responses have been fully analysed (no date set). No levy decision yet.",
    "source": "https://www.gwynedd.llyw.cymru/en-gb/planning-building-control-and-listed-buildings/planning/article-4-direction",
    "verified": true
   },
@@ -354,7 +354,7 @@
   {
    "name": "Conwy",
    "nation": "Wales",
-   "rule": "Visitor levy decision deferred by Full Council on 24 Sep 2026. Council tax second-home premium of 150% (250% of the standard bill) kept for 2026-27 and 2027-28.",
+   "rule": "Visitor levy decision deferred by Full Council on 24 Sep 2026. Council tax second-home premium of 150% (250% of the standard bill) kept for 2026-27 and 2027-28. Parts of Conwy inside Eryri National Park: the park authority's Article 4 direction has applied since 1 Jun 2025 (planning permission needed to change a main home to a second home or holiday let). The council has not confirmed any Article 4 direction for the rest of the county.",
    "source": "https://www.conwy.gov.uk/en/Resident/Council-Tax/Council-Tax-Premium-Update.aspx",
    "verified": true
   },
@@ -1172,6 +1172,12 @@
    "nation": "England",
    "text": "Added council pages for Bournemouth, Christchurch and Poole (BCP) and the Isles of Scilly. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; the Isles of Scilly adds a local exception for staff accommodation. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. BCP Council agreed a short-term lets motion on 12 May 2026 (use existing powers, map lets, gather evidence for a possible future Article 4 direction); the Isles of Scilly Local Plan resists turning permanent homes into holiday lets. The visitor levy map now shows the BCP Accommodation BID charge as void (ballot declared void in Jan 2025).",
    "source": "https://www.bcpcouncil.gov.uk/council-tax/council-tax-explained/council-tax-charges-for-unoccupied-but-furnished-or-unfurnished-properties"
+  },
+  {
+   "date": "2026-11-01",
+   "nation": "Wales",
+   "text": "Now tracked: Eryri National Park Authority's Article 4 direction, in force since 1 June 2025, on the Gwynedd and Conwy pages. Inside the National Park, planning permission is needed to change a main home (C3) into a second home (C5) or short-term holiday let (C6), and to switch between C5 and C6. Homes already used as a second home or holiday let before 1 June 2025 are not affected. Cyngor Gwynedd's own direction stays quashed, and Conwy County Borough Council has not confirmed one for the area outside the park.",
+   "source": "https://planning.eryri.gov.wales/policy/article4/"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
