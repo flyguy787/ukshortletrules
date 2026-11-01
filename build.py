@@ -1140,6 +1140,96 @@ CSEO={
   'Aberdeenshire short-term let licence fees (£364 to £1,006 for a new licence until 31 Mar 2027), documents needed, no control area and no visitor levy yet.',
   ANSWER('Do I need a short-term let licence in Aberdeenshire?','Yes. Every short-term let in Aberdeenshire needs a licence from the council before you take bookings or guests; a new 3-year licence costs £364 to £1,006 until 31 Mar 2027, depending on guest numbers and licence type, and renewing before expiry costs less (<a href="https://www.aberdeenshire.gov.uk/licensing/licences-and-permits/stl-apply-or-renew" rel="nofollow">council fees and application</a>). There is no control area, and no visitor levy scheme has been proposed yet. Compare fees on our <a href="../scotland-short-term-let-licence-fees.html">Scotland licence fee finder</a> or see the <a href="../uk-visitor-levy-map.html">Scotland visitor levy map</a>.')),
 }
+# ---- Search titles/descriptions for council pages (1 Nov 2026): match searched phrasing (council + rule type + sourced hook). ----
+# Every number/date below is in that council's data.json rule text (shown as the page lead) or its sourced sections. CSEO pages keep theirs; Perth & Kinross keeps the generic title (directory-only).
+CMETA={
+'city-of-edinburgh':('Edinburgh Short-Term Let Rules: Licence, Levy & Planning',
+  'Edinburgh short-term lets: licence needed, whole-city control area (planning likely for secondary lets), 5% visitor levy from 24 Jul 2026 capped at 5 nights.'),
+'glasgow-city':('Glasgow Short-Term Let Licence: Fees & 5% Visitor Levy',
+  'Glasgow short-term lets: licence needed, council licence fees, and the 5% visitor levy on the whole stay from 25 Jan 2027 (bookings made from 1 Apr 2026).'),
+'highland':('Highland Short-Term Let Rules: Licence, Levy & Control Areas',
+  'Highland short-term lets: licence needed, Badenoch & Strathspey control area, more proposed, and a £5 per room per night levy consultation to 30 Nov 2026.'),
+'aberdeen-city':('Aberdeen Short-Term Let Licence: Fees & 7% Visitor Levy',
+  'Aberdeen City short-term lets: licence fees from £470.40, a 7% visitor levy on the whole stay from 1 Apr 2027 (bookings made from 1 Oct 2026), no control area.'),
+'stirling':('Stirling Short-Term Let Licence: Fees & 3% Visitor Levy',
+  'Stirling short-term lets: licence fees from £113 (2025-26), a 3% visitor levy from 14 Jun 2027 on bookings made from 1 Jan 2027, and no control area.'),
+'west-dunbartonshire':('West Dunbartonshire Short-Term Let Licence & 5% Levy',
+  'West Dunbartonshire short-term lets: licence grant or renewal £929, and a 5% visitor levy on the whole stay from 1 Jul 2027 (bookings made from 1 Oct 2026).'),
+'argyll-and-bute':('Argyll and Bute Short-Term Let Rules: Licence & Control Area',
+  'Argyll and Bute short-term lets: 3-year licence from £285.30, a control area proposed for Mull, Islay, Oban and more (consultation to 15 Nov 2026), levy undecided.'),
+'dundee-city':('Dundee Short-Term Let Licence: Fees & Visitor Levy Plans',
+  'Dundee City short-term lets: licence needed, no control area, and a visitor levy consultation to 27 Nov 2026 (£5 per room per night or 5%); earliest start 2028/29.'),
+'east-lothian':('East Lothian Short-Term Let Licence: Fees & Levy Decision',
+  'East Lothian short-term lets: 3-year licence from £1,154 (2026/27 fees), no control area, and on 27 Oct 2026 the council did not approve the draft 5% visitor levy.'),
+'falkirk':('Falkirk Short-Term Let Licence: Fees & 5% Levy Consultation',
+  'Falkirk short-term lets: licence £157.50 to £504 (2025/26 table), no control area, and a 5% visitor levy consultation to 25 Nov 2026; decision due January 2027.'),
+'fife':('Fife Short-Term Let Licence: Fees, Control Area & Levy',
+  'Fife short-term let licence: fees £295 to £826 by guest numbers, up to 9 months to process, no control area in force, and no visitor levy before 2028.'),
+'gwynedd':('Gwynedd Holiday Let Rules: Article 4, WRA & Visitor Levy',
+  "Gwynedd holiday lets: Eryri National Park's Article 4 direction since 1 Jun 2025 (the council's own was quashed), WRA registration by 31 Mar 2027, levy undecided."),
+'conwy':('Conwy Holiday Let Rules: 150% Council Tax Premium & WRA',
+  'Conwy holiday lets: 150% second-home council tax premium (250% bill) for 2026-27 and 2027-28, Eryri Article 4 in the park area, and WRA registration by 31 Mar 2027.'),
+'cardiff':('Cardiff Holiday Let Rules: Visitor Levy & WRA Registration',
+  'Cardiff holiday and short-term lets: visitor levy from 1 Apr 2027 (£1.30 per person per night), free WRA registration by 31 Mar 2027, council tax and planning.'),
+'pembrokeshire':('Pembrokeshire Holiday Let Rules: 125% Council Tax Premium',
+  'Pembrokeshire holiday lets: 125% second-home council tax premium from 1 Apr 2026 (down from 150%), confirmed for 2027-28, plus free WRA registration by 31 Mar 2027.'),
+'isle-of-anglesey':('Anglesey Holiday Let Rules: Council Tax Premium & Levy',
+  'Isle of Anglesey holiday lets: 100% second-home council tax premium in 2026-27, no visitor levy (decided 24 Sep 2026), and WRA registration by 31 Mar 2027.'),
+'swansea':('Swansea Holiday Let Rules: Council Tax Premium & WRA',
+  'Swansea holiday lets: 100% second-home council tax premium (200% bill) since 1 Apr 2021, free WRA registration by 31 Mar 2027, and no visitor levy.'),
+'powys':('Powys Holiday Let Rules: 75% Council Tax Premium & WRA',
+  'Powys holiday lets: 75% second-home council tax premium (175% bill) since 1 Apr 2023, free WRA registration by 31 Mar 2027, no visitor levy before 2028.'),
+'cornwall':('Cornwall Holiday Let Council Tax: 100% Premium & Exceptions',
+  'Cornwall holiday lets: 100% second-home council tax premium from 1 Apr 2025, with exceptions such as holiday-only planning conditions. No licence, no visitor levy.'),
+'greater-london-all-boroughs':('London Short-Term Lets: The 90-Night Rule & Planning',
+  'Short-term lets in London: a whole home can be let for up to 90 nights per calendar year without planning permission. Rules for all boroughs, with official sources.'),
+'north-yorkshire':('North Yorkshire Holiday Let Council Tax & Business Rates',
+  'North Yorkshire holiday lets: 100% second-home council tax premium (200% bill) since 1 Apr 2025, or business rates if 140 nights available and 70 let. No licence.'),
+'westmorland-and-furness':('Westmorland and Furness Holiday Let Council Tax Rules',
+  'Westmorland and Furness holiday lets: 100% second-home council tax premium since 1 Apr 2025 with exceptions, or business rates at 140 nights available and 70 let.'),
+'isle-of-wight':('Isle of Wight Holiday Let Council Tax & Business Rates',
+  'Isle of Wight holiday lets: 100% second-home council tax premium (200% bill) since 1 Apr 2025, or business rates if 140 nights available and 70 let. No licence.'),
+'brighton-and-hove':('Brighton & Hove Holiday Let Rules: Council Tax & Rates',
+  'Brighton & Hove holiday lets: 100% second-home council tax premium (200% bill) since 1 Apr 2025, or business rates if 140 nights available and 70 let. No licence.'),
+'city-of-york':('York Holiday Let Rules: Council Tax, Rates & Planning',
+  'City of York holiday lets: 100% second-home council tax premium since 1 Apr 2025, business rates at 140 nights available and 70 let, and some lets need planning.'),
+'liverpool':('Liverpool Holiday Let Rules: Council Tax, Rates & Levy',
+  'Liverpool holiday lets: second homes pay double council tax since 1 Apr 2025, business rates at 140 nights available and 70 let, no licence, no visitor levy yet.'),
+'sefton':('Sefton Holiday Let Rules: Planning, Council Tax & Rates',
+  'Sefton holiday lets: Dec 2024 planning guidance (rooms let separately, oversized groups, 5% cap within 100 m) and double council tax on second homes from 1 Apr 2025.'),
+}
+_CMNS=('Licence fees: not summarised','Licence fees: see','Not shown','Not summarised')
+def CMT(c,s,dt):
+    """(title, description) for a council page without a CSEO/CMETA entry: nation template using rule types every page in that nation carries (first candidate within 60/160 chars)."""
+    n=c['name'];N=c['nation']
+    if N=='Scotland':
+        T=[f'{n} Short-Term Let Licence: Fees & Rules',f'{n} Short-Term Let Licence & Rules',f'{n} Short-Term Let Licence']
+        D=[f'Short-term let licence in {n}: who needs one, council licence fees, control area and visitor levy status, with official sources. Checked {dt}.',
+           f'Short-term let licence in {n}: who needs one, council fees, control area and visitor levy status, with official sources. Checked {dt}.',
+           f'{n} short-term let licence: who needs one, council fees, control area and visitor levy, with official sources.']
+    elif N=='Wales' and (m:=re.match(r'(\d+)% council tax premium on second homes \((\d+)% bill\)',c['rule'])) and 'free WRA registration by 31 Mar 2027' in c['rule'] and 'No visitor levy.' in c['rule']:
+        P,B=m.groups()
+        T=[f'{n} Holiday Let Rules: {P}% Council Tax Premium & WRA',f'{n} Holiday Lets: {P}% Council Tax Premium & WRA',f'{n} Holiday Let Rules: Council Tax & WRA']
+        D=[f'{n} holiday lets: {P}% second-home council tax premium ({B}% bill), free WRA registration by 31 Mar 2027 for bookings of 31 nights or fewer, no visitor levy.',
+           f'{n} holiday lets: {P}% second-home council tax premium ({B}% bill), free WRA registration by 31 Mar 2027, and no visitor levy.']
+    elif N=='Wales':
+        T=[f'{n} Holiday Let Rules: WRA Registration & Council Tax',f'{n} Holiday Lets: WRA Registration & Council Tax',f'{n} Holiday Let Rules & WRA Registration']
+        D=[f'Holiday let rules in {n}: free WRA registration by 31 Mar 2027 if you take bookings of 31 nights or fewer, plus council tax, planning and visitor levy.',
+           f'Holiday lets in {n}: free WRA registration by 31 Mar 2027 for bookings of 31 nights or fewer, plus council tax, planning and visitor levy.',
+           f'{n} holiday lets: free WRA registration by 31 Mar 2027 for bookings of 31 nights or fewer, plus council tax, planning and levy.']
+    elif c['rule'].startswith('100% council tax premium on second homes (200% bill) since 1 Apr 2025') and '(140 nights available, 70 let)' in c['rule']:
+        T=[f'{n} Holiday Let Council Tax: 100% Premium & Rates',f'{n} Holiday Let Council Tax: 100% Premium',f'{n} Holiday Let Council Tax & Rates',f'{n} Holiday Let Council Tax']
+        D=[f'{n} holiday lets: 100% second-home council tax premium (200% bill) since 1 Apr 2025, or business rates at 140 nights available and 70 let. No licence.',
+           f'{n} holiday lets: 100% second-home council tax premium since 1 Apr 2025, or business rates at 140 nights available and 70 let.',
+           f'{n} holiday lets: 100% council tax premium since 1 Apr 2025, or business rates (140 nights available, 70 let).']
+    else:
+        T=[f'{n} Holiday Let Rules: Council Tax & Business Rates',f'{n} Holiday Let Council Tax & Business Rates',f'{n} Holiday Let Rules & Council Tax',f'{n} Holiday Let Rules']
+        D=[f'Holiday let rules in {n}: second-home council tax premium, business rates at 140 nights available and 70 let, planning, and the register expected March 2027.',
+           f'{n} holiday lets: second-home council tax premium, business rates at 140 nights available and 70 let, planning, and the register expected March 2027.',
+           f'{n} holiday lets: council tax premium, business rates at 140 nights available and 70 let, planning, and the register expected March 2027.']
+    pick=lambda L,m:next((x for x in L if len(x)<=m),L[-1])
+    return pick(T,60),pick(D,160)
+
 made=[];skipped=[]
 for c in d['councils']:
     s=slug(c)
@@ -1149,7 +1239,8 @@ for c in d['councils']:
     kd=''.join(f'<li>{k}</li>' for k in x['dates']) or '<li>None listed.</li>'
     CF=cfaq(c,x)
     SO=CSEO.get(s);b=LASTCK(c)+ALERT_TOP(c['name'],'council:'+s,x['dates'])+WHAT(c)+f'<p class="lead">{e(c["rule"])}</p>'+(SO[2] if SO else '')+'<div class="rcs">'+sec('Licensing or registration',x['lic'],'lic')+sec('Control area / planning',x['ctrl'],'ctrl')+sec('Visitor levy',x['levy'],'levy')+sec('Fees',x['fees'],'fees')+'</div>'+CHLOG(c)+(f'<h2>Scotland tools</h2><ul><li><a href="../scotland-short-term-let-licence-fees.html">Compare licence fees across all 32 Scottish councils</a></li><li><a href="../scotland-short-term-let-licence-guide.html">How to get a short-term let licence (steps and checklist)</a></li><li><a href="../scotland-business-rates-checker.html">Business rates or council tax? 140/70 nights checker</a></li><li><a href="../short-term-let-fire-safety-scotland.html">Fire safety for short-term lets (alarms, doors, checklist)</a></li><li><a href="../holiday-let-insurance-uk.html">Insurance: the buildings and public liability licence condition</a></li><li><a href="../uk-visitor-levy-map.html">Visitor levy map</a></li></ul>' if c['nation']=='Scotland' else '<h2>England guides</h2><ul><li><a href="../england-holiday-let-planning-permission.html">Do I need planning permission for a holiday let in England?</a></li><li><a href="../holiday-let-fire-safety-england.html">Holiday let fire safety in England: what you need and a checklist</a></li><li><a href="../england-second-homes-council-tax-premium.html">Second homes council tax premium: who pays, business rates and exceptions</a></li><li><a href="../occupancy-threshold-tracker.html">Business rates or council tax? Occupancy threshold tracker</a></li><li><a href="../holiday-let-tax-after-fhl-abolition.html">How holiday lets are taxed since the FHL regime ended</a></li></ul>' if c['nation']=='England' else '<h2>Wales guides and tools</h2><ul><li><a href="../wales-registration-checker.html">Do I need to register with the WRA? 4-question checker</a></li><li><a href="../wales-second-homes-council-tax-premium.html">Second homes council tax premium in Wales: rates, the 182-night test and exceptions</a></li><li><a href="../occupancy-threshold-tracker.html">Business rates or council tax? Occupancy threshold tracker</a></li><li><a href="../holiday-let-fire-safety-wales.html">Holiday let fire safety in Wales: what you need and a checklist</a></li><li><a href="../wales-visitor-accommodation-licensing.html">Wales licensing scheme (2026 Act, legal default March 2030): who needs a licence</a></li><li><a href="../holiday-let-tax-after-fhl-abolition.html">How holiday lets are taxed since the FHL regime ended</a></li></ul>' if c['nation']=='Wales' else '')+f'<p class="box"><b>Not sure what applies to your let?</b> <a href="../checker.html" data-cta="council-checker">Use the free licence checker</a>: pick your nation, council and type of let for a plain-English answer with the official source.</p>'+('' if s in PICK_EXCL else f'<p class="box"><b>Buying here?</b> <a href="../buyer-due-diligence-checker?council={s}" data-cta="council-buyer">See the buyer checks for {e(c["name"])}</a>: licence or registration, planning, visitor levy, business rates or council tax, plus the lender, insurance and title checks to make before you buy.</p>')+f'<h2>Key dates</h2><ul>{kd}</ul>'+CF[0]+(MOREC(c) or f'<p><a href="../{ {"Scotland":"scotland","Wales":"wales","England":"england"}[c["nation"]]}.html">All {c["nation"]} rules</a> · <a href="../councils.html">All councils</a></p>')+ALERT(c['name'],'council:'+s,f' Prefer every {c["nation"]} change? <a href="../{c["nation"].lower()}.html#alerts">Get {c["nation"]} alerts</a>.')
-    page(f'councils/{s}.html',t,b,desc=SO[1] if SO else f'Short-term let licensing, control area, visitor levy, fees and key dates for {c["name"]}, {c["nation"]}, with official sources. Updated {dt}.',full_title=SO[0] if SO else t,head=CF[1],checked=ck)
+    MT=SO[:2] if SO else (None if s in PICK_EXCL else CMETA.get(s) or CMT(c,s,dt))
+    page(f'councils/{s}.html',t,b,desc=MT[1] if MT else f'Short-term let licensing, control area, visitor levy, fees and key dates for {c["name"]}, {c["nation"]}, with official sources. Updated {dt}.',full_title=MT[0] if MT else t,head=CF[1],checked=ck)
     made.append(s)
 print('council pages',len(made),'skipped',skipped)
 def _recent_councils(days=7,n=5):
