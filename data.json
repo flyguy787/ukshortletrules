@@ -820,6 +820,49 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions and a local staff accommodation exception. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The Local Plan resists losing permanent homes to holiday lets.",
    "source": "https://scilly.gov.uk/council-democracy/council-finances/council-tax",
    "verified": true
+  },
+  {
+   "name": "Canterbury",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The draft Local Plan (2026) proposes tests for changing a home into a short-term holiday let; not in force.",
+   "source": "https://www.canterbury.gov.uk/council-tax/furnished-second-homes-review",
+   "verified": true
+  },
+  {
+   "name": "Thanet",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; a new Local Plan is at an early stage.",
+   "source": "https://www.thanet.gov.uk/info-pages/your-council-tax-bill-explained/",
+   "verified": true
+  },
+  {
+   "name": "Folkestone and Hythe",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets.",
+   "source": "https://www.folkestone-hythe.gov.uk/council-tax/second-home-premium",
+   "verified": true
+  },
+  {
+   "name": "Rother",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme (a voluntary scheme has run since 2019). The draft Local Plan 2025-2042 would stop homes being lost to holiday lets in Camber, Rye, Rye Foreign and Icklesham where permission is needed; not in force.",
+   "source": "https://www.rother.gov.uk/council-tax/council-tax-second-homes/",
+   "verified": true
+  },
+  {
+   "name": "Chichester",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The West Wittering Neighbourhood Plan requires new open-market homes to be principal residences.",
+   "source": "https://www.chichester.gov.uk/counciltaxsecondhomes",
+   "verified": true
+  },
+  {
+   "name": "King's Lynn and West Norfolk",
+   "slug": "kings-lynn-and-west-norfolk",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions, plus local exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. Heacham and Burnham Market neighbourhood plans require new homes to be principal residences.",
+   "source": "https://www.west-norfolk.gov.uk/info/20118/discounts_exemptions_and_premiums/1136/council_tax_premium_for_second_homes",
+   "verified": true
   }
  ],
  "changes": [
@@ -1178,6 +1221,12 @@
    "nation": "Wales",
    "text": "Now tracked: Eryri National Park Authority's Article 4 direction, in force since 1 June 2025, on the Gwynedd and Conwy pages. Inside the National Park, planning permission is needed to change a main home (C3) into a second home (C5) or short-term holiday let (C6), and to switch between C5 and C6. Homes already used as a second home or holiday let before 1 June 2025 are not affected. Cyngor Gwynedd's own direction stays quashed, and Conwy County Borough Council has not confirmed one for the area outside the park.",
    "source": "https://planning.eryri.gov.wales/policy/article4/"
+  },
+  {
+   "date": "2026-11-02",
+   "nation": "England",
+   "text": "Added council pages for six English holiday-let hotspots: Canterbury, Thanet, Folkestone and Hythe, Rother, Chichester and King's Lynn and West Norfolk. All six charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; holiday lets valued for business rates instead do not pay it. None has a short-let licence or an Article 4 direction on holiday lets. Draft local plans in Canterbury and Rother propose new limits on turning homes into holiday lets (not yet in force), and neighbourhood plans in West Wittering (Chichester), Heacham and Burnham Market (King's Lynn and West Norfolk) already require new homes to be principal residences.",
+   "source": "https://www.rother.gov.uk/planning-and-building-control/planning-policy/emerging-local-plan/local-plan-review/"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
