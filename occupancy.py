@@ -24,8 +24,12 @@ OC=dict(
   src=['https://www.mygov.scot/non-domestic-rates-guidance/short-term-lets','https://www.legislation.gov.uk/ssi/2026/72/made','https://www.saa.gov.uk/non-domestic-valuation/self-catering/']),
 )
 import json as _j
+OCALERT='<div class="alertbox" id="occ-alert" hidden><h2>Get an email when holiday let rules change in <span id="occ-an">your nation</span></h2><p id="occ-why">We track these rules against official sources and email you when one of them changes.</p><p class="small">Plus one short weekly UK "what changed" email. Free. Unsubscribe any time.</p>'+FORMX.replace('<form class="signup"','<form class="signup" id="occ-form" data-cta="occupancy-result" data-area="" data-area-name=""',1).replace('>Subscribe<','>Get free alerts<')+'</div>'
+OCWHY={'wales':'We track the Welsh business rates and council tax rules for holiday lets against official sources, and email you when they change. The Welsh Government consulted until 30 October 2026 on how self-catering properties are classified, including whether 182 days is the right threshold, and will publish the outcome.',
+ 'england':'We track the business rates and council tax rules for holiday lets in England against official sources, and email you when they change, including the 140/70-night tests and second homes premiums.',
+ 'scotland':'We track the Scottish business rates and council tax rules for short-term lets against official sources, and email you when they change, including the 140/70-night test and the Assessor evidence deadline (before 27 May each year).'}
 _opts=''.join(f'<option value="{k}">{v["name"]} ({v["av"]} available / {v["let"]} let)</option>' for k,v in OC.items())
-OCJS='''<script>(function(){var O=__O__,$=function(i){return document.getElementById(i)};
+OCJS='''<script>(function(){var O=__O__,W=__W__,$=function(i){return document.getElementById(i)};
 function fd(d){return d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}
 function sync(){var o=O[$('on').value];$('ope').textContent='Counting period: '+o.period+'.';if($('on').value=='scotland'&&!$('oe').value){var t=new Date(),y=t.getMonth()>2?t.getFullYear()+1:t.getFullYear();$('oe').value=y+'-03-31'}}
 $('on').addEventListener('change',sync);sync();
@@ -41,8 +45,10 @@ $('ogo').addEventListener('click',function(){var o=O[$('on').value],l=parseInt($
  $('osrc').innerHTML='Sources: '+o.src.map(function(u){return '<a href="'+u+'" rel="nofollow">'+u.replace('https://','').split('/')[0]+'</a>'}).join(', ');
  var body='Holiday let business rates check ('+o.name+')\\n\\nThreshold: '+o.av+' nights available and '+o.let+' nights let in '+o.period+'.\\nSo far: '+a+' available, '+l+' let.\\nPeriod ends: '+fd(end)+'.\\nResult: '+h+warn+'\\nIf missed: '+o.miss+'\\n\\nSource: '+o.src[0]+'\\nWorked out with the free tracker at https://ukshortletrules.co.uk/occupancy-threshold-tracker (general information, not tax advice).';
  $('omail').href='mailto:?subject='+encodeURIComponent('Holiday let business rates threshold: '+o.name)+'&body='+encodeURIComponent(body);
- $('or').hidden=false});
-})();</script>'''.replace('__O__',_j.dumps(OC))
+ $('or').hidden=false;
+ var A=$('occ-alert'),F=$('occ-form'),S=document.querySelector('section.alertcta'),k=$('on').value;if(A&&F){if(F.getAttribute('data-area')!='nation:'+k){var M=F.querySelector('.msg');if(M)M.textContent=''}F.setAttribute('data-area','nation:'+k);F.setAttribute('data-area-name',o.name);$('occ-an').textContent=o.name;$('occ-why').textContent=W[k];A.hidden=false;if(S)S.hidden=true}
+ try{gtag('event','occupancy_check',{nation:k,met:ok?'yes':'no'})}catch(x){}});
+})();</script>'''.replace('__O__',_j.dumps(OC)).replace('__W__',_j.dumps(OCWHY))
 # Common questions (visible + FAQPage JSON-LD). Built inline (guides.py shadows FAQ() with a list). Sources re-checked 31 Oct 2026:
 # GOV.UK "Apply for business rates for a self-catering property in England" (updated 29 Sep 2026) and "... in Wales" (updated 9 Oct 2026);
 # mygov.scot non-domestic rates: self-catering (updated 30 Mar 2026); Scottish Assessors self-catering page; legislation.gov.uk ssi/2026/72 (reg 5A),
@@ -70,7 +76,7 @@ page('occupancy-threshold-tracker.html','Holiday let occupancy threshold tracker
 <label for="oa">Nights available to let so far</label><input type="number" id="oa" min="0" max="366" inputmode="numeric" value="0">
 <label for="oe">End date of the 12-month period</label><input type="date" id="oe">
 <button type="button" id="ogo">Check my nights</button></form>
-<div id="or" hidden aria-live="polite"><h2 id="orh"></h2><p id="orw"></p><h3>Allowances and what counts</h3><ul id="oal"></ul><h3>If you miss the threshold</h3><p id="omiss"></p><p><a class="btn" id="omail" href="#">Send to my accountant</a> <span class="small">Opens your email app with a summary. Nothing is sent by this site.</span></p><p class="small" id="osrc"></p><p class="small"><b>Estimate, not tax advice.</b> The valuation office or Assessor decides. Keep booking records as evidence.</p></div></div>
+<div id="or" hidden aria-live="polite"><h2 id="orh"></h2><p id="orw"></p><h3>Allowances and what counts</h3><ul id="oal"></ul><h3>If you miss the threshold</h3><p id="omiss"></p><p><a class="btn" id="omail" href="#">Send to my accountant</a> <span class="small">Opens your email app with a summary. Nothing is sent by this site.</span></p><p class="small" id="osrc"></p><p class="small"><b>Estimate, not tax advice.</b> The valuation office or Assessor decides. Keep booking records as evidence.</p></div>{OCALERT}</div>
 <h2>Thresholds</h2><div class="tw"><table><tr><th>Nation</th><th>Available</th><th>Let</th><th>Period</th><th>Official source</th></tr>{_tab}</table></div>
 <p>Northern Ireland uses a different system: see the <a href="northern-ireland.html">Northern Ireland page</a>. For Scotland, try the <a href="scotland-business-rates-checker.html">Scotland business rates checker</a>.</p>
 {OCQH}{OCJS}''',desc='Free tracker for the holiday let business rates tests: Wales 252/182 nights, England and Scotland 140/70. See how many more let nights you need, allowances, and email a summary to your accountant.',full_title='Holiday let occupancy threshold tracker (182/252 and 140/70 nights) | UK Short-Let Rules',head='<script type="application/ld+json">'+OCQLD+'</script>')
