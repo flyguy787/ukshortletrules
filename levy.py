@@ -20,7 +20,9 @@ LV=[
   rule='£1.30 per person per night (all ages, including babies) for self-catering, holiday lets, B&Bs and hotels; 75p per adult per night in tent pitches or shared hostel rooms (under-18s free there). Stays from 1 Apr 2027; bookings made from 28 Sep 2026 are liable. One booking of 32 nights or more pays no levy.',
   src=['https://www.gov.wales/visitor-levy-accommodation-providers-steps/how-much','https://www.gov.wales/visitor-levy-accommodation-providers-steps/before-levy-starts','https://www.gov.wales/check-if-local-council-charges-visitor-levy-wales']),
 ]
+assert sorted(LVCALC.values())==sorted(x['id'] for x in LV),'LVCALC (council-page levy links) out of step with LV'
 LVJ=_j.dumps(LV)
+LVSLJ=_j.dumps({v:k for k,v in LVCALC.items()})
 LVF='''<form class="lvf" id="lvf" onsubmit="return false"><div class="ckw">
 <label for="lc">Council</label><select id="lc">%s</select>
 <label for="lb">Booking date (when the guest booked)</label><input type="date" id="lb" required>
@@ -33,11 +35,11 @@ LVF='''<form class="lvf" id="lvf" onsubmit="return false"><div class="ckw">
 <label for="lk">Children (under 18, including babies)</label><input type="number" id="lk" min="0" value="0" inputmode="numeric"></div>
 <button type="button" id="lgo">Work out the levy</button></div></form>
 <div id="lr" aria-live="polite" hidden><h2 id="lrh"></h2><p id="lrt"></p><h3>Guest message (copy and paste)</h3><textarea id="lmsg" rows="3" style="width:100%%" aria-label="Guest message"></textarea><p><button type="button" id="lcp">Copy message</button> <span id="lcm" class="small"></span></p><p class="small" id="lsrc"></p><p class="small"><b>Estimate, not tax advice.</b> Based on the council's published scheme; the accommodation provider is responsible for the correct amount. Check the official source.</p></div>'''%''.join(f'<option value="{x["id"]}">{x["name"]}</option>' for x in LV)
-LVJS='''<script>(function(){var L=__L__,$=function(i){return document.getElementById(i)};
+LVJS='''<script>(function(){var L=__L__,SL0=__SL__,$=function(i){return document.getElementById(i)};
 function cur(){var v=$('lc').value;for(var i=0;i<L.length;i++)if(L[i].id==v)return L[i]}
 function fd(s){var d=new Date(s+'T00:00:00Z');return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}
 function sync(){var c=cur();$('lpw').hidden=!c.cutpaid;$('lcd').textContent=fd(c.cut);$('lgw').hidden=c.kind!='pp';$('lpw2').hidden=c.kind=='pp'}
-$('lc').addEventListener('change',sync);sync();
+var dl=0;$('lc').addEventListener('change',function(){if(!dl)delete $('lc').dataset.src;sync()});sync();(function(){var q=(location.search.match(/[?&]council=([a-z0-9-]+)/)||[])[1],S=__S__,v=q&&(S[q]||q);if(!q)return;for(var i=0;i<L.length;i++)if(L[i].id==v){$('lc').value=v;$('lc').dataset.src='deeplink';dl=1;$('lc').dispatchEvent(new Event('change'));dl=0;var A=$('lr-alert-area');if(A){A.value='council:'+(SL0[v]||v);if(A.selectedIndex<1)A.value='';$('lr-an').textContent=A.value?L[i].name:'this council'}return}})();
 function src(c){return 'Sources: '+c.src.map(function(u){return '<a href="'+u+'" target="_blank" rel="noopener nofollow">'+u.replace(/^https:\\/\\/(www\\.)?/,'').split('/')[0]+'</a>'}).join(', ')}
 $('lgo').addEventListener('click',function(){var c=cur(),b=$('lb').value,ci=$('li').value,co=$('lo').value,r=$('lr');
  if(!b||!ci||!co){alert('Please enter the booking date, check-in and check-out.');return}
@@ -63,7 +65,7 @@ $('lgo').addEventListener('click',function(){var c=cur(),b=$('lb').value,ci=$('l
   $('lrh').textContent='Levy due: £'+amt.toFixed(2)}
  $('lmsg').value=msg;$('lsrc').innerHTML=src(c)+'. Rule: '+c.rule.replace(/</g,'&lt;');r.hidden=false;var SL={edinburgh:'city-of-edinburgh',glasgow:'glasgow-city',aberdeen:'aberdeen-city'},AS=$('lr-alert-area');if(AS){AS.value='council:'+(SL[c.id]||c.id);if(AS.selectedIndex<1)AS.value='';$('lr-an').textContent=AS.value?c.name:'this council'}var BA=$('levy-alert');if(BA)BA.hidden=true;$('lrh').focus&&r.scrollIntoView({block:'nearest'})});
 $('lcp').addEventListener('click',function(){var t=$('lmsg');t.select();(navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).then(function(){$('lcm').textContent='Copied.'},function(){document.execCommand('copy');$('lcm').textContent='Copied.'})});
-})();</script>'''.replace('__L__',LVJ)
+})();</script>'''.replace('__L__',LVJ).replace('__SL__',LVSLJ).replace('__S__',_j.dumps(LVCALC))
 rows=''.join(f'<tr><td>{x["name"]}</td><td>{e(x["rule"])}</td><td>{" ".join(f"<a href=\"{u}\" rel=\"nofollow\">source</a>" for u in x["src"])}</td></tr>' for x in LV)
 
 # Common questions (visible + FAQPage JSON-LD). Sources re-checked 31 Oct 2026: City of Edinburgh Council accommodation provider guidance v2.1 (Sep 2026, quotes the 2026 VisitScotland guidance); gov.wales WRA "How much you must pay"; Highland/Dundee from data.json.

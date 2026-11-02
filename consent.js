@@ -11,7 +11,7 @@ function ev(n,p){try{gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('submit',function(e){var f=e.target;
  if(f.matches('form.signup'))ev(f.dataset.area?'council_alert_signup':'newsletter_signup',f.dataset.area?{area:f.dataset.area}:{});},true);
 document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('button');if(!t)return;
- if(t.id==='lgo')ev('levy_calculate',{area:(document.getElementById('lc')||{}).value||''});
+ if(t.id==='lgo'){var lc=document.getElementById('lc')||{dataset:{}},lp={area:lc.value||''};if(lc.dataset.src)lp.source=lc.dataset.src;ev('levy_calculate',lp);}
  else if(t.id==='cp')ev('embed_code_copy',{widget:'checker'});},true);
 document.addEventListener('change',function(e){var t=e.target;if(t.id==='ck-n'||t.id==='ck-c')ev('checker_use',{field:t.id==='ck-n'?'nation':'council',value:t.value});},true);
 document.addEventListener('copy',function(e){var t=e.target;if(t&&t.closest&&t.closest('textarea[aria-label="Embed code"]'))ev('embed_code_copy',{widget:'levy'});},true);

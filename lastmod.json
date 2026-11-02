@@ -21,7 +21,7 @@
  },
  "councils/aberdeen-city.html": {
   "d": "2026-11-02",
-  "h": "2f3ec7fc58fedc52c1392e8f09348da9c171d6b79839ac7e8ae14bab05b18a23",
+  "h": "c4d019d026ab7e9f2788e8be0c9b6f86ab4ab279b339e6d0f1a09a252bd7311e",
   "m": "c9192745dc7ece73687e4c745d00d93faece40a636fc6e0d4b54c332fd1a3cd7"
  },
  "councils/aberdeenshire.html": {
@@ -70,8 +70,8 @@
   "m": "33cace7790785c24270f479d4474d67925f675aa885d633df2296d1bb8beb9b6"
  },
  "councils/cardiff.html": {
-  "d": "2026-11-01",
-  "h": "185f2eee54518fa53b9b152a5a0837ba690fad395c2f88a892c1440201b482e0",
+  "d": "2026-11-02",
+  "h": "44873ea00d989974141ebc6dbb21b80283fbd59f1839b1c2867724dcfcbf305f",
   "m": "9137172e564503eb16e14e96146b8f130d7aa425e0c62074eeda9e7d15287892"
  },
  "councils/carmarthenshire.html": {
@@ -86,7 +86,7 @@
  },
  "councils/city-of-edinburgh.html": {
   "d": "2026-11-02",
-  "h": "6e49621568336d450d79a1ffda204e771185c5dfa5940b55c06ce30ecdde0314",
+  "h": "b1a44e8db2b8e112b4687f1b8139c770c0bb681dbf8bf995482d7d235e055501",
   "m": "b2a7108699d58c41d3c6012817f947f14a054a56b2720a22c4cf8de7b0eda7ed"
  },
  "councils/city-of-york.html": {
@@ -196,7 +196,7 @@
  },
  "councils/glasgow-city.html": {
   "d": "2026-11-02",
-  "h": "dbdd4dbba411f08c00e8370b40815007d6a9715b6c957be23d662776a2fac1e6",
+  "h": "e5738c446e1ca277e7bc7807b6fcc937f0be2855d64b974f6ddf0f43a943da6d",
   "m": "aa1cebfc991cc74771d5e0d0fcc1c13d5f666d870901e59573987b24613f11ae"
  },
  "councils/greater-london-all-boroughs.html": {
@@ -376,7 +376,7 @@
  },
  "councils/stirling.html": {
   "d": "2026-11-02",
-  "h": "297be4b60c47aebe9f82c161ec92f5eeaec4f44f30baa5fd2f1e786411631ce0",
+  "h": "8c830936457c84e58a689972bd7e43830f334245389baf25875421f03a0ac9f4",
   "m": "75a1028ddf7913fb5de5cb74e7854ba915c4f20399a239bce6598eebbd5b243d"
  },
  "councils/swansea.html": {
@@ -416,7 +416,7 @@
  },
  "councils/west-dunbartonshire.html": {
   "d": "2026-11-02",
-  "h": "451dd9f721dc9b0506724b827d324d49c8f135b232ba6f35df08a98751841c17",
+  "h": "74a52c5a80e8861c98c42a3a81f361ab6dc54a9f5ad91c36c7e0322b917ca961",
   "m": "421f4c6a5fd264f3a3c72c023d0f4aa4eb701bb97a5558290cf991b212bd6688"
  },
  "councils/west-lothian.html": {
@@ -495,8 +495,8 @@
   "m": "12369caa5aae5e93b48fd67d8dc23ac22152e38e7d4cb430b4137606d2cdec99"
  },
  "levy-calculator.html": {
-  "d": "2026-10-31",
-  "h": "5f1c2721f4c6c1974a5eb1f5a31703a468688ea9a5badfefd105637dcf6319bd",
+  "d": "2026-11-02",
+  "h": "1004e1833bc1c818e02fb1b8ad70a054366134b6c3907cf341e470c8e12f25d7",
   "m": "599b21185a65751ed6cac6ce3b5dd43b1a19c8207a195bd7c88dfed61ca6fb8c"
  },
  "london-90-night-counter.html": {
