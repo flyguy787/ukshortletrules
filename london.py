@@ -12,6 +12,20 @@ LFAQ=[('What is the London 90-night rule?','In Greater London, using a home as t
       ('Can a borough switch the 90-night exception off?','Yes. A borough (with the Secretary of State\'s consent) or the Secretary of State can direct that the exception does not apply to particular premises or areas, if needed to protect local amenity.')]
 fq=''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q,a in LFAQ)
 ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in LFAQ]}).replace('</','<\\/')
+# In-context alert signup under the 90-night result (data-cta london90-result), like renewal-result/occupancy-result (2 Nov 2026).
+# Shown once at least one booking has nights in the chosen year; always pre-set to council:greater-london-all-boroughs (the London area the
+# page's own picker and the buyer checker use). Reason restates facts already sourced on this page: the 90-night limit and planning permission
+# above it (Deregulation Act 2015 s44), a borough/Secretary of State can switch the exception off, and the England register GOV.UK expects in March 2027.
+LNALERT='<div class="alertbox" id="ln-alert" hidden><h2>Get an email when the 90-night rule or other London short-let rules change</h2><p id="ln-why">We track these rules against official sources and email you when one of them changes.</p><p class="small">Plus one short weekly UK "what changed" email. Free. Unsubscribe any time.</p>'+FORMX.replace('<form class="signup"','<form class="signup" id="ln-form" data-cta="london90-result" data-area="council:greater-london-all-boroughs" data-area-name="Greater London (all boroughs)"',1).replace('>Subscribe<','>Get free alerts<')+'</div>'
+LNJS='''<script>(function(){var SEEN={},RK='',W={over:'Above 90 nights in a calendar year you need planning permission from your borough (Deregulation Act 2015, s44). We watch the 90-night rule, and the England-wide changes that also apply in London such as the national short-term let register GOV.UK expects to begin in March 2027, against official sources, and email you when something changes.',
+under:'The 90-night limit is set in law (Deregulation Act 2015, s44), and a borough or the Secretary of State can switch the exception off for specific properties or areas. We watch it, and the England-wide changes that also apply in London such as the national short-term let register GOV.UK expects to begin in March 2027, against official sources, and email you when something changes.'};
+function band(u){return u<1?'0':u<=30?'1-30':u<=60?'31-60':u<=80?'61-80':u<=90?'81-90':'91+'}
+function sw(){var A=document.getElementById('ln-alert'),S=document.querySelector('section.alertcta');if(S)S.hidden=!A.hidden;else if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sw)}
+window.lnA=function(u,rows,y){var A=document.getElementById('ln-alert'),F=document.getElementById('ln-form');if(!A||!F)return;
+if(!rows){if(!A.hidden){A.hidden=true;sw()}RK='';return}
+var ov=u>90,b=band(u),rk=y+'|'+b;if(rk!==RK){var M=F.querySelector('.msg');if(M)M.textContent=''}RK=rk;
+document.getElementById('ln-why').textContent=W[ov?'over':'under'];A.hidden=false;sw();
+var k=b+'|'+(ov?'yes':'no');if(!SEEN[k]){SEEN[k]=1;try{gtag('event','london90_check',{nights_band:b,over_limit:ov?'yes':'no'})}catch(x){}}};})();</script>'''
 f='london-90-night-counter.html'
 t='London 90-night rule counter for short-term lets'
 dsc='Free London 90-night counter: add your bookings from every platform and see how many short-let nights you have left this calendar year without planning permission. Official sources.'
@@ -20,7 +34,7 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
 <p><label>Check-in <input type="date" id="lin"></label> <label>Check-out <input type="date" id="lout"></label> <label>Platform <input type="text" id="lp" placeholder="e.g. Airbnb" style="width:9em"></label> <button type="button" id="ladd">Add booking</button></p>
 <p id="lerr" class="small" aria-live="polite"></p>
 <div class="tw"><table id="lt"><tr><th>Check-in</th><th>Check-out</th><th>Platform</th><th>Nights in year</th><th></th></tr></table></div>
-<div id="lres" aria-live="polite"></div>
+<div id="lres" aria-live="polite"></div>{LNALERT}
 <p class="small"><button type="button" id="lclr">Clear all bookings</button> <button type="button" onclick="window.print()">Print</button></p></div>
 <h2>How the counter works</h2><ul>
 <li>It counts the nights of each stay that fall in the year you choose. A stay over New Year is split across the two years.</li>
@@ -43,17 +57,17 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
 <p>Related: <a href="councils/greater-london-all-boroughs.html">Greater London council page</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="changes.html">Changes log</a> · <a href="buyer-due-diligence-checker?council=greater-london-all-boroughs">Buying a holiday let? Due-diligence checker</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in LS)}</ul>
 <p class="small"><b>Not legal or planning advice.</b> Checked {C}. Your borough planning team has the final say.</p>
-<script>
+{LNJS}<script>
 function lnNights(i,o,y){{var a=new Date(i+'T00:00:00Z'),b=new Date(o+'T00:00:00Z');if(isNaN(a)||isNaN(b)||b<=a)return null;var D=864e5,tot=Math.round((b-a)/D),s=Math.max(a,Date.UTC(y,0,1)),en=Math.min(b,Date.UTC(y+1,0,1));return {{total:tot,inYear:Math.max(0,Math.round((en-s)/D))}};}}
 (function(){{var K='stl-ldn-90',L=[];try{{L=JSON.parse(localStorage.getItem(K))||[]}}catch(x){{}}
 var Y=document.getElementById('ly'),T=document.getElementById('lt'),R=document.getElementById('lres'),E=document.getElementById('lerr');Y.value=new Date().getFullYear();
 function sv(){{try{{localStorage.setItem(K,JSON.stringify(L))}}catch(x){{}}}}
 function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
-function draw(){{var y=parseInt(Y.value,10),u=0;while(T.rows.length>1)T.deleteRow(1);
-L.slice().sort(function(p,q){{return p.i<q.i?-1:1}}).forEach(function(k){{var n=lnNights(k.i,k.o,y);if(!n||n.inYear==0)return;var long=n.total>=90;if(!long)u+=n.inYear;
+function draw(){{var y=parseInt(Y.value,10),u=0,nr=0;while(T.rows.length>1)T.deleteRow(1);
+L.slice().sort(function(p,q){{return p.i<q.i?-1:1}}).forEach(function(k){{var n=lnNights(k.i,k.o,y);if(!n||n.inYear==0)return;nr++;var long=n.total>=90;if(!long)u+=n.inYear;
 var r=T.insertRow();r.innerHTML='<td>'+esc(k.i)+'</td><td>'+esc(k.o)+'</td><td>'+esc(k.p||'')+'</td><td>'+(long?n.inYear+' <span class="tag">90+ night stay, not counted</span>':n.inYear)+'</td><td><button type="button">Remove</button></td>';
 r.querySelector('button').onclick=function(){{L.splice(L.indexOf(k),1);sv();draw();}};}});
-var left=90-u,c=u>90?'warn':'';R.innerHTML='<h2>'+u+' of 90 nights used in '+y+'</h2><p>'+(u>90?'<span class="tag warn">Over the limit</span> You are '+(u-90)+' nights over. Above 90 nights you need planning permission from your borough.':left<=10?'<span class="tag warn">Nearly there</span> '+left+' nights left this calendar year.':left+' nights left this calendar year.')+'</p>';}}
+var left=90-u,c=u>90?'warn':'';R.innerHTML='<h2>'+u+' of 90 nights used in '+y+'</h2><p>'+(u>90?'<span class="tag warn">Over the limit</span> You are '+(u-90)+' nights over. Above 90 nights you need planning permission from your borough.':left<=10?'<span class="tag warn">Nearly there</span> '+left+' nights left this calendar year.':left+' nights left this calendar year.')+'</p>';if(window.lnA)lnA(u,nr,y);}}
 document.getElementById('ladd').onclick=function(){{var i=document.getElementById('lin').value,o=document.getElementById('lout').value,p=document.getElementById('lp').value.slice(0,40);
 if(!lnNights(i,o,2000)){{E.textContent='Pick a check-in date and a later check-out date.';return;}}E.textContent='';L.push({{i:i,o:o,p:p}});sv();draw();}};
 document.getElementById('lclr').onclick=function(){{if(confirm('Remove all bookings from this device?')){{L=[];sv();draw();}}}};Y.oninput=draw;draw();}})();</script>'''
