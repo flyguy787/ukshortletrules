@@ -346,7 +346,9 @@ for _c in _chsorted:
     _cl=_chcouncils(_c['text'])
     _chg+=f'<li><time datetime="{_c["date"]}">{_dt0.date.fromisoformat(_c["date"]).strftime("%-d %b %Y")}</time> <span class="tag">{e(_c["nation"])}</span> {e(_c["text"])}<br><span class="cn">'+(('Council page: ' if len(_cl)==1 else 'Council pages: ')+', '.join(_cl)+' · ' if _cl else '')+f'<a href="{e(_c["source"])}" rel="nofollow">Official source</a></span></li>'
 _chg+='</ul>' if _curm else ''
-page('changes.html','Changes log',CH_ANS+TOP_PICK()+f'<h2>Recent changes, newest first</h2><p class="small">Each council page also has its own dated <b>What changed</b> list and the date its rules were last checked. Start at <a href="councils.html">all councils</a>.</p>{_chg}<p class="small">General information only, not legal advice. Always check the official source before acting.</p>',desc='What changed in UK short-term let and holiday let rules: licensing, visitor levies, council tax premiums and registration, each with an official source.',full_title=f'UK Short-Let Rule Changes: Latest Updates ({_chld.strftime("%b %Y")})')
+# changes.html is written by changespick.py (after guidehub.py, which defines the shared RCPICK picker); the page body pieces are kept here.
+PAGES.append('changes.html')  # keep its sitemap position
+_CHPAGE=lambda pick:page('changes.html','Changes log',CH_ANS+pick+TOP_PICK()+f'<h2>Recent changes, newest first</h2><p class="small">Each council page also has its own dated <b>What changed</b> list and the date its rules were last checked. Start at <a href="councils.html">all councils</a>.</p>{_chg}<p class="small">General information only, not legal advice. Always check the official source before acting.</p>',desc='What changed in UK short-term let and holiday let rules: licensing, visitor levies, council tax premiums and registration, each with an official source.',full_title=f'UK Short-Let Rule Changes: Latest Updates ({_chld.strftime("%b %Y")})')
 # Newsletter landing page: a concrete reason to subscribe, built only from facts already sourced on the site:
 # the 3 latest changes-log entries (first sentence + official source) and the next 3 deadlines from deadlines.py DL/AHEAD (read via ast).
 def _nlitems(nch=3,ndl=3):
@@ -1441,6 +1443,7 @@ exec(open('deadlines.py').read())
 exec(open('occupancy.py').read())
 exec(open('buyer.py').read())
 exec(open('guidehub.py').read())
+exec(open('changespick.py').read())
 
 # ---- sitemap / robots ----
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}{"" if f=="index.html" else f}</loc><lastmod>{C}</lastmod></url>\n' for f in PAGES)+'</urlset>\n')
