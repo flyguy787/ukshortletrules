@@ -1161,6 +1161,29 @@ CX.update({
  fees=('No short-let fees. Council tax: Cabinet recommended the Empty Homes and Second Homes Premium Policy on 7 Feb 2024 and the council agreed it on 21 Feb 2024. Second homes (furnished homes that are nobody\'s sole or main residence) pay a 100% premium on top of the standard charge from 1 Apr 2025, so 200% council tax. '+EN_EXC+' The council lists the national exception classes and asks for evidence (for example an agent\'s letter and a live listing for a home marketed for sale or let); contact localtax@wealden.gov.uk. Empty and substantially unfurnished homes pay a premium after 1 year: 100% (1 to 5 years), 200% (5 to 10 years) and 300% (over 10 years); a change of owner does not reset the clock.'+EN_BRT,[WE,WE2,EN_BR]),
  dates=['7 Feb 2024: Cabinet recommended the empty and second homes premiums','21 Feb 2024: council agreed the premiums','1 Apr 2025: 100% second homes premium started','21 Sep to 2 Nov 2026: Proposed Submission Local Plan representation period','Dec 2026: council intends to submit the new Local Plan for examination',EREG]),
 })
+# ---- English tourism hotspots: Stratford-on-Avon and Oxford (sources read 3 Nov 2026) ----
+SA='https://www.stratford.gov.uk/council-tax/council-tax-premiums-on-second-homes-consultation.cfm'
+SA2='https://democracy.stratford.gov.uk/mgAi.aspx?ID=51450'
+SACS='https://www.stratford.gov.uk/planning-building/core-strategy.cfm'
+SAPP='https://www.stratford.gov.uk/planning-building/planning-policy.cfm'
+SWLP='https://southwarwickshire.oc2.uk/document/168'
+OX='https://www.oxford.gov.uk/council-tax-discounts-exemptions/council-tax-empty-property-premium'
+OXLP='https://www.oxford.gov.uk/downloads/file/1637/adopted-oxford-local-plan-2036'
+OXAP='https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=60271835'
+OXEX='https://www.oxford.gov.uk/oxford-local-plan-2045/oxford-local-plan-2045-examination'
+OX45='https://www.oxford.gov.uk/oxford-local-plan-2045'
+CX.update({
+'stratford-on-avon':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area or Article 4 direction aimed at holiday lets that we found (checked 3 Nov 2026); the national planning data register lists no Article 4 directions for Stratford-on-Avon District Council, so check the council\'s own records for a specific property. Whether letting a whole home as a holiday let is a material change of use is decided case by case. The development plan is the Core Strategy 2011 to 2031, adopted on 11 July 2016, plus neighbourhood plans. The council\'s April 2026 review found that in key respects, notably housing land supply, Core Strategy policies must be treated as out of date, while many other policies keep full weight. A new South Warwickshire Local Plan, prepared with Warwick District Council, is set to replace the Core Strategy\'s strategic policies: its final (Regulation 19) consultation ran from 21 July to 8 September 2026 and the next step is submission for independent examination. We have not checked that draft for holiday-let policies (unverified), and it is not in force.',[A4R+'321',SACS,SAPP,SWLP,EN_SH]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: since 1 Apr 2013 second homes in the district get no discount, so they pay 100% council tax. The council has agreed a 100% second homes premium across the whole district from 1 Apr 2027, so a second home will then pay double council tax (200%). Cabinet and Council agreed it on 23 Feb 2026, after a consultation from 15 Dec 2025 to 2 Feb 2026 (589 online responses plus 8 paper ones), and the council said all second home owners would be written to before 31 Mar 2026; it counts 859 second homes in the district (over 1% of all homes). At the 19 Feb 2026 scrutiny meeting, members were told the council could still decide not to go ahead before the 2027/28 year, and the committee asked for more information, and a chance to comment later in the year, on exemptions and how the premium will be put in place. '+EN_EXC+EN_BRT,[SA,SA2,EN_BR]),
+ dates=['11 Jul 2016: Core Strategy adopted','23 Feb 2026: Cabinet and Council agreed the second homes premium','21 Jul to 8 Sep 2026: South Warwickshire Local Plan final consultation','1 Apr 2027: 100% second homes premium starts',EREG]),
+'oxford':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area, and no Article 4 direction aimed at holiday lets (checked 3 Nov 2026). The national planning data register lists 4 Article 4 directions for Oxford: Jericho (2011), Osney Town (1993), Wolvercote Green (2007) and a city-wide direction for houses in multiple occupation (from 25 Feb 2012); none is about holiday lets. Under the Oxford Local Plan 2036 (adopted 8 June 2020), Policy V5 allows new holiday and other short stay accommodation only in the city centre, district centres, sites allocated for it and on the main arterial roads with frequent, direct public transport to the city centre, and only with no loss of a residential dwelling; Policy H5 refuses development that causes the net loss of a self-contained home, with narrow exceptions. In a decision of 11 Dec 2024 a planning inspector upheld the council\'s enforcement notice against a house in Headington run as short-term let accommodation, finding a material change of use from a C3 home that conflicted with Policies H5 and V5; the owner had 12 weeks to stop its primary use as a short-term let. The inspector made clear that occasional short-term letting of a house that stays mainly a home may not need permission: it is a question of fact and degree in each case. A new Oxford Local Plan 2045 was submitted for examination on 14 July 2026; stage 2 hearings run from 24 Nov to 11 Dec 2026 and the council expects to adopt it in May 2027. We have not checked its short stay policy wording (unverified), and it is not yet in force.',[A4R+'251',OXLP,OXAP,OXEX,OX45,EN_SH]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: from 1 Apr 2025 a 100% premium applies to most second homes (furnished homes that are nobody\'s sole or main residence), so they pay double council tax (200%). '+EN_EXC+' If one applies, use the council\'s online form to apply for an exception (you need your 9-digit council tax account number). Empty and unfurnished homes have paid premiums since 1 Apr 2024: 100% after 1 year, 200% after 5 years and 300% after 10 years, and a change of owner does not reset the clock.'+EN_BRT,[OX,EN_BR]),
+ dates=['8 Jun 2020: Oxford Local Plan 2036 adopted','11 Dec 2024: inspector upheld the Headington short-let enforcement notice','1 Apr 2025: 100% second homes premium started','24 Nov to 11 Dec 2026: Local Plan 2045 stage 2 examination hearings','May 2027: council expects to adopt the Local Plan 2045',EREG]),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
@@ -1326,6 +1349,10 @@ CMETA={
   'Liverpool holiday lets: second homes pay double council tax since 1 Apr 2025, business rates at 140 nights available and 70 let, no licence, no visitor levy yet.'),
 'sefton':('Sefton Holiday Let Rules: Planning, Council Tax & Rates',
   'Sefton holiday lets: Dec 2024 planning guidance (rooms let separately, oversized groups, 5% cap within 100 m) and double council tax on second homes from 1 Apr 2025.'),
+'oxford':('Oxford Short-Term Let Rules: Planning & Council Tax',
+  'Oxford short-term lets: planning resists losing homes to short stays (enforcement upheld Dec 2024), and a 100% second-home council tax premium since Apr 2025.'),
+'stratford-on-avon':('Stratford-on-Avon Holiday Let Rules: Council Tax & Rates',
+  'Stratford-on-Avon holiday lets: full council tax on second homes now, a 100% premium (200% bill) from 1 Apr 2027, or business rates if 140 nights/70 let.'),
 }
 _CMNS=('Licence fees: not summarised','Licence fees: see','Not shown','Not summarised')
 def CMT(c,s,dt):
