@@ -6,7 +6,7 @@
  },
  "changes.html": {
   "d": "2026-11-03",
-  "h": "fdfc00220225b49994048dfce10028846f3fccd7ae358cd0183d7dd7ed22882a",
+  "h": "2d9ac02b6c704a6453e2daa22de592a9485f8e5a144c7ff2907f84bbd8f65e7c",
   "m": "2417cde31fde0a01bc26c9ac493681e681bb79c3c09080f2733c50c5228ae94a"
  },
  "checker.html": {
@@ -21,22 +21,22 @@
  },
  "councils/aberdeen-city.html": {
   "d": "2026-11-03",
-  "h": "08eeacf03b014ae77e677627a6975c4ade7449f59b166b4a9d5fe1b9761e6720",
+  "h": "3075bceb47e73a197cd13e033f8137ffc745132f6ee2cd779174dba5b0813c50",
   "m": "c9192745dc7ece73687e4c745d00d93faece40a636fc6e0d4b54c332fd1a3cd7"
  },
  "councils/aberdeenshire.html": {
   "d": "2026-11-03",
-  "h": "2bfa74909287ba6b792ad525f92e6b9b7fada9398a2e2ed2c90893cfa78cb610",
+  "h": "a9a0c52c7fd113a5a47a303ff8e5433ff44187cbdfe8ed480d05ba87dde48552",
   "m": "82d009bcb0aeded8fffae68f0de11c8611030674125b042001d0e9d973e1c2ae"
  },
  "councils/angus.html": {
   "d": "2026-11-03",
-  "h": "bec91bad74561f0e5754cd2bae1be76009a02c8d32b405b14041fbfa5064db99",
+  "h": "4120453f7ed6f07105259ae184354b302f979433cdd04e4652ffbeddf28a5be4",
   "m": "e5b2c8766a131ba87c312bd14de3e34defad6e4915a4589aeecc7c9e73100794"
  },
  "councils/argyll-and-bute.html": {
   "d": "2026-11-03",
-  "h": "11551734dbd006b5aeb9404bccd8f06628857c484c880e28c8289d5f61ad9937",
+  "h": "d39ae4618c847c1097e64e1216c614b25cb97f1c785a4643f0a8f351a6de81b2",
   "m": "7513014bdef0fd7924f0e9840a4abdf2a4faee9da891584b68cde92e5bb3a72f"
  },
  "councils/bath-and-north-east-somerset.html": {
@@ -96,7 +96,7 @@
  },
  "councils/city-of-edinburgh.html": {
   "d": "2026-11-03",
-  "h": "a0c952ab9604703f0c0503c0b91029d6ab03e3a10ec228f3ad8a8037510ab66b",
+  "h": "cd1bd9c761080eb685d4c9061aaff9a8e8902f521c925b88c4cd7f3ad6eae4ae",
   "m": "b2a7108699d58c41d3c6012817f947f14a054a56b2720a22c4cf8de7b0eda7ed"
  },
  "councils/city-of-york.html": {
@@ -106,7 +106,7 @@
  },
  "councils/clackmannanshire.html": {
   "d": "2026-11-03",
-  "h": "f413332bf5620bc77ef59fe0c629a12d074161d61c73b64dbe7b3e4004a10a31",
+  "h": "94666a2ba5930698572f93f17e2d85b493f9ab636755b48cd4fee8407f3ab8a1",
   "m": "cc9d13a03d255d49346066e01ae693bd785435909594fd264b7ad53888a57eb7"
  },
  "councils/conwy.html": {
@@ -146,17 +146,17 @@
  },
  "councils/dumfries-and-galloway.html": {
   "d": "2026-11-03",
-  "h": "8ef842362f484f8dec9e0d176bf37c9a29a0304b7dad2a31761e3cd0e956d5f3",
+  "h": "8a9db84e810853a9517a47ba4abfce413021db62d23944ae80bf9711b894fdd9",
   "m": "7d92b405835617ab62ec4f05445f7e653a56134c606c643c5ce2ab8372cc913b"
  },
  "councils/dundee-city.html": {
   "d": "2026-11-03",
-  "h": "e2461fd8ca756b949a3ccd493abe3c7703639089ad3b82f47509c11a2ba75f51",
+  "h": "8b7150080be12320071b063e486a97ce81439533af8e4789242adec8127d3b9a",
   "m": "a593ac0a6d6d4f0c3fc6c361633426bc20e20f23d1a59aaff8fa631b0f70cc48"
  },
  "councils/east-ayrshire.html": {
   "d": "2026-11-03",
-  "h": "5c1001fbaa88dc7b1e8ea15ba59912c80c1a9ca6b4e469a15d0400b093fe605c",
+  "h": "fd0a78dbef1dffcf4e111ac3878e587f44acb34a989d8082db2db91406bc979f",
   "m": "0030756cfb50d835492ea297252dee80b399c46b56dfd0520b2783db6087f680"
  },
  "councils/east-devon.html": {
@@ -166,7 +166,7 @@
  },
  "councils/east-dunbartonshire.html": {
   "d": "2026-11-03",
-  "h": "d1096d373f1c311b5a80761ecdcba7363f910345bb94230620f1855ec7071b9c",
+  "h": "4b269ddd0a1afb6ff9f61df33b80f17fbab823747559d67e57ddf3066f52b8c9",
   "m": "8be7ab665d03d828bd511f92ac4506e4111b2a2fcf74ca5570f3581a8652938e"
  },
  "councils/east-lindsey.html": {
@@ -176,12 +176,12 @@
  },
  "councils/east-lothian.html": {
   "d": "2026-11-03",
-  "h": "e0314f82bb4d7490e820b9f1b5cc8841edbc904b78edaab978a9f87e2cc8a716",
+  "h": "84ba0a87e191616aaadb8cbb60f6f49448c24599c097c4a1c50b016511764de2",
   "m": "94a11d074f574a076c84afea79730a082e62ad02a154d0fc5caab572b10988bc"
  },
  "councils/east-renfrewshire.html": {
   "d": "2026-11-03",
-  "h": "ce190e38f879f73474de89191ce070a55b4c8c76adc60b7950799608e1a3ca45",
+  "h": "8432c2b77a249b856c9a91dd507424e8950f404df8403ce81e93b3b4d9d78c97",
   "m": "5794583c298424d27638ac0709e867d1494be77d1c3f6cea0b9a0876e8d965e5"
  },
  "councils/east-suffolk.html": {
@@ -191,12 +191,12 @@
  },
  "councils/falkirk.html": {
   "d": "2026-11-03",
-  "h": "5ae154904cb15ff7320c4a00c2a48ec8fb65f0099045c8ef2ba51b3fadbcc0bf",
+  "h": "95104f1aac9bdff23243af827258284d9ba6c662457e6e2ca27a92e61e564c23",
   "m": "8316abc183cf1eed5f4c30b37cc2db9399e3b60a3f8f3f75ea6569b13bf749f0"
  },
  "councils/fife.html": {
   "d": "2026-11-03",
-  "h": "44b3875d3ed0cff44c870d82d06d85e0bbbede3198f90eaac2cd59ee9c38bc6b",
+  "h": "e5143db56de75294ff22cf19b0293d71bb289be5b68bb1958a4c264cde9b1ddb",
   "m": "cad2ab1524c55df58ea530855771f526c163a0cf832604975d2662e65b9aab57"
  },
  "councils/flintshire.html": {
@@ -211,7 +211,7 @@
  },
  "councils/glasgow-city.html": {
   "d": "2026-11-03",
-  "h": "8cbb15e0e7470a2aa558f543cbdb5fac8c07fbef6409303154571b8dc7d7d2a1",
+  "h": "1882cc05de25e4125b49ba4990d82b92caf9ae9d7ef9a5fa639944d16b1964b3",
   "m": "aa1cebfc991cc74771d5e0d0fcc1c13d5f666d870901e59573987b24613f11ae"
  },
  "councils/great-yarmouth.html": {
@@ -231,12 +231,12 @@
  },
  "councils/highland.html": {
   "d": "2026-11-03",
-  "h": "8ff0da0b1f19d8096bc9e3fdf993727321c7fc3a48c6581ef200e8cbb9a73bcf",
+  "h": "1ceabb20cd7ad0ce43284e1dc34010b56aef08ce15d0e1761b3403c87d17630e",
   "m": "523cf832f1d8e98c3d45f2431d81e06cc9bca8e315969368d8741138ceee2c41"
  },
  "councils/inverclyde.html": {
   "d": "2026-11-03",
-  "h": "24d5adff8d13e4000c707b1a7c694db8c47d27e24ce62b0e00014b4ac06face7",
+  "h": "98f44b3c7cc7c4993075fab02835d34d7a79692bf819a7e1efaf65e9954217e8",
   "m": "f7273c7b797988e8b9b2ff5ad95ad6e8d9095828cc26e85463da0d6441d0f26e"
  },
  "councils/isle-of-anglesey.html": {
@@ -271,7 +271,7 @@
  },
  "councils/midlothian.html": {
   "d": "2026-11-03",
-  "h": "1788b1b7743c1775fd4f5599a79836e383c25200c0727b521811d1efd5a08165",
+  "h": "c11307f513b7b3f1b67490da5bba0209b7d8d9bd868726dc2cec385d5483fa08",
   "m": "c274f6533facdf886a9b5ba804d5eb8fdb4da8a436abe69d54602ce5e4f24caa"
  },
  "councils/monmouthshire.html": {
@@ -281,12 +281,12 @@
  },
  "councils/moray.html": {
   "d": "2026-11-03",
-  "h": "1ea4415f00b027daa2af10e57fcbdbdb4d611e01b5db1bd36e5ff2524bb2a326",
+  "h": "5b6fa7e648cb4b5b375b44a0609cb7355ce44efc204f771aa467f25c5aaed842",
   "m": "a8a9232bf20b23ebe1b2e43c2f345fad79ef6e83e0800a414654191edac8d91b"
  },
  "councils/na-h-eileanan-siar.html": {
   "d": "2026-11-03",
-  "h": "69d7418f6335448b8d8e35bda53025ddfa62fd431721dbf9198a3b8a37072925",
+  "h": "0a3e7f24aeab627abca907d93a0eba27b5d87c54f6c6ca91042cdba64bc5ee92",
   "m": "7a2f5100230d2943aa7b208a8d38d99832eae6296f5118d918cddd387856a7fb"
  },
  "councils/neath-port-talbot.html": {
@@ -306,7 +306,7 @@
  },
  "councils/north-ayrshire.html": {
   "d": "2026-11-03",
-  "h": "03854d5237f5dacb3ff4ddff4ee50ad17842335492377829ebd38e4fc61758f2",
+  "h": "a4358db031ee8a8773b503dc720a57ebd34345eb4500fa867a51edaf8283cae4",
   "m": "0a04d0f2611ab461164f9ac6ec5317675d72baaa7043709d48677091b43ee578"
  },
  "councils/north-devon.html": {
@@ -316,7 +316,7 @@
  },
  "councils/north-lanarkshire.html": {
   "d": "2026-11-03",
-  "h": "6adb76eaf70ad6534aa1b22a2a7b22e510899bb1a207473576613f293d6cc638",
+  "h": "e71a7b5e2ce33b4ff2c9b8d998e8b0ff90ab7131b2018ba547f51d727a729dc6",
   "m": "c158aa96f8382882f460884735f5429a674b44ad74d43b89342be10afd35d18b"
  },
  "councils/north-norfolk.html": {
@@ -336,7 +336,7 @@
  },
  "councils/orkney-islands.html": {
   "d": "2026-11-03",
-  "h": "a12ef2fd467cf5d6416e501fcd5c6840a17f33dd4a256953e645c5ebf9bb24c4",
+  "h": "7b6171598b4c2c40fd4e21cbae9a17abd0c704c4872566becddaacfbe1893ce8",
   "m": "0dee550d6c6e818560f0987fdcab5953aeda508d3da754d662017adefe559c03"
  },
  "councils/pembrokeshire.html": {
@@ -356,7 +356,7 @@
  },
  "councils/renfrewshire.html": {
   "d": "2026-11-03",
-  "h": "6f500d84f8add23772c9f84ba25dfd5fcf75a417eecf93cafcfdf33971620584",
+  "h": "5fdf53d1474a2f79345aa19c3911f251ded39d8061c072074adbe58a220f20cc",
   "m": "75004c41f4d79fd06f8fa8c6e6b026663ca93802c02b4aa1f8bf4a1499763f67"
  },
  "councils/rhondda-cynon-taf.html": {
@@ -371,7 +371,7 @@
  },
  "councils/scottish-borders.html": {
   "d": "2026-11-03",
-  "h": "c53e3be7111d0008bd44d69aefb7113e50b6e79ca3646c8b96699733f035c1db",
+  "h": "7ca3353e510b3cd6c2db710f4f73efa348cb2d3f892898082dd4fba905cbc8da",
   "m": "93d6d4334eedad6e7b1f00e74fe3ea689b4c6cc4aa7adfcaada164c0d146f1fa"
  },
  "councils/sefton.html": {
@@ -381,7 +381,7 @@
  },
  "councils/shetland-islands.html": {
   "d": "2026-11-03",
-  "h": "b4cb3208df4375aa4ed5764dc280dab4507d4248b468a44a68547d9f1e541501",
+  "h": "f89eb6fdb7fc228213902329d8f8a47ebf13c6715a8f561c5191be2d98c49a95",
   "m": "b685b6e4e62b4f828ee9c4cf774a61632779429a8de04df861875b4bdef41f2b"
  },
  "councils/somerset.html": {
@@ -391,7 +391,7 @@
  },
  "councils/south-ayrshire.html": {
   "d": "2026-11-03",
-  "h": "194496ca11c35161c70e6e5556bde7f6a9256b62f87578878507049d28a1bb39",
+  "h": "95e1ade81ffd0d22e93f91bbf5b44f69a9569bc0bbdd146277a29c342a19b969",
   "m": "944d00810dcbf75d228564aacf64bc689083bfca15785bb42ce885fdccd46f93"
  },
  "councils/south-hams.html": {
@@ -401,12 +401,12 @@
  },
  "councils/south-lanarkshire.html": {
   "d": "2026-11-03",
-  "h": "da4f02eea0e89d9077db4d393750ea3d9302d865a450f25f26ed2da5dab016ff",
+  "h": "723c7e662e5728bb81aa43224e6fefb16b552aa0746e5091842c5c3d61eb0559",
   "m": "512163bcc9117a94916c866b6d142ab99148dfe0145a1299b1149ed1432c45a9"
  },
  "councils/stirling.html": {
   "d": "2026-11-03",
-  "h": "b7063658735cd9a266dfde691db42fd502817dc053785889f8cf1160cb907730",
+  "h": "3c48568000a90c79af7492f71e0a21ce7e95900af19ba9a9fb154bf796bfeecd",
   "m": "75a1028ddf7913fb5de5cb74e7854ba915c4f20399a239bce6598eebbd5b243d"
  },
  "councils/swansea.html": {
@@ -456,12 +456,12 @@
  },
  "councils/west-dunbartonshire.html": {
   "d": "2026-11-03",
-  "h": "b1d8e17277e04d8c54a1d52ac850a6823b13f03031ca8717316b301de4b77018",
+  "h": "8db57ab4065bdc9192c0208dc90e5866da275d52be930e8caa0c4894a4699cdd",
   "m": "421f4c6a5fd264f3a3c72c023d0f4aa4eb701bb97a5558290cf991b212bd6688"
  },
  "councils/west-lothian.html": {
   "d": "2026-11-03",
-  "h": "8f64e1e566193910b548a34444a1a45117f30d21433e05c08c6f02345af9a880",
+  "h": "5a2a1489e261ffe93772496c751a4f4dac658ccf9d4486893c4ff4ba6a44f40f",
   "m": "00144482ade7fb6f6a080ecee58739448ea0eb8f8d78a163364d4e0e878e249b"
  },
  "councils/westmorland-and-furness.html": {

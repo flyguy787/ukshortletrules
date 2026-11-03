@@ -1205,7 +1205,7 @@ def WHAT(c):
     return f'<p class="what"><b>Last checked {_d.date.fromisoformat(CK(c)).strftime("%-d %b %Y")}:</b> no change logged for this council in our <a href="../changes.html">changes log</a>. <a href="#get-alerts">Get free alerts</a> when it changes.</p>'
 def NATL(c):
     """Latest rule change that applies to every let in the council's nation (data.json changes[].applies, set by hand on national entries; optional 'short' = shorter wording for this line, full text stays in the lists:
-    UK/Westminster tax, GOV.UK/GOV.WALES rules). None for Perth & Kinross (PICK_EXCL, directory-only) or nations with no flagged entry (Scotland so far)."""
+    UK/Westminster tax, GOV.UK/GOV.WALES rules). None for Perth & Kinross (PICK_EXCL, directory-only) or nations with no flagged entry. Scotland: Visitor Levy (Amendment) Act 2026 entry (3 Nov 2026)."""
     if slug(c) in PICK_EXCL: return None
     m=[ch for ch in d['changes'] if c['nation'] in ch.get('applies',()) and ch.get('kind')!='site']
     return max(m,key=lambda z:z['date']) if m else None

@@ -1299,6 +1299,16 @@
     "England"
    ],
    "short": "Budget 2026 details confirmed: from 1 April 2027 the higher Small Business Rate Relief thresholds (100% relief up to £18,000 rateable value, tapering to £21,000) cover self-catering holiday lets that pay business rates, and mortgage interest relief rises to 24% from 6 April 2027 once Finance Bill 2026-27 passes."
+  },
+  {
+   "date": "2026-11-03",
+   "nation": "Scotland",
+   "text": "Now tracked: the Visitor Levy (Amendment) (Scotland) Act 2026 (2026 asp 18) received Royal Assent on 21 May 2026 and has been fully in force since 22 July 2026. Scottish councils can now set a visitor levy as a fixed amount per room (or area) per night, as well as a percentage of the accommodation cost, and can switch an existing or planned scheme between the two after a notice period. There is still no levy unless your council adopts a scheme.",
+   "source": "https://www.legislation.gov.uk/asp/2026/18/contents",
+   "applies": [
+    "Scotland"
+   ],
+   "short": "Scottish councils can now set a visitor levy as a fixed amount per room per night, as well as a percentage of the accommodation cost, under the Visitor Levy (Amendment) (Scotland) Act 2026, fully in force since 22 July 2026. There is still no levy unless your council adopts a scheme."
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
