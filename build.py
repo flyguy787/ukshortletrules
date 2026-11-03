@@ -336,7 +336,7 @@ def _chcouncils(t):
     for c in sorted(d['councils'],key=lambda c:c['name']):
         if not c['verified'] or slug(c) in PICK_EXCL:continue
         k=c['name'].split(' (')[0].replace('City of ','').replace(' City','')
-        if re.search(r'(?<!North )(?<!South )(?<!East )(?<!West )\b'+re.escape(k)+r'\b',t):out.append(f'<a href="councils/{slug(c)}.html">{e(c["name"])}</a>')
+        if re.search(r'(?<!North )(?<!South )(?<!East )(?<!West )\b'+re.escape(k)+r'\b',t) or (slug(c)=='greater-london-all-boroughs' and re.search(r'\bLondon\b',t)):out.append(f'<a href="councils/{slug(c)}.html">{e(c["name"])}</a>')  # plain 'London' entries link to Greater London (all boroughs)
     return out
 _chsorted=sorted(_chs,key=lambda z:z['date'],reverse=True);_chg='';_curm=None
 for _c in _chsorted:
@@ -344,7 +344,7 @@ for _c in _chsorted:
     if _m!=_curm:
         _chg+=('</ul>' if _curm else '')+f'<h3>{_m}</h3><ul class="chl">';_curm=_m
     _cl=_chcouncils(_c['text'])
-    _chg+=f'<li><time datetime="{_c["date"]}">{_dt0.date.fromisoformat(_c["date"]).strftime("%-d %b %Y")}</time> <span class="tag">{e(_c["nation"])}</span> {e(_c["text"])}<br><span class="cn">'+(('Council page: ' if len(_cl)==1 else 'Council pages: ')+', '.join(_cl)+' · ' if _cl else '')+f'<a href="{e(_c["source"])}" rel="nofollow">Official source</a></span></li>'
+    _chg+=f'<li><time datetime="{_c["date"]}">{_dt0.date.fromisoformat(_c["date"]).strftime("%-d %b %Y")}</time> <span class="tag">{e(_c["nation"])}</span> '+('<span class="tag site">Site update</span> ' if _c.get('kind')=='site' else '')+f'{e(_c["text"])}<br><span class="cn">'+(('Council page: ' if len(_cl)==1 else 'Council pages: ')+', '.join(_cl)+' · ' if _cl else '')+f'<a href="{e(_c["source"])}" rel="nofollow">Official source</a></span></li>'
 _chg+='</ul>' if _curm else ''
 # changes.html is written by changespick.py (after guidehub.py, which defines the shared RCPICK picker); the page body pieces are kept here.
 PAGES.append('changes.html')  # keep its sitemap position
@@ -360,7 +360,7 @@ def _nlitems(nch=3,ndl=3):
     keys=[_d.date.fromisoformat(r[0]).strftime('%-d %b %Y')+f': {i}' for i,r in enumerate(L)]
     dl=[(lambda a,n,c,t,u:f'<li><b>{_d.date.fromisoformat(a).strftime("%B %Y")+" (expected)" if t.startswith("Expected") else _d.date.fromisoformat(a).strftime("%-d %b %Y")}, {e(n if c=="All of "+n else c)}:</b> {e(t)} (<a href="{e(u)}" rel="nofollow">source</a>)</li>')(*L[int(k.rsplit(": ",1)[1])]) for k in NEXTD(keys,ndl)]
     s1=lambda t:re.split(r'(?<=[a-z0-9)])\. (?=[A-Z])',t,maxsplit=1)[0].rstrip('.')+'.'
-    rc=[c for c in _chs if not re.match(r'(Added|Re-checked|Now tracked)\b',c['text'])];pk=[]
+    rc=[c for c in _chs if c.get('kind')!='site' and not re.match(r'(Added|Re-checked|Now tracked)\b',c['text'])];pk=[]
     for c in rc:
         if len(pk)<nch and c['nation'] not in [p['nation'] for p in pk]:pk.append(c)
     pk+=[c for c in rc if c not in pk][:nch-len(pk)];pk.sort(key=lambda c:c['date'],reverse=True)  # rule changes only (not site additions), one per nation where possible

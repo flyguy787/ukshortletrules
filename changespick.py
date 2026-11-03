@@ -3,11 +3,12 @@
 # its latest 2 logged changes from this page's own log (council: entries this page already links to that council via _chcouncils; nation: entries
 # tagged with that nation), its next sourced key dates, a link to its page (data-cta changes-council-page) and an in-context alert box pre-set to the
 # pick (data-cta changes-council-result). While shown it hides both generic boxes (top-answer and sitewide, .alertcta); the placeholder restores them.
-# Perth & Kinross (PICK_EXCL) never appears. GA4: changes_council_pick {area_type, council}, once per distinct pick per page view. No new facts.
+# Site-feature entries (kind: site) are skipped. Perth & Kinross (PICK_EXCL) never appears. GA4: changes_council_pick {area_type, council}, once per distinct pick per page view. No new facts.
 def _chslugs(t):
     return [re.search(r'councils/([a-z0-9-]+)\.html',h).group(1) for h in _chcouncils(t)]
 _cch={}
 for _c in _chsorted:
+    if _c.get('kind')=='site':continue  # site-feature entries (data.json kind: site, e.g. a new tool) stay in the main log, labelled 'Site update', but not in rule-change lists
     _ln=_dt0.date.fromisoformat(_c['date']).strftime('%-d %b %Y')+': '+_c['text']
     for _s in _chslugs(_c['text']):_cch.setdefault(('c',_s),[]).append(_ln)
     for _n in d['nations']:

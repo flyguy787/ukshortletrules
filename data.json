@@ -1032,7 +1032,8 @@
    "date": "2026-10-24",
    "nation": "Scotland",
    "text": "Added a free \"Is your licence renewal due?\" checker for Scottish short-term let licences: estimates your expiry date and when to start your renewal, with renewal rules from the 1982 Act, Scottish Government guidance and council pages (Highland, Edinburgh, Argyll and Bute, Na h-Eileanan Siar, Angus).",
-   "source": "https://www.gov.scot/publications/short-term-lets-licensing-scheme-part-1-guidance-hosts-operators/pages/6/"
+   "source": "https://www.gov.scot/publications/short-term-lets-licensing-scheme-part-1-guidance-hosts-operators/pages/6/",
+   "kind": "site"
   },
   {
    "date": "2026-10-24",
