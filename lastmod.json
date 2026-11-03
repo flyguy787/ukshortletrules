@@ -6,7 +6,7 @@
  },
  "changes.html": {
   "d": "2026-11-03",
-  "h": "3c231640b4bfc67d731b070017a643c18dc45585b88a2d6d574aa149ccd082aa",
+  "h": "fdfc00220225b49994048dfce10028846f3fccd7ae358cd0183d7dd7ed22882a",
   "m": "2417cde31fde0a01bc26c9ac493681e681bb79c3c09080f2733c50c5228ae94a"
  },
  "checker.html": {
@@ -501,7 +501,7 @@
  },
  "england.html": {
   "d": "2026-11-03",
-  "h": "9edd8593fd5f477190c9ce9590cd7b513f28ff4433f988be130c64c53ed26d1c",
+  "h": "b11bae4bb2e9d8eadbbdfa6225d8badc49a2384855cd899af67ce2ee36461f41",
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
  },
  "guides.html": {
@@ -531,7 +531,7 @@
  },
  "index.html": {
   "d": "2026-11-03",
-  "h": "393d367b5e7ed57a6f38f7056c437f270370bb3f5bbaea5471fdc03a61c9f2b3",
+  "h": "b7da9a0d726f4890257156528b0e5ebc1db13743533f27c43e7545a084a70e5e",
   "m": "12369caa5aae5e93b48fd67d8dc23ac22152e38e7d4cb430b4137606d2cdec99"
  },
  "levy-calculator.html": {
@@ -555,8 +555,8 @@
   "m": "78009a1c70b80c007611e371823ce81e76d325b3508d17da81f6154944265587"
  },
  "northern-ireland.html": {
-  "d": "2026-10-30",
-  "h": "657d35353c192dc9994bf08a427edcd3413ef96b921dbf379110a13e03f8638a",
+  "d": "2026-11-03",
+  "h": "a1052d86ad4c7e0e1c9229ac286aefd89399719079f4bc24d4766b11d32458f6",
   "m": "caf51d4da73392b07951753578160c29999aad1b3b33dedaa7cc3227f3bb640b"
  },
  "occupancy-threshold-tracker.html": {
