@@ -24,7 +24,7 @@
 <script>(function(){var SEEN={},RK='',W={over:'Above 90 nights in a calendar year you need planning permission from your borough (Deregulation Act 2015, s44). We watch the 90-night rule, and the England-wide changes that also apply in London such as the national short-term let register GOV.UK expects to begin in March 2027, against official sources, and email you when something changes.',
 under:'The 90-night limit is set in law (Deregulation Act 2015, s44), and a borough or the Secretary of State can switch the exception off for specific properties or areas. We watch it, and the England-wide changes that also apply in London such as the national short-term let register GOV.UK expects to begin in March 2027, against official sources, and email you when something changes.'};
 function band(u){return u<1?'0':u<=30?'1-30':u<=60?'31-60':u<=80?'61-80':u<=90?'81-90':'91+'}
-function sw(){var A=document.getElementById('ln-alert'),S=document.querySelector('section.alertcta');if(S)S.hidden=!A.hidden;else if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sw)}
+function sw(){var A=document.getElementById('ln-alert'),L=document.getElementById('london-alert'),S=document.querySelector('section.alertcta');if(L)L.hidden=!A.hidden;if(S)S.hidden=!A.hidden;else if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sw)}
 window.lnA=function(u,rows,y){var A=document.getElementById('ln-alert'),F=document.getElementById('ln-form');if(!A||!F)return;
 if(!rows){if(!A.hidden){A.hidden=true;sw()}RK='';return}
 var ov=u>90,b=band(u),rk=y+'|'+b;if(rk!==RK){var M=F.querySelector('.msg');if(M)M.textContent=''}RK=rk;
