@@ -1197,7 +1197,18 @@ def WHAT(c):
     if m:
         ch=max(m,key=lambda z:z['date']);dd=_d.date.fromisoformat(ch['date']).strftime('%-d %b %Y')
         return f'<p class="what"><b>What changed ({dd}):</b> {e(ch["text"])} <a href="{e(ch["source"])}" rel="nofollow">Source</a> · <a href="#get-alerts">Get free alerts</a></p>'
+    n=NATL(c)
+    if n:
+        # empty state (3 Nov 2026): instead of 'no change logged', show the latest sourced change that applies to every let in this nation (data.json 'applies')
+        dd=_d.date.fromisoformat(n['date']).strftime('%-d %b %Y');nm=e(c['name'])
+        return f'<p class="what"><b>Latest change for all {e(c["nation"])} holiday lets ({dd}):</b> {e(n.get("short") or n["text"])} <a href="{e(n["source"])}" rel="nofollow">Source</a><br><span class="small">No change specific to {nm} in our log (last checked {_d.date.fromisoformat(CK(c)).strftime("%-d %b %Y")}). <a href="#get-alerts">Get free alerts for {nm}</a> so you hear when that changes, plus changes that apply across {e(c["nation"])}.</span></p>'
     return f'<p class="what"><b>Last checked {_d.date.fromisoformat(CK(c)).strftime("%-d %b %Y")}:</b> no change logged for this council in our <a href="../changes.html">changes log</a>. <a href="#get-alerts">Get free alerts</a> when it changes.</p>'
+def NATL(c):
+    """Latest rule change that applies to every let in the council's nation (data.json changes[].applies, set by hand on national entries; optional 'short' = shorter wording for this line, full text stays in the lists:
+    UK/Westminster tax, GOV.UK/GOV.WALES rules). None for Perth & Kinross (PICK_EXCL, directory-only) or nations with no flagged entry (Scotland so far)."""
+    if slug(c) in PICK_EXCL: return None
+    m=[ch for ch in d['changes'] if c['nation'] in ch.get('applies',()) and ch.get('kind')!='site']
+    return max(m,key=lambda z:z['date']) if m else None
 # ---- Public per-council changelog (28 Oct 2026): dated 'What changed' list built from data.json changes,
 # plus the last full check (data.json 'checked') and the watcher's last automated scan (scan.json, exported by
 # ukslr/watcher/export_scan.py). dir_only entries only appear on their own council's page; Perth entries never elsewhere.
@@ -1220,6 +1231,8 @@ def LASTCK(c):
     return s+'<a class="small" href="#what-changed">What changed</a></p>'
 def CHLOG(c):
     it=[(ch['date'],f'{e(ch["text"])} <a href="{e(ch["source"])}" rel="nofollow">Official source</a>') for ch in CHG(c)]
+    n=NATL(c)
+    if n and n not in CHG(c): it.append((n['date'],f'<span class="tag">All {e(c["nation"])} lets</span> {e(n["text"])} <a href="{e(n["source"])}" rel="nofollow">Official source</a>'))
     it.append((C,'Rules on this page last checked in full against the official sources listed above.'))
     it.sort(key=lambda z:z[0],reverse=True)
     _l=lambda L:''.join(f'<li><time datetime="{dt}">{_fdate(dt)}</time> {tx}</li>' for dt,tx in L)
