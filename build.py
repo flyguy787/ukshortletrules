@@ -1169,7 +1169,7 @@ def CK(c):
     return max([C]+[ch['date'] for ch in d['changes'] if rx.search(ch['text'])])
 def WHAT(c):
     import datetime as _d
-    m=[ch for ch in d['changes'] if c['name'].split(' (')[0].replace('City of ','').replace(' City','') in ch['text'] and not ch['text'].startswith('Added')]
+    m=[ch for ch in d['changes'] if c['name'].split(' (')[0].replace('City of ','').replace(' City','') in ch['text'] and ch.get('kind')!='site' and not ch['text'].startswith('Added')]
     if m:
         ch=max(m,key=lambda z:z['date']);dd=_d.date.fromisoformat(ch['date']).strftime('%-d %b %Y')
         return f'<p class="what"><b>What changed ({dd}):</b> {e(ch["text"])} <a href="{e(ch["source"])}" rel="nofollow">Source</a> · <a href="#get-alerts">Get free alerts</a></p>'
@@ -1185,8 +1185,9 @@ def _crx(c):
 def _fdate(s):
     import datetime as _d;return _d.date.fromisoformat(s).strftime('%-d %b %Y')
 def CHG(c):
+    # rule changes only: kind 'site' entries (site features, e.g. the 24 Oct renewal checker launch) stay in the main /changes log only
     rx=_crx(c);own=slug(c) in PICK_EXCL
-    m=[ch for ch in d['changes'] if rx.search(ch['text']) and (own or (not ch.get('dir_only') and 'Perth' not in ch['text']))]
+    m=[ch for ch in d['changes'] if ch.get('kind')!='site' and rx.search(ch['text']) and (own or (not ch.get('dir_only') and 'Perth' not in ch['text']))]
     return sorted(m,key=lambda z:z['date'],reverse=True)
 def LASTCK(c):
     sc=SCAN.get(slug(c),{})
