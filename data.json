@@ -863,6 +863,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions, plus local exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. Heacham and Burnham Market neighbourhood plans require new homes to be principal residences.",
    "source": "https://www.west-norfolk.gov.uk/info/20118/discounts_exemptions_and_premiums/1136/council_tax_premium_for_second_homes",
    "verified": true
+  },
+  {
+   "name": "Great Yarmouth",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; the Local Plan protects designated Holiday Accommodation Areas from losing holiday uses.",
+   "source": "https://www.great-yarmouth.gov.uk/article/5669/Do-I-have-to-pay-Council-Tax-on-an-empty-property-or-second-home",
+   "verified": true
+  },
+  {
+   "name": "Wealden",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; a new Local Plan to 2042 is heading for examination.",
+   "source": "https://www.wealden.gov.uk/council-tax/council-tax-discounts/second-home-and-long-term-empty-property-premiums/",
+   "verified": true
   }
  ],
  "changes": [
@@ -1228,6 +1242,12 @@
    "nation": "England",
    "text": "Added council pages for six English holiday-let hotspots: Canterbury, Thanet, Folkestone and Hythe, Rother, Chichester and King's Lynn and West Norfolk. All six charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; holiday lets valued for business rates instead do not pay it. None has a short-let licence or an Article 4 direction on holiday lets. Draft local plans in Canterbury and Rother propose new limits on turning homes into holiday lets (not yet in force), and neighbourhood plans in West Wittering (Chichester), Heacham and Burnham Market (King's Lynn and West Norfolk) already require new homes to be principal residences.",
    "source": "https://www.rother.gov.uk/planning-and-building-control/planning-policy/emerging-local-plan/local-plan-review/"
+  },
+  {
+   "date": "2026-11-03",
+   "nation": "England",
+   "text": "Added council pages for two more English holiday-let areas: Great Yarmouth and Wealden. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. Great Yarmouth's Local Plan protects designated Holiday Accommodation Areas from losing holiday uses, and Wealden's new Local Plan to 2042 is due to be submitted for examination by the end of 2026.",
+   "source": "https://www.wealden.gov.uk/council-tax/council-tax-discounts/second-home-and-long-term-empty-property-premiums/"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
