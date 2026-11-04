@@ -910,6 +910,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; a new Local Plan is expected to be adopted in late 2026.",
    "source": "https://www.bristol.gov.uk/residents/council-tax/empty-properties-and-council-tax",
    "verified": true
+  },
+  {
+   "name": "Manchester",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme, and no Article 4 direction or Local Plan policy on short lets; the council says current planning law makes them hard to control. The £1 City Visitor Charge applies only to larger accommodation businesses in the city centre BID zone.",
+   "source": "https://www.manchester.gov.uk/council-tax/definitions-and-overview/what-you-have-to-pay-if-a-second-home-isnt-exempt-from-council-tax",
+   "verified": true
+  },
+  {
+   "name": "Blackpool",
+   "nation": "England",
+   "rule": "The council says most Airbnb-style holiday flats and houses (self-contained, no on-site management) are a sui generis use needing planning permission, supported in principle only in the Town Centre, Resort Core and six Holiday Accommodation Areas. 100% council tax premium on second homes (200% bill) since 1 Apr 2025, which the council says can include short-term holiday lets; lets that qualify for business rates (140/70 nights) pay business rates instead. No licensing scheme.",
+   "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx",
+   "verified": true
   }
  ],
  "changes": [
@@ -1352,6 +1366,12 @@
    "nation": "England",
    "text": "Added council pages for Cambridge and Bristol. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Cambridge assesses whole-home short lets case by case as a possible change of use, and its draft Greater Cambridge Local Plan would allow homes to be turned into visitor accommodation only in exceptional circumstances. Bristol's draft new Local Plan, which the council expects to adopt in late 2026, includes a policy against losing existing homes. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
    "source": "https://www.cambridge.gov.uk/council-tax-for-empty-and-second-homes"
+  },
+  {
+   "date": "2026-11-04",
+   "nation": "England",
+   "text": "Added council pages for Manchester and Blackpool. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Blackpool's planning advice says most Airbnb-style holiday flats and houses need planning permission, which is generally supported only in the town centre, resort core and six holiday accommodation areas. Manchester has no short-let planning policy, and its £1 City Visitor Charge applies only to larger city centre accommodation businesses. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
+   "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
