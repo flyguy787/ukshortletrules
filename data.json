@@ -896,6 +896,20 @@
    "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. Local Plan policies resist losing homes to short stay use, and the council has taken enforcement action against a whole-home short let.",
    "source": "https://www.oxford.gov.uk/council-tax-discounts-exemptions/council-tax-empty-property-premium",
    "verified": true
+  },
+  {
+   "name": "Cambridge",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions; the council says this includes homes used for short-term holiday rental. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. The council treats whole-home short lets as a possible change of use needing planning permission, decided case by case.",
+   "source": "https://www.cambridge.gov.uk/council-tax-for-empty-and-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Bristol",
+   "nation": "England",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; a new Local Plan is expected to be adopted in late 2026.",
+   "source": "https://www.bristol.gov.uk/residents/council-tax/empty-properties-and-council-tax",
+   "verified": true
   }
  ],
  "changes": [
@@ -1332,6 +1346,12 @@
    "nation": "England",
    "text": "Added council pages for Stratford-on-Avon and Oxford. Oxford has charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025, and its Local Plan resists losing homes to short stay use: a planning inspector upheld the council's enforcement notice against a whole-home short let in December 2024. Stratford-on-Avon has agreed a 100% premium from 1 Apr 2027; until then second homes pay full council tax. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
    "source": "https://www.stratford.gov.uk/council-tax/council-tax-premiums-on-second-homes-consultation.cfm"
+  },
+  {
+   "date": "2026-11-04",
+   "nation": "England",
+   "text": "Added council pages for Cambridge and Bristol. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Cambridge assesses whole-home short lets case by case as a possible change of use, and its draft Greater Cambridge Local Plan would allow homes to be turned into visitor accommodation only in exceptional circumstances. Bristol's draft new Local Plan, which the council expects to adopt in late 2026, includes a policy against losing existing homes. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
+   "source": "https://www.cambridge.gov.uk/council-tax-for-empty-and-second-homes"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
