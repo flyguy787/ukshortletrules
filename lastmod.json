@@ -14,6 +14,11 @@
   "h": "d8c09f75766d686860439d13a15f0e350e60886655eb4e24e553c3bea767d891",
   "m": "43d10a3c932094f287d73e768a39643d66ea62f852ec035978c925c9eed7f082"
  },
+ "consultations.html": {
+  "d": "2026-11-04",
+  "h": "78692fdf3ba46738e034999118b4608156e15660f8edb05a675e6d56e0a18204",
+  "m": "b8e9342c776d8acbd653c97d87772c4409c8dd937057d8aaea96e86b3479d387"
+ },
  "councils.html": {
   "d": "2026-11-04",
   "h": "c12c67ee5c74e2ac4d07bf6d3c98899fdc5313faa3b6e2b7d86e7e93a2c2634c",
@@ -506,7 +511,7 @@
  },
  "deadlines.html": {
   "d": "2026-11-04",
-  "h": "d62988d76107b5d81478de03e24b8f812d039f3a67f79bfa4bb2d3b67cba608f",
+  "h": "2ceddf0ab350fc7289da972cec1f2392965b11fccc9e71f5a53e6db59b0d23f9",
   "m": "9da5a04193106c2095b9d35213060e46a3c8ab357837c40428a69618c5dab62d"
  },
  "embed.html": {
@@ -536,7 +541,7 @@
  },
  "guides.html": {
   "d": "2026-11-04",
-  "h": "5ce4c14b5f9bfebc21e52e3e8636bb4a67acb470c48bcc79855e4ee14d13fbc9",
+  "h": "d92780405edebf656862be0cc9c6c46169edee5e21690769fcb444b7d89906fd",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -561,12 +566,12 @@
  },
  "index.html": {
   "d": "2026-11-04",
-  "h": "0ddb8500aa746bcc3b7cbada7fe04fcacf1483227276b346b979313bf6b62350",
+  "h": "5a0e1b9f8e826d5d2619f4af617ffe7a9e114affaac7d50510e5b64b729d56c5",
   "m": "12369caa5aae5e93b48fd67d8dc23ac22152e38e7d4cb430b4137606d2cdec99"
  },
  "levy-calculator.html": {
   "d": "2026-11-04",
-  "h": "b16829c5d89c64ee1d13b4c2c13a721f5809a5a252177f283e52d88a68b9b7eb",
+  "h": "35f425c826b8edf28adac6a9ed4197f176c479e65d70d4addfc7d656ca4fb41e",
   "m": "2c2dde6b6a18bd1482567cb1da4219057229428f8064d83eb2814fccd1454c0b"
  },
  "london-90-night-counter.html": {
@@ -576,17 +581,17 @@
  },
  "newsletter.html": {
   "d": "2026-11-04",
-  "h": "bbb42402181459ee884f5e2e4066d35b8a544cb1d584d6272bde4b2a10cc11ac",
+  "h": "dbc72927f2bcd3d485377fe34b77bfd5cc467aadf9eda09902310864c217fe64",
   "m": "1f66101584892c3cff06b7bead006e6f4ff18834648cf0d3d4f75fe249239690"
  },
  "northern-ireland-tourism-certificate-guide.html": {
   "d": "2026-11-04",
-  "h": "1c273f7a24a06c8de64dd6d1a329bc1d12e5c69aca5a5f3b5d1505afc75f8d7f",
+  "h": "aa7498452d38e9188904b84bac353564f9b98a808ac0e7e7b0cae35bfd2e4d16",
   "m": "7cf0662f82b161d4994ffab88ae402845500467c78a6a6b9d43d2ec61969aa71"
  },
  "northern-ireland.html": {
-  "d": "2026-11-03",
-  "h": "a1052d86ad4c7e0e1c9229ac286aefd89399719079f4bc24d4766b11d32458f6",
+  "d": "2026-11-04",
+  "h": "a423d19dfbad0de364cf22710222f210920addb0ac2b820298247fa707faa413",
   "m": "caf51d4da73392b07951753578160c29999aad1b3b33dedaa7cc3227f3bb640b"
  },
  "occupancy-threshold-tracker.html": {
@@ -601,7 +606,7 @@
  },
  "scotland-business-rates-checker.html": {
   "d": "2026-11-04",
-  "h": "07cbda0ce5e970d302412eb5852f7c3054ea2bc3dd406dea549dd7aa2d8b8d41",
+  "h": "4a5629fb9a1bc767819f75277e72e4d89c093b5ca9909fe7a409730f47a279e4",
   "m": "15d5dbfde469ddf8d08b5de973d7b5f59763e7a9d3d2aecfa50084f0a7f29609"
  },
  "scotland-licence-renewal-checker.html": {
@@ -616,12 +621,12 @@
  },
  "scotland-short-term-let-licence-guide.html": {
   "d": "2026-11-04",
-  "h": "e97eb484aa04f837a5664dc1d70163af4ba9a0ccbe52e5b5790d8ca99342b79b",
+  "h": "505ac6320d5d8d7251b9da5de41631c5709e114f6bf8bf7873906541279fa7fc",
   "m": "a15ec71ca3b2d3d7a645f2eefaa5bb045c06c20a358e932e15e1637be3b7fe87"
  },
  "scotland.html": {
   "d": "2026-11-04",
-  "h": "f48d7797377d124df742a3194f46b1d94ba5caad266be1fb9d4e1274cfbff3c0",
+  "h": "a7808ac8dfaa7a60fe55b294474326462e0dba25977d0ef0d5e584548e763e28",
   "m": "4c1a3578ac156e60b39d1a0b68a3b39b3f17f933ac8fa5747b25bb7ab8b02834"
  },
  "short-let-planning-permission-by-council.html": {
@@ -631,7 +636,7 @@
  },
  "short-term-let-fire-safety-scotland.html": {
   "d": "2026-11-04",
-  "h": "70ab7ebb61d422d1cb2c4b667cfb94c6e647937e561dd26ef5612506b855ea02",
+  "h": "aeadc1ee044e7d152fb5ec7067943a170e9d9d4696e4c19e86c8a11bae9a5184",
   "m": "c21f107dd93e3f167b3e7955384f9796fbed68f9f7b155c11619251d1b64ff34"
  },
  "sponsor.html": {
@@ -641,7 +646,7 @@
  },
  "uk-visitor-levy-map.html": {
   "d": "2026-11-04",
-  "h": "b340fd455aeb790a56bbb07331e037951fa82285a54bb6dfa1d6f9418eb1b465",
+  "h": "de9127850afddf944b7d21e9cfd0f73b2b683243c3101089c2aae1789fdeeec7",
   "m": "6ab24a6422cc695a88e2384e36bb7004dad2c696bad2c29f7fbabcff79b0d44e"
  },
  "wales-registration-checker.html": {

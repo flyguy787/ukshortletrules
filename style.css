@@ -178,3 +178,7 @@ main details.more>ul.cpkl li,.cpkl li{margin:0}
 .cpkl a{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.9rem;text-decoration:none;color:var(--navy)}
 .cpkl a:hover{border-color:var(--navy2);background:#f7fbff}
 .ghpick h2{margin:0 0 .5rem}.ghpick label{display:block;margin-top:.6rem}.ghpick select{display:block;box-sizing:border-box;width:100%;max-width:26rem;margin-top:.3rem}.ghpick .ghres{margin-top:.8rem;border-top:1px solid #edf0f4;padding-top:.2rem}.ghpick .rcch{margin:.6rem 0 .2rem;font-size:1rem}.ghpick ul.anx{margin:.2rem 0 .6rem;padding-left:1.2rem}.ghpick ul.anx li{margin:.25rem 0}
+
+/* /consultations cards */
+.cons h3{margin:.1rem 0 .6rem;font-size:1.12rem;line-height:1.35}.cdl{display:grid;grid-template-columns:max-content 1fr;gap:.25rem 1rem;margin:0 0 .6rem}.cdl dt{font-weight:700;color:var(--mute);font-size:.9rem}.cdl dd{margin:0;overflow-wrap:anywhere}.cons p{margin:.4rem 0}
+@media(max-width:600px){.cdl{grid-template-columns:1fr;gap:0}.cdl dt{margin-top:.45rem;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}}
