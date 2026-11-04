@@ -53,7 +53,7 @@ b=ANSWER(t,f'Sometimes. There is no national rule in England that every holiday 
 <li><b>Planning application.</b> If permission is needed, apply to your council. If you are refused, you can appeal to the Planning Inspectorate.</li></ul>
 <h2>If you let without permission you needed</h2>
 <p>The council can take enforcement action. In England the time limit is now <b>10 years</b> for breaches on or after 25 April 2024 (<a href="{L115}" rel="nofollow">LURA 2023, s115</a>). Breaches that happened before that date keep the old limits (<a href="{SI452}" rel="nofollow">SI 2024/452, reg 5</a>). That means a let that has run for a few years is not automatically safe.</p>
-<h2>Local planning policies we track</h2><ul>
+<h2>Local planning policies we track</h2><p>For every council in one place, see the <a href="short-let-planning-permission-by-council.html">short-let planning permission by council table</a>.</p><ul>
 <li><a href="councils/isles-of-scilly.html">Isles of Scilly</a>: the adopted Local Plan restricts holiday-let conversions and needs principal residence on new homes.</li>
 <li><a href="councils/derbyshire-dales.html">Derbyshire Dales and the Peak District</a>: the National Park&rsquo;s holiday-occupancy policy, and a draft principal residence clause (not adopted).</li>
 <li><a href="councils/new-forest.html">New Forest</a>: draft National Park Local Plan proposes principal residence conditions on new homes (not adopted).</li>
