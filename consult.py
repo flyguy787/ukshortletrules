@@ -77,6 +77,16 @@ CONS=[
   u='https://www.economy-ni.gov.uk/consultations/consultation-policy-statutory-regulation-tourist-accommodation',r='',
   x='Proposed updates to the minimum standards and statutory categories for certified tourist accommodation, including self-catering. No outcome is shown on the page yet.'),
 ]
+# ---- In-context alert box (4 Nov 2026 growth push, priority 1): the page had only the sitewide box. Reason to subscribe = what happens
+# next on each open consultation. Every 'next' line restates the decision/next step already given in that entry's x text (same official
+# page, checked CONS_CHECKED). Picker = PICK (all verified councils + 'All of <nation>', Perth & Kinross excluded via PICK_EXCL), cta 'consultations'.
+# Each open card gets a 'Get an email when <area> decides' link (data-pick) that pre-selects its council/nation in this box (signup.js).
+CONS_NEXT={('Argyll and Bute Council','Planning control area'):'findings go to a future council meeting; if approved, the Scottish Government would have to agree before it could start',
+ ('Falkirk Council','Visitor levy'):'Full Council expected to decide in January 2027',
+ ('Dundee City Council','Visitor levy'):'earliest a levy could apply is 2028/29',
+ ('The Highland Council','Visitor levy'):'councillors could decide on 10 December 2026',
+ ('Moray Council','Second homes council tax'):'report to Full Council in January 2027'}
+def _cpk(c):return ('council:'+c['s'],c['w']) if c['s'] else ('nation:'+c['n'].lower().replace(' ','-'),c['n'])
 assert not any('kinross' in (c['w']+c['s']+c['t']).lower() for c in CONS)
 import datetime as _cdt
 try:
@@ -98,15 +108,24 @@ def _ccard(c,op):
     if op:rows.append(('How to respond',c['r']))
     return (f'<article class="box cons" id="{"c-"+re.sub(r"[^a-z0-9]+","-",(c["b"]+" "+c["t"]).lower()).strip("-")[:60]}"><h3>{e(c["t"])} {pill}</h3>'
      +'<dl class="cdl">'+''.join(f'<dt>{a}</dt><dd>{v}</dd>' for a,v in rows)+'</dl>'
-     +f'<p>{c["x"]}</p><p class="small"><a href="{c["u"]}" rel="nofollow">Official consultation page</a> · checked {CONS_CHECKED}</p></article>')
+     +f'<p>{c["x"]}</p>'+((lambda a,nm:f'<p class="cpick"><a href="#cons-alerts" data-pick="{a}" data-cta="cons-card-pick">'+(f'Get an email when {e(nm)} decides' if a.startswith('council:') else f'Get an email when {e(nm)} short-let rules change')+'</a></p>')(*_cpk(c)) if op else '')+f'<p class="small"><a href="{c["u"]}" rel="nofollow">Official consultation page</a> · checked {CONS_CHECKED}</p></article>')
 _csum=''.join(f'<tr><td><b>{_cd(c["c"]).strftime("%-d %b %Y")}</b></td><td>{_cwhere(c,False)}</td><td><a href="#{"c-"+re.sub(r"[^a-z0-9]+","-",(c["b"]+" "+c["t"]).lower()).strip("-")[:60]}">{e(c["t"])}</a></td><td>{e(c["k"])}</td></tr>' for c in _copen)
 _cntw=len([c for c in _copen if (_cd(c['c'])-_ctoday).days<=14])
+_cnx=[(c,CONS_NEXT.get((c['b'],c['k']))) for c in _copen]
+CONSALERT=(PICK('consultations',aid='cons-alerts',tag='div')
+ .replace('>Get free rule-change alerts for <span class="acn">your council</span></h2>','>Get an email when <span class="acn">your council</span> consults or decides</h2>',1)
+ .replace('<p>Pick your council. We email you when its short-let rules change (licensing, planning, levy, fees), plus one short weekly "what changed" email. Free. Unsubscribe any time.</p>',
+   '<p>Pick your council. We email you when a consultation or council decision changes its short-let rules (licensing, planning, visitor levy, council tax, fees). The weekly "what changed" email also lists consultations closing soon. Free. Unsubscribe any time.</p>',1)
+ .replace('</script></div>','</script>'+(('<p class="anxh"><b>What happens after the open consultations close:</b></p><ul class="anx">'+''.join(f'<li><b>{e(c["w"])}</b> ({e(c["k"].lower())}, closes {_cd(c["c"]).strftime("%-d %b")}): {e(n)}</li>' for c,n in _cnx if n)+'</ul>') if any(n for c,n in _cnx) else '')+'</div>',1))
+assert CONSALERT.index('</form>')<CONSALERT.index('What happens after') if 'What happens after' in CONSALERT else True
+assert 'consults or decides' in CONSALERT and 'consultation or council decision' in CONSALERT
 _cft='Short-let consultations: have your say before they close'
 _cfd='Open UK short-let and holiday-let consultations: control areas, visitor levies, second home council tax and planning guidance, with closing dates and links.'
 _cbody=(f'<p class="lead">Public consultations that could change the rules for short-term lets and holiday lets in England, Scotland, Wales and Northern Ireland, with closing dates and how to respond. Every detail comes from the official consultation page, linked on each one. Checked {CONS_CHECKED}.</p>'
  +(f'<div class="answer"><h2>Open now: {len(_copen)} consultation{"s" if len(_copen)!=1 else ""}</h2><p>'
    +(f'{_cntw} close{"s" if _cntw==1 else ""} within 14 days. ' if _cntw else '')
    +f'The next closes on <b>{_cf(_copen[0]["c"])}</b>: {e(_copen[0]["t"])} ({e(_copen[0]["b"])}).</p></div>' if _copen else '<div class="answer"><h2>No open consultations right now</h2><p>We have no open short-let consultations logged. The closed ones are in the archive below.</p></div>')
+ +CONSALERT
  +(f'<h2 id="open">Open consultations, closing soonest first</h2><div class="tw"><table class="stk"><tr><th>Closes</th><th>Where</th><th>Consultation</th><th>Topic</th></tr>{_csum}</table></div>'
    +''.join(_ccard(c,True) for c in _copen) if _copen else '')
  +'<p>Closing dates also appear on the <a href="deadlines.html">UK short-let deadlines</a> page, alongside levy start dates and tax deadlines.</p>'

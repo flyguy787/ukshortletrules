@@ -20,6 +20,12 @@ function ukslrSuggest(email){
 if(typeof module!=='undefined'&&module.exports)module.exports={ukslrSuggest:ukslrSuggest};
 if(typeof document!=='undefined'){
 function ukslrSrc(){try{return JSON.parse(sessionStorage.getItem('ukslr_src')||'{}')}catch(e){return {}}}
+// In-page 'get an email when <council> decides' links (consultations cards): pre-select that council in the target alert box, focus the email field.
+if(!window.ukslrPickBound){window.ukslrPickBound=1;document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-pick]');if(!a)return;
+  var box=document.querySelector(a.getAttribute('href')),sel=box&&box.querySelector('select[name=area]');if(!sel)return;
+  var o=sel.querySelector('option[value="'+a.getAttribute('data-pick')+'"]');if(!o)return;
+  ev.preventDefault();sel.value=o.value;sel.dispatchEvent(new Event('change'));box.scrollIntoView({block:'start'});
+  var em=box.querySelector('input[type=email]');if(em)em.focus({preventScroll:true});});}
 document.querySelectorAll('form.signup').forEach(function(f){
   if(f.dataset.bound)return;f.dataset.bound='1';
   var src=ukslrSrc();['utm_source','utm_medium','utm_campaign','referrer'].forEach(function(n){var i=document.createElement('input');i.type='hidden';i.name=n;i.value=src[n]||'';f.appendChild(i);});
