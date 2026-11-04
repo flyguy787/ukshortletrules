@@ -49,7 +49,7 @@ f'<b>The 182-night test is under review.</b> The Welsh Government <a href="{WCON
 <li>Is it an annex or garage conversion used as part of your main home? Class 3 may apply, or the council may have a local reduction policy.</li>
 <li>What rate does your council charge? See below or your council's website.</li>
 <li>Buying a property to let in Wales? Run the <a href="buyer-due-diligence-checker">buyer due-diligence checker</a> for the council first: it shows the 252/182-night test, premium risk, planning, WRA registration and visitor levy points in one place.</li></ul>
-<h2>Council rates we track</h2><ul>{wcl}</ul><p><a href="wales.html">All Wales rules</a> · <a href="councils.html">All councils</a></p>
+<h2>Council rates we track</h2><p>Compare Welsh councils side by side, with England and Scotland, in our <a href="second-homes-council-tax-premium-by-council.html">second homes council tax premium by council table</a> (with a CSV download).</p><ul>{wcl}</ul><p><a href="wales.html">All Wales rules</a> · <a href="councils.html">All councils</a></p>
 <p>England has a different premium (up to 100%) and a 140/70-night business rates test: see <a href="england-second-homes-council-tax-premium.html">England second homes council tax premium</a>. Holiday lets in Wales must also <a href="wales-registration-checker.html">register with the Welsh Revenue Authority</a> by 31 March 2027.</p>
 {NATALERT('wales','wales-premium','We track the Welsh second homes council tax premium, the 252/182-night business rates test, council premium rates and other Welsh short-let rules against official sources, and email you when one changes.',nats=('Wales','England / Wales / NI'))}
 <h2>Common questions</h2>{wfq}
