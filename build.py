@@ -122,7 +122,35 @@ def FBZ(f,p):
           '<div class="fbact"><button type="submit">Send report</button><button type="button" class="repcancel lnk">Cancel</button></div><p class="fbmsg" role="status"></p></form>'
           '<p class="repthx" hidden tabindex="-1" role="status"><b>Thank you!</b> We\'ll check it against the official source and fix it.</p></div>')
     return f'<section class="fbz" aria-label="Feedback" data-endpoint="{FB_EP}">{vote}{rp}{priv}</section><script src="{p}feedback.js"></script>'
+# Search snippet overrides for guide/tool pages (4 Nov 2026): titles <=60 chars, descriptions <=165, so Google doesn't cut them off.
+# Keeps each page's own lead phrase; drops the ' | UK Short-Let Rules Tracker' suffix (Google shows the site name separately).
+# (title, desc); None keeps the page's own value. Every fact must already be on that page (checked by claims script).
+GLONG={}
+GMETA={
+'scotland-short-term-let-licence-fees.html':('Scotland short-term let licence fees by council (all 32)','Compare short-term let licence fees across all 32 Scottish councils: secondary letting, home letting and home sharing, new and renewal, with official sources.'),
+'wales-registration-checker.html':('Wales holiday let registration checker (WRA, 31 Mar 2027)','Free 4-question checker: do you need to register your Wales holiday let or short-term let with the Welsh Revenue Authority by 31 March 2027? Official sources.'),
+'scotland-business-rates-checker.html':('Scotland holiday let business rates checker (140/70 nights)','Free checker: does your Scottish holiday let qualify for business rates? 140 nights available, 70 let, evidence by 26 May, or council tax and second-home premium.'),
+'scotland-short-term-let-licence-guide.html':('How to get a short-term let licence in Scotland: checklist','Steps to get a Scottish short-term let licence, plus a free tick-off checklist of every certificate, safety item and notice you need. Official sources.'),
+'holiday-let-fire-safety-england.html':('Holiday let fire safety in England: rules and checklist','Fire safety law for holiday lets in England: fire risk assessment, smoke and heat alarms, doors, escape routes and guest information, plus a free checklist.'),
+'short-term-let-fire-safety-scotland.html':('Short-term let fire safety in Scotland: rules and checklist','Fire safety for Scottish short-term lets: fire risk assessment, smoke, heat and CO alarms, fire blanket and licence mandatory conditions, plus a free checklist.'),
+'england-second-homes-council-tax-premium.html':('England second homes council tax premium for holiday lets','England\'s second homes council tax premium from April 2025: who pays up to double, when a holiday let pays business rates instead, and the exceptions.'),
+'england-short-term-let-rules-2027.html':('England short-term let rules 2027: register, C5 & levy','England short-let changes for 2027: national register expected March 2027, the C5 use class and Article 4, second homes premiums and the Overnight Visitor Levy.'),
+'checker.html':('Need a short-let licence or registration? Free UK checker','Free checker: does your UK short-term or holiday let need a licence or registration? Pick nation, council and let type for a plain answer and official source.'),
+'scotland-licence-renewal-checker.html':('Short-term let licence renewal checker (Scotland)','Free checker for Scottish short-term let hosts: estimate when your licence expires and when to renew, with your council\'s renewal rules and official sources.'),
+'levy-calculator.html':('Visitor levy calculator: Edinburgh, Glasgow, Cardiff & more','Free visitor levy calculator for Edinburgh, Glasgow, Aberdeen, Stirling, West Dunbartonshire and Cardiff: levy due, advance-booking exemptions, official sources.'),
+'deadlines.html':('UK short-let deadlines: next 90 days and 2027 dates','UK short-let deadlines: Self Assessment, Edinburgh and Glasgow levy dates, consultations closing, Cardiff and Stirling levies, England register. Official sources.'),
+'occupancy-threshold-tracker.html':('Holiday let occupancy tracker: 252/182 and 140/70 nights','Free tracker for the holiday let business rates tests: Wales 252/182 nights, England and Scotland 140/70. See how many more let nights you need, and allowances.'),
+'buyer-due-diligence-checker.html':('Buying a holiday let? Free UK due-diligence checker','Free due-diligence checker for buying a UK holiday let: licence, planning, visitor levy, business rates and registration by council or postcode. Official sources.'),
+'guides.html':('Guides and free tools for UK short-let hosts','Every UK Short-Let Rules guide and free tool for holiday-let and short-term-let hosts by nation: planning, licensing, council tax premiums, fire safety, tax, levies.'),
+'northern-ireland-tourism-certificate-guide.html':(None,'Holiday lets in NI: planning permission (change of use) and the Tourism NI certificate: fees, the inspection, what inspectors check and a free checklist.'),
+'wales-second-homes-council-tax-premium.html':(None,'Holiday let council tax in Wales: the second homes premium (up to 300%), when a holiday let pays it after missing the 252/182-night test, and exceptions.'),
+'holiday-let-tax-after-fhl-abolition.html':(None,'FHL repeal explained: how holiday lets and static caravans are taxed since the FHL rules ended in April 2025: mortgage interest, capital allowances, losses, CGT.'),
+'embed.html':('Embed the free UK short-let licence checker',None),
+}
 def page(f,t,b,desc=None,full_title=None,head='',pre='',noh1=False,checked=None):
+    if f in GMETA:
+        if GMETA[f][1] and desc:GLONG[f]=desc  # longer original kept for the /guides hub cards
+        full_title,desc=(GMETA[f][0] or full_title),(GMETA[f][1] or desc)
     p='../'*f.count('/');nav=mknav(p)
     if 'id="get-alerts"' not in b+pre:b=b+PICK('sitewide')
     if f not in PAGES:PAGES.append(f)
