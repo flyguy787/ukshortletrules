@@ -1,17 +1,17 @@
 {
  "buyer-due-diligence-checker.html": {
   "d": "2026-11-05",
-  "h": "98889ce6e0df629b4f8c5d74808ff011eda8f8a41c24baf25de8a04f26ffed9c",
+  "h": "542ae626f51636b527a5cf1e2a6c288dc058258a42f158883be99e93bef8642e",
   "m": "139243b54122e79fcfec609a09a2cbc8622c8f55c54b4d9c5984b2a57b7ec6ea"
  },
  "changes.html": {
   "d": "2026-11-05",
-  "h": "da33a2dd785c2689f5544b407c8b018c9ffa9b230b946c8cc6379db799d04a89",
+  "h": "e3604d1eabca58e0b7f1e8a364c1a30e80b729918be756d5bbceb765294d3cbb",
   "m": "2417cde31fde0a01bc26c9ac493681e681bb79c3c09080f2733c50c5228ae94a"
  },
  "checker.html": {
   "d": "2026-11-05",
-  "h": "f8b5e6c13a4ad128e284f960598ccac54e5cb32647d51144b3a895c7df9ec259",
+  "h": "327222a68b33700dc4f32273e146c83b51ac3e09d747fa02b19b3b5b218633a5",
   "m": "43d10a3c932094f287d73e768a39643d66ea62f852ec035978c925c9eed7f082"
  },
  "consultations.html": {
@@ -21,7 +21,7 @@
  },
  "councils.html": {
   "d": "2026-11-05",
-  "h": "bcd08bd54d9a86c1f1b8211c2b32ea767435caf526f6e3f8862fa5597cd7d9c3",
+  "h": "046822a2c0cd7bcd709fa81e9b286d468826d438ef04e95231b3ea86bb8f1eed",
   "m": "9a6212a8076e5d3dfca917022a2a9519f97d3931afab7d3891e5232f12c14969"
  },
  "councils/aberdeen-city.html": {
@@ -236,7 +236,7 @@
  },
  "councils/great-yarmouth.html": {
   "d": "2026-11-05",
-  "h": "e5c50e569e6f8bb2b3b006d14c784472c007db4a91924a57d5fd256495c4b8bc",
+  "h": "d15b9b42fd8e05038f603d292a97bc4ae329b46b5db61b70fb1393377dca9a2d",
   "m": "0127d713ba078ab46027585cbb8e1f567dc8e833a665297be8dae0b35434a78a"
  },
  "councils/greater-london-all-boroughs.html": {
@@ -536,12 +536,12 @@
  },
  "england-second-homes-council-tax-premium.html": {
   "d": "2026-11-05",
-  "h": "d75840f0325f428fd3151f47630db07c683f5f99c081289ef742cbf2c08014aa",
+  "h": "f61659fc23485b14580f8a578cece1bfe2c38112a6af5f2ae8de133bb499f955",
   "m": "95f084aa00e70083e976b940667cd4fff9ac039668e1937114895cae7feb731d"
  },
  "england-short-term-let-rules-2027.html": {
   "d": "2026-11-05",
-  "h": "651fc9090314353a62553656c9a8b446803cbca65ce37b5beb36bbff1cf4c4e4",
+  "h": "2a14b47fbe7f2b78e9b9a580f00f6f75e771629da6c6f0570101472ddf0a5e7a",
   "m": "3ac6b7fb80e73a15d44cdf9daa280617dfb72a0358fbc228d93674ad33fcb77b"
  },
  "england.html": {
@@ -551,7 +551,7 @@
  },
  "guides.html": {
   "d": "2026-11-05",
-  "h": "d79fcde5d70ee6897c91df1ff4847bcb9785374970ef80a193d2ac07cd9df59c",
+  "h": "41bfc4c33e040c420c859f8cb88966696586fe39ca7a2a706b4228aae71d2696",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -646,7 +646,7 @@
  },
  "short-let-planning-permission-by-council.html": {
   "d": "2026-11-05",
-  "h": "3f77574aa3267c5befda7cd353a8617fe8c0fcddf391c1488788942e13077a75",
+  "h": "b4db2d83bc62b4bcb82f374a05f4014f76dc7aedfb10193e63fd71c3386a576d",
   "m": "7d2d3e9bac4f6f2f0071294fd01232a47fd41a75236acc5753239102ac38ba67"
  },
  "short-term-let-fire-safety-scotland.html": {

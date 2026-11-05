@@ -873,7 +873,7 @@
   {
    "name": "Great Yarmouth",
    "nation": "England",
-   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; the Local Plan protects designated Holiday Accommodation Areas from losing holiday uses.",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme. No Article 4 direction on holiday lets; the council resists losing holiday accommodation in the seafront area (new Local Plan 2024-2042, adopted 24 Sep 2026).",
    "source": "https://www.great-yarmouth.gov.uk/article/5669/Do-I-have-to-pay-Council-Tax-on-an-empty-property-or-second-home",
    "verified": true
   },
@@ -942,6 +942,13 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-05",
+   "nation": "England",
+   "text": "Now tracked: Great Yarmouth Borough Council adopted its new Local Plan 2024-2042 on 24 Sep 2026. It replaces the Core Strategy (2015) and Local Plan Part 2 (2021), including Part 2's Holiday Accommodation Areas policy. The council still resists losing holiday accommodation in the seafront area, and new holiday units usually keep holiday-only planning conditions. No short-let licence or control area.",
+   "source": "https://gybc1-prd.gosshosted.com/article/2491/Historic-local-plans",
+   "dir_only": true
+  },
   {
    "date": "2026-11-05",
    "nation": "England",
