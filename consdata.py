@@ -2,7 +2,7 @@
 # Used by consult.py (page build) and build.py CONSOPEN (council-page notice). Status open/closed is computed at build time.
 # Perth & Kinross is directory-only and is never listed here.
 # Each check is logged in /workspace/ukslr/SOURCE_LOG.csv (topic 'consultation check').
-CONS_CHECKED='4 Nov 2026'
+CONS_CHECKED='5 Nov 2026'
 CONS=[
  dict(t='Proposed short-term let control area (Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; Oban, Lorn and the Inner Isles)',b='Argyll and Bute Council',n='Scotland',w='Argyll and Bute',s='argyll-and-bute',k='Planning control area',
   o='2026-09-21',c='2026-11-15',cn='',

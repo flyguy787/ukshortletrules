@@ -12,7 +12,8 @@ _TL=[('12 Apr to 7 Jun 2023','Government consults on a new C5 short-term let use
      ('19 Feb 2024','Government confirms a mandatory national register for all of England and says it will introduce the C5 use class, permitted development rights, and flexibility to let your own main home for up to 90 nights a year.',EN_REG),
      ('1 Apr 2025','Councils can charge up to a 100% council tax premium on second homes (furnished, nobody\'s main home), if they decided at least a year before.',PGP),
      ('26 Nov 2025 to 18 Feb 2026','Government consults on an Overnight Visitor Levy.',EN_OVL),
-     ('10 Sep 2026','Government announces that mayors and Foundation Strategic Authority leaders will get the power to bring in an Overnight Visitor Levy.',EN_OVL),
+     ('10 Sep 2026','Government announces that mayors and Foundation Strategic Authority leaders will get the power to bring in an Overnight Visitor Levy.',EN_OVL_ANN),
+     ('4 Nov 2026','Government introduces the Visitor Levy Bill in the House of Commons.',EN_OVL),
      ('2 Oct 2026','GOV.UK updates its guidance: the national registration scheme is now expected to begin in March 2027.',GHL),
      ('March 2027 (expected)','National short-term let registration scheme expected to begin. No regulations, portal or fee published yet.',GHL),
      ('Early 2028','Government expects mayors and Foundation Strategic Authority leaders to set out their visitor levy spending plans.',EN_OVL)]
@@ -28,7 +29,7 @@ EQ=[('When does the England short-term let register start?','GOV.UK says the man
     ('Will the register apply to hotels and B&Bs?','No. The government said in February 2024 that the register and the planning changes are focused on short-term lets and will not affect hotels, hostels or B&Bs.'),
     ('Is the C5 use class law yet?','No. The government consulted on a C5 short-term let use class and permitted development rights in 2023 and said in February 2024 that it will introduce them, but no legislation has been made. Until then your local planning authority decides case by case whether letting a home is a material change of use. In Greater London the separate 90-night rule applies.'),
     ('Can my council use an Article 4 direction to stop holiday lets?','An Article 4 direction removes permitted development rights in an area. Under the 2023 proposals, a new permitted development right would let homes switch to short-term lets without an application, and areas would only see a change where a council removed that right with an Article 4 direction. Because that right does not exist yet, no English council can use one for short lets today. Existing Article 4 directions in the areas we track cover things like small HMOs and building alterations, not holiday-let use.'),
-    ('Is there a tourist tax in England?','Not yet. On 10 Sep 2026 the government announced that mayors and Foundation Strategic Authority leaders will get the power to bring in an Overnight Visitor Levy, charged as a percentage of the accommodation cost. A bill is still to come, and no levy applies yet.')]
+    ('Is there a tourist tax in England?','Not yet. On 4 Nov 2026 the government introduced the Visitor Levy Bill in the House of Commons. It would let mayors and Foundation Strategic Authority leaders charge an Overnight Visitor Levy as a percentage of the accommodation cost. Ten mayors have said any levy in their areas would be no higher than 5%. The Bill still has to pass Parliament, and no levy applies yet.')]
 _eld=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in EQ]}).replace('</','<\\/')
 _efq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in EQ)
 _ES=[('GOV.UK: Letting out a self-catering holiday home in England (updated 2 Oct 2026)',GHL),
@@ -36,20 +37,21 @@ _ES=[('GOV.UK: Letting out a self-catering holiday home in England (updated 2 Oc
      ('MHCLG: Introduction of a use class for short-term lets and associated permitted development rights (consultation, 2023)',GC5),
      ('Planning Practice Guidance: When is permission required? (Article 4 directions)',GWP),
      ('MHCLG: Guidance on the council tax premiums on long-term empty homes and second homes',PGP),
-     ('MHCLG: Local leaders handed powers to drive investment in communities (Overnight Visitor Levy, 10 Sep 2026)',EN_OVL),
+     ('MHCLG: New visitor levy powers to put money back into local communities (Visitor Levy Bill, 4 Nov 2026)',EN_OVL),
+     ('MHCLG: Local leaders handed powers to drive investment in communities (Overnight Visitor Levy, 10 Sep 2026)',EN_OVL_ANN),
      ('Liverpool City Region Combined Authority: New powers for Mayor to introduce overnight visitor levy (11 Sep 2026)',LCROVL)]
 dsc='England short-term let changes for 2027: national register expected March 2027, the C5 use class and Article 4 directions, second homes premiums and the Overnight Visitor Levy. Official sources.'
 b=f'''<p class="lead">England is catching up with Scotland and Wales. A national register for short-term lets is expected in March 2027, planning changes have been promised, councils already charge second homes premiums, and mayors are getting a visitor levy power. Here is where each one stands, with the official source for every fact.</p>
 {TLDR([f'<b>Register:</b> a mandatory national registration scheme is <a href="{GHL}" rel="nofollow">expected to begin in March 2027</a> (GOV.UK, updated 2 Oct 2026). No regulations, portal or fee yet, so you cannot register today.',
  '<b>Planning:</b> the C5 short-term let use class is still only a proposal. Today your local planning authority decides whether letting a home is a material change of use (London: 90-night rule).',
  f'<b>Second homes:</b> since 1 Apr 2025 councils can charge up to a 100% council tax premium. {len(_prem)} of the {len(_EN)} English council areas we track charge one.',
- f'<b>Tourist tax:</b> the <a href="{EN_OVL}" rel="nofollow">Overnight Visitor Levy</a> was announced on 10 Sep 2026 but still needs a bill. No levy applies yet.',
+ f'<b>Tourist tax:</b> the <a href="{EN_OVL}" rel="nofollow">Visitor Levy Bill</a> was introduced on 4 Nov 2026. It still has to pass Parliament, and no levy applies yet.',
  '<b>Do now:</b> check <a href="#premiums">your council</a>, ask your council how registration will work locally (as GOV.UK advises), and <a href="#england-alert">get an email</a> when any of this changes.'],
  title='In short: what changes in England in 2027')}
 {SCARDS([('Registration','coming','Expected March 2027','National, mandatory, mainly online. No regulations, portal or fee yet.','register'),
  ('Planning use class (C5)','proposed','Proposal, not law','Promised in Feb 2024. No legislation made yet.','planning'),
  ('Second-home premiums','in',f'{len(_prem)} of {len(_EN)} tracked councils','Up to 100% extra (double bill) since 1 Apr 2025.','premiums'),
- ('Visitor levy','announced','Announced, not in force','Power for mayors announced 10 Sep 2026. Bill still to come.','levy')])}
+ ('Visitor levy','announced','Bill introduced, not in force','Visitor Levy Bill introduced 4 Nov 2026. Not yet law.','levy')])}
 {TOC([('timeline','Timeline'),('register','Registration'),('planning','Planning (C5)'),('article4','Article 4'),('premiums','Second homes premiums'),('levy','Visitor levy'),('england-alert','Get alerts'),('faq','Questions'),('sources','Sources')])}
 <h2 id="timeline">Timeline</h2>{_tl}
 <h2 id="register">1. The national registration scheme <span class="pill p-coming">Coming</span></h2>
@@ -79,17 +81,18 @@ b=f'''<p class="lead">England is catching up with Scotland and Wales. A national
 <p class="stat"><b>{len(_prem)} of {len(_EN)}</b> English council areas we track charge a second homes premium.</p>
 {COLLAPSE(f'Show all {len(_prem)} councils', f'<div class="tw"><table class="stk"><tr><th>Council</th><th>What we track</th><th>Last checked</th></tr>{_prow}</table></div>', filt='Type your council, e.g. Cornwall')}
 {CALLOUT('<p>If your home is a furnished second home that is nobody\'s main home and is not valued for business rates, your council can charge up to double. Find your council above. How it works and the exceptions: <a href="england-second-homes-council-tax-premium.html">England second homes premium guide</a>.</p>')}
-<h2 id="levy">5. Overnight Visitor Levy (tourist tax) <span class="pill p-announced">Announced</span></h2>
-<p>On 10 Sep 2026 the government announced that mayors and Foundation Strategic Authority leaders will get the power to introduce an Overnight Visitor Levy (<a href="{EN_OVL}" rel="nofollow">MHCLG</a>):</p>
-<ul class="tick"><li>It must be charged as a <b>percentage of the accommodation cost</b>, not a flat fee.</li>
-<li>Local leaders decide whether to use it and can offer exemptions (such as campsites).</li>
-<li>Temporary accommodation, shelters and refuges would not be subject to it.</li>
-<li>Hotels and other accommodation providers would pay it to the authority.</li>
-<li>A bill will be introduced "in due course", and the government expects spending plans by early 2028.</li></ul>
-<p>In the government's announcement, the mayors of London, the Liverpool City Region, the East Midlands, West Yorkshire, the West of England, South Yorkshire, and York and North Yorkshire welcomed the power; York and North Yorkshire said no decision will be made without a full public consultation. The Liverpool City Region Mayor says a levy could raise up to £18m a year there (<a href="{LCROVL}" rel="nofollow">LCRCA</a>).</p>
-{CALLOUT('<p>No levy has been set anywhere in England yet. See <a href="councils/liverpool.html">Liverpool</a>, <a href="councils/sefton.html">Sefton</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>')}
+<h2 id="levy">5. Overnight Visitor Levy (tourist tax) <span class="pill p-announced">Bill introduced</span></h2>
+<p>On 4 Nov 2026 the government introduced the Visitor Levy Bill in the House of Commons (<a href="{EN_OVL}" rel="nofollow">MHCLG</a>). It builds on the 10 Sep 2026 announcement (<a href="{EN_OVL_ANN}" rel="nofollow">MHCLG</a>) that mayors and Foundation Strategic Authority leaders will get the power to charge an Overnight Visitor Levy:</p>
+<ul class="tick"><li>It must be charged as a <b>percentage of the accommodation cost</b>, not a flat fee, so lower-cost stays pay less.</li>
+<li>Ten mayors have said any levy in their areas would be <b>no higher than 5%</b>.</li>
+<li>Local consultation is required before a scheme starts; Foundation Strategic Authorities need unanimous support.</li>
+<li>Temporary accommodation, shelters and refuges would not be charged; leaders can add limited local exemptions (for example camping pitches).</li>
+<li>Accommodation providers would account for and pay the levy to the authority.</li>
+<li>The government still expects spending plans by early 2028 once powers are in use.</li></ul>
+<p>The Liverpool City Region Mayor says a levy could raise up to £18m a year there (<a href="{LCROVL}" rel="nofollow">LCRCA</a>). York and North Yorkshire have said no decision will be made without a full public consultation.</p>
+{CALLOUT('<p>No levy has been set anywhere in England yet: the Bill still has to pass Parliament, and each area then decides whether to use the power. See <a href="councils/liverpool.html">Liverpool</a>, <a href="councils/sefton.html">Sefton</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>')}
 {NATALERT('england','england-2027','We track the England short-term let register, the C5 planning changes, council tax premiums and the Overnight Visitor Levy against official sources, and email you when one changes.',nats=('England','England / Wales / NI'))}
 <h2 id="faq">Common questions</h2><div class="faq">{_efq}</div>
 <h2 id="sources">Official sources</h2>{SOURCES(_ES,'Show all official sources')}
-<p class="small"><b>Not legal advice.</b> General information based on the official sources above, checked 28 Oct 2026. Check with your council before acting. See also <a href="england.html">all England rules</a> and the <a href="changes.html">changes log</a>.</p>{FILTJS}'''
+<p class="small"><b>Not legal advice.</b> General information based on the official sources above, checked 5 Nov 2026. Check with your council before acting. See also <a href="england.html">all England rules</a> and the <a href="changes.html">changes log</a>.</p>{FILTJS}'''
 page(f,t,b,desc=dsc,full_title='England Short-Term Let Rules 2027: Register, C5 & Levy | UK Short-Let Rules Tracker',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{_eld}</script>')
