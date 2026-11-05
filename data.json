@@ -946,7 +946,8 @@
    "date": "2026-11-05",
    "nation": "England",
    "text": "Added council pages for Lancaster (Morecambe and the Lancashire coast) and High Peak (Buxton, Glossop and the Peak District fringe). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; part of High Peak is in the Peak District National Park, where the park authority handles planning and restricts new self-catering outside named settlements to holiday use.",
-   "source": "https://www.lancaster.gov.uk/council-tax/council-tax-reductions?chapter=3"
+   "source": "https://www.lancaster.gov.uk/council-tax/council-tax-reductions?chapter=3",
+   "dir_only": true
   },
   {
    "date": "2026-11-04",
@@ -1372,7 +1373,8 @@
    "date": "2026-11-03",
    "nation": "England",
    "text": "Added council pages for two more English holiday-let areas: Great Yarmouth and Wealden. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025; holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. Great Yarmouth's Local Plan protects designated Holiday Accommodation Areas from losing holiday uses, and Wealden's new Local Plan to 2042 is due to be submitted for examination by the end of 2026.",
-   "source": "https://www.wealden.gov.uk/council-tax/council-tax-discounts/second-home-and-long-term-empty-property-premiums/"
+   "source": "https://www.wealden.gov.uk/council-tax/council-tax-discounts/second-home-and-long-term-empty-property-premiums/",
+   "dir_only": true
   },
   {
    "date": "2026-11-03",
@@ -1392,31 +1394,36 @@
    "applies": [
     "Scotland"
    ],
-   "short": "Scottish councils can now set a visitor levy as a fixed amount per room per night, as well as a percentage of the accommodation cost, under the Visitor Levy (Amendment) (Scotland) Act 2026, fully in force since 22 July 2026. There is still no levy unless your council adopts a scheme."
+   "short": "Scottish councils can now set a visitor levy as a fixed amount per room per night, as well as a percentage of the accommodation cost, under the Visitor Levy (Amendment) (Scotland) Act 2026, fully in force since 22 July 2026. There is still no levy unless your council adopts a scheme.",
+   "dir_only": true
   },
   {
    "date": "2026-11-03",
    "nation": "England",
    "text": "Added council pages for Stratford-on-Avon and Oxford. Oxford has charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025, and its Local Plan resists losing homes to short stay use: a planning inspector upheld the council's enforcement notice against a whole-home short let in December 2024. Stratford-on-Avon has agreed a 100% premium from 1 Apr 2027; until then second homes pay full council tax. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
-   "source": "https://www.stratford.gov.uk/council-tax/council-tax-premiums-on-second-homes-consultation.cfm"
+   "source": "https://www.stratford.gov.uk/council-tax/council-tax-premiums-on-second-homes-consultation.cfm",
+   "dir_only": true
   },
   {
    "date": "2026-11-04",
    "nation": "England",
    "text": "Added council pages for Cambridge and Bristol. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Cambridge assesses whole-home short lets case by case as a possible change of use, and its draft Greater Cambridge Local Plan would allow homes to be turned into visitor accommodation only in exceptional circumstances. Bristol's draft new Local Plan, which the council expects to adopt in late 2026, includes a policy against losing existing homes. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
-   "source": "https://www.cambridge.gov.uk/council-tax-for-empty-and-second-homes"
+   "source": "https://www.cambridge.gov.uk/council-tax-for-empty-and-second-homes",
+   "dir_only": true
   },
   {
    "date": "2026-11-04",
    "nation": "England",
    "text": "Added council pages for Manchester and Blackpool. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Blackpool's planning advice says most Airbnb-style holiday flats and houses need planning permission, which is generally supported only in the town centre, resort core and six holiday accommodation areas. Manchester has no short-let planning policy, and its £1 City Visitor Charge applies only to larger city centre accommodation businesses. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
-   "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx"
+   "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx",
+   "dir_only": true
   },
   {
    "date": "2026-11-05",
    "nation": "England/Wales",
    "text": "Now tracked: the second homes council tax premium on the Gwynedd, Cardiff and Greater London pages and in the premium-by-council table (now 96 council areas). Gwynedd has charged 150% (so 250% council tax) since 1 Apr 2023 and kept it for 2026/27. Cardiff has charged 100% (double) since 1 Apr 2024. In London, 30 of the 33 councils were charging the 100% premium on 6 Oct 2025 (MHCLG Council Taxbase 2025); Barking and Dagenham, Kensington and Chelsea and Hillingdon started one from 1 Apr 2026. Holiday lets valued for business rates instead of council tax do not pay it.",
-   "source": "https://www.gov.uk/government/statistics/council-taxbase-2025-in-england"
+   "source": "https://www.gov.uk/government/statistics/council-taxbase-2025-in-england",
+   "dir_only": true
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"
