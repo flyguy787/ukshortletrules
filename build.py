@@ -1747,6 +1747,7 @@ def _clean_esc(t):  # escaped hrefs inside inline JSON strings (e.g. buyer check
     return _ESC.sub(lambda m:'href=\\"'+(re.sub(r'(^|/)index$',lambda k:k.group(1) or './',m.group(1))),t)
 for f in PAGES+['levy-calculator-widget.html','checker-widget.html','sitemap.xml']:
     t=open(f).read();open(f,'w').write(_clean_esc(_clean(t)))
+exec(open('notfound.py').read())  # custom 404 page (not in PAGES/sitemap)
 
 # ---- Short redirect links (redirects.json: slug -> query string on homepage). Not in sitemap; no analytics here ----
 import os
