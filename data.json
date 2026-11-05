@@ -924,9 +924,29 @@
    "rule": "The council says most Airbnb-style holiday flats and houses (self-contained, no on-site management) are a sui generis use needing planning permission, supported in principle only in the Town Centre, Resort Core and six Holiday Accommodation Areas. 100% council tax premium on second homes (200% bill) since 1 Apr 2025, which the council says can include short-term holiday lets; lets that qualify for business rates (140/70 nights) pay business rates instead. No licensing scheme.",
    "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx",
    "verified": true
+  },
+  {
+   "name": "Lancaster",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; planning decided case by case.",
+   "source": "https://www.lancaster.gov.uk/council-tax/council-tax-reductions?chapter=3",
+   "verified": true
+  },
+  {
+   "name": "High Peak",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. Part of the district is in the Peak District National Park (park authority handles planning there).",
+   "source": "https://www.highpeak.gov.uk/article/8415/Second-Home-Premium",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-05",
+   "nation": "England",
+   "text": "Added council pages for Lancaster (Morecambe and the Lancashire coast) and High Peak (Buxton, Glossop and the Peak District fringe). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; part of High Peak is in the Peak District National Park, where the park authority handles planning and restricts new self-catering outside named settlements to holiday use.",
+   "source": "https://www.lancaster.gov.uk/council-tax/council-tax-reductions?chapter=3"
+  },
   {
    "date": "2026-10-30",
    "nation": "Wales",

@@ -101,6 +101,8 @@ PRM={
  'greater-london-all-boroughs':('max','100%','200%','1 Apr 2025 (30 of 33 councils)','30 of the 33 London councils charged it at 6 Oct 2025 (MHCLG Council Taxbase 2025). Barking and Dagenham and Kensington and Chelsea added a 100% premium from 1 Apr 2026; Hillingdon added one from 1 Apr 2026 but does not state the rate. '+U,'fees',0),
  'manchester':('max','100%','200%','1 Apr 2025','Agreed 17 Jan 2024. Charged from day one on a home used as a second home, or after 12 months on a furnished home nobody lives in.','fees',0),
  'blackpool':('max','100%','200%','1 Apr 2025','Agreed 21 Feb 2024. The council says it can include short-term holiday lets and furnished rentals empty between lets.','fees',0),
+ 'lancaster':('max','100%','200%','1 Apr 2025','Determination published 29 Feb 2024. Empty and unfurnished homes also pay a premium after 12 months (since 1 Apr 2024).','fees',0),
+ 'high-peak':('max','100%','200%','1 Apr 2025','Confirmed on the council\'s Second Home Premium page; Feb 2025 budget news said the decision was made the year before.','fees',0),
 # Wales
  'pembrokeshire':('hi','125%','225%','1 Apr 2026','Down from 200% (2024-25) and 150% (2025-26). The council has confirmed 125% for 2027-28.','fees',0),
  'isle-of-anglesey':('max','100%','200%','In force 2026/27','Set by Full Council on 5 Mar 2026 with the 2026/27 council tax. The council\'s second homes page still shows older wording.','fees',2),
