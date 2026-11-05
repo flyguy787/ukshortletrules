@@ -939,6 +939,20 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. Part of the district is in the Peak District National Park (park authority handles planning there).",
    "source": "https://www.highpeak.gov.uk/article/8415/Second-Home-Premium",
    "verified": true
+  },
+  {
+   "name": "Herefordshire",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill), including holiday lets that don't qualify for business rates. No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; new development in the River Lugg and Clun catchments must show nutrient neutrality.",
+   "source": "https://www.herefordshire.gov.uk/secondhome",
+   "verified": true
+  },
+  {
+   "name": "Shropshire",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; SAMDev Policy MD11 resists new-build holiday lets in the countryside and conditions new visitor accommodation against residential use.",
+   "source": "https://next.shropshire.gov.uk/council-tax/council-tax-liability-and-empty-property-charges/council-tax-on-empty-property/",
+   "verified": true
   }
  ],
  "changes": [
@@ -1430,6 +1444,13 @@
    "nation": "England/Wales",
    "text": "Now tracked: the second homes council tax premium on the Gwynedd, Cardiff and Greater London pages and in the premium-by-council table (now 96 council areas). Gwynedd has charged 150% (so 250% council tax) since 1 Apr 2023 and kept it for 2026/27. Cardiff has charged 100% (double) since 1 Apr 2024. In London, 30 of the 33 councils were charging the 100% premium on 6 Oct 2025 (MHCLG Council Taxbase 2025); Barking and Dagenham, Kensington and Chelsea and Hillingdon started one from 1 Apr 2026. Holiday lets valued for business rates instead of council tax do not pay it.",
    "source": "https://www.gov.uk/government/statistics/council-taxbase-2025-in-england",
+   "dir_only": true
+  },
+  {
+   "date": "2026-11-05",
+   "nation": "England",
+   "text": "Added council pages for Herefordshire (Hereford, the Wye Valley and the Black Mountains edge) and Shropshire (Shrewsbury, Ludlow and the Shropshire Hills). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; Shropshire's adopted plan resists new-build holiday lets in the countryside, and Herefordshire requires nutrient neutrality for development in the River Lugg and Clun catchments.",
+   "source": "https://www.herefordshire.gov.uk/secondhome",
    "dir_only": true
   }
  ],
