@@ -251,7 +251,7 @@
  },
  "councils/greater-london-all-boroughs.html": {
   "d": "2026-11-05",
-  "h": "a4858965f9cce322f56fded42c6c3fa4747cd54c823df5856479208683095a80",
+  "h": "8dbd3771b9117a44985af7ad0f5f0c8b568ec98602ac97599ff6e4ce0405b4a1",
   "m": "e6b31b86d21cad71bed2aab7aebcb750f36de552a820a88a16448408c60064fb"
  },
  "councils/gwynedd.html": {
@@ -556,7 +556,7 @@
  },
  "england-second-homes-council-tax-premium.html": {
   "d": "2026-11-05",
-  "h": "f4ff6bd2235ec9d59e5c94de5ca4ce486cbc75c7ca02c3484d6ea9929bf60501",
+  "h": "ca355a5de8742a3ccf1035ea56ecee0610d757d6839ddec9e79f34ffc8762d8e",
   "m": "95f084aa00e70083e976b940667cd4fff9ac039668e1937114895cae7feb731d"
  },
  "england-short-term-let-rules-2027.html": {
@@ -566,12 +566,12 @@
  },
  "england.html": {
   "d": "2026-11-05",
-  "h": "68609cef61fb46535cc9653821564e830e42c3b6a77e67b2abd62052f1933273",
+  "h": "c9e34fe9c0319b858be66ec110a18bcb90472ed3927d0f202e1bec6bbbf2b966",
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
  },
  "guides.html": {
   "d": "2026-11-05",
-  "h": "acd2351095bd28a1840c7a1d455d9670987ee2aab6611cdcceaa482b1aa96d11",
+  "h": "2427bfb3489e848e075e9b9b07aa38f458a1a6f9a11adeee7b51af2693764550",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -606,8 +606,13 @@
  },
  "london-90-night-counter.html": {
   "d": "2026-11-05",
-  "h": "9c2342711fc7bf327a1448def4f457185749f35edfd44c3c5361105c979d7ceb",
+  "h": "f55aa32971102fef8ac7164a444d3fe954d53e95fb280091b4b6dceff103e4a8",
   "m": "feaff5e6b379a2a23f6be418a1239b4784e8ea2244627b4a9f0560f4ba41b34e"
+ },
+ "london-second-homes-council-tax-premium.html": {
+  "d": "2026-11-05",
+  "h": "ac1e8c72e7ec0e690ec5d612530d78a11bf3778229cbe3b1f6cf4942f5ff8712",
+  "m": "1ea8a3024cb9d91d56a19f189f31eeeeb9d5c2ea0fcdb3cfb6509a1c2695c472"
  },
  "newsletter.html": {
   "d": "2026-11-05",
@@ -661,7 +666,7 @@
  },
  "second-homes-council-tax-premium-by-council.html": {
   "d": "2026-11-05",
-  "h": "5cda53aab4ea2b8209ba5746a9cd520a55bcd04625233ce9de2257355b225e66",
+  "h": "82c3a76b622e4f340ba8ceb8eadb14d7de2f9f97296785b9be93e1aeafd78df0",
   "m": "c0a8d9c891d80a4b2334bf1fc638d9b09c2c60a66349030676eaa70896b5f907"
  },
  "short-let-planning-permission-by-council.html": {

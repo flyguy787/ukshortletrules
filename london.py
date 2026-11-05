@@ -55,7 +55,7 @@ b=f'''<p class="lead">In Greater London you can let a whole home short-term for 
  'Keep Greater London for London alerts, or pick All of England.',
  'We have no upcoming London dates logged right now. If the government or a borough announces a change, we\'ll email you.')}
 <h2>Common questions</h2>{fq}
-<p>Related: <a href="councils/greater-london-all-boroughs.html">Greater London council page</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="changes.html">Changes log</a> · <a href="buyer-due-diligence-checker?council=greater-london-all-boroughs">Buying a holiday let? Due-diligence checker</a></p>
+<p>Related: <a href="councils/greater-london-all-boroughs.html">Greater London council page</a> · <a href="london-second-homes-council-tax-premium.html">London second homes premium by borough</a> · <a href="uk-visitor-levy-map.html">UK visitor levy map</a> · <a href="changes.html">Changes log</a> · <a href="buyer-due-diligence-checker?council=greater-london-all-boroughs">Buying a holiday let? Due-diligence checker</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in LS)}</ul>
 <p class="small"><b>Not legal or planning advice.</b> Checked {C}. Your borough planning team has the final say.</p>
 {LNJS}<script>
