@@ -1372,6 +1372,12 @@
    "nation": "England",
    "text": "Added council pages for Manchester and Blackpool. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Blackpool's planning advice says most Airbnb-style holiday flats and houses need planning permission, which is generally supported only in the town centre, resort core and six holiday accommodation areas. Manchester has no short-let planning policy, and its £1 City Visitor Charge applies only to larger city centre accommodation businesses. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
    "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx"
+  },
+  {
+   "date": "2026-11-05",
+   "nation": "England/Wales",
+   "text": "Now tracked: the second homes council tax premium on the Gwynedd, Cardiff and Greater London pages and in the premium-by-council table (now 96 council areas). Gwynedd has charged 150% (so 250% council tax) since 1 Apr 2023 and kept it for 2026/27. Cardiff has charged 100% (double) since 1 Apr 2024. In London, 30 of the 33 councils were charging the 100% premium on 6 Oct 2025 (MHCLG Council Taxbase 2025); Barking and Dagenham, Kensington and Chelsea and Hillingdon started one from 1 Apr 2026. Holiday lets valued for business rates instead of council tax do not pay it.",
+   "source": "https://www.gov.uk/government/statistics/council-taxbase-2025-in-england"
   }
  ],
  "newsletter_endpoint": "https://ukshortletrules-signup.vercel.app/api/subscribe"

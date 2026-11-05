@@ -5,8 +5,8 @@
   "m": "139243b54122e79fcfec609a09a2cbc8622c8f55c54b4d9c5984b2a57b7ec6ea"
  },
  "changes.html": {
-  "d": "2026-11-04",
-  "h": "2fd36b4f644284f8c62d016fc2e672b387e1dea6a81cd375be772459a124fbd0",
+  "d": "2026-11-05",
+  "h": "87fd903576f7a1429a2c2676772e01b25b03e93b50c7e79da58f84341dc2717c",
   "m": "2417cde31fde0a01bc26c9ac493681e681bb79c3c09080f2733c50c5228ae94a"
  },
  "checker.html": {
@@ -95,8 +95,8 @@
   "m": "d3c7cf0d3033f7dc32ccfe63f202bd947a92bf5fe391532e2e85b5807a3ab532"
  },
  "councils/cardiff.html": {
-  "d": "2026-11-04",
-  "h": "b008744f780fc88ee6af180502fcf60a747c63fa8c613e954133058481a23195",
+  "d": "2026-11-05",
+  "h": "137905c628b25b4f2580803d8c5b1e1a770bb0cd4580eb80ca975914fc7937a5",
   "m": "9137172e564503eb16e14e96146b8f130d7aa425e0c62074eeda9e7d15287892"
  },
  "councils/carmarthenshire.html": {
@@ -240,13 +240,13 @@
   "m": "0127d713ba078ab46027585cbb8e1f567dc8e833a665297be8dae0b35434a78a"
  },
  "councils/greater-london-all-boroughs.html": {
-  "d": "2026-11-04",
-  "h": "9a90b4fb885d206652666592c80f8f5ce4b58a2c7235806e4cb16b5ea0b2fb88",
+  "d": "2026-11-05",
+  "h": "d2d0dc702acc92d32077d4d27c43f5522266fadf14c2e4422d74cd54b351aa1d",
   "m": "e6b31b86d21cad71bed2aab7aebcb750f36de552a820a88a16448408c60064fb"
  },
  "councils/gwynedd.html": {
-  "d": "2026-11-04",
-  "h": "f1e319b0a5c2723f562ba906f17230a018939184811a3fc5d62aa5a02eb9198f",
+  "d": "2026-11-05",
+  "h": "4c8aae6e6f80c0d5c84c107a3f7f4fb22af61db0f6ac583dd9ebb11e7cf3c0aa",
   "m": "a22a00dc01788ba0c67463883bf7edeeb498c3da054a0bebcc7167b1bcfddf1e"
  },
  "councils/highland.html": {
@@ -540,8 +540,8 @@
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
  },
  "guides.html": {
-  "d": "2026-11-04",
-  "h": "e88dccb15beaec987602784577087304b59eb991dbb5010d2152dd21b480e302",
+  "d": "2026-11-05",
+  "h": "dc77bc25dfed4ac347eaf77b220cade130d7cf637831218111b332a0b9a4301b",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -630,9 +630,9 @@
   "m": "4c1a3578ac156e60b39d1a0b68a3b39b3f17f933ac8fa5747b25bb7ab8b02834"
  },
  "second-homes-council-tax-premium-by-council.html": {
-  "d": "2026-11-04",
-  "h": "9c0ce3dd7153e910da32ebc4bbe0adf2f8a9d38a2046bf27a9ac41baa90bde4f",
-  "m": "a1591ef93f1b98527513101f5cceaf495172bcc56bd2be2abc2d65455e080b3e"
+  "d": "2026-11-05",
+  "h": "6cbd109ae60a2302e8ee3f2a6a267261c7f1789888413f999e132eb0254ccee0",
+  "m": "b5fe33c2232c9e37244fa701fb19d87d439523c44cb69976cb42ed560a1bd9fb"
  },
  "short-let-planning-permission-by-council.html": {
   "d": "2026-11-04",
