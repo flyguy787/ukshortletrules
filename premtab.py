@@ -105,6 +105,8 @@ PRM={
  'high-peak':('max','100%','200%','1 Apr 2025','Confirmed on the council\'s Second Home Premium page; Feb 2025 budget news said the decision was made the year before.','fees',0),
  'herefordshire':('max','100%','200%','1 Apr 2025','Decided 9 Feb 2024. The council says it also covers holiday lets that fail the business rates test.','fees',0),
  'shropshire':('max','100%','200%','1 Apr 2025','Empty and unfurnished homes pay a premium after 1 year (up to 300% after 10 years).','fees',0),
+ 'forest-of-dean':('max','100%','200%','1 Apr 2025','Decided by Full Council on 14 Sep 2023. Empty and unfurnished homes pay a premium after 1 year (up to 300% after 10 years).','fees',0),
+ 'east-riding-of-yorkshire':('max','100%','200%','1 Apr 2025','Not charged where you let commercially and pay business rates. Empty and unfurnished homes pay a premium after 1 year (up to 300% after 10 years).','fees',0),
 # Wales
  'pembrokeshire':('hi','125%','225%','1 Apr 2026','Down from 200% (2024-25) and 150% (2025-26). The council has confirmed 125% for 2027-28.','fees',0),
  'isle-of-anglesey':('max','100%','200%','In force 2026/27','Set by Full Council on 5 Mar 2026 with the 2026/27 council tax. The council\'s second homes page still shows older wording.','fees',2),

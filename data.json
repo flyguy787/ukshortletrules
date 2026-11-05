@@ -953,6 +953,20 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; SAMDev Policy MD11 resists new-build holiday lets in the countryside and conditions new visitor accommodation against residential use.",
    "source": "https://next.shropshire.gov.uk/council-tax/council-tax-liability-and-empty-property-charges/council-tax-on-empty-property/",
    "verified": true
+  },
+  {
+   "name": "Forest of Dean",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; the council withdrew its draft Local Plan on 30 Jun 2026, so the Core Strategy (2012) and Allocations Plan (2018) still apply.",
+   "source": "https://www.fdean.gov.uk/council-tax-and-benefits/second-homes/",
+   "verified": true
+  },
+  {
+   "name": "East Riding of Yorkshire",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; Local Plan Policy EC2 supports tourism accommodation, and holiday accommodation with planning permission is usually conditioned so it can't be anyone's main home.",
+   "source": "https://www.eastriding.gov.uk/housing/council-tax/second-homes-and-empty-properties/second-homes/",
+   "verified": true
   }
  ],
  "changes": [
@@ -1451,6 +1465,13 @@
    "nation": "England",
    "text": "Added council pages for Herefordshire (Hereford, the Wye Valley and the Black Mountains edge) and Shropshire (Shrewsbury, Ludlow and the Shropshire Hills). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets; Shropshire's adopted plan resists new-build holiday lets in the countryside, and Herefordshire requires nutrient neutrality for development in the River Lugg and Clun catchments.",
    "source": "https://www.herefordshire.gov.uk/secondhome",
+   "dir_only": true
+  },
+  {
+   "date": "2026-11-05",
+   "nation": "England",
+   "text": "Added council pages for the Forest of Dean (the Forest, the Wye Valley edge and the Severn) and the East Riding of Yorkshire (Bridlington, Hornsea, Withernsea and the Yorkshire Wolds). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. The East Riding usually conditions holiday accommodation with planning permission so it can't be anyone's main home, and the Forest of Dean withdrew its draft Local Plan on 30 Jun 2026.",
+   "source": "https://www.fdean.gov.uk/council-tax-and-benefits/second-homes/",
    "dir_only": true
   }
  ],
