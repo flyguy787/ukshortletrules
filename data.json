@@ -1009,9 +1009,30 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; Local Plan Policy DM22 covers tourism and leisure development. A small part of the district is in Dartmoor National Park (park authority planning there).",
    "source": "https://www.middevon.gov.uk/residents/council-tax/council-tax-second-homes-changes-to-second-homes/",
    "verified": true
+  },
+  {
+   "name": "Ribble Valley",
+   "nation": "England",
+   "rule": "No second homes council tax premium (Policy and Finance Committee kept the power under review on 11 Nov 2025 for 2026/27; same recommendation for 2025/26). Unoccupied furnished homes get a 10% discount. No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; Core Strategy Key Statement EC3 and Policy DMB3 cover visitor accommodation. Much of the borough is in the Forest of Bowland National Landscape (formerly AONB); Ribble Valley Borough Council remains the planning authority.",
+   "source": "https://www.ribblevalley.gov.uk/council-tax/council-tax-discounts",
+   "verified": true
+  },
+  {
+   "name": "Southampton",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 6 Mar 2024. No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (city-wide HMO Article 4 since 23 Mar 2012; conservation-area directions only otherwise). Adopted Core Strategy (partial review 13 Mar 2015) supports hotel and leisure growth in the city centre.",
+   "source": "https://www.southampton.gov.uk/emptyproperties/",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Ribble Valley (Clitheroe, Longridge, Whalley and the Forest of Bowland National Landscape) and Southampton. Ribble Valley does not charge a second homes council tax premium and still gives a 10% discount on unoccupied furnished homes; Policy and Finance Committee kept the new premium powers under review on 11 Nov 2025. Southampton charges a 100% second homes premium, so 200% council tax, from 1 Apr 2025 (agreed by Full Council on 6 Mar 2024). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets. Ribble Valley planning is under the Core Strategy (Key Statement EC3 and Policy DMB3 on the visitor economy); Southampton's under the Core Strategy partial review and City Centre Action Plan.",
+   "source": "https://www.ribblevalley.gov.uk/council-tax/council-tax-discounts",
+   "dir_only": true
+  },
   {
    "date": "2026-11-06",
    "nation": "England",
