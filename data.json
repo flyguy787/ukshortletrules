@@ -981,6 +981,20 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (Article 4 covers HMOs only). The Plymouth and South West Devon Joint Local Plan (adopted 2019) supports visitor accommodation in the core tourism area (Policy PLY21); a new Plymouth Local Plan is in preparation.",
    "source": "https://www.plymouth.gov.uk/council-tax-premiums",
    "verified": true
+  },
+  {
+   "name": "Staffordshire Moorlands",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. Part of the district is in the Peak District National Park (park authority planning; Policy DMR3 on new self-catering). No Article 4 for holiday lets outside the park.",
+   "source": "https://www.staffsmoorlands.gov.uk/article/6836/Empty-property-premium",
+   "verified": true
+  },
+  {
+   "name": "Exeter",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO Article 4 only); Local Plan First Review Policy TM2 covers small self-catering in residential areas.",
+   "source": "https://exeter.gov.uk/council-tax/how-much-is-my-council-tax/council-tax-premiums/",
+   "verified": true
   }
  ],
  "changes": [
@@ -1500,6 +1514,13 @@
    "nation": "England",
    "text": "Added council pages for Birmingham and Plymouth. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets (both have HMO Article 4s only). Plymouth's Joint Local Plan Policy PLY21 supports visitor accommodation in the city's core tourism area; Birmingham decides whole-home short lets case by case under its Development Plan.",
    "source": "https://www.birmingham.gov.uk/info/20144/apply_for_a_council_tax_discount_or_exemption/806/information_about_council_tax_on_second_homes",
+   "dir_only": true
+  },
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Staffordshire Moorlands (Leek, Cheadle, Biddulph and the Peak District fringe) and Exeter. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets (Exeter has an HMO Article 4 only). Part of Staffordshire Moorlands is in the Peak District National Park, where the park authority handles planning and restricts new self-catering outside named settlements to holiday use.",
+   "source": "https://www.staffsmoorlands.gov.uk/article/6836/Empty-property-premium",
    "dir_only": true
   }
  ],
