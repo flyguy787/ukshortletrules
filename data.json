@@ -1023,9 +1023,30 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 6 Mar 2024. No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (city-wide HMO Article 4 since 23 Mar 2012; conservation-area directions only otherwise). Adopted Core Strategy (partial review 13 Mar 2015) supports hotel and leisure growth in the city centre.",
    "source": "https://www.southampton.gov.uk/emptyproperties/",
    "verified": true
+  },
+  {
+   "name": "Portsmouth",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 13 Feb 2024. Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Portsmouth City Council). The Portsmouth Plan (adopted 2012) supports tourist-related facilities including hotels linked to the waterfront and maritime heritage.",
+   "source": "https://www.portsmouth.gov.uk/services/council-tax/second-homes-and-empty-properties/premiums-for-second-homes",
+   "verified": true
+  },
+  {
+   "name": "Newcastle upon Tyne",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); the council gave one year's notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 8 for Newcastle City Council — HMO and conservation/character directions only). Core Strategy and Urban Core Plan (adopted 26 Mar 2015) Policy CS8 supports leisure, culture and tourism including visitor accommodation; Urban Core Policy UC3 supports a range of hotels.",
+   "source": "https://new.newcastle.gov.uk/council-tax/empty-properties/long-term-empty-property-and-second-home-charges",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Portsmouth and Newcastle upon Tyne. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025 (Portsmouth Full Council 13 Feb 2024; Newcastle gave notice in March 2024). Empty and unfurnished homes in both cities pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets. Portsmouth planning is under the Portsmouth Plan (adopted 2012), which supports tourist-related facilities including hotels. Newcastle planning is under the Core Strategy and Urban Core Plan (Policy CS8 on leisure, culture and tourism; Urban Core Policy UC3 on hotels).",
+   "source": "https://www.portsmouth.gov.uk/services/council-tax/second-homes-and-empty-properties/premiums-for-second-homes",
+   "dir_only": true
+  },
   {
    "date": "2026-11-06",
    "nation": "England",

@@ -115,6 +115,8 @@ PRM={
  'mid-devon':('max','100%','200%','1 Apr 2025','Full Council agreed 21 Feb 2024. Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
  'ribble-valley':('none','None','90% (10% discount)','','No second homes or empty homes premium; Policy and Finance Committee kept the powers under review on 11 Nov 2025 for 2026/27. Unoccupied furnished homes get a 10% discount (50% if job-related).','fees',0),
  'southampton':('max','100%','200%','1 Apr 2025','Full Council agreed 6 Mar 2024. Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
+ 'portsmouth':('max','100%','200%','1 Apr 2025','Full Council agreed 13 Feb 2024. Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
+ 'newcastle-upon-tyne':('max','100%','200%','1 Apr 2025','Council gave notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
 # Wales
  'pembrokeshire':('hi','125%','225%','1 Apr 2026','Down from 200% (2024-25) and 150% (2025-26). The council has confirmed 125% for 2027-28.','fees',0),
  'isle-of-anglesey':('max','100%','200%','In force 2026/27','Set by Full Council on 5 Mar 2026 with the 2026/27 council tax. The council\'s second homes page still shows older wording.','fees',2),
