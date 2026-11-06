@@ -1056,6 +1056,13 @@
  "changes": [
   {
    "date": "2026-11-06",
+   "nation": "UK",
+   "text": "Published a shareable table of every UK visitor levy rate, start date and who pays (Edinburgh live; Glasgow, Aberdeen, Stirling, West Dunbartonshire and Cardiff confirmed; Highland proposed; England Visitor Levy Bill introduced 4 Nov 2026 but not yet law), plus licence and registration deadlines (Wales WRA 31 Mar 2027, England register expected March 2027, Scotland licence in force, NI Tourism NI certificate in force). Each row links its official source; checked 6 Nov 2026.",
+   "source": "https://ukshortletrules.co.uk/uk-levy-and-licence-deadlines",
+   "dir_only": true
+  },
+  {
+   "date": "2026-11-06",
    "nation": "England",
    "text": "Added council pages for Leeds and Sheffield. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025 (Leeds Full Council 21 Feb 2024; Sheffield Finance Committee determination 19 Feb 2024, noted in the Strategy and Resources budget supplementary). Empty and unfurnished homes in both cities pay a premium after 1 year (up to 300% after 10 years; Sheffield shortened the empty premium to 1 year from 1 Apr 2024). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets (Leeds has a city-wide HMO Article 4). Leeds planning is under the Core Strategy (Policies CC1 and P2 support hotels as main town centre uses). Sheffield planning is under the Core Strategy (Policies CS14 and CS15 on City Centre shopping and leisure).",
    "source": "https://www.leeds.gov.uk/council-tax/discounts-and-exemptions/empty-properties/second-homes-long-term-empty-homes-premiums",

@@ -26,7 +26,7 @@
  },
  "councils/aberdeen-city.html": {
   "d": "2026-11-06",
-  "h": "26d203d30c579315d8cb3ca3fdbe6ef692d7559cc31d0bec286485c54f5dbed1",
+  "h": "60d4216b37c14c5f66f7d9db6032f7da5e0a6aeab284c611a34487c4739c897d",
   "m": "c9192745dc7ece73687e4c745d00d93faece40a636fc6e0d4b54c332fd1a3cd7"
  },
  "councils/aberdeenshire.html": {
@@ -101,7 +101,7 @@
  },
  "councils/cardiff.html": {
   "d": "2026-11-06",
-  "h": "ac96493fec31f030b679ada201a1b78902b87de1c3cdc2b5858c7130d0921e01",
+  "h": "5504c53339681b88ed6b82eb84bf2a140dc9262bc4cce86158727c66ad89b169",
   "m": "9137172e564503eb16e14e96146b8f130d7aa425e0c62074eeda9e7d15287892"
  },
  "councils/carmarthenshire.html": {
@@ -121,7 +121,7 @@
  },
  "councils/city-of-edinburgh.html": {
   "d": "2026-11-06",
-  "h": "ae7bb096e6e9c88ec6a1ada6f9a1975e11bafa3faf2dcade3818ed77eeb7b2e2",
+  "h": "d022542a2d40d5c55722c4bea7e3d490d3a54370327a181e7a298d6436e83d41",
   "m": "b2a7108699d58c41d3c6012817f947f14a054a56b2720a22c4cf8de7b0eda7ed"
  },
  "councils/city-of-york.html": {
@@ -251,7 +251,7 @@
  },
  "councils/glasgow-city.html": {
   "d": "2026-11-06",
-  "h": "458f7a2ab8226f14b09106acc744b9af4c7a8a57dd065ccc14a53819752478e9",
+  "h": "3c246534e24bc2b595fcac672803d929b54a4dbc6f323a25be2b3fdf5df19943",
   "m": "aa1cebfc991cc74771d5e0d0fcc1c13d5f666d870901e59573987b24613f11ae"
  },
  "councils/great-yarmouth.html": {
@@ -281,7 +281,7 @@
  },
  "councils/highland.html": {
   "d": "2026-11-06",
-  "h": "ede7e31e5c593c3f7cbfbf92289bd6867ef43d8a453d96f264c40fb434d47ced",
+  "h": "81fcd8f395825367225ef0e4edd4e6d4f9a124ccb67c46fb502299193c37247a",
   "m": "523cf832f1d8e98c3d45f2431d81e06cc9bca8e315969368d8741138ceee2c41"
  },
  "councils/inverclyde.html": {
@@ -526,7 +526,7 @@
  },
  "councils/stirling.html": {
   "d": "2026-11-06",
-  "h": "5bd814f7fbca444ed1eefb7c238149bfcb3d5a71582ff0b8d22de4bbfae04695",
+  "h": "feebbfbb67bb6e90e10cf677428966e4dfcee7d6c5f41e33a7e4bf647625fcc4",
   "m": "75a1028ddf7913fb5de5cb74e7854ba915c4f20399a239bce6598eebbd5b243d"
  },
  "councils/stratford-on-avon.html": {
@@ -581,7 +581,7 @@
  },
  "councils/west-dunbartonshire.html": {
   "d": "2026-11-06",
-  "h": "11a8cb21d240cedf594b0082c6fca6bf4981edb9ed9b7fc1d1c20c4d1e11690e",
+  "h": "343fef970fbb45d422276b2c1da0f277d75a9f8c45656445051bffd6bf72236c",
   "m": "421f4c6a5fd264f3a3c72c023d0f4aa4eb701bb97a5558290cf991b212bd6688"
  },
  "councils/west-lothian.html": {
@@ -601,7 +601,7 @@
  },
  "deadlines.html": {
   "d": "2026-11-06",
-  "h": "b5ad0d9a0c96c42f6cf92ad76c83991cf23eaed13f77290c58be05216c440cf8",
+  "h": "61e379c758b5bc51f42c714ccb5857af157517c0a05e0a0a83681ce2cdfa86b0",
   "m": "9da5a04193106c2095b9d35213060e46a3c8ab357837c40428a69618c5dab62d"
  },
  "embed.html": {
@@ -621,7 +621,7 @@
  },
  "england-short-term-let-rules-2027.html": {
   "d": "2026-11-06",
-  "h": "7d6e85b6442367b5f8baf2c885be2f244fef17b5fd75b4d4accc55f2182923be",
+  "h": "cab2039de749936a5d5a102d35254d86400f5b0740de8b7e29cb05ff866e0f08",
   "m": "3ac6b7fb80e73a15d44cdf9daa280617dfb72a0358fbc228d93674ad33fcb77b"
  },
  "england.html": {
@@ -631,7 +631,7 @@
  },
  "guides.html": {
   "d": "2026-11-06",
-  "h": "e96d9c716bd73efe33204dc0ea7e9f5ca542db32881368835f08968b03d98762",
+  "h": "e7de4582fc7e753597cca2efc225f4cf70e1fd508ae1ccaa0f712ac4df7cc5a8",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -656,7 +656,7 @@
  },
  "index.html": {
   "d": "2026-11-06",
-  "h": "759a169a56ea19fab866e762745dc2fb72e5d190417e1c0ab6d278f5b2c1b5c9",
+  "h": "94adf4973eb0617496060e5f91ff3414ff96c43ab4862fe890c94563b51b37a2",
   "m": "8c1ddfe14cabee80f5d05adfc321f1959cb532bb74785872dddae420f482fb2f"
  },
  "levy-calculator.html": {
@@ -744,9 +744,14 @@
   "h": "0425e18ea4fc9033aff1bdfea25c51f6a88ca0ed2b4630565a5fd7af9fe68d40",
   "m": "6f22366b00df32afb870117331f709affe1079173caf16394ff61cc5ad36d360"
  },
+ "uk-levy-and-licence-deadlines.html": {
+  "d": "2026-11-06",
+  "h": "bc504700621e5c3a0fb43c81a09b0a5a43fa1c678801266cfd01a94ac2acb617",
+  "m": "e21f92fccc9c9b3cbb5fb26dbdee3280414db422649faa02b99600aa4382082e"
+ },
  "uk-visitor-levy-map.html": {
   "d": "2026-11-06",
-  "h": "cd06d3e0abbeca56c85859da196480ffc42fabeebc7893183257bb13cb435c1a",
+  "h": "0d93eb4d0b14a54733ec96d39ab0141c117a41a39ce74c90ae1fd40e1419dd7c",
   "m": "6ab24a6422cc695a88e2384e36bb7004dad2c696bad2c29f7fbabcff79b0d44e"
  },
  "wales-registration-checker.html": {

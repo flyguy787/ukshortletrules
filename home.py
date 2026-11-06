@@ -23,6 +23,7 @@ TOP5=[('checker.html','Do I need a licence?','3 questions: your nation, council 
  ('levy-calculator.html','Visitor levy calculator','Levy due on a booking, plus a guest message.'),
  ('uk-visitor-levy-map.html','Visitor levy map','Which councils charge, rates and start dates.'),
  ('deadlines.html','Deadlines: next 90 days','Every UK short-let date coming up.'),
+ ('uk-levy-and-licence-deadlines.html','Levy and licence deadline table','Every UK visitor levy and licence deadline in one table.'),
  ('occupancy-threshold-tracker.html','Occupancy thresholds','Business rates or council tax? Count your nights.')]
 NTOOLS={'england':[('england-short-term-let-rules-2027.html','What changes in 2027'),('england-holiday-let-planning-permission.html','Planning permission'),('england-second-homes-council-tax-premium.html','Second homes premium'),('holiday-let-fire-safety-england.html','Fire safety checklist'),('london-90-night-counter.html','London 90-night counter'),('london-second-homes-council-tax-premium.html','London: second homes premium by borough')],
  'scotland':[('scotland-short-term-let-licence-guide.html','How to get a licence'),('scotland-short-term-let-licence-fees.html','Licence fees, 32 councils'),('scotland-business-rates-checker.html','Business rates checker'),('scotland-licence-renewal-checker.html','Licence renewal checker'),('short-term-let-fire-safety-scotland.html','Fire safety checklist')],
