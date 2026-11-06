@@ -1037,9 +1037,30 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); the council gave one year's notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 8 for Newcastle City Council — HMO and conservation/character directions only). Core Strategy and Urban Core Plan (adopted 26 Mar 2015) Policy CS8 supports leisure, culture and tourism including visitor accommodation; Urban Core Policy UC3 supports a range of hotels.",
    "source": "https://new.newcastle.gov.uk/council-tax/empty-properties/long-term-empty-property-and-second-home-charges",
    "verified": true
+  },
+  {
+   "name": "Leeds",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 21 Feb 2024. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 1 for Leeds City Council — city-wide HMO Article 4 since 10 Feb 2012). Core Strategy (adopted Nov 2014) supports hotels as main town centre uses in the City Centre and town centres (Policies CC1 and P2); no separate holiday-let policy.",
+   "source": "https://www.leeds.gov.uk/council-tax/discounts-and-exemptions/empty-properties/second-homes-long-term-empty-homes-premiums",
+   "verified": true
+  },
+  {
+   "name": "Sheffield",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Finance Committee determined on 19 Feb 2024 to implement it (noted in the Strategy and Resources budget supplementary report). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Sheffield City Council). Core Strategy (adopted 4 Mar 2009) concentrates city-wide shopping and leisure in the City Centre (Policies CS14 and CS15); hotels are treated as supporting City Centre uses.",
+   "source": "https://www.sheffield.gov.uk/council-tax/who-pays-council-tax/empty-properties-second-homes",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Leeds and Sheffield. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025 (Leeds Full Council 21 Feb 2024; Sheffield Finance Committee determination 19 Feb 2024, noted in the Strategy and Resources budget supplementary). Empty and unfurnished homes in both cities pay a premium after 1 year (up to 300% after 10 years; Sheffield shortened the empty premium to 1 year from 1 Apr 2024). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets (Leeds has a city-wide HMO Article 4). Leeds planning is under the Core Strategy (Policies CC1 and P2 support hotels as main town centre uses). Sheffield planning is under the Core Strategy (Policies CS14 and CS15 on City Centre shopping and leisure).",
+   "source": "https://www.leeds.gov.uk/council-tax/discounts-and-exemptions/empty-properties/second-homes-long-term-empty-homes-premiums",
+   "dir_only": true
+  },
   {
    "date": "2026-11-06",
    "nation": "England",

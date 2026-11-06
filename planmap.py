@@ -51,6 +51,8 @@ PM={
  'southampton':('pol','Core Strategy (partial review 2015) supports hotel and leisure growth in the city centre. No holiday-let Article 4; city-wide HMO Article 4 since 2012 plus conservation-area directions.'),
  'portsmouth':('pol','Portsmouth Plan (adopted 2012) supports tourist-related facilities including hotels linked to the waterfront and maritime heritage. No holiday-let Article 4 (planning.data lists none).'),
  'newcastle-upon-tyne':('pol','Core Strategy and Urban Core Plan Policy CS8 supports leisure, culture and tourism including visitor accommodation; Urban Core Policy UC3 supports a range of hotels. No holiday-let Article 4 (HMO and conservation directions only).'),
+ 'leeds':('pol','Core Strategy Policies CC1 and P2 support hotels as main town centre / intensive leisure uses in the City Centre and town centres. No holiday-let Article 4 (city-wide HMO Article 4 since 2012).'),
+ 'sheffield':('pol','Core Strategy Policies CS14 and CS15 concentrate city-wide shopping and leisure in the City Centre; hotels noted as complementary City Centre uses. No holiday-let Article 4 (planning.data lists none).'),
  'bath-and-north-east-somerset':('case','No control area or Article 4 direction for holiday lets. A 2018 council report said most short lets in Bath (3 or fewer rooms) stay in the C3 home use class; larger ones can be a material change of use.'),
  'west-lothian':('case','No control area, but every licence application must include planning permission or a certificate of lawfulness (or one confirming no material change of use).'),
  'inverclyde':('case','No control area. Check with planning before applying: where permission is needed and not obtained, the council can refuse the licence application within 14 days with no refund.'),
