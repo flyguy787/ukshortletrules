@@ -1359,6 +1359,31 @@ CX.update({
  fees=('No short-let fees. Council tax: from April 2025 the East Riding charges a 100% second home premium on homes that are substantially furnished and usually unoccupied, not anyone\'s main home, so most second home owners pay double. It does not apply where an exception or an unoccupied property exemption applies, or where you let the property commercially and pay business rates instead. '+EN_EXC+' To ask for an exception, or if you think your home is not a second home, email council.tax@eastriding.gov.uk with your account reference, the address, the exception and evidence; you can also apply for a discretionary reduction for hardship. Homes empty and substantially unfurnished pay a premium after 1 year: 100% (1 to 5 years), 200% (5 to 10 years) and 300% (10 years or more), and a change of owner does not reset it.'+EN_BRT,[ERY,ERY2,ERY3,EN_BR]),
  dates=['2 Apr 2025: Local Plan Update adopted (Policy EC2 on the visitor economy)','1 Apr 2025: 100% second homes premium started','30 Oct 2026: Gateway 1 completed for a new East Riding Local Plan',EREG]),
 })
+# ---- English cities: Birmingham and Plymouth (sources read 6 Nov 2026) ----
+BIR='https://www.birmingham.gov.uk/info/20144/apply_for_a_council_tax_discount_or_exemption/806/information_about_council_tax_on_second_homes'
+BIR2='https://www.birmingham.gov.uk/info/20005/council_tax/3040/premium_charges'
+BIR3='https://www.birmingham.gov.uk/info/20005/council_tax/3040/premium_charges/2'
+BIR4='https://www.birmingham.gov.uk/download/downloads/id/18855/budget_for_birmingham_council_tax_help_and_information_booklet_2026_to_2027.pdf'
+BIRBDP='https://www.birmingham.gov.uk/info/20054/local_plan_documents/78/birmingham_development_plan'
+BIRA4='https://www.birmingham.gov.uk/info/20054/local_plan_documents/1933/city-wide_article_4_direction_for_houses_in_multiple_occupation'
+PLY='https://www.plymouth.gov.uk/council-tax-premiums'
+PLY2='https://democracy.plymouth.gov.uk/ieDecisionDetails.aspx?Id=4354'
+PLYJLP='https://www.plymouth.gov.uk/plymouth-and-south-west-devon-joint-local-plan'
+PLYAD='https://www.plymouth.gov.uk/adopted-plymouth-and-south-west-devon-joint-local-plan'
+PLYLP='https://www.plymouth.gov.uk/local-plan'
+PLYHMO='https://www.plymouth.gov.uk/planning-permission-and-houses-multiple-occupation-hmo'
+CX.update({
+'birmingham':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area, and no Article 4 direction aimed at holiday lets: the national planning data register lists 12 for Birmingham City Council, covering named conservation areas (Old Yardley, Bournville Village, High Street Sutton Coldfield, Austin Village, Edgbaston, Moor Pool, Moseley, Greenfield Road Harborne, St Agnes Moseley, Selly Park Avenues and Selly Park) and a city-wide Houses in Multiple Occupation direction in force since 8 Jun 2020, none about holiday lets (checked 6 Nov 2026). Whether letting a whole home as a short-term let is a material change of use is decided case by case. The adopted Local Plan is the Birmingham Development Plan 2031 (adopted 10 Jan 2017).', [BIRBDP,BIRA4,A4R+'44',EN_SH]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: from 1 Apr 2025 Birmingham charges a 100% premium on second homes (substantially furnished dwellings with no permanent resident, not anyone\'s sole or main residence), so the bill doubles. The council\'s second homes page and its 2026-27 council tax help booklet both say so. '+EN_EXC+' The council also lists Class E (armed forces accommodation) with the shared empty/second-home exceptions, and Class M (empty homes needing major repairs, up to 12 months). If your property qualifies for an exception you still pay the standard council tax. For a job-related second home that is part of your employment contract you can get a 50% discount (not the premium exception alone): apply with the council\'s other council tax enquiry form; the council may send a questionnaire and aims to reply in at least 2 weeks. Empty and substantially unfurnished homes have paid a premium since 1 Apr 2024 after 1 year: 100% (1 to 5 years), 200% (5 to 10 years) and 300% (10 years or more); the premium stays with the property when it is sold.'+EN_BRT,[BIR,BIR2,BIR3,BIR4,EN_BR]),
+ dates=['10 Jan 2017: Birmingham Development Plan adopted','8 Jun 2020: city-wide HMO Article 4 in force','1 Apr 2024: empty homes premium after 1 year started','1 Apr 2025: 100% second homes premium started',EREG]),
+'plymouth':dict(lic=EN_LIC2,
+ ctrl=('No short-let control area, and no Article 4 direction aimed at holiday lets: the national planning data register lists one for Plymouth City Council, an HMO direction for Mutley, Greenbank, the city centre and surrounding areas (2012), not holiday lets (checked 6 Nov 2026). Whether letting a whole home as a short-term let is a material change of use is decided case by case. The adopted Local Plan is the Plymouth and South West Devon Joint Local Plan (adopted by Plymouth City Council on 26 Mar 2019, five-year review 2024), shared with South Hams and West Devon. Policy PLY21 supports visitor accommodation, including self-catering, on appropriate sites in the city\'s core tourism area (the waterfront from Sutton Harbour / The Barbican to Royal William Yard, including the Hoe, Millbay and the City Centre), and resists losing important visitor facilities unless there are over-riding sustainability or regeneration benefits or the use is shown to be unviable. After a Joint Local Plan Partnership Board decision in January 2025, Plymouth has started a new Local Plan for the city alone; the council\'s Local Plan page says the Joint Local Plan stays in force until the new plan is adopted, which it expects in spring 2029. Plymouth is not in Dartmoor National Park.', [PLYAD,PLYJLP,PLYLP,PLYHMO,A4R+'253',EN_SH]),
+ levy=EN_LEVY,
+ fees=('No short-let fees. Council tax: from 1 Apr 2025 Plymouth charges a 100% premium on dwellings that are substantially furnished and not occupied as anyone\'s sole or main residence, so second homes pay double. Cabinet reconfirmed this on 8 Jan 2024 after the Levelling-up and Regeneration Act\'s delay, moving the start from the earlier 2024 plan to 1 Apr 2025. The council\'s premiums page (checked 6 Nov 2026) says all such furnished properties are subject to full charge plus 100%. '+EN_EXC+' Apply for an exception online with the council\'s premium exception form. Empty and substantially unfurnished homes pay a premium after 1 year: 100% (1 to 5 years), 200% (5 to 10 years) and 300% (10 years or more); a change of owner does not remove it. Empty-home exceptions also include major repairs or structural alterations (12 months).'+EN_BRT,[PLY,PLY2,EN_BR]),
+ dates=['26 Mar 2019: Plymouth and South West Devon Joint Local Plan adopted by Plymouth','8 Jan 2024: Cabinet reconfirmed the second homes premium from 1 Apr 2025','1 Apr 2025: 100% second homes premium started','Jan 2025: JLP Partnership Board decided Plymouth would prepare its own Local Plan','Spring 2029: new Plymouth Local Plan expected to be adopted (council timetable)',EREG]),
+})
 import html as _h
 def cfaq(c,x):
     nm=c['name'];tx=lambda v:_h.unescape(re.sub(r'<[^>]+>','',v)).strip()
@@ -1560,6 +1585,10 @@ CMETA={
   'Manchester short lets: double council tax on second homes since 1 Apr 2025, no short-let planning policy yet, £1 room charge at larger city centre venues only.'),
 'blackpool':('Blackpool Holiday Let Rules: Planning Permission & Tax',
   'Blackpool says most Airbnb-style holiday flats and houses need planning permission. Where they are allowed, plus double council tax on second homes since 1 Apr 2025.'),
+'birmingham':('Birmingham Short-Term Let Rules: Planning & Council Tax',
+  'Birmingham short lets: double council tax on second homes since 1 Apr 2025, no short-let licence, HMO Article 4 only, change of use decided case by case.'),
+'plymouth':('Plymouth Holiday Let Rules: Council Tax, Planning & Rates',
+  'Plymouth holiday lets: double council tax on second homes since 1 Apr 2025, Joint Local Plan Policy PLY21 on visitor accommodation, no short-let licence.'),
 }
 _CMNS=('Licence fees: not summarised','Licence fees: see','Not shown','Not summarised')
 def CMT(c,s,dt):

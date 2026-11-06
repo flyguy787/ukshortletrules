@@ -967,6 +967,20 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; Local Plan Policy EC2 supports tourism accommodation, and holiday accommodation with planning permission is usually conditioned so it can't be anyone's main home.",
    "source": "https://www.eastriding.gov.uk/housing/council-tax/second-homes-and-empty-properties/second-homes/",
    "verified": true
+  },
+  {
+   "name": "Birmingham",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (city-wide Article 4 covers HMOs only); change of use is decided case by case under the Birmingham Development Plan (adopted 2017).",
+   "source": "https://www.birmingham.gov.uk/info/20144/apply_for_a_council_tax_discount_or_exemption/806/information_about_council_tax_on_second_homes",
+   "verified": true
+  },
+  {
+   "name": "Plymouth",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (Article 4 covers HMOs only). The Plymouth and South West Devon Joint Local Plan (adopted 2019) supports visitor accommodation in the core tourism area (Policy PLY21); a new Plymouth Local Plan is in preparation.",
+   "source": "https://www.plymouth.gov.uk/council-tax-premiums",
+   "verified": true
   }
  ],
  "changes": [
@@ -1479,6 +1493,13 @@
    "nation": "England",
    "text": "Added council pages for the Forest of Dean (the Forest, the Wye Valley edge and the Severn) and the East Riding of Yorkshire (Bridlington, Hornsea, Withernsea and the Yorkshire Wolds). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. The East Riding usually conditions holiday accommodation with planning permission so it can't be anyone's main home, and the Forest of Dean withdrew its draft Local Plan on 30 Jun 2026.",
    "source": "https://www.fdean.gov.uk/council-tax-and-benefits/second-homes/",
+   "dir_only": true
+  },
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Birmingham and Plymouth. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets (both have HMO Article 4s only). Plymouth's Joint Local Plan Policy PLY21 supports visitor accommodation in the city's core tourism area; Birmingham decides whole-home short lets case by case under its Development Plan.",
+   "source": "https://www.birmingham.gov.uk/info/20144/apply_for_a_council_tax_discount_or_exemption/806/information_about_council_tax_on_second_homes",
    "dir_only": true
   }
  ],
