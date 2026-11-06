@@ -1056,6 +1056,15 @@
  "changes": [
   {
    "date": "2026-11-06",
+   "applies": "England",
+   "topic": "Site update",
+   "text": "Published an England Visitor Levy Bill explainer (Bill introduced 4 Nov 2026): providers account for and pay any levy, government still considering platform collection help, percentage design, 28-day cap, exemptions, consultation rules and England levy alert signup. Linked from the levy map, deadline table, England tools and Guides nav.",
+   "source": "https://www.gov.uk/government/news/new-visitor-levy-powers-to-put-money-back-into-local-communities",
+   "dir_only": true,
+   "kind": "site"
+  },
+  {
+   "date": "2026-11-06",
    "nation": "UK",
    "text": "Published a shareable table of every UK visitor levy rate, start date and who pays (Edinburgh live; Glasgow, Aberdeen, Stirling, West Dunbartonshire and Cardiff confirmed; Highland proposed; England Visitor Levy Bill introduced 4 Nov 2026 but not yet law), plus licence and registration deadlines (Wales WRA 31 Mar 2027, England register expected March 2027, Scotland licence in force, NI Tourism NI certificate in force). Each row links its official source; checked 6 Nov 2026.",
    "source": "https://ukshortletrules.co.uk/uk-levy-and-licence-deadlines",

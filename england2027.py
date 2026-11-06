@@ -87,10 +87,10 @@ b=f'''<p class="lead">England is catching up with Scotland and Wales. A national
 <li>Ten mayors have said any levy in their areas would be <b>no higher than 5%</b>.</li>
 <li>Local consultation is required before a scheme starts; Foundation Strategic Authorities need unanimous support.</li>
 <li>Temporary accommodation, shelters and refuges would not be charged; leaders can add limited local exemptions (for example camping pitches).</li>
-<li>Accommodation providers would account for and pay the levy to the authority.</li>
+<li>Accommodation providers would account for and pay the levy to the authority. Government is still considering how platforms might help with collection — see the <a href="england-visitor-levy-bill.html">Bill explainer</a>.</li>
 <li>The government still expects spending plans by early 2028 once powers are in use.</li></ul>
 <p>The Liverpool City Region Mayor says a levy could raise up to £18m a year there (<a href="{LCROVL}" rel="nofollow">LCRCA</a>). York and North Yorkshire have said no decision will be made without a full public consultation.</p>
-{CALLOUT('<p>No levy has been set anywhere in England yet: the Bill still has to pass Parliament, and each area then decides whether to use the power. See the <a href="uk-levy-and-licence-deadlines.html">levy and licence deadline table</a>, <a href="councils/liverpool.html">Liverpool</a>, <a href="councils/sefton.html">Sefton</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>')}
+{CALLOUT('<p>No levy has been set anywhere in England yet: the Bill still has to pass Parliament, and each area then decides whether to use the power. See the <a href="england-visitor-levy-bill.html">England Visitor Levy Bill explainer</a>, the <a href="uk-levy-and-licence-deadlines.html">levy and licence deadline table</a>, <a href="councils/liverpool.html">Liverpool</a>, <a href="councils/sefton.html">Sefton</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>')}
 {NATALERT('england','england-2027','We track the England short-term let register, the C5 planning changes, council tax premiums and the Overnight Visitor Levy against official sources, and email you when one changes.',nats=('England','England / Wales / NI'))}
 <h2 id="faq">Common questions</h2><div class="faq">{_efq}</div>
 <h2 id="sources">Official sources</h2>{SOURCES(_ES,'Show all official sources')}
