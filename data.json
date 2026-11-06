@@ -995,9 +995,30 @@
    "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO Article 4 only); Local Plan First Review Policy TM2 covers small self-catering in residential areas.",
    "source": "https://exeter.gov.uk/council-tax/how-much-is-my-council-tax/council-tax-premiums/",
    "verified": true
+  },
+  {
+   "name": "Malvern Hills",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; South Worcestershire Development Plan Review Policy SWDPR 45 covers visitor accommodation (adopted 26 Mar 2026). The Malvern Hills National Landscape is not a National Park planning authority.",
+   "source": "https://www.malvernhills.gov.uk/council-tax/discounts-and-exemptions",
+   "verified": true
+  },
+  {
+   "name": "Mid Devon",
+   "nation": "England",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets; Local Plan Policy DM22 covers tourism and leisure development. A small part of the district is in Dartmoor National Park (park authority planning there).",
+   "source": "https://www.middevon.gov.uk/residents/council-tax/council-tax-second-homes-changes-to-second-homes/",
+   "verified": true
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-06",
+   "nation": "England",
+   "text": "Added council pages for Malvern Hills (Malvern, Tenbury Wells, Upton-upon-Severn and the Malvern Hills National Landscape) and Mid Devon (Tiverton, Crediton, Cullompton). Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025. Holiday lets valued for business rates instead do not pay it. Neither has a short-let licence or an Article 4 direction on holiday lets. Malvern Hills planning is under the South Worcestershire Development Plan Review (Policy SWDPR 45 on visitor accommodation). A small part of Mid Devon is in Dartmoor National Park, where the park authority handles planning.",
+   "source": "https://www.malvernhills.gov.uk/council-tax/discounts-and-exemptions",
+   "dir_only": true
+  },
   {
    "date": "2026-11-05",
    "nation": "England",
