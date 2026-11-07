@@ -39,6 +39,11 @@ document.querySelectorAll('form.signup').forEach(function(f){
     hint.appendChild(document.createTextNode('Did you mean '));hint.appendChild(bt);hint.appendChild(document.createTextNode('?'));}
   var ht;if(em){em.addEventListener('blur',showHint);em.addEventListener('input',function(){clearTimeout(ht);ht=setTimeout(showHint,600);});}
   var sel=f.querySelector('select[name=area]'),box=f.closest('.alertcta'),acn=box&&box.querySelector('.acn');
+  // Signup funnel (GA4, consent mode applies; no email or personal data sent): signup_view (box at least half on screen, once per page view) -> signup_start (first focus in the form) -> signup_submit (consent.js) -> sign_up (success, below) or signup_error.
+  var fcta=f.dataset.cta||'newsletter',ftype=(sel||f.dataset.area)?'alert':'newsletter';
+  function fev(n,x){try{if(typeof window.gtag==='function')gtag('event',n,Object.assign({cta:fcta,page_path:location.pathname,signup_type:ftype},x||{}));}catch(e){}}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){fev('signup_view');io.disconnect();}});},{threshold:0.5});io.observe(f);}
+  f.addEventListener('focusin',function st(ev){if(ev.target&&ev.target.name==='website')return;fev('signup_start');f.removeEventListener('focusin',st);});
   function pick(){var o=sel&&sel.options[sel.selectedIndex];return o&&o.value?{area:o.value,name:o.getAttribute('data-name')||o.text}:null;}
   if(sel&&acn){var upd=function(){var p=pick();acn.textContent=p?(p.area.indexOf('nation:')===0?'all of '+p.name:p.name):'your council';};sel.addEventListener('change',upd);upd();}
   f.addEventListener('submit',function(ev){
@@ -47,7 +52,7 @@ document.querySelectorAll('form.signup').forEach(function(f){
     if(f.website.value){m.textContent='Thanks!';return;}
     if(!url){m.textContent='Signups open very soon. Thanks for your interest!';return;}
     var p=sel?pick():(f.dataset.area?{area:f.dataset.area,name:f.dataset.areaName||''}:null);
-    if(sel&&!p){m.textContent='Please choose your council.';sel.focus();return;}
+    if(sel&&!p){m.textContent='Please choose your council.';fev('signup_error',{reason:'no_area'});sel.focus();return;}
     var cta=f.dataset.cta||'newsletter';
     m.textContent='Subscribing...';b.disabled=true;
     fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.assign({email:f.email.value,website:f.website.value,utm_source:f.utm_source.value,utm_medium:f.utm_medium.value,utm_campaign:f.utm_campaign.value,referrer:f.referrer.value,cta:cta,page:location.pathname},p?{area:p.area,area_name:p.name}:{}))})
@@ -58,9 +63,9 @@ document.querySelectorAll('form.signup').forEach(function(f){
           try{if(typeof window.gtag==='function'){gtag('event',p?'alert_signup':'newsletter_signup',{cta:cta,area:p?p.area:''});gtag('event','sign_up',{method:'email',cta:cta,council:p?p.area.replace(/^(council|nation):/,''):'',signup_type:p?'alert':'newsletter'});gtag('event','generate_lead',{form_location:cta,page_path:location.pathname,signup_type:p?'alert':'newsletter',area:p?p.area:''});}}catch(e){}
           f.email.value='';hint.textContent='';
         }
-        else{m.textContent=j.error||'Sorry, something went wrong. Please try again.';}
+        else{m.textContent=j.error||'Sorry, something went wrong. Please try again.';fev('signup_error',{reason:String(j.code||'server').slice(0,40)});}
       })
-      .catch(function(){m.textContent='Sorry, something went wrong. Please try again.';})
+      .catch(function(){m.textContent='Sorry, something went wrong. Please try again.';fev('signup_error',{reason:'network'});})
       .finally(function(){b.disabled=false;});
   });
 });

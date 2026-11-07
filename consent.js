@@ -8,8 +8,9 @@ if(!s)show();
 if(b){b.querySelector('.ckb-a').addEventListener('click',function(){set('granted')});b.querySelector('.ckb-r').addEventListener('click',function(){set('denied')})}
 document.querySelectorAll('.ck-open').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();show();var x=b&&b.querySelector('.ckb-a');if(x)x.focus()})});
 function ev(n,p){try{gtag('event',n,p||{})}catch(e){}}
+// Submit attempt only (success is sign_up/alert_signup/newsletter_signup in signup.js); was logged as newsletter_signup/council_alert_signup, which double-counted attempts as signups.
 document.addEventListener('submit',function(e){var f=e.target;
- if(f.matches('form.signup'))ev(f.dataset.area?'council_alert_signup':'newsletter_signup',f.dataset.area?{area:f.dataset.area}:{});},true);
+ if(f.matches('form.signup')){var s=f.querySelector('select[name=area]'),a=f.dataset.area||(s&&s.value)||'';ev('signup_submit',{cta:f.dataset.cta||'newsletter',page_path:location.pathname,signup_type:(s||f.dataset.area)?'alert':'newsletter',area:a});}},true);
 document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('button');if(!t)return;
  if(t.id==='lgo'){var lc=document.getElementById('lc')||{dataset:{}},lp={area:lc.value||''};if(lc.dataset.src)lp.source=lc.dataset.src;ev('levy_calculate',lp);}
  else if(t.id==='cp')ev('embed_code_copy',{widget:'checker'});},true);
