@@ -56,6 +56,7 @@ b=f'''{TLDR(['<b>The law applies even for one night.</b> If you charge guests to
 <li><b>About every 10 years:</b> replace smoke alarms (typical lifespan).</li></ul>
 {NATALERT('england','england-fire-safety','We check the fire safety guidance for small holiday lets in England against official sources, along with the coming national short-term let register and council rules, and email you when one changes.',nats=('England','England / Wales / NI'))}
 <h2>Common questions</h2>{_fq}
+<p>Related energy rules: <a href="epc-energy-rules-holiday-lets.html">EPC and MEES for holiday lets</a> (short-term lets not in the 2030 PRS energy standard for now; under review).</p>
 <h2>Elsewhere in the UK</h2><p>This guide covers England only. In Scotland, see <a href="short-term-let-fire-safety-scotland.html">short-term let fire safety in Scotland</a>, and fire safety is part of the licence conditions: see <a href="scotland-short-term-let-licence-guide.html">how to get a Scottish short-term let licence</a>. For Wales see <a href="holiday-let-fire-safety-wales.html">holiday let fire safety in Wales</a>. See also <a href="wales.html">Wales rules</a> and <a href="northern-ireland.html">Northern Ireland rules</a>.</p>
 <p>Related: <a href="england.html">England short-let rules</a> · <a href="london-90-night-counter.html">London 90-night counter</a> · <a href="holiday-let-tax-after-fhl-abolition.html">Holiday let tax after FHL abolition</a></p>
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in FS)}</ul>

@@ -9,7 +9,7 @@
     {
      "topic": "Licensing",
      "status": "In force",
-     "text": "All short-term lets (secondary letting, home letting, home sharing) need a licence from the local council before taking bookings or receiving guests. Operating without a licence is a criminal offence (Edinburgh notes fines up to £2,500).",
+     "text": "All short-term lets (secondary letting, home letting, home sharing) need a licence from the local council before taking bookings or receiving guests. Operating without a licence is a criminal offence (Edinburgh notes fines up to \u00a32,500).",
      "sources": [
       "https://www.gov.scot/publications/short-term-lets/",
       "https://www.edinburgh.gov.uk/licences-permits/licences-permits-applications/10"
@@ -30,7 +30,7 @@
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "Councils choose whether to charge a visitor levy, so there is none unless your council adopts a scheme. Since 22 Jul 2026 (Visitor Levy (Amendment) (Scotland) Act 2026) a council can set it as a percentage of the accommodation cost or as a fixed amount per room (or area) per night, and can switch a scheme between the two after a notice period. Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on £5 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, £5 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: early-stage levy consultation closed 31 Oct 2026 with no decision yet; a draft scheme would need a further consultation. East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); on 27 Oct 2026 the council agreed an independent review and further work instead of a decision, so no levy yet. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
+     "text": "Councils choose whether to charge a visitor levy, so there is none unless your council adopts a scheme. Since 22 Jul 2026 (Visitor Levy (Amendment) (Scotland) Act 2026) a council can set it as a percentage of the accommodation cost or as a fixed amount per room (or area) per night, and can switch a scheme between the two after a notice period. Edinburgh: 5% of the accommodation cost, first 5 consecutive nights, stays from 24 Jul 2026, quarterly returns via visitorlevy.scot. First returns (stays 24 Jul to 30 Sep 2026) are due 1 to 30 Oct 2026, with payment by 13 Nov 2026. Glasgow: 5% from 25 Jan 2027, whole stay, liable on bookings made from 1 Apr 2026. Highland: consultation on \u00a35 per room per night (opened 7 Sep 2026, closes 30 Nov 2026); council decision due 10 Dec 2026, then an 18-month lead-in. Aberdeen: 7% from 1 Apr 2027, whole stay, bookings made from 1 Oct 2026. Stirling: 3% from 14 Jun 2027, bookings made from 1 Jan 2027. West Dunbartonshire: 5% from 1 Jul 2027, bookings made from 1 Oct 2026. Dundee: consultation 31 Aug to 27 Nov 2026 on two options, \u00a35 per room per night or 5% of the nightly room rate, both capped at 7 nights; earliest start 2028/29. Moray: early-stage levy consultation closed 31 Oct 2026 with no decision yet; a draft scheme would need a further consultation. East Lothian: consulted on a draft 5% scheme (26 Jun to 18 Sep 2026); on 27 Oct 2026 the council agreed an independent review and further work instead of a decision, so no levy yet. Argyll and Bute: consultation on a flat rate per room per night closed 5 Oct 2026, no decision yet.",
      "sources": [
       "https://www.edinburgh.gov.uk/visitorlevyinformation",
       "https://www.glasgow.gov.uk/article/14800/Accommodation-providers",
@@ -129,7 +129,10 @@
      "status": "In force",
      "text": "Fire safety duties under the Regulatory Reform (Fire Safety) Order 2005, plus gas and electrical safety, an EPC where needed, and insurance (see GOV.UK guidance).",
      "sources": [
-      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations"
+      "https://www.gov.uk/guidance/letting-out-a-self-catering-holiday-home-in-england-rules-and-regulations",
+      "https://www.gov.uk/government/consultations/improving-the-energy-performance-of-privately-rented-homes-2025-update/outcome/improving-the-energy-performance-of-privately-rented-homes-government-response-html",
+      "https://www.gov.uk/government/consultations/reforms-to-the-energy-performance-of-buildings-regime",
+      "https://www.gov.uk/buy-sell-your-home/energy-performance-certificates"
      ]
     }
    ]
@@ -137,7 +140,7 @@
   {
    "id": "wales",
    "name": "Wales",
-   "summary": "Free registration with the Welsh Revenue Authority is mandatory by 31 March 2027. Councils can start a visitor levy (£1.30 per person per night); only Cardiff has so far. Licensing is legislated for, with a default start of March 2030. Business rates need 182 days let.",
+   "summary": "Free registration with the Welsh Revenue Authority is mandatory by 31 March 2027. Councils can start a visitor levy (\u00a31.30 per person per night); only Cardiff has so far. Licensing is legislated for, with a default start of March 2030. Business rates need 182 days let.",
    "rules": [
     {
      "topic": "Registration (WRA)",
@@ -150,7 +153,7 @@
     {
      "topic": "Visitor levy",
      "status": "Council-by-council",
-     "text": "£1.30 per person per night (75p for hostels, dorms and tent pitches). The earliest start is 1 Apr 2027. Cardiff starts 1 Apr 2027. Councils must give 12 months' notice. Isle of Anglesey decided on 24 Sep 2026 not to introduce a levy at present, and Conwy deferred any decision the same day. Gwynedd says it has not decided yet. GOV.WALES lists Cardiff as the only council charging the levy and no councils currently consulting.",
+     "text": "\u00a31.30 per person per night (75p for hostels, dorms and tent pitches). The earliest start is 1 Apr 2027. Cardiff starts 1 Apr 2027. Councils must give 12 months' notice. Isle of Anglesey decided on 24 Sep 2026 not to introduce a levy at present, and Conwy deferred any decision the same day. Gwynedd says it has not decided yet. GOV.WALES lists Cardiff as the only council charging the levy and no councils currently consulting.",
      "sources": [
       "https://www.gov.wales/visitor-levy-for-visitor-accommodation-providers-overview",
       "https://www.gov.wales/visitor-levy-wales",
@@ -203,7 +206,7 @@
   {
    "id": "northern-ireland",
    "name": "Northern Ireland",
-   "summary": "All tourist accommodation must hold a Tourism NI certificate. Inspections every 4 years. Fee £40 per unit (min £40, max £350).",
+   "summary": "All tourist accommodation must hold a Tourism NI certificate. Inspections every 4 years. Fee \u00a340 per unit (min \u00a340, max \u00a3350).",
    "rules": [
     {
      "topic": "Certification",
@@ -262,28 +265,28 @@
   {
    "name": "Highland",
    "nation": "Scotland",
-   "rule": "Badenoch & Strathspey control area; proposed Inverness City and Highland Rural control areas agreed for submission to Ministers on 28 Sep 2026 (not in force). Consulting on a £5 per room per night levy until 30 Nov 2026; decision due 10 Dec 2026.",
+   "rule": "Badenoch & Strathspey control area; proposed Inverness City and Highland Rural control areas agreed for submission to Ministers on 28 Sep 2026 (not in force). Consulting on a \u00a35 per room per night levy until 30 Nov 2026; decision due 10 Dec 2026.",
    "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal",
    "verified": true
   },
   {
    "name": "Perth & Kinross",
    "nation": "Scotland",
-   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: £350 (1–2 guests), £530 (3–6), £900 (7–10), £1,600 (11+). Home letting/sharing: £175 / £265 / £450 / £800. Variation or transfer £75. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; Ministers' approval on 12 Oct 2026 reported in planning press (UNVERIFIED); not in force until a designation notice is published. Flats already need planning permission to become a short-term let. Visitor levy: draft scheme with fixed-rate options under consultation 19 Aug to 11 Nov 2026, no decision yet (reported £4 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
+   "rule": "Licence fees, 3-year licence, new or renewal (Policy Statement, 10 Mar 2025). Secondary letting: \u00a3350 (1\u20132 guests), \u00a3530 (3\u20136), \u00a3900 (7\u201310), \u00a31,600 (11+). Home letting/sharing: \u00a3175 / \u00a3265 / \u00a3450 / \u00a3800. Variation or transfer \u00a375. Proposed control area (Highland Perthshire + N. Eastern Perthshire) agreed 17 Jun 2026; Ministers' approval on 12 Oct 2026 reported in planning press (UNVERIFIED); not in force until a designation notice is published. Flats already need planning permission to become a short-term let. Visitor levy: draft scheme with fixed-rate options under consultation 19 Aug to 11 Nov 2026, no decision yet (reported \u00a34 per room per night UNVERIFIED). Public register at pkc.gov.uk/article/22511.",
    "source": "https://www.pkc.gov.uk/media/50153/Short-term-Lets-Policy-Statement/pdf/Short-term_Lets_Licensing_Policy_Statement_-_10_MARCH_2025.pdf?m=1741781506817",
    "verified": true
   },
   {
    "name": "Aberdeen City",
    "nation": "Scotland",
-   "rule": "7% visitor levy on the whole stay from 1 Apr 2027 (bookings made from 1 Oct 2026). No control area. Licence fees from £470.40 (home sharing/letting, 1–2 guests) and £492.80 (secondary letting, 1–2 guests), effective 1 Jan 2026. No temporary licences or exemptions granted.",
+   "rule": "7% visitor levy on the whole stay from 1 Apr 2027 (bookings made from 1 Oct 2026). No control area. Licence fees from \u00a3470.40 (home sharing/letting, 1\u20132 guests) and \u00a3492.80 (secondary letting, 1\u20132 guests), effective 1 Jan 2026. No temporary licences or exemptions granted.",
    "source": "https://www.aberdeencity.gov.uk/Council-Services/housing/short-term-lets/information/short-term-let-fees",
    "verified": true
   },
   {
    "name": "Dundee City",
    "nation": "Scotland",
-   "rule": "No control area. Visitor levy consultation 31 Aug to 27 Nov 2026 on £5 per room per night or 5% of the room rate (both capped at 7 nights); earliest start 2028/29.",
+   "rule": "No control area. Visitor levy consultation 31 Aug to 27 Nov 2026 on \u00a35 per room per night or 5% of the room rate (both capped at 7 nights); earliest start 2028/29.",
    "source": "https://www.dundeecity.gov.uk/consultations-and-surveys/visitor-levy-have-your-say",
    "verified": true
   },
@@ -297,21 +300,21 @@
   {
    "name": "Argyll and Bute",
    "nation": "Scotland",
-   "rule": "Consulting (21 Sep to 15 Nov 2026) on a proposed control area for Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. Not in force. Visitor levy consultation (flat rate per room per night proposed) closed 5 Oct 2026; no decision yet. 3-year licence from £285.30 (home sharing/letting, up to 4 guests) or £398.95 (secondary letting, up to 4 guests).",
+   "rule": "Consulting (21 Sep to 15 Nov 2026) on a proposed control area for Mull and Iona; Coll and Tiree; Islay, Jura and Colonsay; and Oban, Lorn and the Inner Isles. Not in force. Visitor levy consultation (flat rate per room per night proposed) closed 5 Oct 2026; no decision yet. 3-year licence from \u00a3285.30 (home sharing/letting, up to 4 guests) or \u00a3398.95 (secondary letting, up to 4 guests).",
    "source": "https://www.argyll-bute.gov.uk/licences/short-term-lets-licence",
    "verified": true
   },
   {
    "name": "Stirling",
    "nation": "Scotland",
-   "rule": "3% visitor levy from 14 Jun 2027 (bookings made from 1 Jan 2027); Stirling residents and nights beyond 7 refunded. No control area. Licence fees from £113 (home letting/sharing, up to 4) and £283 (secondary letting, up to 4), as published for 2025-26.",
+   "rule": "3% visitor levy from 14 Jun 2027 (bookings made from 1 Jan 2027); Stirling residents and nights beyond 7 refunded. No control area. Licence fees from \u00a3113 (home letting/sharing, up to 4) and \u00a3283 (secondary letting, up to 4), as published for 2025-26.",
    "source": "https://www.stirling.gov.uk/business-and-licences/licensing/short-term-let-licensing/apply-for-a-short-term-let-licence/",
    "verified": true
   },
   {
    "name": "West Dunbartonshire",
    "nation": "Scotland",
-   "rule": "5% visitor levy on the whole stay from 1 Jul 2027 (bookings made and paid for from 1 Oct 2026). No control area. Licence grant or renewal £929.",
+   "rule": "5% visitor levy on the whole stay from 1 Jul 2027 (bookings made and paid for from 1 Oct 2026). No control area. Licence grant or renewal \u00a3929.",
    "source": "https://www.west-dunbarton.gov.uk/business/licences-permits-and-permissions/short-term-lets/short-term-let-licences",
    "verified": true
   },
@@ -339,7 +342,7 @@
   {
    "name": "Cardiff",
    "nation": "Wales",
-   "rule": "Visitor levy from 1 Apr 2027 (£1.30 per person per night).",
+   "rule": "Visitor levy from 1 Apr 2027 (\u00a31.30 per person per night).",
    "source": "https://www.gov.wales/visitor-levy-wales",
    "verified": true
   },
@@ -381,35 +384,35 @@
   {
    "name": "East Lothian",
    "nation": "Scotland",
-   "rule": "Licence needed (3-year licence from £1,154 for 1 to 5 occupants, 2026/27 fees). No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026). On 27 Oct 2026 the council did not approve a levy; it agreed an independent review and further assessment, with options and recommendations to come back in a later report.",
+   "rule": "Licence needed (3-year licence from \u00a31,154 for 1 to 5 occupants, 2026/27 fees). No control area, but check planning before applying. Draft 5% visitor levy consulted on (26 Jun to 18 Sep 2026). On 27 Oct 2026 the council did not approve a levy; it agreed an independent review and further assessment, with options and recommendations to come back in a later report.",
    "source": "https://www.eastlothian.gov.uk/business-and-licensing/licensing/accommodation-licensing/short-term-lets-licensing",
    "verified": true
   },
   {
    "name": "Moray",
    "nation": "Scotland",
-   "rule": "Licence needed (£540 new or renewal from 1 Apr 2026). No control area. Early-stage visitor levy consultation closed 31 Oct 2026; no decision yet (a draft scheme would need a further consultation). Separate consultation on raising the 100% second-home council tax premium runs to 14 Dec 2026.",
+   "rule": "Licence needed (\u00a3540 new or renewal from 1 Apr 2026). No control area. Early-stage visitor levy consultation closed 31 Oct 2026; no decision yet (a draft scheme would need a further consultation). Separate consultation on raising the 100% second-home council tax premium runs to 14 Dec 2026.",
    "source": "https://www.moray.gov.uk/law-and-licensing/licences-permits-and-permissions/property-licences/short-term-lets-licence/",
    "verified": true
   },
   {
    "name": "Scottish Borders",
    "nation": "Scotland",
-   "rule": "Licence needed (3-year licence, £417 to £537 by guest numbers). No control area. No visitor levy proposed.",
+   "rule": "Licence needed (3-year licence, \u00a3417 to \u00a3537 by guest numbers). No control area. No visitor levy proposed.",
    "source": "https://www.scotborders.gov.uk/licensing/short-term-lets",
    "verified": true
   },
   {
    "name": "Aberdeenshire",
    "nation": "Scotland",
-   "rule": "Licence needed (3-year licence, £364 to £1,006 by guest numbers and licence type). No control area. No visitor levy scheme proposed yet.",
+   "rule": "Licence needed (3-year licence, \u00a3364 to \u00a31,006 by guest numbers and licence type). No control area. No visitor levy scheme proposed yet.",
    "source": "https://www.aberdeenshire.gov.uk/licensing/licences-and-permits/stl-apply-or-renew",
    "verified": true
   },
   {
    "name": "Dumfries and Galloway",
    "nation": "Scotland",
-   "rule": "Licence needed (3-year licence, £324 to £454 by guest numbers and licence type). No control area. Visitor levy plans dropped in June 2026.",
+   "rule": "Licence needed (3-year licence, \u00a3324 to \u00a3454 by guest numbers and licence type). No control area. Visitor levy plans dropped in June 2026.",
    "source": "https://www.dumfriesandgalloway.gov.uk/housing/landlords/property-licensing/short-term-lets/apply-short-term-let-licence",
    "verified": true
   },
@@ -500,21 +503,21 @@
   {
    "name": "Falkirk",
    "nation": "Scotland",
-   "rule": "Licence needed (£157.50 to £504 on the 2025/26 table). No control area. Consultation on a 5% visitor levy runs to 25 Nov 2026; full Council expected to decide in January 2027.",
+   "rule": "Licence needed (\u00a3157.50 to \u00a3504 on the 2025/26 table). No control area. Consultation on a 5% visitor levy runs to 25 Nov 2026; full Council expected to decide in January 2027.",
    "source": "https://www.falkirk.gov.uk/visitor-levy/the-levy",
    "verified": true
   },
   {
    "name": "Orkney Islands",
    "nation": "Scotland",
-   "rule": "Licence needed (£275 to £583 for 3 years, 25% off on non-linked isles). No control area. Council decided against an overnight visitor levy on 23 Sep 2025.",
+   "rule": "Licence needed (\u00a3275 to \u00a3583 for 3 years, 25% off on non-linked isles). No control area. Council decided against an overnight visitor levy on 23 Sep 2025.",
    "source": "https://www.orkney.gov.uk/business-and-licensing/licensing-information-and-applications/short-term-lets-licensing",
    "verified": true
   },
   {
    "name": "Shetland Islands",
    "nation": "Scotland",
-   "rule": "Licence needed (£210 to £530 by guest numbers, 2026/27). No control area. Council decided against an overnight visitor levy in Sep 2025.",
+   "rule": "Licence needed (\u00a3210 to \u00a3530 by guest numbers, 2026/27). No control area. Council decided against an overnight visitor levy in Sep 2025.",
    "source": "https://www.shetland.gov.uk/downloads/file/7747/environmental-health-charges",
    "verified": true
   },
@@ -522,28 +525,28 @@
    "name": "Na h-Eileanan Siar (Western Isles)",
    "slug": "na-h-eileanan-siar",
    "nation": "Scotland",
-   "rule": "Licence needed (base fee £189 or £294 plus £21 per guest, 2026/27). No control area. Accommodation-based visitor levy paused.",
+   "rule": "Licence needed (base fee \u00a3189 or \u00a3294 plus \u00a321 per guest, 2026/27). No control area. Accommodation-based visitor levy paused.",
    "source": "https://www.cne-siar.gov.uk/stl/fees-and-how-pay",
    "verified": true
   },
   {
    "name": "South Ayrshire",
    "nation": "Scotland",
-   "rule": "Licence needed (£300 or £480 for a new secondary let, by guest numbers). No control area, but every application includes a planning operational statement. Visitor levy work paused until August 2027 at the earliest.",
+   "rule": "Licence needed (\u00a3300 or \u00a3480 for a new secondary let, by guest numbers). No control area, but every application includes a planning operational statement. Visitor levy work paused until August 2027 at the earliest.",
    "source": "https://www.south-ayrshire.gov.uk/article/40559/Short-Term-Let-Licensing-Scheme-South-Ayrshire",
    "verified": true
   },
   {
    "name": "Angus",
    "nation": "Scotland",
-   "rule": "Licence needed (£349 to £588 by guest numbers; 3-year grant, renewals up to 6 years). No control area. No visitor levy: the council is still at early engagement.",
+   "rule": "Licence needed (\u00a3349 to \u00a3588 by guest numbers; 3-year grant, renewals up to 6 years). No control area. No visitor levy: the council is still at early engagement.",
    "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets",
    "verified": true
   },
   {
    "name": "North Ayrshire",
    "nation": "Scotland",
-   "rule": "Licence needed (£300 or £480 for a new secondary let, by guest numbers; covers Arran and Cumbrae). No control area. No visitor levy decided yet. Second homes pay double council tax since April 2025.",
+   "rule": "Licence needed (\u00a3300 or \u00a3480 for a new secondary let, by guest numbers; covers Arran and Cumbrae). No control area. No visitor levy decided yet. Second homes pay double council tax since April 2025.",
    "source": "https://www.north-ayrshire.gov.uk/business-licensing/licensing/accommodation-licences",
    "verified": true
   },
@@ -564,21 +567,21 @@
   {
    "name": "East Ayrshire",
    "nation": "Scotland",
-   "rule": "Licence needed (£250 or £400 for a new secondary let, by guest numbers). No control area. Visitor levy paused until August 2027.",
+   "rule": "Licence needed (\u00a3250 or \u00a3400 for a new secondary let, by guest numbers). No control area. Visitor levy paused until August 2027.",
    "source": "https://www.east-ayrshire.gov.uk/LawAndLicensing/ApplyForALicence/AccommodationLicences/short-term-lets-licence.aspx",
    "verified": true
   },
   {
    "name": "Clackmannanshire",
    "nation": "Scotland",
-   "rule": "Licence needed (£514.30 or £628.70 for a new secondary let in 2026/27, by guest numbers). No control area. No visitor levy proposed.",
+   "rule": "Licence needed (\u00a3514.30 or \u00a3628.70 for a new secondary let in 2026/27, by guest numbers). No control area. No visitor levy proposed.",
    "source": "https://www.clacks.gov.uk/regulation/licensing/business/shorttermlets/",
    "verified": true
   },
   {
    "name": "Liverpool",
    "nation": "England",
-   "rule": "Second homes pay double council tax since 1 Apr 2025; holiday lets that pass the business rates test (140 nights available, 70 let) pay business rates instead. No short-let licence: holiday lets are exempt from selective landlord licensing. The city centre £2 Accommodation BID charge only covers hotels and serviced accommodation rated £45,000+. No visitor levy yet, but the City Region Mayor is getting the power to bring one in.",
+   "rule": "Second homes pay double council tax since 1 Apr 2025; holiday lets that pass the business rates test (140 nights available, 70 let) pay business rates instead. No short-let licence: holiday lets are exempt from selective landlord licensing. The city centre \u00a32 Accommodation BID charge only covers hotels and serviced accommodation rated \u00a345,000+. No visitor levy yet, but the City Region Mayor is getting the power to bring one in.",
    "source": "https://liverpool.gov.uk/council-tax/empty-properties-and-second-homes/",
    "verified": true
   },
@@ -592,56 +595,56 @@
   {
    "name": "Midlothian",
    "nation": "Scotland",
-   "rule": "Licence needed (£541 for a secondary let up to 4 bedrooms, new or renewal, from Apr 2026). No control area. No visitor levy; council to reassess in 2026.",
+   "rule": "Licence needed (\u00a3541 for a secondary let up to 4 bedrooms, new or renewal, from Apr 2026). No control area. No visitor levy; council to reassess in 2026.",
    "source": "https://www.midlothian.gov.uk/info/200269/licences_and_permits/742/short-term_let_licence",
    "verified": true
   },
   {
    "name": "West Lothian",
    "nation": "Scotland",
-   "rule": "Licence needed, and every application must include planning permission or a certificate of lawfulness. Fees by size (2025/26 schedule: £500.86 to £1,113.03 for a secondary let; check with council). No control area. No visitor levy yet.",
+   "rule": "Licence needed, and every application must include planning permission or a certificate of lawfulness. Fees by size (2025/26 schedule: \u00a3500.86 to \u00a31,113.03 for a secondary let; check with council). No control area. No visitor levy yet.",
    "source": "https://www.westlothian.gov.uk/article/75805/Short-Term-Lets",
    "verified": true
   },
   {
    "name": "Inverclyde",
    "nation": "Scotland",
-   "rule": "Licence needed (£508 for a secondary let for up to 4 guests from Apr 2026; renewal £451). Check planning with the council before applying. No control area. No visitor levy; council monitoring the national rollout.",
+   "rule": "Licence needed (\u00a3508 for a secondary let for up to 4 guests from Apr 2026; renewal \u00a3451). Check planning with the council before applying. No control area. No visitor levy; council monitoring the national rollout.",
    "source": "https://www.inverclyde.gov.uk/assets/attach/15462/2026-short-term-lets-fee-list.pdf",
    "verified": true
   },
   {
    "name": "Renfrewshire",
    "nation": "Scotland",
-   "rule": "Licence needed (secondary let £927 to £1,274 by bedrooms from Apr 2026; renewal fee not published, check with council). Licence lasts 3 years; renew at least 6 weeks before expiry. No control area. No visitor levy yet.",
+   "rule": "Licence needed (secondary let \u00a3927 to \u00a31,274 by bedrooms from Apr 2026; renewal fee not published, check with council). Licence lasts 3 years; renew at least 6 weeks before expiry. No control area. No visitor levy yet.",
    "source": "https://www1.renfrewshire.gov.uk/article/12823/Short-term-let-licence-for-residential-accommodation",
    "verified": true
   },
   {
    "name": "East Renfrewshire",
    "nation": "Scotland",
-   "rule": "Licence needed (secondary let £972 to £1,293 by bedrooms; renewal £805 to £1,126). Check planning with the council before applying. No control area. No visitor levy proposed.",
+   "rule": "Licence needed (secondary let \u00a3972 to \u00a31,293 by bedrooms; renewal \u00a3805 to \u00a31,126). Check planning with the council before applying. No control area. No visitor levy proposed.",
    "source": "https://eastrenfrewshire.gov.uk/article/5412/Short-term-lets-fees",
    "verified": true
   },
   {
    "name": "South Lanarkshire",
    "nation": "Scotland",
-   "rule": "Licence needed (secondary let £381.43 to £953.58 by guests from Apr 2026; same fee for renewal). No control area; planning checked case by case. No visitor levy yet; council researching one.",
+   "rule": "Licence needed (secondary let \u00a3381.43 to \u00a3953.58 by guests from Apr 2026; same fee for renewal). No control area; planning checked case by case. No visitor levy yet; council researching one.",
    "source": "https://www.southlanarkshire.gov.uk/business-licences-1/short-term-lets-scotland-%E2%80%93-licensing-scheme/3",
    "verified": true
   },
   {
    "name": "North Lanarkshire",
    "nation": "Scotland",
-   "rule": "Licence needed (£315 up to 4 guests, £472.50 for 5 or more, any licence type; renewal fee not published, check with council). No control area; check planning separately. No visitor levy yet; council exploring one.",
+   "rule": "Licence needed (\u00a3315 up to 4 guests, \u00a3472.50 for 5 or more, any licence type; renewal fee not published, check with council). No control area; check planning separately. No visitor levy yet; council exploring one.",
    "source": "https://www.northlanarkshire.gov.uk/housing/private-housing/short-term-lets-2022",
    "verified": true
   },
   {
    "name": "East Dunbartonshire",
    "nation": "Scotland",
-   "rule": "Licence needed (secondary let £594 up to 10 guests, +£55 per extra 5; same fee to renew). No control area. No visitor levy: council decided against one in 2026.",
+   "rule": "Licence needed (secondary let \u00a3594 up to 10 guests, +\u00a355 per extra 5; same fee to renew). No control area. No visitor levy: council decided against one in 2026.",
    "source": "https://www.eastdunbarton.gov.uk/services/a-z-of-services/housing-properties/short-term-lets-policy/",
    "verified": true
   },
@@ -915,7 +918,7 @@
   {
    "name": "Manchester",
    "nation": "England",
-   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme, and no Article 4 direction or Local Plan policy on short lets; the council says current planning law makes them hard to control. The £1 City Visitor Charge applies only to larger accommodation businesses in the city centre BID zone.",
+   "rule": "100% council tax premium on second homes (200% bill) since 1 Apr 2025, with national exceptions. Holiday lets that qualify for business rates (140 nights available, 70 let) pay business rates instead. No licensing or local registration scheme, and no Article 4 direction or Local Plan policy on short lets; the council says current planning law makes them hard to control. The \u00a31 City Visitor Charge applies only to larger accommodation businesses in the city centre BID zone.",
    "source": "https://www.manchester.gov.uk/council-tax/definitions-and-overview/what-you-have-to-pay-if-a-second-home-isnt-exempt-from-council-tax",
    "verified": true
   },
@@ -1027,28 +1030,28 @@
   {
    "name": "Portsmouth",
    "nation": "England",
-   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 13 Feb 2024. Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Portsmouth City Council). The Portsmouth Plan (adopted 2012) supports tourist-related facilities including hotels linked to the waterfront and maritime heritage.",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 13 Feb 2024. Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1\u20135/5\u201310/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Portsmouth City Council). The Portsmouth Plan (adopted 2012) supports tourist-related facilities including hotels linked to the waterfront and maritime heritage.",
    "source": "https://www.portsmouth.gov.uk/services/council-tax/second-homes-and-empty-properties/premiums-for-second-homes",
    "verified": true
   },
   {
    "name": "Newcastle upon Tyne",
    "nation": "England",
-   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); the council gave one year's notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 8 for Newcastle City Council — HMO and conservation/character directions only). Core Strategy and Urban Core Plan (adopted 26 Mar 2015) Policy CS8 supports leisure, culture and tourism including visitor accommodation; Urban Core Policy UC3 supports a range of hotels.",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); the council gave one year's notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1\u20135/5\u201310/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 8 for Newcastle City Council \u2014 HMO and conservation/character directions only). Core Strategy and Urban Core Plan (adopted 26 Mar 2015) Policy CS8 supports leisure, culture and tourism including visitor accommodation; Urban Core Policy UC3 supports a range of hotels.",
    "source": "https://new.newcastle.gov.uk/council-tax/empty-properties/long-term-empty-property-and-second-home-charges",
    "verified": true
   },
   {
    "name": "Leeds",
    "nation": "England",
-   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 21 Feb 2024. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 1 for Leeds City Council — city-wide HMO Article 4 since 10 Feb 2012). Core Strategy (adopted Nov 2014) supports hotels as main town centre uses in the City Centre and town centres (Policies CC1 and P2); no separate holiday-let policy.",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council agreed 21 Feb 2024. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1\u20135/5\u201310/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists 1 for Leeds City Council \u2014 city-wide HMO Article 4 since 10 Feb 2012). Core Strategy (adopted Nov 2014) supports hotels as main town centre uses in the City Centre and town centres (Policies CC1 and P2); no separate holiday-let policy.",
    "source": "https://www.leeds.gov.uk/council-tax/discounts-and-exemptions/empty-properties/second-homes-long-term-empty-homes-premiums",
    "verified": true
   },
   {
    "name": "Sheffield",
    "nation": "England",
-   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Finance Committee determined on 19 Feb 2024 to implement it (noted in the Strategy and Resources budget supplementary report). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Sheffield City Council). Core Strategy (adopted 4 Mar 2009) concentrates city-wide shopping and leisure in the City Centre (Policies CS14 and CS15); hotels are treated as supporting City Centre uses.",
+   "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Finance Committee determined on 19 Feb 2024 to implement it (noted in the Strategy and Resources budget supplementary report). Empty and substantially unfurnished homes pay a premium after 1 year since 1 Apr 2024 (100%/200%/300% at 1\u20135/5\u201310/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (planning.data lists none for Sheffield City Council). Core Strategy (adopted 4 Mar 2009) concentrates city-wide shopping and leisure in the City Centre (Policies CS14 and CS15); hotels are treated as supporting City Centre uses.",
    "source": "https://www.sheffield.gov.uk/council-tax/who-pays-council-tax/empty-properties-second-homes",
    "verified": true
   }
@@ -1158,7 +1161,7 @@
   {
    "date": "2026-10-29",
    "nation": "England",
-   "text": "Budget 2026: from 1 April 2027, Small Business Rate Relief thresholds for retail, hospitality and leisure properties in England rise from £12,000 to £18,000 (100% relief) and from £15,000 to £21,000 (tapered relief). Self-catering holiday lets that pay business rates count as hospitality for this: the new thresholds will use the same retail, hospitality and leisure definition, which includes self-catering accommodation and holiday homes. The Budget also repeats the plan to legislate so Strategic Authorities can bring in an Overnight Visitor Levy.",
+   "text": "Budget 2026: from 1 April 2027, Small Business Rate Relief thresholds for retail, hospitality and leisure properties in England rise from \u00a312,000 to \u00a318,000 (100% relief) and from \u00a315,000 to \u00a321,000 (tapered relief). Self-catering holiday lets that pay business rates count as hospitality for this: the new thresholds will use the same retail, hospitality and leisure definition, which includes self-catering accommodation and holiday homes. The Budget also repeats the plan to legislate so Strategic Authorities can bring in an Overnight Visitor Levy.",
    "source": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html",
    "applies": [
     "England"
@@ -1227,7 +1230,7 @@
   {
    "date": "2026-10-26",
    "nation": "Scotland",
-   "text": "Added the published short-term let licence fees for Glasgow (from April 2026: secondary letting grant £310 for up to 4 guests or £494 for 5 or more), Dundee (£310 to £3,100 by guest capacity, same for every licence type) and Fife (£295 to £826 for a full licence by occupancy). Our licence fee finder now lists fees for all 32 Scottish councils.",
+   "text": "Added the published short-term let licence fees for Glasgow (from April 2026: secondary letting grant \u00a3310 for up to 4 guests or \u00a3494 for 5 or more), Dundee (\u00a3310 to \u00a33,100 by guest capacity, same for every licence type) and Fife (\u00a3295 to \u00a3826 for a full licence by occupancy). Our licence fee finder now lists fees for all 32 Scottish councils.",
    "source": "https://glasgow.gov.uk/feesandcharges"
   },
   {
@@ -1269,25 +1272,25 @@
   {
    "date": "2026-10-25",
    "nation": "Scotland",
-   "text": "Added council pages for North Lanarkshire (one licence fee for all types: £315 up to 4 guests, £472.50 for 5 or more; levy feasibility work under way, no consultation yet) and East Dunbartonshire (3-year fee £594 for a secondary let up to 10 guests, same to renew; council decided in 2026 not to introduce a visitor levy). North Lanarkshire has its own levy map row; East Dunbartonshire is shown as 'No levy: decided against'.",
+   "text": "Added council pages for North Lanarkshire (one licence fee for all types: \u00a3315 up to 4 guests, \u00a3472.50 for 5 or more; levy feasibility work under way, no consultation yet) and East Dunbartonshire (3-year fee \u00a3594 for a secondary let up to 10 guests, same to renew; council decided in 2026 not to introduce a visitor levy). North Lanarkshire has its own levy map row; East Dunbartonshire is shown as 'No levy: decided against'.",
    "source": "https://www.northlanarkshire.gov.uk/housing/private-housing/short-term-lets-2022"
   },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added council pages for East Renfrewshire (licence fees by bedrooms, £972 to £1,293 for a new secondary let; no visitor levy proposed) and South Lanarkshire (2026/27 fees by guests, £381.43 to £953.58 for a secondary let, same fee to renew; visitor levy research under way, no formal consultation yet). East Renfrewshire added to the levy map's 'None proposed yet' group; South Lanarkshire has its own row.",
+   "text": "Added council pages for East Renfrewshire (licence fees by bedrooms, \u00a3972 to \u00a31,293 for a new secondary let; no visitor levy proposed) and South Lanarkshire (2026/27 fees by guests, \u00a3381.43 to \u00a3953.58 for a secondary let, same fee to renew; visitor levy research under way, no formal consultation yet). East Renfrewshire added to the levy map's 'None proposed yet' group; South Lanarkshire has its own row.",
    "source": "https://www.southlanarkshire.gov.uk/business-licences-1/short-term-lets-scotland-%E2%80%93-licensing-scheme/3"
   },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added council pages for Inverclyde (2026/27 licence fees from £508 for a secondary let; levy decision on hold while the council monitors the national rollout) and Renfrewshire (2026/27 fees by bedrooms, £927 to £1,274 for a secondary let; renewal fee not published; levy proposition being developed). Both added to the levy map's 'None proposed yet' group.",
+   "text": "Added council pages for Inverclyde (2026/27 licence fees from \u00a3508 for a secondary let; levy decision on hold while the council monitors the national rollout) and Renfrewshire (2026/27 fees by bedrooms, \u00a3927 to \u00a31,274 for a secondary let; renewal fee not published; levy proposition being developed). Both added to the levy map's 'None proposed yet' group.",
    "source": "https://www1.renfrewshire.gov.uk/article/12823/Short-term-let-licence-for-residential-accommodation"
   },
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added council pages for Midlothian (2026/27 licence fees from £541 for a secondary let; levy to be reassessed in 2026) and West Lothian (planning permission or a certificate of lawfulness needed with every licence application; two conflicting fee tables flagged). Both added to the levy map's 'None proposed yet' group.",
+   "text": "Added council pages for Midlothian (2026/27 licence fees from \u00a3541 for a secondary let; levy to be reassessed in 2026) and West Lothian (planning permission or a certificate of lawfulness needed with every licence application; two conflicting fee tables flagged). Both added to the levy map's 'None proposed yet' group.",
    "source": "https://www.westlothian.gov.uk/article/75805/Short-Term-Lets"
   },
   {
@@ -1299,7 +1302,7 @@
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added council pages for East Ayrshire (new secondary let licence from £250; visitor levy paused until Aug 2027) and Clackmannanshire (2026/27 fees from £514.30 for a secondary let; no levy proposed). East Ayrshire moved to the 'paused' row on the levy map.",
+   "text": "Added council pages for East Ayrshire (new secondary let licence from \u00a3250; visitor levy paused until Aug 2027) and Clackmannanshire (2026/27 fees from \u00a3514.30 for a secondary let; no levy proposed). East Ayrshire moved to the 'paused' row on the levy map.",
    "source": "https://www.east-ayrshire.gov.uk/LawAndLicensing/ApplyForALicence/AccommodationLicences/short-term-lets-licence.aspx"
   },
   {
@@ -1311,7 +1314,7 @@
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added a council page for North Ayrshire, including Arran and Cumbrae (licence £300 or £480 for a new secondary let from 1 April 2026; no control area; visitor levy not yet decided).",
+   "text": "Added a council page for North Ayrshire, including Arran and Cumbrae (licence \u00a3300 or \u00a3480 for a new secondary let from 1 April 2026; no control area; visitor levy not yet decided).",
    "source": "https://www.north-ayrshire.gov.uk/business-licensing/licensing/accommodation-licences"
   },
   {
@@ -1324,7 +1327,7 @@
   {
    "date": "2026-10-24",
    "nation": "Scotland",
-   "text": "Added council pages for South Ayrshire (visitor levy paused until August 2027 at the earliest; licensing policy and fees under review) and Angus (licence £349 to £588, renewals now up to 6 years; no control area), with licence fees and levy status.",
+   "text": "Added council pages for South Ayrshire (visitor levy paused until August 2027 at the earliest; licensing policy and fees under review) and Angus (licence \u00a3349 to \u00a3588, renewals now up to 6 years; no control area), with licence fees and levy status.",
    "source": "https://www.angus.gov.uk/licences_and_permits/short_term_lets"
   },
   {
@@ -1429,7 +1432,7 @@
   {
    "date": "2026-09-07",
    "nation": "Scotland",
-   "text": "Highland opens 12-week visitor levy consultation (£5 per room per night proposed).",
+   "text": "Highland opens 12-week visitor levy consultation (\u00a35 per room per night proposed).",
    "source": "https://www.highland.gov.uk/news/article/17462/highland-council-opens-statutory-public-consultation-on-a-tiered-fixed-amount-visitor-levy-proposal"
   },
   {
@@ -1441,7 +1444,7 @@
   {
    "date": "2026-08-31",
    "nation": "Scotland",
-   "text": "Dundee opens a 12-week visitor levy consultation on two options: £5 per room per night or 5% of the room rate, both capped at 7 nights (to 27 Nov 2026).",
+   "text": "Dundee opens a 12-week visitor levy consultation on two options: \u00a35 per room per night or 5% of the room rate, both capped at 7 nights (to 27 Nov 2026).",
    "source": "https://www.dundeecity.gov.uk/news/article?article_ref=5123"
   },
   {
@@ -1549,12 +1552,12 @@
   {
    "date": "2026-11-03",
    "nation": "England",
-   "text": "Confirmed two Budget 2026 details for holiday lets. The higher Small Business Rate Relief thresholds from 1 April 2027 (100% relief up to £18,000 rateable value, tapering to £21,000) cover self-catering holiday lets that pay business rates, because they use the retail, hospitality and leisure definition, which includes self-catering accommodation and holiday homes. And mortgage interest relief for let property is given at the property basic rate under Finance Act 2026, so it rises to 24% from 6 April 2027 once Finance Bill 2026-27 passes.",
+   "text": "Confirmed two Budget 2026 details for holiday lets. The higher Small Business Rate Relief thresholds from 1 April 2027 (100% relief up to \u00a318,000 rateable value, tapering to \u00a321,000) cover self-catering holiday lets that pay business rates, because they use the retail, hospitality and leisure definition, which includes self-catering accommodation and holiday homes. And mortgage interest relief for let property is given at the property basic rate under Finance Act 2026, so it rises to 24% from 6 April 2027 once Finance Bill 2026-27 passes.",
    "source": "https://www.gov.uk/guidance/business-rates-multipliers-qualifying-retail-hospitality-or-leisure",
    "applies": [
     "England"
    ],
-   "short": "Budget 2026 details confirmed: from 1 April 2027 the higher Small Business Rate Relief thresholds (100% relief up to £18,000 rateable value, tapering to £21,000) cover self-catering holiday lets that pay business rates, and mortgage interest relief rises to 24% from 6 April 2027 once Finance Bill 2026-27 passes."
+   "short": "Budget 2026 details confirmed: from 1 April 2027 the higher Small Business Rate Relief thresholds (100% relief up to \u00a318,000 rateable value, tapering to \u00a321,000) cover self-catering holiday lets that pay business rates, and mortgage interest relief rises to 24% from 6 April 2027 once Finance Bill 2026-27 passes."
   },
   {
    "date": "2026-11-03",
@@ -1584,7 +1587,7 @@
   {
    "date": "2026-11-04",
    "nation": "England",
-   "text": "Added council pages for Manchester and Blackpool. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Blackpool's planning advice says most Airbnb-style holiday flats and houses need planning permission, which is generally supported only in the town centre, resort core and six holiday accommodation areas. Manchester has no short-let planning policy, and its £1 City Visitor Charge applies only to larger city centre accommodation businesses. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
+   "text": "Added council pages for Manchester and Blackpool. Both have charged a 100% second homes council tax premium, so 200% council tax, since 1 Apr 2025. Blackpool's planning advice says most Airbnb-style holiday flats and houses need planning permission, which is generally supported only in the town centre, resort core and six holiday accommodation areas. Manchester has no short-let planning policy, and its \u00a31 City Visitor Charge applies only to larger city centre accommodation businesses. Holiday lets valued for business rates instead do not pay the premium, and neither council has a short-let licence.",
    "source": "https://www.blackpool.gov.uk/Residents/Planning-environment-and-community/Planning/Planning-policy/Blackpool-local-plan/Supplementary-planning-documents-and-guidance/Serviced-holiday-accommodation-in-Blackpool-advice-note.aspx",
    "dir_only": true
   },
