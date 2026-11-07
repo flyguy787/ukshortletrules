@@ -119,6 +119,8 @@ PRM={
  'newcastle-upon-tyne':('max','100%','200%','1 Apr 2025','Council gave notice in March 2024 (Empty Homes and Second Homes Protocol). Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
  'leeds':('max','100%','200%','1 Apr 2025','Full Council agreed 21 Feb 2024. Empty and unfurnished homes pay a premium after 1 year (up to 300% after 10 years).','fees',0),
  'sheffield':('max','100%','200%','1 Apr 2025','Finance Committee determined 19 Feb 2024 (noted in Strategy and Resources budget supplementary). Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
+ 'nottingham':('max','100%','200%','1 Apr 2025','City Council agreed 4 Mar 2024. Empty and unfurnished homes pay a premium after 1 year since 1 Apr 2024 (up to 300% after 10 years).','fees',0),
+ 'cheshire-west-and-chester':('max','100%','200%','1 Apr 2025','Budget Council 16 Feb 2023 delegated the premiums policy. Empty and unfurnished homes pay a premium after 1 year since Apr 2024 (up to 300% after 10 years).','fees',0),
 # Wales
  'pembrokeshire':('hi','125%','225%','1 Apr 2026','Down from 200% (2024-25) and 150% (2025-26). The council has confirmed 125% for 2027-28.','fees',0),
  'isle-of-anglesey':('max','100%','200%','In force 2026/27','Set by Full Council on 5 Mar 2026 with the 2026/27 council tax. The council\'s second homes page still shows older wording.','fees',2),
