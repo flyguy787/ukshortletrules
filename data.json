@@ -1068,6 +1068,27 @@
       "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Budget Council on 16 Feb 2023 delegated the policy update (empty premium after 12 months from Apr 2024 and second homes premium). Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1–5/5–10/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO directions in Garden Quarter, Newry Park and King Street; Employment Class E to C3 Directions made Jul 2026, proposed in force Aug 2027). Local Plan Part One (adopted 29 Jan 2015) Policy ECON 3 supports visitor accommodation; Part Two Policy DM 9 covers hotels, guest houses, holiday lets and B&Bs.",
       "source": "https://www.cheshirewestandchester.gov.uk/residents/council-tax/council-tax-and-empty-properties/second-home-premium",
       "verified": true
+    },
+    {
+      "name": "Windsor and Maidenhead",
+      "nation": "England",
+      "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill), charged as soon as a home is unoccupied and furnished (council premiums page and 2025/26 council tax guide). Empty and unfurnished homes pay a premium after 12 months (100%/200%/300% at 12 months/5 years/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (small-area directions in Bray, Bisham, Windsor Town Centre, Wraysbury, Datchet, Sunningdale and Waltham St Lawrence, plus a Class E to C3 direction on protected employment sites since 30 Jan 2025). Borough Local Plan 2013-2033 (adopted 8 Feb 2022) Policy VT1 focuses major visitor development on Maidenhead and Windsor town centres; no separate holiday-let policy.",
+      "source": "https://www.rbwm.gov.uk/council-tax-and-benefits/council-tax/premiums-second-homes-and-long-term-empty-properties",
+      "verified": true
+    },
+    {
+      "name": "Winchester",
+      "nation": "England",
+      "rule": "100% second homes council tax premium from 1 Apr 2026 (double bill); Full Council decided 27 Feb 2025 and on 2 Jun 2026 confirmed it and approved 100% for 2027/28 onwards. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1/5/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO directions in Stanmore, Winnall and Chalk Ridge only). Part of the district is in the South Downs National Park (park authority plans there). Winchester District Local Plan 2020-2040 (adopted 24 Mar 2026): Strategic Policy E3 encourages tourism and hotels in town centres; Policy E11 covers countryside visitor accommodation; no separate holiday-let policy.",
+      "source": "https://www.winchester.gov.uk/council-tax/unoccupied-properties",
+      "verified": true
+    },
+    {
+      "name": "Arun",
+      "nation": "England",
+      "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Policy and Finance Committee 7 Mar 2024 and Full Council 13 Mar 2024. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1/5/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO direction in River, Marine and Hotham wards only, from Jan 2023). Part of the district is in the South Downs National Park (park authority plans there). Arun Local Plan 2011-2031 (adopted 18 Jul 2018) Policy TOU DM1 supports visitor accommodation in accessible locations and resists losing existing visitor accommodation; no separate holiday-let policy.",
+      "source": "https://www.arun.gov.uk/council-tax-premiums/",
+      "verified": true
     }
   ],
   "changes": [
@@ -1645,6 +1666,13 @@
       "nation": "England",
       "text": "Added council pages for Nottingham and Cheshire West and Chester. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025 (Nottingham City Council 4 Mar 2024; Cheshire West and Chester Budget Council 16 Feb 2023 delegated the premiums policy). Empty and unfurnished homes in both areas pay a premium after 1 year (up to 300% after 10 years; Cheshire West shortened the empty premium to 1 year from Apr 2024). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets (Nottingham has six conservation/character Article 4 areas; Cheshire West has HMO Article 4s in Chester and Employment Class E to C3 Directions made in Jul 2026). Nottingham planning is under the Aligned Core Strategy (Policies 5 and 13). Cheshire West planning is under Local Plan Part One Policy ECON 3 and Part Two Policy DM 9 on visitor accommodation including holiday lets.",
       "source": "https://www.nottinghamcity.gov.uk/information-for-residents/council-tax/council-tax-discounts-and-reductions/",
+      "dir_only": true
+    },
+    {
+      "date": "2026-11-07",
+      "nation": "England",
+      "text": "Added council pages for Windsor and Maidenhead, Winchester and Arun. All three charge a 100% second homes council tax premium, so 200% council tax: Windsor and Maidenhead and Arun from 1 Apr 2025 (Arun Full Council 13 Mar 2024), Winchester from 1 Apr 2026 (Full Council 27 Feb 2025, confirmed on 2 Jun 2026 for 2027/28 onwards). Empty and unfurnished homes in all three pay a premium after 1 year (up to 300% after 10 years). Holiday lets valued for business rates instead do not pay council tax premiums. None has a short-let licence or an Article 4 direction on holiday lets (Winchester and Arun have HMO Article 4s; Windsor and Maidenhead has small-area directions and a Class E to C3 direction on employment sites). Parts of Winchester and Arun are in the South Downs National Park, where the park authority handles planning.",
+      "source": "https://www.winchester.gov.uk/council-tax/unoccupied-properties",
       "dir_only": true
     }
   ],
