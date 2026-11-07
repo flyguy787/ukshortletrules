@@ -1089,6 +1089,20 @@
       "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Policy and Finance Committee 7 Mar 2024 and Full Council 13 Mar 2024. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1/5/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (HMO direction in River, Marine and Hotham wards only, from Jan 2023). Part of the district is in the South Downs National Park (park authority plans there). Arun Local Plan 2011-2031 (adopted 18 Jul 2018) Policy TOU DM1 supports visitor accommodation in accessible locations and resists losing existing visitor accommodation; no separate holiday-let policy.",
       "source": "https://www.arun.gov.uk/council-tax-premiums/",
       "verified": true
+    },
+    {
+      "name": "Hastings",
+      "nation": "England",
+      "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council approved 21 Feb 2024. The council says it includes holiday homes and holiday lets. Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1/5/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets in force (town-wide HMO direction since 2 Jul 2012; conservation-area and cliff-stability directions). Adopted Planning Strategy 2014 Policy E4 directs visitor accommodation to the seafront and resists losing serviced accommodation in the Seafront, Old Town and Town Centre. Proposed: draft Local Plan 2023-2041 Policy E5 (Regulation 19 consultation 1 Oct to 12 Nov 2026, not in force) would not support using homes as short-term lets beyond the business rates de minimis threshold.",
+      "source": "https://www.hastings.gov.uk/council-tax/secondhomes/",
+      "verified": true
+    },
+    {
+      "name": "Dover",
+      "nation": "England",
+      "rule": "100% second homes council tax premium from 1 Apr 2025 (double bill); Full Council approved 31 Jan 2024 (recorded vote 31-0). Empty and unfurnished homes pay a premium after 1 year (100%/200%/300% at 1/5/10+ years). No short-let licence; England register expected Mar 2027. No Article 4 for holiday lets (conservation-area directions only: Sandwich, Middle Street and Nelson Street in Deal, Kingsdown, Dour Street). Dover District Local Plan to 2040 (adopted 16 Oct 2024) Policy E4 supports self-catering tourism accommodation across the district subject to criteria and protects existing tourist accommodation; no separate holiday-let policy.",
+      "source": "https://www.dover.gov.uk/council-tax/council-tax-premiums",
+      "verified": true
     }
   ],
   "changes": [
@@ -1673,6 +1687,13 @@
       "nation": "England",
       "text": "Added council pages for Windsor and Maidenhead, Winchester and Arun. All three charge a 100% second homes council tax premium, so 200% council tax: Windsor and Maidenhead and Arun from 1 Apr 2025 (Arun Full Council 13 Mar 2024), Winchester from 1 Apr 2026 (Full Council 27 Feb 2025, confirmed on 2 Jun 2026 for 2027/28 onwards). Empty and unfurnished homes in all three pay a premium after 1 year (up to 300% after 10 years). Holiday lets valued for business rates instead do not pay council tax premiums. None has a short-let licence or an Article 4 direction on holiday lets (Winchester and Arun have HMO Article 4s; Windsor and Maidenhead has small-area directions and a Class E to C3 direction on employment sites). Parts of Winchester and Arun are in the South Downs National Park, where the park authority handles planning.",
       "source": "https://www.winchester.gov.uk/council-tax/unoccupied-properties",
+      "dir_only": true
+    },
+    {
+      "date": "2026-11-07",
+      "nation": "England",
+      "text": "Added council pages for Hastings and Dover. Both charge a 100% second homes council tax premium, so 200% council tax, from 1 Apr 2025 (Hastings Full Council 21 Feb 2024; Dover Full Council 31 Jan 2024). Empty and unfurnished homes in both pay a premium after 1 year (up to 300% after 10 years). Holiday lets valued for business rates instead do not pay council tax premiums. Neither has a short-let licence or an Article 4 direction on holiday lets. Hastings is consulting until 12 Nov 2026 on its new Local Plan, whose draft Policy E5 would not support using homes as short-term lets beyond the business rates threshold (not in force). Dover planning is under the Local Plan to 2040 Policy E4 on tourist accommodation.",
+      "source": "https://www.hastings.gov.uk/council-tax/secondhomes/",
       "dir_only": true
     }
   ],

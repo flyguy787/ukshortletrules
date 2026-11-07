@@ -34,6 +34,11 @@ CONS=[
   u='https://engage.moray.gov.uk/long-term-empty-properties-and-second-home-consultation',
   r='Survey on Moray Engage. Hard copies from Information Hubs in libraries across Moray. Questions: CtxEnq@moray.gov.uk.',
   x='Asks how far the current 100% second home premium (and the 100% charge on long-term empty homes) should rise, now councils can go above 100% from 1 April 2026, and what reliefs to offer. It does not consider cutting the charges. A report goes to Full Council in January 2027.'),
+ dict(t='Hastings Local Plan Pre-Submission Version 2023-2041 (Regulation 19), including draft Policy E5 on short-term lets',b='Hastings Borough Council',n='England',w='Hastings',s='hastings',k='Local plan (short-term let policy)',
+  o='2026-10-01',c='2026-11-12',cn='11:59pm',
+  u='https://www.hastings.gov.uk/planning/policy/new-local-plan/draft-new-local-plan-reg-19/',
+  r='<a href="https://hastings.oc2.uk/document/193" rel="nofollow">Online consultation portal</a> (recommended), or the council\'s representation form by email, post or hand to Muriel Matters House, Breeds Place, Hastings TN34 3UY (postal forms must arrive by 12 November).',
+  x='Formal representations at this stage must be about whether the plan is legally compliant and sound. Draft Policy E5 says using homes, including annexes, as short-term visitor accommodation beyond the Valuation Office Agency\'s de minimis threshold will not be supported, and new short-term lets must not mean losing a home. The council expects to submit the plan for examination in December 2026 and adopt it in June 2028.'),
  # ---- closed (archive) ----
  dict(t='Visitor levy consultation',b='Moray Council',n='Scotland',w='Moray',s='moray',k='Visitor levy',
   o='2026-09-01',c='2026-10-31',cn='',

@@ -1,28 +1,28 @@
 {
  "buyer-due-diligence-checker.html": {
   "d": "2026-11-07",
-  "h": "9c6eac9161297ef1b929aca771b6aa696af51879f20f387df7ebb4923370a91c",
+  "h": "1cc84b9a16df8d218652705f7a00cc0cf506578c52dcdaafa54fbf3b5141f795",
   "m": "139243b54122e79fcfec609a09a2cbc8622c8f55c54b4d9c5984b2a57b7ec6ea"
  },
  "changes.html": {
   "d": "2026-11-07",
-  "h": "026896fdf1085b9f98cf45071e8837b001feba6f46f51a5adbc31ae13b75328f",
+  "h": "6162fc6906738ab4614daf01e436fd8c6c7a9a60905c41bebcbdbbb0357cac03",
   "m": "2417cde31fde0a01bc26c9ac493681e681bb79c3c09080f2733c50c5228ae94a"
  },
  "checker.html": {
   "d": "2026-11-07",
-  "h": "e6b3d519eb9079edb67ec2646a09a5bf29275f87c81bad745449fd94a7116c87",
+  "h": "52af601cff2c5fdc3b74cfb201e7216b48cd59986b3a6e4091493dc53fbdaef9",
   "m": "43d10a3c932094f287d73e768a39643d66ea62f852ec035978c925c9eed7f082"
  },
  "consultations.html": {
   "d": "2026-11-07",
-  "h": "f4817386ac94085c68a4f58bd0efe68ecd06a542b954d8ead1bc166048da59e9",
+  "h": "7d3bb9c4ae04f2ddfafd6162d26dc604b75e3c359f83b817e12b74b84f0e4b7e",
   "m": "b8e9342c776d8acbd653c97d87772c4409c8dd937057d8aaea96e86b3479d387"
  },
  "councils.html": {
   "d": "2026-11-07",
-  "h": "13e6b794a93d385f9e37ed5ca7243c958dbd2e7f529456f03157852c4176af5e",
-  "m": "87daf792f9df3b276a60fb829d618df5f78275a167ec771de4971a404a936fd2"
+  "h": "ab0c040c5b2debd73a1775d4312262b96717a6439bcbc34be6a8752b20d86c02",
+  "m": "4e854de93dd72c29c24cbe8b808478804821fa39addeecd84ce30a7a263cf05f"
  },
  "councils/aberdeen-city.html": {
   "d": "2026-11-07",
@@ -161,7 +161,7 @@
  },
  "councils/cumberland.html": {
   "d": "2026-11-07",
-  "h": "79317c3887b606cb50a518d1c26393999692462ed69b61ae22360e9455501c99",
+  "h": "7a89639710ac7763ce58d3ee1b7770337271c1d284f2163516064a07aa697ac0",
   "m": "324d999c27a95c313b8831b2cb33d39d353a88c18d62d831331885163c7e43a3"
  },
  "councils/denbighshire.html": {
@@ -171,13 +171,18 @@
  },
  "councils/derbyshire-dales.html": {
   "d": "2026-11-07",
-  "h": "e388ee1db62659055e7ad83c209f191ec3e0ec6d2adadf4365f6bdffb4f853f9",
+  "h": "970837727a8292aeba690830ad6ce511f6f5f27959d19e0dfcfd73c31ce1766a",
   "m": "1c880558ddb66a6423470c973edaf4856af885c780b690cc3f9e450900dfc0e6"
  },
  "councils/dorset.html": {
   "d": "2026-11-07",
-  "h": "217fccc9eaf98dce7364cbc6e9ed684f5af6d08c1bcdf9e33048685151b5301a",
+  "h": "07b82e99b007d14b1b8bbbdf9c4614c899f44135f0589440f11be7656a311aa3",
   "m": "d0eb9913ac7577b338438c78a1a2b60ddcdf38cf533485cb01c434f986e1125d"
+ },
+ "councils/dover.html": {
+  "d": "2026-11-07",
+  "h": "005660c3ccb00f87f0b7dc676cf4f7171e907c60b429aae8acfb7c53587df6cf",
+  "m": "f979234fa6904f2c431a51445989eafcf64a3b2be0cf1a764e2a1f0498d035e5"
  },
  "councils/dumfries-and-galloway.html": {
   "d": "2026-11-07",
@@ -196,7 +201,7 @@
  },
  "councils/east-devon.html": {
   "d": "2026-11-07",
-  "h": "5bbf9085055ec4edaa713b4a3a9cd4ae1485eb7579687d907b5f70f2d95fba72",
+  "h": "4333e32821c718a13d7e7678644edeab352d3a017a311c77fd93197ee52775ef",
   "m": "8987bdac267bdd173a2581e9a18cb159c488ddc8a84c745c229e5efbb31ff2b5"
  },
  "councils/east-dunbartonshire.html": {
@@ -206,7 +211,7 @@
  },
  "councils/east-lindsey.html": {
   "d": "2026-11-07",
-  "h": "26d9a79a30ae34a16f3317164802b6f15d7e1f96342ac0c2d46cb55f767e4f82",
+  "h": "6197429fdb3a912177db65514a8a1a5cd2c90083bea737846c5477421df1b8e6",
   "m": "572d6505a0d373ef69b73714513402950090c48259f749ba9940005c64ddb613"
  },
  "councils/east-lothian.html": {
@@ -221,7 +226,7 @@
  },
  "councils/east-riding-of-yorkshire.html": {
   "d": "2026-11-07",
-  "h": "1b38fcbb18d8cb093246b3e184601280e1edb2bd8feb16468c163601cd9ef7ed",
+  "h": "6d99e68cd1f28007e439e06f736d6113ff56fb3cd7d1c7426c38a61cf1c91504",
   "m": "6176609d19776305b5a244c1e22cb2e19bfe5d6350f4ca3085d82584d18144ec"
  },
  "councils/east-suffolk.html": {
@@ -256,7 +261,7 @@
  },
  "councils/forest-of-dean.html": {
   "d": "2026-11-07",
-  "h": "11cc4971d5073df1eb949fee9c5d0546e1cf41917f5c4ec18f34f6a3a69ee913",
+  "h": "dee1f16b627eaffc251e017408a0f443dadf84bc1d6460e82c0c67bbd09be99e",
   "m": "ff802bf688e569659140be99040f1bb35e5d42c942e18106eff63a700a31842c"
  },
  "councils/glasgow-city.html": {
@@ -266,12 +271,12 @@
  },
  "councils/great-yarmouth.html": {
   "d": "2026-11-07",
-  "h": "c70e3c904cf2013e785ee543d3f2e831656f8a303e25f9e1f8f0f904c586fe89",
+  "h": "b28d692f212b67e9023e8fa32ab4b45614026eea91babc9f4f4cf1d728cc56c8",
   "m": "0127d713ba078ab46027585cbb8e1f567dc8e833a665297be8dae0b35434a78a"
  },
  "councils/greater-london-all-boroughs.html": {
   "d": "2026-11-07",
-  "h": "9f4ea0bf5a01cdca894f24251934a465ff3a2ff2c1e26f6eed1c9cbdbccf95a1",
+  "h": "5bab57f5d195c8cb0bb5b0baa5c706b60ca2696a1fbd53953834ae75d505896f",
   "m": "e6b31b86d21cad71bed2aab7aebcb750f36de552a820a88a16448408c60064fb"
  },
  "councils/gwynedd.html": {
@@ -279,14 +284,19 @@
   "h": "fb4ccdbb0c5b7c733dead095fcdee1374b053f55642898b5e3f2adf3cdb606e0",
   "m": "a22a00dc01788ba0c67463883bf7edeeb498c3da054a0bebcc7167b1bcfddf1e"
  },
+ "councils/hastings.html": {
+  "d": "2026-11-07",
+  "h": "914b5edaeb18b3e4aff18a7966a0b71ac2d31b8bbbf4dfc456c5c6062af4fd1d",
+  "m": "7c9fffbaf53b3ad833b25eac6c453cdaadca507e1003bc06aad89de588edbf58"
+ },
  "councils/herefordshire.html": {
   "d": "2026-11-07",
-  "h": "a767484a9ce61e40b493331d349d6a5c2b1d986d2cb99279ac579a7f427d0282",
+  "h": "de56b85ec3a57254d3fda570d8d8e2d43ea41f132524875012774be5162a59bc",
   "m": "f1ad33437080492a2523dcdf9e0761590a9ff85306ea7f3acbf2cc0171e88e1c"
  },
  "councils/high-peak.html": {
   "d": "2026-11-07",
-  "h": "624f01a902175bb04526353cdbe14c634970277c6b017ae47a080125367507af",
+  "h": "8e5e280886c1cce73d129095a6d539d8e03fe23a0aacdd06a415860d8a98370e",
   "m": "e9a5826e1feb40b2e6a026c2b3f196668384168d33176f13a3e318552b90d5bd"
  },
  "councils/highland.html": {
@@ -306,7 +316,7 @@
  },
  "councils/isle-of-wight.html": {
   "d": "2026-11-07",
-  "h": "45eb71bb799b0eb86ce3a7695720432fa9ded9d6c371b19e5d9f55cc22e4010e",
+  "h": "f8e41eadd69a7d98f64574c9bc8cce635174294b7e97cff50add48b8aef3c141",
   "m": "a37d522414656c899b457d4ffde541c413b0f3bcf71ea25b6c12219048759e9f"
  },
  "councils/isles-of-scilly.html": {
@@ -626,102 +636,102 @@
  },
  "deadlines.html": {
   "d": "2026-11-07",
-  "h": "673ec198981a5fedfdfc0aac3f6b417d03d96e6ececea4c1fb59746bc86ef301",
+  "h": "b195e7a50d52a45a0a700e545292a44ef7be134e931b2d1e723f99ec2a34d1bc",
   "m": "9da5a04193106c2095b9d35213060e46a3c8ab357837c40428a69618c5dab62d"
  },
  "embed.html": {
   "d": "2026-11-07",
-  "h": "7d341a7dff3f184f2ecaae1f03583158db15ca476ef89b704aa20dddf034f6d3",
+  "h": "f57f57f0421fcaea327f7e94a1c6687cdc7494fdc3a1024fede756d341501b22",
   "m": "5a1e74b420db2fe5a90f5bfad5683d4f660d1af08ca51aa735ad9586aa05482f"
  },
  "england-holiday-let-planning-permission.html": {
   "d": "2026-11-07",
-  "h": "bc716b9ce9de70dedee9dd28aa25a2759a15878ccfd5d77c257a867759cf26a2",
+  "h": "3bee1f74299f312a1062564aeb0d55c26fb75fb6931120dca89685eeb7cd9afd",
   "m": "04f0251f8e87d1ff2b3a0aaf77715d3a28916780a9a31c1b60e5ea7eb5cd6582"
  },
  "england-second-homes-council-tax-premium.html": {
   "d": "2026-11-07",
-  "h": "1c16f2156930a267f299f24fdd66ecfc238dc9b9d578376047dc3a4fac82a7fe",
+  "h": "41882cde5f4bc2babf22958a0e8b9d6dd4c2e00a5d56f4beeecae25508100240",
   "m": "95f084aa00e70083e976b940667cd4fff9ac039668e1937114895cae7feb731d"
  },
  "england-short-term-let-rules-2027.html": {
   "d": "2026-11-07",
-  "h": "3e5fc4faa8203f553ea17f25676017395e78217f6120da5af0512ab2fb2ce8d1",
+  "h": "2368fed9cd16e061171e09c4d2d21ab510d58f022b01e6e281b155a3964ced4c",
   "m": "3ac6b7fb80e73a15d44cdf9daa280617dfb72a0358fbc228d93674ad33fcb77b"
  },
  "england-visitor-levy-bill.html": {
   "d": "2026-11-07",
-  "h": "27ccf779289a340b286b3fad965f5816cd217b805df02617797e548aa6fcc812",
+  "h": "649c14452a2bd29164b8e5073751a4c94201afbe56902585ac24ac046bac8318",
   "m": "e0d065d4ce651c3107dc3a397135d998fd843ae3ef56161ed5096f15c87059dc"
  },
  "england.html": {
   "d": "2026-11-07",
-  "h": "12f443091c5f872ab7e3229175532e53e8d69b6803903a8590c38ace91cc502d",
+  "h": "3d3003935010293d353d22f3dbf6a053bbb44db3309c6a00d75094cfec363f83",
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
  },
  "epc-energy-rules-holiday-lets.html": {
   "d": "2026-11-07",
-  "h": "77fcfc373d4bae9d7bf0bd49a377434fca522a188873b9c2545aed8725ad212a",
+  "h": "f97ae43b27dabcc0ff4dcb9aa76abfbdc5bd16beef0c42c96f26870d453c31f7",
   "m": "5c475e88bf2e3ebee030606c3c2ececcf45c2de43f83e778d672326bf479c494"
  },
  "guides.html": {
   "d": "2026-11-07",
-  "h": "5f5942f4f235492f029661eaea9ebcfb3fbb1f51baaa98b7d30a4e91d8849cdb",
+  "h": "57ab78bd8cac8434e338a67fea4466dab8206c777ec227eda45995e23af7b383",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
   "d": "2026-11-07",
-  "h": "89db5d812bf8bd2cb02842314924f2b5b85bf52278790d8e0b2b4dd3c8e6d5c3",
+  "h": "646ba451878ed5db3033fa8345b2f71a01cb18b61c597cb2a4afe11ec9232e24",
   "m": "4fdd35138f6eb1e1013a09e647134507a5e37f5197e6ff396ba5f95fd2666cd8"
  },
  "holiday-let-fire-safety-wales.html": {
   "d": "2026-11-07",
-  "h": "ef90247bc4cdf3f9aeb34ce4022f501492a08f50dbf30a6bd931c4bba99ff9b4",
+  "h": "2a17a678e345d2dd561ee85662c969e45a689595c6511ec6c9e3cded5f900779",
   "m": "1760a600a91e06663fd8e9144d3aba64b41c4a5eb278e213aae8a0d21a41ae5b"
  },
  "holiday-let-insurance-uk.html": {
   "d": "2026-11-07",
-  "h": "498d57098be124712753ef73b23102f937b951e60331c2e999ec230ed019bb2c",
+  "h": "2aca2320eded6feb6f4318551f924349810df76295f53474a58c20a0bdc06a89",
   "m": "ff6bdcc5e5546c055c01f7bf0681e49a908331a9d61f7489b70a68ec58d50e1e"
  },
  "holiday-let-tax-after-fhl-abolition.html": {
   "d": "2026-11-07",
-  "h": "9ceef7fe5a980e2ec78aafa99ff3d539713b68961f77d17e06d096201a324442",
+  "h": "9ad5019682c50fb1c31e13f86977b83a74220e7ed4627298b23ffae3fe0aa96a",
   "m": "416a94faf911d456605732d6a23fca9d79b74359b4f39879906c3243985681df"
  },
  "index.html": {
   "d": "2026-11-07",
-  "h": "0be3e9929691c1cd52516fe978c3873f370415b1c95c83e40f131575e3f2266c",
+  "h": "d584466f2b236118f9943cc0a37db96de1c98f86e06f5f6ca144e30ea0f096e3",
   "m": "8c1ddfe14cabee80f5d05adfc321f1959cb532bb74785872dddae420f482fb2f"
  },
  "levy-calculator.html": {
   "d": "2026-11-07",
-  "h": "a28177f1b6d3462393282a3e03202111b48791f328bb19452396948da95f438c",
+  "h": "fe760ddff03bbf9d5f0a0bc9f69b4fc114e04f7bd35ae630c9ee6ebf6ee87a13",
   "m": "2c2dde6b6a18bd1482567cb1da4219057229428f8064d83eb2814fccd1454c0b"
  },
  "london-90-night-counter.html": {
   "d": "2026-11-07",
-  "h": "303d8a3560cb5f3b950ad4cb3133064a8739e70f49bb33e8304ba4ae4bf8dbbb",
+  "h": "ea297593ba9062be8402fb3216d6dcfa9e72251c0d14390a368cf7a108b7484e",
   "m": "feaff5e6b379a2a23f6be418a1239b4784e8ea2244627b4a9f0560f4ba41b34e"
  },
  "london-second-homes-council-tax-premium.html": {
   "d": "2026-11-07",
-  "h": "452dfd5f0d6725b5af3ca7b012258f999262fb7d9640323b3776f013bd7f784a",
+  "h": "195c24b56cae2c492e49fcee00dacf3c7a16b29dcf704f868e40cfee796aced5",
   "m": "1ea8a3024cb9d91d56a19f189f31eeeeb9d5c2ea0fcdb3cfb6509a1c2695c472"
  },
  "making-tax-digital-holiday-lets.html": {
   "d": "2026-11-07",
-  "h": "619b800cb40eff30ee70e10488411914394c0fd7cf1049559308e1687cefb894",
+  "h": "8836cc717936350b2ff3250168fdceeca439dcbaf743ba562db9d78a2e9a1e77",
   "m": "726bf40758ff006fe177841b93da26c961c24d689cdb31735ade9facc547d32f"
  },
  "newsletter.html": {
   "d": "2026-11-07",
-  "h": "f57e10a1b425402f2ddd3365567447174dc41b05d24e0c88c8b9a9dbd4836283",
+  "h": "bfd0696aa0b99074ebb0abb3f0d813f1ad0a27ad1d00ee42c0a449c48904405a",
   "m": "1f66101584892c3cff06b7bead006e6f4ff18834648cf0d3d4f75fe249239690"
  },
  "northern-ireland-tourism-certificate-guide.html": {
   "d": "2026-11-07",
-  "h": "d72539ed2a56cab58780eeeba0775a08d2fac911f0509a7e1d03d734d48520b4",
+  "h": "9213a7fb7e87e8bdae66686ee24528fd4bd06bf6e02b56f50d94a610473e00ef",
   "m": "7cf0662f82b161d4994ffab88ae402845500467c78a6a6b9d43d2ec61969aa71"
  },
  "northern-ireland.html": {
@@ -731,32 +741,32 @@
  },
  "occupancy-threshold-tracker.html": {
   "d": "2026-11-07",
-  "h": "b9b7dca6e20340eca4296a62aac16356f9de83aa8630cb628fa78ca65cd8613e",
+  "h": "71293dcbbd8935062b8daaa42a92e4784189aad57d995c8cda98b46e2193dad3",
   "m": "69923b5ca2c6ddf00dd0ef908311dc0cbf5385b5823ce181a5de65c414f7f3e3"
  },
  "privacy.html": {
   "d": "2026-11-07",
-  "h": "b105724d1512d688e3dd74c9fa7bf46340b82b962b5f2a45f52c99aaee675e45",
+  "h": "556bdf97cfb6fd4af5c212979d5c6e68d3a30a3125b820c380e47875df4efed3",
   "m": "9b2dddc721f3d666c7466aa2c0cd6fb3612ee44fc35e5fb4c5b463fba27b73e3"
  },
  "scotland-business-rates-checker.html": {
   "d": "2026-11-07",
-  "h": "b0e11ab9cadd0d8b0227f055b35c2fc82d7787ddbf2245eef2f649aec0b2d70d",
+  "h": "a607cd0db14d14b806bcb23edf24378d0e0b124555ea2592dc028fea2b5cf127",
   "m": "15d5dbfde469ddf8d08b5de973d7b5f59763e7a9d3d2aecfa50084f0a7f29609"
  },
  "scotland-licence-renewal-checker.html": {
   "d": "2026-11-07",
-  "h": "3b7a7d0898a5cf8e53658af7c225bc4dc42ee2c2ec1074c952e1f36e2d66e6ed",
+  "h": "c599bad30bf9d869fba77d208564bcd732d2616d4cd19e3a7c4ee0696ea0b4be",
   "m": "dd1e42c307287ca77f38aea4d652030935f71b069e81e6e4155fae9fea73d5d6"
  },
  "scotland-short-term-let-licence-fees.html": {
   "d": "2026-11-07",
-  "h": "8835be55f8e2ec05edad14e702da23d58f77a8f1e82aa51360061c9797759ef1",
+  "h": "7c911a2bd020be8ac78f913e2819753d5ef52415e1ea363e3fef6d5846d10c88",
   "m": "60ff4455b7ec173e44df7f2ab02bea81fe88de2276fd9527ab317d8035a95f3e"
  },
  "scotland-short-term-let-licence-guide.html": {
   "d": "2026-11-07",
-  "h": "15fc40f8622bfeb3792dd9fc97b6b2f813bf33c5297434cb6967a716bd70b804",
+  "h": "0416a7c1de2f1f8e15a81fb0da7411227bd2f0502961b030b907ffe5444f9cdb",
   "m": "a15ec71ca3b2d3d7a645f2eefaa5bb045c06c20a358e932e15e1637be3b7fe87"
  },
  "scotland.html": {
@@ -766,47 +776,47 @@
  },
  "second-homes-council-tax-premium-by-council.html": {
   "d": "2026-11-07",
-  "h": "c80bf2881c399ebc14436efba7d91080b5870a9922d75e950d045b31d07f74cc",
-  "m": "a80abb0c6503ad466e986f08deaf7dc3070b68a2a4fa6df177b80523786e98ad"
+  "h": "c5c0f6b17ab8d24122223bf63f682fea4fb495ce51bd282cfba99e9fd06ef265",
+  "m": "a97e9b016515215c4a115563650169282319b0f5b70f8d91a66161bb742aacb1"
  },
  "short-let-planning-permission-by-council.html": {
   "d": "2026-11-07",
-  "h": "befcd192bdda3f50f8481faa3f314a1665e619ff92799a52e07389d238eec4ef",
+  "h": "172b7d51a15ef40d1653f3b20fbee31f9d211558f92a5191ade150b9c95995c0",
   "m": "7d2d3e9bac4f6f2f0071294fd01232a47fd41a75236acc5753239102ac38ba67"
  },
  "short-term-let-fire-safety-scotland.html": {
   "d": "2026-11-07",
-  "h": "95b457b23d79c4111a33ce1c0ccc1fe5bd509e52e50a11bd970687cbf3be923b",
+  "h": "11b6fa3856ef297ece2ec91d6ebc904c537bf236be79baf4c1f5bececcb7d522",
   "m": "c21f107dd93e3f167b3e7955384f9796fbed68f9f7b155c11619251d1b64ff34"
  },
  "sponsor.html": {
   "d": "2026-11-07",
-  "h": "ef3a4ed614357677917973d4604da6f01b0f072864e048f54d12d9f802eabcd8",
+  "h": "173fca8c9b899094269154a7bb4a1afe3ef4ba26efbfdd18f049acb0a1703318",
   "m": "6f22366b00df32afb870117331f709affe1079173caf16394ff61cc5ad36d360"
  },
  "uk-levy-and-licence-deadlines.html": {
   "d": "2026-11-07",
-  "h": "45296646a49efdabbe608fcae0d2d6f339add4d75bd5ebd04dfeb39a435a0ca9",
+  "h": "04e7546a9c032069f2c1b0ea65e41bbac18a9451ee893cf562420ac196b6a3fc",
   "m": "e21f92fccc9c9b3cbb5fb26dbdee3280414db422649faa02b99600aa4382082e"
  },
  "uk-visitor-levy-map.html": {
   "d": "2026-11-07",
-  "h": "6d3f0d62f564c31befe6ac5a6b63cc6b597f87430303288cbe95365867cebcdf",
+  "h": "f0433448aa7053820ba9da162e42fdee3443c52223927ca17e88b2a1aa02b217",
   "m": "6ab24a6422cc695a88e2384e36bb7004dad2c696bad2c29f7fbabcff79b0d44e"
  },
  "wales-registration-checker.html": {
   "d": "2026-11-07",
-  "h": "cfb76ade52b571274e7af71223356bf771a27ba6a588563d4f9d552f6772aee8",
+  "h": "096b110bb1d9a5a86d0b1984c3562c11c5a453ea4c61b960e432859aa6c70046",
   "m": "6138ddcd4fb274ffec77f8bcee80fe80f8989a4fbd42434343dafeed04d1421f"
  },
  "wales-second-homes-council-tax-premium.html": {
   "d": "2026-11-07",
-  "h": "e50f2a9c17d096a229fd5bb5ae573569c69fa1cc6f64a51fd4d39e2cda1b301a",
+  "h": "b2971ea7b0e7e47553d89ad5cbcf596de67efc3dbfb5775b4f133a51459f3cc2",
   "m": "11b9178510b8a2868657b454f23215c469be568cf7108c46b6ddbefe0214ea19"
  },
  "wales-visitor-accommodation-licensing.html": {
   "d": "2026-11-07",
-  "h": "a2dd20f60a35f35feee50555beb3d539f3a35a5980abbf486ab4057961b87411",
+  "h": "98693fd276109939558edfec087aeb1d79ba5343122b9535a6d88277214cc4ef",
   "m": "4859d5cf2f450122061150981005fb954726017108bdb372f8ed05f136ec4865"
  },
  "wales.html": {
