@@ -631,17 +631,22 @@
  },
  "england.html": {
   "d": "2026-11-07",
-  "h": "16ec3a5af875ea67a442ab022941dc0e08880ce86b0e9b1e47fc2cec9b63a06d",
+  "h": "e952c1a084c504f043174bccd3363d8dfea2436909b6b51b65d966142c3ab9d4",
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
+ },
+ "epc-energy-rules-holiday-lets.html": {
+  "d": "2026-11-07",
+  "h": "c85d8597740fff947c2d4e4555a22d5067ee572fd9d8d5317b7b3b00d319cc1c",
+  "m": "5c475e88bf2e3ebee030606c3c2ececcf45c2de43f83e778d672326bf479c494"
  },
  "guides.html": {
   "d": "2026-11-07",
-  "h": "079abc5f6269cfcf5164a96c829b2d75143a6872603a7e194a1a84286cd7e3a6",
+  "h": "2ac185557f63b78ff597fd5a88d16edde5fa00bb49c743ed3d67276221c5cbd3",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
-  "d": "2026-11-06",
-  "h": "8aaa698ef65c1705a3fba97ca5139235400afc8c0c42f097ac6881f4bddee2e7",
+  "d": "2026-11-07",
+  "h": "9f7a325c54926d0bef9a9df3792d903a38e7565f123554f54702dec66c18451f",
   "m": "4fdd35138f6eb1e1013a09e647134507a5e37f5197e6ff396ba5f95fd2666cd8"
  },
  "holiday-let-fire-safety-wales.html": {
@@ -650,8 +655,8 @@
   "m": "1760a600a91e06663fd8e9144d3aba64b41c4a5eb278e213aae8a0d21a41ae5b"
  },
  "holiday-let-insurance-uk.html": {
-  "d": "2026-11-06",
-  "h": "47be9f2898c56f67a5c7d71439e53cfb626cd4381c50888034869a658b037f4a",
+  "d": "2026-11-07",
+  "h": "81795a9d6c2b34d3f9ccee8eeb8bcad38cbf3e5fefe44fc9fe2bef78b2c44648",
   "m": "ff6bdcc5e5546c055c01f7bf0681e49a908331a9d61f7489b70a68ec58d50e1e"
  },
  "holiday-let-tax-after-fhl-abolition.html": {
@@ -661,7 +666,7 @@
  },
  "index.html": {
   "d": "2026-11-07",
-  "h": "b94915d4b17ca690ffb900aba5bd923fceb3d9df54cbf49853f078540346d4ce",
+  "h": "613a11caf2dc733de9070ca6d3b98a95f66a839cfda90744920de4fb9dd970aa",
   "m": "8c1ddfe14cabee80f5d05adfc321f1959cb532bb74785872dddae420f482fb2f"
  },
  "levy-calculator.html": {
@@ -696,7 +701,7 @@
  },
  "northern-ireland.html": {
   "d": "2026-11-07",
-  "h": "2c2324185b44e8ea854d1fb14d3872129dcfc5459e623324aac51d4c3c52e60a",
+  "h": "5f5b37468f73f31ac8a7e4645960871cda100d0f85885597ee3599d18c17cd30",
   "m": "caf51d4da73392b07951753578160c29999aad1b3b33dedaa7cc3227f3bb640b"
  },
  "occupancy-threshold-tracker.html": {
@@ -731,7 +736,7 @@
  },
  "scotland.html": {
   "d": "2026-11-07",
-  "h": "825faa60830b4be462d1d52555cc6162611301eec0b82f4f4a7c0b822803ff0b",
+  "h": "35ccf5645a20c53fd084810dfc0d1d81a9728b379f87f51cfcd1e8e3bc559a6c",
   "m": "4c1a3578ac156e60b39d1a0b68a3b39b3f17f933ac8fa5747b25bb7ab8b02834"
  },
  "second-homes-council-tax-premium-by-council.html": {
@@ -781,7 +786,7 @@
  },
  "wales.html": {
   "d": "2026-11-07",
-  "h": "491767d63d065bf6681c5c2ff4627ab3f891219ea49788fc505bd4806f516137",
+  "h": "00fa4d8b2d750ad90078274df1302d4a1337a20b94c4eb96fa263f2baaf928b6",
   "m": "6c5177287f0ff79a052d68bcae3c00f0d61c6992f889c03eb79307df1fb8c475"
  }
 }
