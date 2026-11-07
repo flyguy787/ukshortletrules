@@ -150,7 +150,7 @@ GMETA={
 'guides.html':('Guides and free tools for UK short-let hosts','Every UK Short-Let Rules guide and free tool for holiday-let and short-term-let hosts by nation: planning, licensing, council tax premiums, fire safety, tax, levies.'),
 'northern-ireland-tourism-certificate-guide.html':(None,'Holiday lets in NI: planning permission (change of use) and the Tourism NI certificate: fees, the inspection, what inspectors check and a free checklist.'),
 'wales-second-homes-council-tax-premium.html':('Holiday Let Council Tax Wales: Second Homes Premium to 300%','Holiday let council tax in Wales: the second homes premium (up to 300%), when a holiday let pays it after missing the 252/182-night test, and exceptions.'),
-'holiday-let-tax-after-fhl-abolition.html':(None,'FHL repeal explained: how holiday lets and static caravans are taxed since the FHL rules ended in April 2025: mortgage interest, capital allowances, losses, CGT.'),
+'holiday-let-tax-after-fhl-abolition.html':(None,'FHL repeal and VAT for holiday lets: tax since April 2025, £90k VAT threshold, Notice 709/3 standard rating, and when the 28-day rule does not apply.'),
 'making-tax-digital-holiday-lets.html':('Making Tax Digital for holiday lets: thresholds and checker','Making Tax Digital for Income Tax for UK holiday-let hosts: £50k/£30k/£20k start thresholds, free qualifying-income checker and quarterly dates. HMRC sources.'),
 'epc-energy-rules-holiday-lets.html':('EPC and energy rules for holiday lets: MEES and when you need an EPC','EPC and MEES for UK holiday lets: short-term lets not in the 2030 PRS energy standard for now (under review), when you still need an EPC, England and Wales. Official sources.'),
 'embed.html':('Embed the free UK short-let licence checker',None),

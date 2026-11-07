@@ -3,6 +3,10 @@ FCL='https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-r
 FCA='https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca22100'
 FS23='https://www.legislation.gov.uk/ukpga/2001/2/section/23'
 FPI='https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1112'
+VREG='https://www.gov.uk/vat-registration'
+VTHR='https://www.gov.uk/how-vat-works/vat-thresholds'
+V709='https://www.gov.uk/guidance/hotels-holiday-accommodation-and-vat-notice-7093'
+VRATE='https://www.gov.uk/vat-rates'
 TS=[('HMRC policy paper: Abolition of the furnished holiday lettings tax regime (updated 7 Nov 2024)','https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition/abolition-of-the-furnished-holiday-lettings-tax-regime'),
     ('HMRC Capital Gains Manual CG73505: FHL, consequences of abolition','https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg73505'),
     ('Finance Act 2025, Schedule 5','https://www.legislation.gov.uk/ukpga/2025/8/schedule/5'),
@@ -13,7 +17,11 @@ TS=[('HMRC policy paper: Abolition of the furnished holiday lettings tax regime 
     ('Capital Allowances Act 2001, section 23, List C (item 19: caravans provided mainly for holiday lettings)',FS23),
     ('Capital Allowances Act 2001, section 35 (plant or machinery for use in a dwelling-house)','https://www.legislation.gov.uk/ukpga/2001/2/section/35'),
     ('HMRC Property Income Manual PIM1112: caravan sites',FPI),
-    ('Income Tax (Trading and Other Income) Act 2005, section 20: caravan sites where trade carried on','https://www.legislation.gov.uk/ukpga/2005/5/section/20')]
+    ('Income Tax (Trading and Other Income) Act 2005, section 20: caravan sites where trade carried on','https://www.legislation.gov.uk/ukpga/2005/5/section/20'),
+    ('GOV.UK: When to register for VAT',VREG),
+    ('GOV.UK: VAT thresholds',VTHR),
+    ('HMRC VAT Notice 709/3: Hotels and holiday accommodation (updated 27 Oct 2026)',V709),
+    ('GOV.UK: VAT rates',VRATE)]
 TROWS=[('Mortgage and loan interest (individuals)','Deducted in full from profits','Restricted: relief only at the basic rate of Income Tax, as for other residential landlords'),
     ('Furniture, equipment and fittings','Capital allowances on new spending','Replacement of domestic items relief for replacing items. An existing capital allowances pool can still be written down'),
     ('Losses','Kept in a separate FHL pot','Carried forward and set against your UK (or overseas) property business profits'),
@@ -30,21 +38,26 @@ TFAQ=[('When was the furnished holiday let tax regime abolished?','From 6 April 
       ('Do the 105-night and 210-day tests still matter?','Not for Income Tax or Capital Gains Tax. Those tests decided whether a property counted as a furnished holiday let, which no longer exists. Separate night-count rules still apply to business rates in Scotland and Wales.'),
       ('Does the FHL abolition apply to static caravans?','Yes. If a static or holiday caravan you let out qualified as a furnished holiday let, it lost that treatment at the same time as other holiday lets: from 6 April 2025 for Income Tax and Capital Gains Tax, and 1 April 2025 for Corporation Tax. Its income now forms part of your property business. HMRC says the changes are the same whether or not there are usage restrictions on a let property, and they do not change Council Tax or business rates.'),
       ('Can I still claim capital allowances on a holiday caravan after April 2025?','It is not clear from HMRC guidance. The Capital Allowances Act still lists caravans provided mainly for holiday lettings as plant, and HMRC accepts that a caravan provided mainly for holiday lettings on a licensed holiday caravan site is plant, but a property business cannot claim allowances on plant for use in a dwelling-house. HMRC has not said how these rules apply to a let holiday caravan after the FHL abolition, so check with an accountant before claiming. Existing capital allowances pools can still be written down.'),
-      ('Is a caravan park taxed as a trade or as property income?','It depends on what the site does. HMRC says a caravan site may be a trade, a mix of trade and letting, or purely letting, depending on the services provided. If the site operator carries on a trade, the operator can choose to include caravan and pitch letting income in the trade profits. HMRC also says income from a former furnished holiday let has always been property income, not trading income.')]
+      ('Is a caravan park taxed as a trade or as property income?','It depends on what the site does. HMRC says a caravan site may be a trade, a mix of trade and letting, or purely letting, depending on the services provided. If the site operator carries on a trade, the operator can choose to include caravan and pitch letting income in the trade profits. HMRC also says income from a former furnished holiday let has always been property income, not trading income.'),
+      ('When do I have to register for VAT on a holiday let?','You must register if your total taxable turnover for the last 12 months goes over £90,000, or if you expect it to go over £90,000 in the next 30 days. You can also register voluntarily below that threshold. Taxable turnover is the total value of everything you sell that is not VAT exempt or out of scope.'),
+      ('Is holiday let income charged at the standard rate of VAT?','Yes. If you supply holiday accommodation (or a site for it), HMRC says you account for VAT at the standard rate on your charges, regardless of how long guests stay. The temporary reduced rate for hospitality and tourism ended on 31 March 2022. The standard rate is 20%.'),
+      ('Does the 28-day reduced-value rule apply to self-catering holiday lets?','No. HMRC says there is no reduced value rule for holiday accommodation. The 28-day rule that reduces the taxable value of the sleeping-accommodation element from day 29 applies only to hotels, inns, boarding houses and similar establishments, not to holiday lets.'),
+      ('Can off-season residential lets of a holiday property be VAT exempt?','Sometimes. If you let the property as residential accommodation for more than 28 days in the off-season, and the holiday trade in the area is clearly seasonal, HMRC says you should treat the supply as exempt and keep evidence such as a tenancy agreement. Areas with year-round visitors, such as London and Edinburgh, are not regarded as seasonal.')]
 tr=''.join(f'<tr><td>{e(a)}</td><td>{e(b_)}</td><td>{e(c)}</td></tr>' for a,b_,c in TROWS)
 fq=''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in TFAQ)
 ld=_j.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in TFAQ]}).replace('</','<\\/')
-FCK='2026-10-30'  # sources re-checked for the TL;DR
+FCK='2026-11-07'  # sources re-checked for VAT section + TL;DR
 f='holiday-let-tax-after-fhl-abolition.html'
 t='Holiday let tax after the FHL abolition'
-dsc='FHL repeal explained: how holiday lets and static caravans are taxed since the furnished holiday lettings rules ended in April 2025: mortgage interest, capital allowances, losses, CGT and pensions.'
+dsc='FHL repeal explained: how holiday lets and static caravans are taxed since April 2025, plus VAT registration (£90k), Notice 709/3 standard rating, and when the 28-day rule does not apply.'
 b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 2025 for Income Tax and Capital Gains Tax, and 1 April 2025 for Corporation Tax. Council tax and business rates did not change.',
 '<b>Taxed like other property income.</b> A former holiday let is now part of your UK (or overseas) property business. The 105-night and 210-day tests no longer matter for Income Tax or Capital Gains Tax.',
 '<b>Mortgage interest:</b> if you let as an individual, relief is now at the basic rate of Income Tax (20%) only, like other landlords. Companies are not affected by this restriction.',
 '<b>No new capital allowances.</b> You can keep writing down an existing pool. Replacing furniture and kit now uses replacement of domestic items relief. Old FHL losses carry forward against property profits.',
 '<b>Selling and pensions:</b> Business Asset Disposal, rollover and gift relief no longer apply to disposals from 6 April 2025, apart from limited transitional cases. An anti-forestalling rule applies from 6 March 2024. Profits no longer count as earnings for pension relief.',
+'<b>VAT:</b> register if taxable turnover goes over £90,000 (or you expect to in the next 30 days). Holiday accommodation is standard-rated at 20%; the hotel 28-day reduced-value rule does not apply. See <a href="#vat-for-holiday-lets">VAT for holiday lets</a>.',
 '<b>Do now:</b> go through <a href="#what-to-check-for-your-own-lets">what to check for your own lets</a>, and <a href="#fhl-tax-alert">get an email when holiday-let tax rules change</a>. Next up: <a href="making-tax-digital-holiday-lets.html">Making Tax Digital for Income Tax</a> from 6 April 2027 if your property and self-employment income was over £30,000 in 2025 to 2026 (see thresholds and the free checker).'],sub='From HMRC and GOV.UK guidance. Not tax advice.')}
-<p class="lead">How holiday lets are taxed since the furnished holiday let (FHL) rules ended, in plain English with HMRC sources, including <a href="#static-caravans">static caravans</a>.</p>
+<p class="lead">How holiday lets are taxed since the furnished holiday let (FHL) rules ended, in plain English with HMRC sources, including <a href="#static-caravans">static caravans</a> and <a href="#vat-for-holiday-lets">VAT</a>.</p>
 <h2>Before and after</h2>
 <div class="tw"><table><tr><th>Area</th><th>Under the FHL rules</th><th>Now</th></tr>{tr}</table></div>
 <h2 id="what-to-check-for-your-own-lets">What to check for your own lets</h2><ul>
@@ -62,6 +75,17 @@ b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 20
 <li><b>Caravan parks:</b> HMRC says a <a href="{FPI}" rel="nofollow">caravan site</a> may be a trade, a mix of trade and letting, or purely letting, depending on the services provided. A site operator carrying on a trade can choose to put caravan and pitch letting income into the trade profits (<a href="https://www.legislation.gov.uk/ukpga/2005/5/section/20" rel="nofollow">ITTOIA 2005, s20</a>). HMRC says FHL income was always property income, not trading income.</li>
 <li><b>Council tax:</b> in England, an occupied caravan pitch that is nobody&rsquo;s main home is excepted from the <a href="england-second-homes-council-tax-premium.html">second homes premium</a> (Class K). This is separate from income tax.</li></ul>
 <p>Local taxes are separate and did not change with the FHL abolition. See <a href="scotland-business-rates-checker.html">Scotland business rates or council tax</a>, <a href="wales.html">Wales rules</a> and the <a href="uk-visitor-levy-map.html">UK visitor levy map</a>.</p>
+<h2 id="vat-for-holiday-lets">VAT for holiday lets</h2>
+{ANSWER('Do I have to charge VAT on a holiday let?','Only if you are (or must become) VAT-registered. You <a href="'+VREG+'" rel="nofollow">must register</a> if your total taxable turnover for the last 12 months goes over £90,000, or if you expect it to go over £90,000 in the next 30 days. You can also register voluntarily below the threshold. Taxable turnover is the total value of everything you sell that is not VAT exempt or out of scope (<a href="'+VTHR+'" rel="nofollow">GOV.UK thresholds</a>).')}
+<ul>
+<li><b>Holiday accommodation is standard-rated:</b> HMRC&rsquo;s <a href="{V709}" rel="nofollow">VAT Notice 709/3</a> (updated 27 Oct 2026) says holiday accommodation includes a house, flat, chalet, villa, beach hut, tent, caravan or houseboat. Accommodation advertised or held out as suitable for holiday or leisure use is always treated as holiday accommodation (s5.1). If you supply holiday accommodation, or a site for it, you account for VAT at the <a href="{VRATE}" rel="nofollow">standard rate (20%)</a> on your charges, regardless of the length of occupation (s5.2). Hotels, inns, B&amp;Bs and similar establishments are not &ldquo;holiday accommodation&rdquo; for VAT; they follow sections 2 to 4 of the same notice.</li>
+<li><b>Temporary reduced rate ended:</b> the temporary reduced rate for hospitality and tourism ended on 31 March 2022. From 1 April 2022 the normal rules apply, so holiday accommodation is charged at the standard rate.</li>
+<li><b>No 28-day reduced-value rule for holiday lets:</b> Notice 709/3 s5.8 says there is no reduced value rule for holiday accommodation. The 28-day rule that reduces the taxable value of the sleeping-accommodation element from day 29 applies only to hotels, inns, boarding houses and similar establishments (s3), not to self-catering holiday lets.</li>
+<li><b>Off-season residential lets:</b> if you let the property as residential accommodation for more than 28 days in the off-season, and the holiday trade in the area is clearly seasonal, HMRC says treat the supply as exempt and keep evidence such as a tenancy agreement (s5.6). Areas with year-round visitors, such as London and Edinburgh, are not regarded as seasonal.</li>
+<li><b>Caravan already on a pitch:</b> a caravan already sited on a pitch and used as holiday accommodation is standard-rated (s6.2).</li>
+<li><b>Leaving VAT:</b> if you are already VAT-registered and your taxable turnover falls below £88,000, cancelling registration is optional (<a href="{VTHR}" rel="nofollow">GOV.UK</a>).</li>
+</ul>
+<p class="small">VAT is separate from Income Tax and the FHL abolition. This is a summary of HMRC&rsquo;s public guidance, not advice on whether you should register or how to reclaim input tax. Confirm with HMRC or an accountant for your own facts.</p>
 {TOPICALERT('fhl-tax-alert','fhl-tax','Get an email when holiday-let tax rules change',
  'Holiday let tax is still changing. From 6 April 2027, <a href="making-tax-digital-holiday-lets.html">Making Tax Digital for Income Tax</a> applies if your self-employment and property income was over £30,000 in 2025 to 2026 (<a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax" rel="nofollow">HMRC</a>), and <a href="https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar" rel="nofollow">property income gets its own tax rates</a> (24%, 44%, 49% after Budget 2026) in England, Wales and Northern Ireland. We check HMRC and GOV.UK and email you when something changes.',
  "Next holiday-let tax dates we're watching",_rowdates(lambda r:r[1] in ('UK','England / Wales / NI')),
@@ -71,4 +95,4 @@ b=f'''{TLDR(['<b>The FHL tax rules have ended across the UK.</b> From 6 April 20
 <h2>Common questions</h2>{fq}
 <h2>Official sources</h2><ul>{"".join(f'<li><a href="{u}" rel="nofollow">{e(n)}</a></li>' for n,u in TS)}</ul>
 <p class="small"><b>Not tax advice.</b> Checked {FCK}. Tax depends on your circumstances, so speak to an accountant or HMRC before acting.</p>'''
-page(f,t,b,desc=dsc,full_title='FHL Repeal: How Holiday Lets Are Taxed Since April 2025',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>',checked=FCK)
+page(f,t,b,desc=dsc,full_title='FHL Repeal and VAT: How Holiday Lets Are Taxed Since April 2025',head=OGT(f,t,dsc)+f'<script type="application/ld+json">{ld}</script>',checked=FCK)
