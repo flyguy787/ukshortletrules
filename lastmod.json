@@ -15,13 +15,13 @@
   "m": "43d10a3c932094f287d73e768a39643d66ea62f852ec035978c925c9eed7f082"
  },
  "consultations.html": {
-  "d": "2026-11-06",
-  "h": "bb3ad750ba7c5e5b9d1693c5b324fbea2c39f04e9d26b9e295fdacf894d1e9c8",
+  "d": "2026-11-07",
+  "h": "dcf1c73970f3f03b8347726cdd4905fddbf838deda111fc22b15abb77738861b",
   "m": "b8e9342c776d8acbd653c97d87772c4409c8dd937057d8aaea96e86b3479d387"
  },
  "councils.html": {
-  "d": "2026-11-06",
-  "h": "f796ed7ababc71fbf170270e667fd7c8c9079934f1f05a61d5f5fb905b042e4c",
+  "d": "2026-11-07",
+  "h": "416de6de39e9d1f770af4a756d466e0a6976572d7491a4d0a96448c4fd44dc0f",
   "m": "d450fd56b7ea90ba4d0981720295ead8a46ee996f86e76250054bca0f1519342"
  },
  "councils/aberdeen-city.html": {
@@ -600,8 +600,8 @@
   "m": "2a3e5b7120ff2ea4954af153b93412c9d123d255832eaa32034a2a675f61157c"
  },
  "deadlines.html": {
-  "d": "2026-11-06",
-  "h": "61e379c758b5bc51f42c714ccb5857af157517c0a05e0a0a83681ce2cdfa86b0",
+  "d": "2026-11-07",
+  "h": "995ae642495f178023192e47509584583e4eb5e580554cfd96dd1b2578f3cec0",
   "m": "9da5a04193106c2095b9d35213060e46a3c8ab357837c40428a69618c5dab62d"
  },
  "embed.html": {
@@ -630,13 +630,13 @@
   "m": "e0d065d4ce651c3107dc3a397135d998fd843ae3ef56161ed5096f15c87059dc"
  },
  "england.html": {
-  "d": "2026-11-06",
-  "h": "bb6e91cd8c54c954b50af9b303d24e90ccbce90616883c7363721083d339a811",
+  "d": "2026-11-07",
+  "h": "16ec3a5af875ea67a442ab022941dc0e08880ce86b0e9b1e47fc2cec9b63a06d",
   "m": "cf6e92d0b7327414a5436790ff1e5d49ba230ca079955fecf1bcf32e70aeabcd"
  },
  "guides.html": {
-  "d": "2026-11-06",
-  "h": "69b731c83e4abe51b5aa4c321d8b1f0dd87d78ee311e982da430e74d62086006",
+  "d": "2026-11-07",
+  "h": "079abc5f6269cfcf5164a96c829b2d75143a6872603a7e194a1a84286cd7e3a6",
   "m": "b3a5e57d476b97c5ddad081ef360a60749017c433c59a1987e2ea79d091163aa"
  },
  "holiday-let-fire-safety-england.html": {
@@ -655,13 +655,13 @@
   "m": "ff6bdcc5e5546c055c01f7bf0681e49a908331a9d61f7489b70a68ec58d50e1e"
  },
  "holiday-let-tax-after-fhl-abolition.html": {
-  "d": "2026-11-06",
-  "h": "19836e0b75cf87be2b3686b885819b0a795007df958b052d02c89bb4f8872f6e",
+  "d": "2026-11-07",
+  "h": "d1f8944de99994517980e2e10d9319c243ad1db706af9f4060cc29e97da085c1",
   "m": "f003a4d3a34f1c44a009bc675c9491ad45e999dbcc63841e3c5d6638ef5950a5"
  },
  "index.html": {
-  "d": "2026-11-06",
-  "h": "94adf4973eb0617496060e5f91ff3414ff96c43ab4862fe890c94563b51b37a2",
+  "d": "2026-11-07",
+  "h": "b94915d4b17ca690ffb900aba5bd923fceb3d9df54cbf49853f078540346d4ce",
   "m": "8c1ddfe14cabee80f5d05adfc321f1959cb532bb74785872dddae420f482fb2f"
  },
  "levy-calculator.html": {
@@ -679,6 +679,11 @@
   "h": "c17d94078ba9c0d222a717d4bd23cf49c6b81e5931b38a14005783cefa94643e",
   "m": "1ea8a3024cb9d91d56a19f189f31eeeeb9d5c2ea0fcdb3cfb6509a1c2695c472"
  },
+ "making-tax-digital-holiday-lets.html": {
+  "d": "2026-11-07",
+  "h": "5360b8b2854ea7074c5bc2f162db649129ca6e07dc345766bce71b3d19c3ecff",
+  "m": "726bf40758ff006fe177841b93da26c961c24d689cdb31735ade9facc547d32f"
+ },
  "newsletter.html": {
   "d": "2026-11-06",
   "h": "c24a2c05fceb833f2c01139c073cf74c40f564a35cb5294801b1436c66982a8b",
@@ -690,8 +695,8 @@
   "m": "7cf0662f82b161d4994ffab88ae402845500467c78a6a6b9d43d2ec61969aa71"
  },
  "northern-ireland.html": {
-  "d": "2026-11-05",
-  "h": "392bdc35fe89af89adfac48a393400a64699b1abd914db827cbab20445b1b784",
+  "d": "2026-11-07",
+  "h": "2c2324185b44e8ea854d1fb14d3872129dcfc5459e623324aac51d4c3c52e60a",
   "m": "caf51d4da73392b07951753578160c29999aad1b3b33dedaa7cc3227f3bb640b"
  },
  "occupancy-threshold-tracker.html": {
@@ -725,8 +730,8 @@
   "m": "a15ec71ca3b2d3d7a645f2eefaa5bb045c06c20a358e932e15e1637be3b7fe87"
  },
  "scotland.html": {
-  "d": "2026-11-05",
-  "h": "923c377a6a8681b48838a71e70b82bc867791a8c5c22f80f35861e4c6ac443a2",
+  "d": "2026-11-07",
+  "h": "825faa60830b4be462d1d52555cc6162611301eec0b82f4f4a7c0b822803ff0b",
   "m": "4c1a3578ac156e60b39d1a0b68a3b39b3f17f933ac8fa5747b25bb7ab8b02834"
  },
  "second-homes-council-tax-premium-by-council.html": {
@@ -775,8 +780,8 @@
   "m": "4859d5cf2f450122061150981005fb954726017108bdb372f8ed05f136ec4865"
  },
  "wales.html": {
-  "d": "2026-11-05",
-  "h": "f530090e29719400bdb25bf717111eb0e8b90aa26723aeec65309c79d47c7c63",
+  "d": "2026-11-07",
+  "h": "491767d63d065bf6681c5c2ff4627ab3f891219ea49788fc505bd4806f516137",
   "m": "6c5177287f0ff79a052d68bcae3c00f0d61c6992f889c03eb79307df1fb8c475"
  }
 }
